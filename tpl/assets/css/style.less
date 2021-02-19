@@ -4,6 +4,7 @@
 @color-sky: #F6F9FC;
 @color-primary: #2F80ED;
 @link-footer: #DFEAEE;
+@color-header: #1D1D1D;
 
 @sm: 575px;
 @md: 767px;
@@ -22,18 +23,35 @@ body {
         border-radius: 0px;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.8)),
             linear-gradient(0deg, #FFFFFF, #FFFFFF);
-        background-image: url(/tpl/assets/img/header-1.jpg);
-        background-size: cover;
-        padding-top: 56px;
 
-        #list {
-            li {
-                width: 90px;
-                border-bottom: 4px #8C97AA solid;
-                margin-right: 20px;
-                &:last-child {
-                    margin-right: 0;
+        .carousel {
+            background-image: url(/tpl/assets/img/header-1.jpg);
+            background-size: cover;
+
+            .carousel-item {
+                height: 100vh;
+            }
+
+            .carousel-indicators {
+                justify-content: left;
+                margin: 0;
+                bottom: 3rem;
+                left: auto;
+                right: auto;
+
+                li {
+                    width: 90px;
+                    margin-left: 20px;
+                    height: 4px;
                 }
+            }
+
+            .carousel-caption {
+                position: relative;
+                right: auto;
+                left: auto;
+                bottom: auto;
+                margin-top: 30vh;
             }
         }
 
@@ -80,7 +98,6 @@ body {
 
         .jumbotron {
             color: @color-white;
-            padding-top: 225px;
 
             h1 {
                 font-size: 72px;
@@ -115,14 +132,18 @@ body {
         padding: 48px 0;
         background: #495060;
         color: @color-white;
+
         .border-bottom {
             border-color: @link-footer;
         }
+
         span {
             font-weight: 400;
         }
+
         a {
             color: @link-footer;
+
             svg {
                 vertical-align: bottom;
             }
@@ -132,6 +153,7 @@ body {
                 color: @color-white;
             }
         }
+
         .navbar-nav {
             .nav-link {
                 font-size: 20px;
@@ -139,7 +161,7 @@ body {
                 line-height: 28px;
                 letter-spacing: 0em;
                 color: @color-white;
-                padding-top:8px;
+                padding-top: 8px;
                 padding-bottom: 8px;
             }
 
@@ -153,6 +175,7 @@ body {
                     line-height: 24px;
                     letter-spacing: 0em;
                     padding-bottom: 0px;
+
                     &:last-child {
                         padding-bottom: 8px;
                     }
@@ -162,8 +185,29 @@ body {
         }
     }
 
+    .widget {
+        h3 {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 44px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: @color-header;
+            margin:0;
+        }
+    }
+
     .bg-topmenu {
         background: #8cb0e01a;
+    }
+
+    .mb-1r {
+        margin-bottom: 1rem;
+    }
+
+    .mb-2r {
+        margin-bottom: 2rem;
     }
 
     .mb-3r {
@@ -177,6 +221,7 @@ body {
     .pb-1r {
         padding-bottom: 1rem;
     }
+
     .pt-1r {
         padding-top: 1rem;
     }
@@ -192,7 +237,7 @@ body {
     .mr-25 {
         margin-right: 25px;
     }
-    
+
 
     .transparent {
         background: transparent;
@@ -223,16 +268,20 @@ body {
         white-space: nowrap;
     }
 
-.dropdown-toggle::after {
-    display: inline-block;
-    content: "";
-    border:0;
-    background-image: url('/tpl/assets/img/arrow.svg');
-    background-size: 10px 6px;
-    margin-left: 6px;
-    vertical-align: .15em;
-    height: 6px;
-    width: 10px;
-}
+    .zi-15 {
+        z-index: 15;
+    }
+
+    .dropdown-toggle::after {
+        display: inline-block;
+        content: "";
+        border: 0;
+        background-image: url('/tpl/assets/img/arrow.svg');
+        background-size: 10px 6px;
+        margin-left: 6px;
+        vertical-align: .15em;
+        height: 6px;
+        width: 10px;
+    }
 
 }
