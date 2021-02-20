@@ -13,7 +13,7 @@
         <div class="slick pb-1r">
             <wb-foreach wb-count="10">
                 <div class="card">
-                    <img class="card-img-top" src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Vfhn 2017</h4>
                         <p class="card-text">ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...</p>

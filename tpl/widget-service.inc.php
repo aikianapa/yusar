@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Сервис программного обеспечения</p>
                     </div>
@@ -15,7 +15,7 @@
 
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Сервис оборудования</p>
                     </div>
@@ -24,7 +24,7 @@
 
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Узнать больше</p>
                     </div>

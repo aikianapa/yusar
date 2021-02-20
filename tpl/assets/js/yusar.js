@@ -1,3 +1,4 @@
+wbapp.lazyload();
 wbapp.loadStyles(['/tpl/assets/slick/slick-theme.css', '/tpl/assets/slick/slick.min.css']);
 wbapp.loadScripts(['/tpl/assets/slick/slick.min.js'], null, function () {
     if ($('.slick').length) {
