@@ -3,6 +3,14 @@
 <body class="homepage">
     <wb-include wb-tpl="header.inc.php" />
     <wb-include wb-tpl="widget-news.inc.php" />
+    <wb-include wb-tpl="widget-products.inc.php" class="bg-sky" />
+    <wb-include wb-tpl="widget-equipment.inc.php" />
+    <wb-include wb-tpl="widget-service.inc.php" class="bg-sky" />
+<div>
+    <img src="/tpl/assets/img/earth.jpg" class="img-fluid">
+</div>
+
+    <wb-include wb-tpl="widget-projects.inc.php" />
     <wb-include wb-tpl="footer.inc.php" />
 </body>
 </html>
