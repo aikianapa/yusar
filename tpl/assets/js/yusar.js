@@ -1,6 +1,6 @@
 wbapp.lazyload();
-wbapp.loadStyles(['/tpl/assets/slick/slick-theme.css', '/tpl/assets/slick/slick.min.css']);
-wbapp.loadScripts(['/tpl/assets/slick/slick.min.js'], null, function () {
+wbapp.loadPreload();
+wbapp.on('ready-js', function () {
     if ($('.slick').length) {
         $('.slick').slick({
             infinite: true,

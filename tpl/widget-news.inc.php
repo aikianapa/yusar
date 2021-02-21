@@ -10,10 +10,10 @@
             <h3>Новости компании</h3>
         </div>
 
-        <div class="slick pb-1r">
+        <div class="slick news-grid pb-1r">
             <wb-foreach wb-count="10">
                 <div class="card">
-                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-news.jpg" alt="">
+                    <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt="">
                     <div class="card-body">
                         <h4 class="card-title">6 декабря</h4>
                         <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>

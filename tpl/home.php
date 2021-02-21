@@ -1,7 +1,7 @@
 <html>
 <wb-include wb-tpl="head.inc.php" />
-<body class="homepage">
-    <wb-include wb-tpl="header.inc.php" />
+<body>
+    <wb-include wb-tpl="header.inc.php" class="homepage" />
     <wb-include wb-tpl="widget-news.inc.php" />
     <wb-include wb-tpl="widget-products.inc.php" class="bg-sky" />
     <wb-include wb-tpl="widget-equipment.inc.php" />

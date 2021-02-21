@@ -5,6 +5,12 @@ RewriteBase /
 Options +FollowSymLinks
 RewriteEngine On
 
+<IfModule mod_headers.c>
+<FilesMatch ".(webp|gif|jpg|jpeg|png|ico|svg|js|css|pdf)$">
+  Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+</IfModule>
+
 RewriteRule ^(.*)\.less$ index.php 
 
 RewriteCond %{HTTP_HOST} ^www\.(.*)$

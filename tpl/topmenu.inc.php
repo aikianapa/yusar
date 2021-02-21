@@ -51,7 +51,7 @@
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>
                 <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
                     <wb-foreach wb="from=children">
-                        <a class="dropdown-item" href="#">{{data.lang.{{_sess.lang}}}}</a>
+                        <a class="dropdown-item" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </wb-foreach>
                 </div>
             </li>

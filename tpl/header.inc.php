@@ -1,4 +1,4 @@
-<header>
+<header wb-if="id == 'home'">
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="container p-0">
@@ -34,5 +34,21 @@
             </wb-foreach>
         </div>
     </div>
-
+</header>
+<header wb-if="id !== 'home'">
+    <div class="carousel" style="background-image: url(/thumb/1920x529/src/tpl/assets/img/{{_var.bkg}})">
+        <wb-include wb-tpl="topmenu.inc.php" />
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <div class="jumbotron transparent row mb-0 pb-1r">
+                            <div class="col-12 px-0">
+                                <h1>{{prop.data.{{_sess.lang}}.children.header.name}}</h1>
+                            </div>
+                            <div class="col-12 col-lg-6 px-0">
+                                <p class="lead">{{prop.data.{{_sess.lang}}.children.header.data.text}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
 </header>

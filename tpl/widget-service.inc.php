@@ -1,4 +1,4 @@
-<div class="pt-3r pb-3r">
+<div class="pt-3r pb-3r widget-service">
     <div class="container widget">
         <div class="border-bottom pb-1r mb-2r">
             <h3>Услуги</h3>
