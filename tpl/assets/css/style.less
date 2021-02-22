@@ -4,6 +4,7 @@
 @color-sky: #F6F9FC;
 @color-primary: #2F80ED;
 @link-footer: #DFEAEE;
+@link-widget: #2BA8DD;
 @color-black: #1D1D1D;
 
 @sm: 575px;
@@ -11,6 +12,7 @@
 
 
 body {
+
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     background-color: @color-white;
@@ -235,15 +237,38 @@ body {
         }
     }
 
-    .widget {
-        .border-bottom>a {
-            color: #2BA8DD;
+    a.link-arrow {
+        color: @link-widget;
+        line-height: 24px;
+        font-size: 16px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
 
-            &:hover {
-                text-decoration: none;
-            }
+    .list-uploads {
+        li {
+            line-height: 36px;
+            display: inline-flex;
+        &:before {
+            content: ' ';
+            background-image: url(/tpl/assets/img/icon-pdf.svg);
+            width: 36px;
+            height: 36px;
+            margin-right: 1.5rem;
+            display: inline-flex;
+        }
+        a {
+            color:@color-black;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+        }
         }
 
+    }
+
+    .widget {
         h3 {
             font-size: 36px;
             font-style: normal;
@@ -278,6 +303,24 @@ body {
             .card-text {
                 font-size: 14px;
                 font-weight: 500;
+            }
+        }
+    }
+
+    .pagination {
+        .page-item {
+            &:not(:last-child) {
+            margin-right: 26px;
+            }
+            .page-link {
+                color: @color-black;
+                border-radius: 0;
+                &.active,
+                &:hover {
+                    border-color: @link-widget;
+                    background-color: @link-widget;
+                    color: @color-white;
+                }
             }
         }
     }
@@ -355,20 +398,28 @@ body {
         margin-bottom: 3rem;
     }
 
+    .mt-1r {
+        margin-top: 1rem;
+    }
     .mt-3r {
         margin-top: 3rem;
+    }
+    .p-1r {
+        padding: 1rem;
     }
 
     .pb-1r {
         padding-bottom: 1rem;
     }
+    .pb-2r {
+        padding-bottom: 2rem;
+    }
+    .pb-3r {
+        padding-bottom: 3rem;
+    }
 
     .pt-1r {
         padding-top: 1rem;
-    }
-
-    .pb-3r {
-        padding-bottom: 3rem;
     }
 
     .pt-3r {
@@ -405,6 +456,14 @@ body {
 
     .tx-right {
         text-align: right;
+    }
+
+    .tx-16 {
+        font-size: 16px;
+    }
+
+    .tx-20 {
+        font-size: 20px;
     }
 
     [class='btn-primary'] {

@@ -1,7 +1,7 @@
 <div class="pt-3r pb-3r">
     <div class="container widget">
         <div class="border-bottom pb-1r mb-2r">
-            <a class="position-absilute float-right pt-1r" href="/news">
+            <a class="position-absilute float-right link-arrow pt-1r" href="/news">
                 Все новости
                 <svg width="24" height="24" class="ml-10">
                     <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />

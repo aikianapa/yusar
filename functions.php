@@ -1,3 +1,3 @@
 <?php
-!isset($_SESSION['listtype']) ? $_SESSION['listtype'] = 'grid' : null;
+!isset($_COOKIE['listtype']) ? $_COOKIE['listtype'] = 'grid' : null;
 ?>
