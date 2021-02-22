@@ -36,7 +36,7 @@
     </div>
 </header>
 <header wb-if="id !== 'home'">
-    <div class="carousel" style="background-image: url(/thumb/1920x529/src/tpl/assets/img/{{_var.bkg}})">
+    <div class="carousel" style="background-image: url(/thumbc/1920x529/src/tpl/assets/img/{{_var.bkg}})">
         <wb-include wb-tpl="topmenu.inc.php" />
                 <div class="container">
                     <div class="carousel-caption text-left">

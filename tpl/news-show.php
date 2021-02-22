@@ -25,7 +25,7 @@
                         <div class="col-12">
                             <div class="media mb-2r border-bottom">
                                 <a class="d-flex" href="/news/{{id}}/">
-                                    <img class="mt-2" data-src="/thumbc/60x60/src/tpl/assets/img/widget-news.jpg" alt="">
+                                    <img class="mt-2" width="60" height="60" data-src="/thumbc/60x60/src/tpl/assets/img/widget-news.jpg" alt="">
                                 </a>
                                 <div class="media-body ml-10">
                                     <p class="tx-16">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>

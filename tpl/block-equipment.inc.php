@@ -4,7 +4,7 @@
                     <div class="col-12 col-lg-6 mb-3r">
                         <div class="media">
                             <a class="d-flex mr-1r" href="/news/{{id}}/">
-                                <img width="120" height="120" data-src="/thumb/120x120/src/tpl/assets/img/widget-holder.jpg" alt="">
+                                <img width="120" height="120" data-src="/thumbc/120x120/src/tpl/assets/img/widget-holder.jpg" alt="">
                             </a>
                             <div class="media-body">
                                 <h4>Тепловизоры</h4>
