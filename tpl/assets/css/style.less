@@ -10,6 +10,7 @@
 @color-black: #1D1D1D;
 @form-gray: #F0F5F9;
 @input-gray: #828282;
+@input-dark: #333333;
 
 
 @sm: 575px;
@@ -326,6 +327,27 @@ body {
                 font-weight: 500;
             }
         }
+
+        label.favorite {
+            position: absolute;
+            display:block;
+            width: 24px;
+            height: 24px;
+            right: 1rem;
+            top: 1rem;
+            &:before {
+                content: ' ';
+                display: block;
+                width: 24px;
+                height: 24px;
+                background: url(/tpl/assets/img/icon-favoroff.svg);
+            }
+        }
+        input[id]:checked+label[for] {
+            &:before {
+                background: url(/tpl/assets/img/icon-favoron.svg);
+            }
+        }
     }
 
     .pagination {
@@ -466,6 +488,53 @@ body {
         border-color: @form-gray;
         background-color: @form-gray;
         box-shadow: none;
+        }
+    }
+
+    #Profile {
+        a {
+            &.nav-link {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 28px;
+                color: @input-gray;
+                padding: 0.5rem 0;
+                margin-right: 2.5rem;
+            }
+
+            &.active {
+                font-weight: 700;
+                color: @input-dark;
+
+                &[data-toggle=tab] {
+                    border-bottom: 3px @btn-def solid;
+                }
+            }
+        }
+
+        .form-profile {
+            label {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                color: @input-gray;
+                margin: 0;
+            }
+            .form-control {
+                background-color: transparent;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                color: @input-dark;
+                padding: 0.5rem 0;
+                border-color:@input-gray;
+                border-top: none;
+                border-right: none;
+                border-left: none;
+                border-radius: 0;
+            }
         }
     }
 

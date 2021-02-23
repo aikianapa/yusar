@@ -36,7 +36,7 @@
                     {{_sett.phone}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link">
+                <a class="nav-link" href="/account">
                     <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/user.svg" /></svg>
                     {{_lang.signin}}</a>
             </li>

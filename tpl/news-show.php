@@ -8,15 +8,9 @@
    <div class="container pt-3r pb-3r">
         <div class="row">
             <div class="col-md-8">
-                <wb-include wb-tpl="widget.slideshow.inc.php" />
+                <wb-include wb-tpl="widget-slideshow.inc.php" />
                 <div class="pb-2r">{{text}}</div>
-                <ul class="list-unstyled list-uploads">
-                    <wb-foreach wb-count="3">
-                    <li class="pb-1r w-100">
-                        <a href="#">Техническая документация Телемедицина (ядро) PDF 14307 Kb</a>
-                    </li>
-                    </wb-foreach>
-                </ul>
+                <wb-include wb-tpl="widget-uploads.inc.php" />
             </div>
             <div class="col-md-4">
                 <div class="row bg-sky p-1r pb-2r">

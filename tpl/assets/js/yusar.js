@@ -79,4 +79,5 @@ wbapp.loadPreload();
 wbapp.on('ready-js', function () {
     yusar.slick();
     yusar.anchor();
+    window.addEventListener('selectstart', function (e) { e.preventDefault(); });
 })
