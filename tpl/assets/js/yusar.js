@@ -17,6 +17,7 @@ yusar.listmode = function(type) {
 
 yusar.anchor = function() {
     let hash = document.location.hash;
+    if (hash == '') return;
     $(document).find(`a[href='${hash}']:eq(0)`).trigger('click');
 }
 
