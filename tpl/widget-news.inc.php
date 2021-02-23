@@ -21,6 +21,5 @@
                 </div>
             </wb-foreach>
         </div>
-
     </div>
 </div>

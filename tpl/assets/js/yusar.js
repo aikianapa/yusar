@@ -15,6 +15,11 @@ yusar.listmode = function(type) {
     })
 }
 
+yusar.anchor = function() {
+    let hash = document.location.hash;
+    $(document).find(`a[href='${hash}']:eq(0)`).trigger('click');
+}
+
 yusar.slick = function() {
     if ($('.slick').length) {
         $('.slick').slick({
@@ -50,7 +55,7 @@ yusar.slick = function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-            centerMode: true,
+        centerMode: true,
         fade: true,
         lazyLoad: 'ondemand',
         asNavFor: '.slider-nav'
@@ -73,4 +78,5 @@ wbapp.lazyload();
 wbapp.loadPreload();
 wbapp.on('ready-js', function () {
     yusar.slick();
+    yusar.anchor();
 })

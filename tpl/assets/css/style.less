@@ -5,7 +5,8 @@
 @color-primary: #2F80ED;
 @link-footer: #DFEAEE;
 @link-gray: #4F4F4F;
-@link-widget: #2BA8DD;
+@btn-def: #2BA8DD;
+@btn-hover: #2286B0;
 @color-black: #1D1D1D;
 @form-gray: #F0F5F9;
 @input-gray: #828282;
@@ -21,6 +22,10 @@ body {
     font-weight: 500;
     background-color: @color-white;
     overflow-x: hidden;
+
+    a:hover {
+        text-decoration: none;
+    }
 
     :focus,
     :active {
@@ -251,7 +256,7 @@ body {
     }
 
     a.link-arrow {
-        color: @link-widget;
+        color: @btn-def;
         line-height: 24px;
         font-size: 16px;
 
@@ -335,8 +340,8 @@ body {
 
                 &.active,
                 &:hover {
-                    border-color: @link-widget;
-                    background-color: @link-widget;
+                    border-color: @btn-hover;
+                    background-color: @btn-hover;
                     color: @color-white;
                 }
             }
@@ -362,9 +367,22 @@ body {
         }
     }
 
+    .gray-link {
+        font-style: normal;
+        font-weight: 500;
+        letter-spacing: 0em;
+        text-align: left;
+        color: @input-gray;
+        display: inline-flex;
+        width: 100%;
+        &:hover, &:active, &.active {
+            color: @link-gray;
+        }
+    }
+
     .btn-link {
-        border-color: @link-widget;
-        background-color: @link-widget;
+        border-color: @btn-def;
+        background-color: @btn-def;
         border-radius: 0;
         padding-left: 5rem;
         padding-right: 5rem;
@@ -375,13 +393,13 @@ body {
         line-height: 20px;
         letter-spacing: 0em;
         color: @color-white;
-                &.active,
-                &:hover {
-                    text-decoration: none;
-                    border-color: @link-widget;
-                    background-color: @link-widget;
-                    color: @color-white;
-                }
+        &.active,
+        &:hover {
+            text-decoration: none;
+            border-color: @btn-hover;
+            background-color: @btn-hover;
+            color: @color-white;
+        }
     }
 
     .news-grid,
@@ -484,6 +502,9 @@ body {
     .pt-1r {
         padding-top: 1rem;
     }
+    .pt-2r {
+        padding-top: 2rem;
+    }
 
     .pt-3r {
         padding-top: 3rem;
@@ -520,7 +541,7 @@ body {
     .mr-1r {
         margin-right: 1rem;
     }
-
+    
     .mr-25 {
         margin-right: 25px;
     }
