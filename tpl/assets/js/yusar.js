@@ -32,7 +32,6 @@ yusar.dataOptions = function(el) {
                 case "undefined": return undefined;
             }
             if (is_numeric(string)) string = string * 1;
-            console.log(string);
         }
         return string;
     }
@@ -42,7 +41,6 @@ yusar.dataOptions = function(el) {
     for (const [k, v] of Object.entries(el.options)) {
         el.options[k] = strToBool(v);
     }
-    console.log(el.options);
     return el.options;
 }
 
@@ -84,6 +82,13 @@ yusar.slick = function() {
 
             yusar.dataOptions(this);
             $(this).slick(this.options);
+            $(document).undelegate('.slick-nav .slick-slide', 'tap click');
+            $(document).delegate('.slick-nav .slick-slide', 'tap click', (ev) => {
+                setTimeout(() => {
+                $(ev.target).parents('.slick-nav').find('.slick-current').removeClass('slick-current');
+                $(ev.target).addClass('slick-current');
+                },10)
+            })
         })
     }
 
