@@ -157,6 +157,8 @@ body {
             }
         }
 
+        /* Main menu */
+
         nav {
             height: 4rem;
 
@@ -193,6 +195,32 @@ body {
 
                     &:last-child {
                         margin-right: 0;
+                    }
+
+                    >.dropdown-menu.show {
+                        position: fixed;
+                        left: 0;
+                        z-index: 1000;
+                        height: 4rem;
+                        padding-top: 1rem !important;
+                        float: left;
+                        width: 100%;
+                        padding: 5px 0;
+                        margin: 0 auto;
+                        text-align: center;
+                        border-radius: 0;
+                        background: rgba(140, 176, 224, 0.04);
+                        backdrop-filter: blur(20px);
+                        .dropdown-item {
+                            display: inline;
+                            vertical-align: middle;
+                            color: @input-gray;
+                            &:hover,&:active {
+                                color: @color-white;
+                                font-weight: 700;
+                                background:transparent;
+                            }
+                        }
                     }
                 }
             }
@@ -469,7 +497,13 @@ body {
         }
     }
 
+    .slick-arrow:before {
+        color: @btn-def;
+    }
+
     .slick {
+        color: @btn-def;
+
         .slick-arrow:before {
             display: block;
             content: ' ';
@@ -535,6 +569,7 @@ body {
 
         .slick-nav {
             min-width: 65px;
+
             .slick-slide {
                 font-size: 14px;
                 font-style: normal;
@@ -545,17 +580,18 @@ body {
                 letter-spacing: 0em;
                 text-align: left;
                 margin-left: 20px;
-                color:@input-gray;
+                color: @input-gray;
                 cursor: pointer;
             }
 
             .slick-current {
-                color:@color-black;
-            &:before {
-                content: '—';
-                position: absolute;
-                left: 0;
-            }
+                color: @color-black;
+
+                &:before {
+                    content: '—';
+                    position: absolute;
+                    left: 0;
+                }
             }
         }
     }
@@ -618,8 +654,20 @@ body {
         background: @color-sky;
     }
 
+    .bg-gray {
+        background: @form-gray;
+    }
+
     .p-1r {
         padding: 1rem;
+    }
+
+    .p-2r {
+        padding: 2rem;
+    }
+
+    .p-3r {
+        padding: 3rem;
     }
 
     .pb-1r {
@@ -684,6 +732,10 @@ body {
 
     .mr-1r {
         margin-right: 1rem;
+    }
+
+    .mr-2r {
+        margin-right: 2rem;
     }
 
     .mr-25 {

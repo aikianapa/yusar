@@ -112,14 +112,13 @@ yusar.slick = function() {
         })
     }
 
+    
 
     if ($('.slider.slider-for').length) {
         $('.slider.slider-for').each(function() {
             this.options = {
-                infinite: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                variableWidth: true,
                 arrows: true,
                 centerMode: true,
                 fade: true,
@@ -137,6 +136,7 @@ yusar.slick = function() {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
+            variableWidth: true,
             asNavFor: '.slider-for',
             lazyLoad: 'ondemand',
             dots: false,
