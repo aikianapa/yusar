@@ -19,20 +19,20 @@
                     <div class="col-3 col-sm-2" style="height:100%;">
                         <wb-var start='1996' />
                         <wb-var year='{{ date("Y")}}' />
-                        <wb-var navs='{{ _var.year - {{_var.start}}' />
-                        <div class="slick slick-nav" data-options="vertical=true&verticalSwiping=false&responsive=false&useCSS=false&useTransform=false&slidesToScroll=1&slidesToShow={{_var.navs}}&infinite=false&touchMove=false">
+                        <wb-var navs='{{ {{_var.year}} - {{_var.start}} }}' />
+                        <div class="slick-uninit slick-nav">
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
-                                <div class="d-block">{{_value}}</div>
+                                <div class="d-block slick-slide" data-year="{{_value}}">{{_value}}</div>
                             </wb-foreach>
                         </div>
                     </div>
                     <div class="col-9 col-sm-10">
-                        <div class="slick slick-for pb-1r" data-options="vertical=true&verticalSwiping=true&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=false&arrows=false">
+                        <div class="slick slick-for pb-1r" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=false&arrows=false&adaptiveHeight&true">
                             <!-- обязательно через src !!! -->
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
                                 <div>
                                 <div data-year="{{_value}}">
-                                    <img class="img-fluid" src="/thumbc/800x600/src/tpl//assets/img/widget-holder.jpg">
+                                    <img class="img-fluid" src="/thumbc/800x600/src/tpl/assets/img/widget-holder.jpg">
                                 </div>
                                 <div>
                                       <img class="img-fluid" src="/thumbc/800x600/src/{{_parent.images.{{_idx}}.img}}">

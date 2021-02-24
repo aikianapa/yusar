@@ -74,23 +74,44 @@ yusar.slick = function() {
                         slidesToShow: 4,
                         slidesToScroll: 4
             }
+            yusar.dataOptions(this);
             if ($(this).hasClass('slick-nav')) {
-                this.options.asNavFor = '.slick-for';
+                if (this.options.asNavFor == undefined) this.options.asNavFor = '.slick-for';
                 this.options.focusOnSelect = true;
             }
-            if ($(this).hasClass('slick-for')) this.options.asNavFor = '.slick-nav'
+            if ($(this).hasClass('slick-for')) {
+                if ($(this).parents('.row').find('.slick.slick-nav').length) {
+                    this.options.asNavFor = '.slick.slick-nav';
+                }
+            }
+            console.log(this.options);
+            $(this).slick(this.options).on('afterChange', (event, slick, currentSlide, nextSlide)=>{
+                if ($(this).is('.slick-for')) {
+                    let nav = $(this).parents('.row').find('.slick.slick-nav');
+                    if (nav) {
+                        $(nav).find('.slick-current').removeClass('slick-current');
+                        $(nav).find(".slick-slide:eq("+currentSlide+")").addClass('slick-current');
+                    }
+                }
+                
+                
+            });
+        })
+    }
 
-            yusar.dataOptions(this);
-            $(this).slick(this.options);
-            $(document).undelegate('.slick-nav .slick-slide', 'tap click');
-            $(document).delegate('.slick-nav .slick-slide', 'tap click', (ev) => {
-                setTimeout(() => {
-                $(ev.target).parents('.slick-nav').find('.slick-current').removeClass('slick-current');
-                $(ev.target).addClass('slick-current');
-                },10)
+    if ($('.slick-uninit.slick-nav').length) {
+        $('.slick-uninit.slick-nav').each(function(){
+            $(this).find('.slick-slide:first-child').addClass('slick-current');
+            let navslick = this;
+            let forslick = $(this).parents('.row').find('.slick-for')[0];
+            $(this).find('.slick-slide').on('tap click',function(){
+                $(navslick).find('.slick-current').removeClass('slick-current');
+                $(this).addClass('slick-current');
+                $(forslick).slick('slickGoTo',$(this).index());
             })
         })
     }
+
 
     if ($('.slider.slider-for').length) {
         $('.slider.slider-for').each(function() {
@@ -109,6 +130,7 @@ yusar.slick = function() {
             $(this).slick(this.options);
         })
     }
+    
     if ($('.slider.slider-nav').length) {
         $('.slider.slider-nav').each(function () {
         this.options = {

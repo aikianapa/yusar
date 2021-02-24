@@ -510,41 +510,52 @@ body {
         .slick.slick-for {
             [data-year] {
                 background: #2BA8DD;
-                > img {
+
+                >img {
                     opacity: 0;
                 }
-            &:before {
-                content: attr(data-year);
-                width: 100%;
-                display: block;
-                position: absolute;
-                font-size: 2rem;
-                margin-top: 30%;
-                color: #fff;
-                text-align: center;
-                font-size: 72px;
-                font-style: normal;
-                font-weight: 100;
-                line-height: 60px;
-                letter-spacing: 0em;
-            }
+
+                &:before {
+                    content: attr(data-year);
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    font-size: 2rem;
+                    margin-top: 30%;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 72px;
+                    font-style: normal;
+                    font-weight: 100;
+                    line-height: 60px;
+                    letter-spacing: 0em;
+                }
             }
         }
-        .slick.slick-nav {
+
+        .slick-nav {
+            min-width: 65px;
             .slick-slide {
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                height: 20px;
+                margin-bottom: 10px;
+                letter-spacing: 0em;
+                text-align: left;
                 margin-left: 20px;
+                color:@input-gray;
+                cursor: pointer;
             }
-            .slick-current:before {
+
+            .slick-current {
+                color:@color-black;
+            &:before {
                 content: '—';
                 position: absolute;
                 left: 0;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
-letter-spacing: 0em;
-text-align: left;
-
+            }
             }
         }
     }
