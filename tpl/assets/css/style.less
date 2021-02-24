@@ -33,7 +33,13 @@ body {
         outline-color: transparent;
     }
 
-
+    h1 {
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+    }
 
     h3 {
         font-size: 36px;
@@ -330,11 +336,12 @@ body {
 
         label.favorite {
             position: absolute;
-            display:block;
+            display: block;
             width: 24px;
             height: 24px;
             right: 1rem;
             top: 1rem;
+
             &:before {
                 content: ' ';
                 display: block;
@@ -343,6 +350,7 @@ body {
                 background: url(/tpl/assets/img/icon-favoroff.svg);
             }
         }
+
         input[id]:checked+label[for] {
             &:before {
                 background: url(/tpl/assets/img/icon-favoron.svg);
@@ -380,6 +388,7 @@ body {
         color: @link-gray;
         display: inline-flex;
         width: 100%;
+
         &:before {
             content: '';
             background-image: url(/tpl/assets/img/icon-paperclip.svg);
@@ -397,7 +406,10 @@ body {
         color: @input-gray;
         display: inline-flex;
         width: 100%;
-        &:hover, &:active, &.active {
+
+        &:hover,
+        &:active,
+        &.active {
             color: @link-gray;
         }
     }
@@ -415,6 +427,7 @@ body {
         line-height: 20px;
         letter-spacing: 0em;
         color: @color-white;
+
         &.active,
         &:hover {
             text-decoration: none;
@@ -483,11 +496,56 @@ body {
         color: @input-gray;
         margin-bottom: 1.5rem;
         padding: 1.3rem 1.5rem;
-        &:active, &:focus {
-        border-radius: 0;
-        border-color: @form-gray;
-        background-color: @form-gray;
-        box-shadow: none;
+
+        &:active,
+        &:focus {
+            border-radius: 0;
+            border-color: @form-gray;
+            background-color: @form-gray;
+            box-shadow: none;
+        }
+    }
+
+    #History {
+        .slick.slick-for {
+            [data-year] {
+                background: #2BA8DD;
+                > img {
+                    opacity: 0;
+                }
+            &:before {
+                content: attr(data-year);
+                width: 100%;
+                display: block;
+                position: absolute;
+                font-size: 2rem;
+                margin-top: 30%;
+                color: #fff;
+                text-align: center;
+                font-size: 72px;
+                font-style: normal;
+                font-weight: 100;
+                line-height: 60px;
+                letter-spacing: 0em;
+            }
+            }
+        }
+        .slick.slick-nav {
+            .slick-slide {
+                margin-left: 20px;
+            }
+            .slick-current:before {
+                content: '—';
+                position: absolute;
+                left: 0;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+            }
         }
     }
 
@@ -522,6 +580,7 @@ body {
                 color: @input-gray;
                 margin: 0;
             }
+
             .form-control {
                 background-color: transparent;
                 font-size: 16px;
@@ -529,7 +588,7 @@ body {
                 line-height: 20px;
                 color: @input-dark;
                 padding: 0.5rem 0;
-                border-color:@input-gray;
+                border-color: @input-gray;
                 border-top: none;
                 border-right: none;
                 border-left: none;
@@ -571,6 +630,7 @@ body {
     .pt-1r {
         padding-top: 1rem;
     }
+
     .pt-2r {
         padding-top: 2rem;
     }
@@ -579,29 +639,33 @@ body {
         padding-top: 3rem;
     }
 
-.mt-0 {
-    margin-top: 0;
-}
+    .mt-0 {
+        margin-top: 0;
+    }
 
-.mb-1r {
-    margin-bottom: 1rem;
-}
+    .mb-1r {
+        margin-bottom: 1rem;
+    }
 
-.mb-2r {
-    margin-bottom: 2rem;
-}
+    .mb-2r {
+        margin-bottom: 2rem;
+    }
 
-.mb-3r {
-    margin-bottom: 3rem;
-}
+    .mb-3r {
+        margin-bottom: 3rem;
+    }
 
-.mt-1r {
-    margin-top: 1rem;
-}
+    .mt-1r {
+        margin-top: 1rem;
+    }
 
-.mt-3r {
-    margin-top: 3rem;
-}
+    .mt-2r {
+        margin-top: 2rem;
+    }
+
+    .mt-3r {
+        margin-top: 3rem;
+    }
 
     .ml-10 {
         margin-left: 10px;
@@ -610,7 +674,7 @@ body {
     .mr-1r {
         margin-right: 1rem;
     }
-    
+
     .mr-25 {
         margin-right: 25px;
     }
