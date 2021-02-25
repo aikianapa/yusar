@@ -84,10 +84,10 @@ yusar.slick = function() {
                     this.options.asNavFor = '.slick.slick-nav';
                 }
             }
-            console.log(this.options);
+
             $(this).slick(this.options).on('afterChange', (event, slick, currentSlide, nextSlide)=>{
                 if ($(this).is('.slick-for')) {
-                    let nav = $(this).parents('.row').find('.slick.slick-nav');
+                    let nav = $(this).parents('.row').find('.slick-nav');
                     if (nav) {
                         $(nav).find('.slick-current').removeClass('slick-current');
                         $(nav).find(".slick-slide:eq("+currentSlide+")").addClass('slick-current');

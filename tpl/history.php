@@ -18,7 +18,7 @@
                 <div class="row pt-3r">
                     <div class="col-3 col-sm-2" style="height:100%;">
                         <wb-var start='1996' />
-                        <wb-var year='{{ date("Y")}}' />
+                        <wb-var year='{{ date("Y") - 1}}' />
                         <wb-var navs='{{ {{_var.year}} - {{_var.start}} }}' />
                         <div class="slick-uninit slick-nav">
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
@@ -31,11 +31,11 @@
                             <!-- обязательно через src !!! -->
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
                                 <div>
-                                <div data-year="{{_value}}">
-                                    <img class="img-fluid" src="/thumbc/800x600/src/tpl/assets/img/widget-holder.jpg">
-                                </div>
                                 <div>
                                       <img class="img-fluid" src="/thumbc/800x600/src/{{_parent.images.{{_idx}}.img}}">
+                                </div>
+                                <div data-year="{{_value + 1}}">
+                                      <img class="img-fluid" src="/thumbc/800x600/src/{{_parent.images.{{_ndx}}.img}}">
                                 </div>
                                 </div>
                             </wb-foreach>
