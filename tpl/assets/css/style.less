@@ -27,11 +27,11 @@
 
 
 body {
-
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     background-color: @color-white;
     overflow-x: hidden;
+    width: 100vw;
 
     a:hover {
         text-decoration: none;
@@ -171,9 +171,9 @@ body {
         nav.navbar {
             &.top {
                 align-items: end;
-
                 .dropdown {
                     position: absolute;
+
                     .dropdown-menu {
                         background-color: @color-topmenu;
                         border: @menu-border;
@@ -181,6 +181,7 @@ body {
                         .dropdown-item {
                             color: @input-gray;
                             background-color: transparent;
+
                             &:hover {
                                 color: @color-white;
                             }
@@ -188,7 +189,7 @@ body {
                     }
                 }
             }
-            
+
             .navbar-toggler {
                 border: none;
                 color: @color-white;
@@ -230,7 +231,53 @@ body {
                 &.top {
                     align-items: end;
                 }
+
                 &.bot {
+                .dropdown {
+                    >.nav-link {
+                        color: @color-white;
+                    }
+
+                    .dropdown-toggle {
+                        color: @color-white;
+
+                        &[aria-expanded=true]:after {
+                            transform: rotate(-90deg);
+                        }
+                    }
+
+                    .dropdown-menu {
+                        position: relative !important;
+                        align-items: start;
+                        background: transparent !important;
+                        border: none !important;
+                        word-break: break-all;
+                        padding: 0;
+                        margin: 0;
+                        top: 0;
+                        backdrop-filter: none;
+                        text-align: left;
+                        height: auto !important;
+
+                        .dropdown-item {
+                            display: block;
+                            color: @input-gray;
+                            font-size: 14px;
+                            font-weight: 500;
+                            padding: 4px 24px;
+                            min-width: 180px;
+                            width: auto;
+                            align-items: start;
+
+                            &:hover {
+                                background: transparent;
+                                color: @color-white;
+                            }
+                        }
+
+                    }
+                }
+
                     #mainMenu {
                         min-height: 80vh;
                         align-items: baseline;
@@ -239,44 +286,6 @@ body {
                             display: block;
                         }
 
-                        .dropdown {
-                            .dropdown-toggle {
-                                color: @color-white;
-                                &[aria-expanded=true]:after {
-                                    transform: rotate(-90deg);
-                                }
-                            }
-
-                            .dropdown-menu {
-                                position: relative !important;
-                           align-items: start;
-                           background: transparent !important;
-                                border: none !important;
-                                word-break: break-all;
-                                padding: 0;
-                                margin: 0;
-                                top: 0;
-                                backdrop-filter: none;
-                                text-align: left;
-                                height: auto !important;
-
-                                .dropdown-item {
-                                    display: block;
-                                    color: @input-gray;
-                                    font-size: 14px;
-                                    font-weight: 500;
-                                    padding: 4px 24px;
-                                    min-width: 180px;
-                                    width: auto;
-align-items: start;
-                                    &:hover {
-                                        background: transparent;
-                                        color: @color-white;
-                                    }
-                                }
-
-                            }
-                        }
                     }
                 }
             }
@@ -285,29 +294,36 @@ align-items: start;
         @media (min-width:@sm-min) and (max-width:@xl) {
             nav {
                 &.navbar.top {
-                        .nav-link {
-                            color: @color-white;
-                        }
+                    .nav-link {
+                        color: @color-white;
+                    }
+
                     align-items: center;
                     border-bottom: @menu-border;
                     padding-bottom: 1rem;
+
                     .navbar-nav {
                         width: 100%;
+
                         &.left {
                             display: inline;
                             width: auto;
                             margin-top: -20px;
+
                             .dropdown {
                                 position: absolute;
                             }
                         }
+
                         &.right {
                             display: inline-block;
                             text-align: center;
+
                             .nav-item {
                                 display: inline;
                                 padding-left: 1rem;
                             }
+
                             .nav-link {
                                 display: inline;
                             }
