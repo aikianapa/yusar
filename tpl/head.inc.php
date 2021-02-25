@@ -7,4 +7,5 @@
 
 <link rel="preload" href="/engine/lib/bootstrap/js/bootstrap.min.js" as="script">
 <link rel="preload" href="/tpl/assets/slick/slick.min.js" as="script">
+<title>{{header}}</title>
 </head>
