@@ -32,10 +32,10 @@
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
                                 <div>
                                 <div>
-                                      <img class="img-fluid" width="800" height="600" data-src="/thumbc/800x600/src/{{_parent.images.{{_idx}}.img}}" alt="{{_value}}">
+                                      <img class="img-fluid" width="640" height="480" data-src="/thumbc/640x480/src/{{_parent.images.{{_idx}}.img}}" alt="{{_value}}">
                                 </div>
                                 <div data-year="{{_value + 1}}">
-                                      <img class="img-fluid" width="800" height="600" data-src="/thumbc/800x600/src/{{_parent.images.{{_ndx}}.img}}" alt="{{_value + 1}}">
+                                      <img class="img-fluid" width="640" height="480" data-src="/thumbc/640x480/src/{{_parent.images.{{_ndx}}.img}}" alt="{{_value + 1}}">
                                 </div>
                                 </div>
                             </wb-foreach>
