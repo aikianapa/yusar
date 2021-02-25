@@ -7,26 +7,27 @@
     </svg>
     </a>
 
+    <ul class="navbar-nav mr-auto left">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{strtoupper({{_sess.lang}})}}</a>
+            <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
+                <a class="dropdown-item" href="/module/lang/ru">RU</a>
+                <a class="dropdown-item" href="/module/lang/en">EN</a>
+            </div>
+        </li>
+
+        <li class="nav-item active" wb-if="children == ''">
+            <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
+        </li>
+
+    </ul>
+
     <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu"
         aria-expanded="false" aria-label="Toggle navigation">
         <span>{{_lang.menu}}</span>
     </button>
     <div class="collapse navbar-collapse" id="mainMenu">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{strtoupper({{_sess.lang}})}}</a>
-                <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
-                    <a class="dropdown-item" href="/module/lang/ru">RU</a>
-                    <a class="dropdown-item" href="/module/lang/en">EN</a>
-                </div>
-            </li>
-
-            <li class="nav-item active" wb-if="children == ''">
-                <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
-            </li>
-
-        </ul>
-        <ul class="navbar-nav my-2 my-lg-0 right">
+        <ul class="navbar-nav my-2 my-lg-0 ml-xl-auto right">
             <li class="nav-item">
                 <a class="nav-link">
                     <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/search.svg" /></svg>
