@@ -22,11 +22,11 @@
 
     </ul>
 
-    <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu"
+    <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target=".mainmenu" aria-controls="mainMenu"
         aria-expanded="false" aria-label="Toggle navigation">
         <span>{{_lang.menu}}</span>
     </button>
-    <div class="collapse navbar-collapse" id="mainMenu">
+    <div class="collapse navbar-collapse mainmenu" id="mainMenu">
         <ul class="navbar-nav my-2 my-lg-0 ml-xl-auto right">
             <li class="nav-item">
                 <a class="nav-link">
@@ -48,7 +48,7 @@
 </nav>
 
 <nav class="navbar navbar-expand-xl navbar-dark px-0 bot">
-    <div class="collapse navbar-collapse" id="mainMenu">
+    <div class="collapse navbar-collapse mainmenu">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" wb-tree="item=menu&branch=mainmenu&parent=false&children=false">
             <li class="nav-item dropdown" wb-if="children > ''">
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>

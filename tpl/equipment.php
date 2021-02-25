@@ -1,4 +1,4 @@
-<html>
+<html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 <body>
     <wb-var bkg="header-4.jpg" />

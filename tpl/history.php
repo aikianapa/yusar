@@ -1,4 +1,4 @@
-<html>
+<html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
 <body>
@@ -32,10 +32,10 @@
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
                                 <div>
                                 <div>
-                                      <img class="img-fluid" data-src="/thumbc/800x600/src/{{_parent.images.{{_idx}}.img}}">
+                                      <img class="img-fluid" width="800" height="600" data-src="/thumbc/800x600/src/{{_parent.images.{{_idx}}.img}}" alt="{{_value}}">
                                 </div>
                                 <div data-year="{{_value + 1}}">
-                                      <img class="img-fluid" data-src="/thumbc/800x600/src/{{_parent.images.{{_ndx}}.img}}">
+                                      <img class="img-fluid" width="800" height="600" data-src="/thumbc/800x600/src/{{_parent.images.{{_ndx}}.img}}" alt="{{_value + 1}}">
                                 </div>
                                 </div>
                             </wb-foreach>
