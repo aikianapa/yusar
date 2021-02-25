@@ -1,15 +1,17 @@
 <div class="bg-topmenu position-absolute w-100" style=z-index:1;>
 <div class="container">
-<nav class="navbar navbar-expand-md navbar-dark px-0 top">
+<nav class="navbar navbar-expand-xl navbar-dark px-0 top">
     <a class="navbar-brand" href="/">
     <svg width="120" height="25">
         <image width="120" height="25" xlink:href="/tpl/assets/img/logo-white.svg" />
     </svg>
     </a>
 
-    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-        aria-expanded="false" aria-label="Toggle navigation">Меню</button>
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span>{{_lang.menu}}</span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{strtoupper({{_sess.lang}})}}</a>
@@ -44,8 +46,8 @@
     </div>
 </nav>
 
-<nav class="navbar navbar-expand-md navbar-dark px-0">
-    <div class="collapse navbar-collapse" id="collapsibleNavId">
+<nav class="navbar navbar-expand-xl navbar-dark px-0 bot">
+    <div class="collapse navbar-collapse" id="mainMenu">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0" wb-tree="item=menu&branch=mainmenu&parent=false&children=false">
             <li class="nav-item dropdown" wb-if="children > ''">
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>
@@ -69,7 +71,9 @@
     [ru]
         search = Поиск
         signin = Личный кабинет
+        menu = Меню
     [en]
         search = Search
         signin = Signin
+        menu = Menu
 </wb-lang>
