@@ -49,17 +49,19 @@
 
 <nav class="navbar navbar-expand-xl navbar-dark px-0 bot">
     <div class="collapse navbar-collapse mainmenu">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0" wb-tree="item=menu&branch=mainmenu&parent=false&children=false">
-            <li class="nav-item dropdown" wb-if="children > ''">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-xl-between" wb-tree="item=menu&branch=mainmenu&parent=false&children=false">
+            <li class="nav-item dropdown w-auto d-xl-inline" wb-if="children > ''">
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>
                 <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
+                    <div class="container-xl text-left justify-content-md-start">
                     <wb-foreach wb="from=children">
-                        <a class="dropdown-item" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
+                        <a class="dropdown-item w-auto d-md-inline" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </wb-foreach>
+                    </div>
                 </div>
             </li>
 
-            <li class="nav-item active" wb-if="children == ''">
+            <li class="nav-item d-xl-inline" wb-if="children == ''">
                 <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
             </li>
 

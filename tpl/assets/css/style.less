@@ -12,7 +12,8 @@
 @input-gray: #828282;
 @input-dark: #333333;
 @menu-border: #ffffff25 1px solid;
-@color-topmenu: #020E1FDD;
+@color-topmenu-xl: #8CB0E012;
+@color-topmenu: #020e1ff2;
 
 
 @sm: 575px;
@@ -32,6 +33,13 @@ body {
     background-color: @color-white;
     overflow-x: hidden;
     width: 100vw;
+
+
+    .elipsis {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
     a:hover {
         text-decoration: none;
@@ -181,14 +189,25 @@ body {
                         .dropdown-item {
                             color: @input-gray;
                             background-color: transparent;
-
                             &:hover {
                                 color: @color-white;
                             }
                         }
                     }
                 }
+                .left {
+                    .dropdown-toggle {
+                        color: @color-white;
+                    }
+                }
             }
+
+                    .right .nav-link {
+                        svg {
+                            margin-right: 13px;
+                        }
+                    }
+
 
             .navbar-toggler {
                 border: none;
@@ -227,20 +246,25 @@ body {
 
 
         @media (max-width:@sm ) {
-            nav {
+            nav.navbar {
                 &.top {
-                    align-items: end;
+                    align-items: center;
+                    .left {
+                        height: 2.4rem;
+                    }
                 }
-
                 &.bot {
-                .dropdown {
-                    >.nav-link {
+                    align-items: baseline;
+                    padding:0;
+                    .nav-link {
                         color: @color-white;
                     }
-
+                    .mainmenu {
+                        padding-bottom: 3rem;
+                        min-height: 80vh;
+                    }
+                    .dropdown {
                     .dropdown-toggle {
-                        color: @color-white;
-
                         &[aria-expanded=true]:after {
                             transform: rotate(-90deg);
                         }
@@ -264,9 +288,8 @@ body {
                             color: @input-gray;
                             font-size: 14px;
                             font-weight: 500;
-                            padding: 4px 24px;
-                            min-width: 180px;
-                            width: auto;
+                            padding: 0.5rem 0;
+                            min-width: 100%;
                             align-items: start;
 
                             &:hover {
@@ -299,8 +322,7 @@ body {
                     }
 
                     align-items: center;
-                    border-bottom: @menu-border;
-                    padding-bottom: 1rem;
+                    padding-bottom: 0;
 
                     .navbar-nav {
                         width: 100%;
@@ -343,10 +365,13 @@ body {
                     height: auto;
 
                     &.bot {
+
                         align-items: baseline;
 
                         .navbar-nav {
                             display: block;
+padding-top: 1rem;
+border-top: @menu-border;
                         }
 
                         .nav-item {
@@ -358,6 +383,7 @@ body {
                             .nav-link {
                                 display: inline-flex;
                                 align-items: center;
+                                 color: @color-white;
                             }
 
                             .dropdown-toggle {
@@ -431,13 +457,12 @@ body {
 
                 &.top {
                     border-bottom: @menu-border;
-
+                    align-items: center;
+                    .left {
+                        height: 2.3rem;
+                    }
                     .right .nav-link {
                         display: flex;
-
-                        svg {
-                            margin-right: 13px;
-                        }
                     }
                 }
 
@@ -470,15 +495,14 @@ body {
                             margin: 0 auto;
                             text-align: center;
                             border-radius: 0;
-                            background: rgba(140, 176, 224, 0.04);
+                            background: #17181ad4;
                             backdrop-filter: blur(20px);
 
                             .dropdown-item {
                                 display: inline;
                                 vertical-align: middle;
                                 color: @input-gray;
-                                padding: 0 1rem;
-
+                                padding: 0 1.5rem 0 0.5rem;
                                 &:hover,
                                 &:active {
                                     color: @color-white;
@@ -912,8 +936,12 @@ body {
 
     .bg-topmenu {
         background: @color-topmenu;
+        @media (min-width: @xl-min) {
+            background: @color-topmenu-xl;
+        }
         backdrop-filter: blur(4px);
         z-index: 100 !important;
+        height:auto;
     }
 
     .bg-sky {
