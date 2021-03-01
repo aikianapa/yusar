@@ -88,8 +88,7 @@ body {
         width: 100%;
         left: 0px;
         border-radius: 0px;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.8)),
-            linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(20, 20, 20, 0.8));
 
         .carousel {
             .carousel-item {
@@ -1058,15 +1057,15 @@ body {
         backdrop-filter: blur(4px);
         -webkit-backdrop-filter: blur(4px);
         z-index: 100 !important;
-        height:auto;
     }
-
 
     @media (max-width: @xl) {
         &.menu-open {
             height: 100vh;
             overflow: hidden;
-
+            header {
+                height: 100vh;
+            }
             .bg-topmenu {
                 height: 100vh;
                 overflow-y: auto;
