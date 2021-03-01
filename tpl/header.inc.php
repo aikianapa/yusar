@@ -40,12 +40,21 @@
         <wb-include wb-tpl="topmenu.inc.php" />
                 <div class="container">
                     <div class="carousel-caption text-left">
-                        <div class="jumbotron transparent row mb-0 pb-1r">
+                        <div class="jumbotron transparent row mb-0 pb-1r no-home">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb transparent pl-0">
+                                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Библиотека</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Данные</li>
+                                </ol>
+                            </nav>
+
                             <div class="col-12 px-0">
-                                <h1>{{prop.data.{{_sess.lang}}.children.header.name}}</h1>
+                                <h1>Новости ЮСАР</h1>
                             </div>
                             <div class="col-12 col-lg-6 px-0">
-                                <p class="lead">{{prop.data.{{_sess.lang}}.children.header.data.text}}</p>
+                                <p class="lead">В жизни нашей компании регулярно случаются интересные события. 
+                                Мы с удовольствием делимся ими с вами в этом разделе. </p>
                             </div>
                         </div>
                     </div>
