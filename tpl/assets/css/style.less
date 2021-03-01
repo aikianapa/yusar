@@ -32,10 +32,12 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     background-color: @color-white;
-    overflow-x: hidden;
+    
     width: 100vw;
-
-
+    height: auto; 
+    >* {
+        overflow-x: hidden;
+    }
     .elipsis {
         white-space: nowrap;
         overflow: hidden;
@@ -104,6 +106,14 @@ body {
                     margin-left: 20px;
                     height: 4px;
                 }
+                @media (max-width: @md) {
+                    bottom: 1.5rem;
+
+                    li {
+                        width: 20px;
+                        height: 2px;
+                    }
+                }
             }
 
             .carousel-caption {
@@ -120,7 +130,7 @@ body {
             padding-bottom: 0;
             padding-top: 0;
             padding-left: 1rem;
-
+          
             h1 {
                 font-size: 48px;
                 font-style: normal;
@@ -135,15 +145,22 @@ body {
                 font-weight: 400;
             }
 
+            .lead .btn {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 20px;
+                padding: 0.8rem 2.2rem;
+            }
+
             .breadcrumb {
                 .breadcrumb-item {
                     +.breadcrumb-item::before {
-content: '';
-background: url(/tpl/assets/img/breadcrumb.svg) 50% 50% no-repeat;
-width: 10px;
-height: 25px;
-margin-right: 10px;
-display: inline;
+                        content: '';
+                        background: url(/tpl/assets/img/breadcrumb.svg) 50% 50% no-repeat;
+                        width: 10px;
+                        height: 25px;
+                        margin-right: 10px;
+                        display: inline;
                     }
 
                     &.active {
@@ -153,8 +170,10 @@ display: inline;
                     &.active {
                         color: @color-gray;
                     }
+
                     a {
                         color: @color-gray;
+
                         &:hover {
                             color: @color-white;
                         }
@@ -167,41 +186,72 @@ display: inline;
             }
         }
 
+
         &.homepage {
-            background-image: url(/thumbc/1920x962/src/tpl/assets/img/header-1.jpg);
+            background: url(/thumbc/1920x962/src/tpl/assets/img/header-1.jpg) 50% 0% no-repeat;
 
             .carousel-item {
                 height: 100vh;
             }
 
-            .carousel-caption {
-                margin-top: 30vh;
+            @media (min-width: @lg-min) {
+                .carousel-caption {
+                    margin-top: 30vh;
+                }
+
+                .jumbotron {
+                    color: @color-white;
+                    margin-top: 6rem;
+
+                    h1 {
+                        font-size: 72px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 60px;
+                        letter-spacing: 0em;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 28px;
+                        font-weight: 500;
+                    }
+
+                    .btn {
+                        font-size: 16px;
+                        line-height: 20px;
+                        padding: 12px 16px;
+                        height: 44px;
+                        width: 158px;
+                    }
+                }
             }
+        }
 
+        @media (max-width: @lg) {
             .jumbotron {
-                color: @color-white;
-                margin-top: 6rem;
-
+                margin-top: 4rem;
                 h1 {
-                    font-size: 72px;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: 60px;
-                    letter-spacing: 0em;
+                    font-size: 36px;
+                    line-height: 48px;
                 }
 
                 p {
-                    font-size: 16px;
-                    line-height: 28px;
-                    font-weight: 500;
-                }
-
-                .btn {
-                    font-size: 16px;
+                    font-size: 14px;
                     line-height: 20px;
-                    padding: 12px 16px;
-                    height: 44px;
-                    width: 158px;
+                    margin-top: 0;
+                }
+            }
+            .carousel-caption {
+                margin-top: 0 !importan;
+            }
+        }
+
+        @media (max-width: @sm) {
+            .jumbotron {
+                h1 {
+                    font-size: 20px;
+                    line-height: 28px;
                 }
             }
         }
@@ -987,6 +1037,18 @@ display: inline;
         backdrop-filter: blur(4px);
         z-index: 100 !important;
         height:auto;
+    }
+
+
+    @media (max-width: @xl) {
+        &.menu-open {
+            height: 100vh;
+            overflow: hidden;
+            .bg-topmenu {
+                height: 100vh;
+                overflow-y: auto;
+            }
+        }
     }
 
     .bg-sky {

@@ -23,7 +23,7 @@
     </ul>
 
     <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target=".mainmenu" aria-controls="mainMenu"
-        aria-expanded="false" aria-label="Toggle navigation">
+        aria-expanded="false" aria-label="Toggle navigation" onclick="$('body').toggleClass('menu-open');">
         <span>{{_lang.menu}}</span>
     </button>
     <div class="collapse navbar-collapse mainmenu" id="mainMenu">
