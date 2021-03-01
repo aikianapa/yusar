@@ -14,7 +14,7 @@
 @input-dark: #333333;
 @menu-border: #ffffff25 1px solid;
 @color-topmenu-xl: #8CB0E012;
-@color-topmenu: #020e1ff2;
+@color-topmenu: #020e1fdd;
 
 
 @sm: 575px;
@@ -27,17 +27,21 @@
 @lg-min: 992px;
 @xl-min: 1200px;
 
-
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     background-color: @color-white;
-    
+
     width: 100vw;
-    height: auto; 
+    height: auto;
+
     >* {
         overflow-x: hidden;
     }
+
     .elipsis {
         white-space: nowrap;
         overflow: hidden;
@@ -106,6 +110,7 @@ body {
                     margin-left: 20px;
                     height: 4px;
                 }
+
                 @media (max-width: @md) {
                     bottom: 1.5rem;
 
@@ -126,11 +131,11 @@ body {
 
         .jumbotron {
             color: @color-white;
-            margin-top: 8rem;
+            margin-top: 12rem;
             padding-bottom: 0;
             padding-top: 0;
             padding-left: 1rem;
-          
+
             h1 {
                 font-size: 48px;
                 font-style: normal;
@@ -186,10 +191,22 @@ body {
             }
         }
 
+        .youtube-background {
+            overflow: hidden;
+
+            iframe {
+                transition: opacity 500ms ease-in-out;
+                transition-delay: 250ms;
+                height: 100vh !important;
+                margin-top: -1px;
+            }
+        }
+
+        .video-background-controls {
+            opacity: 0;
+        }
 
         &.homepage {
-            background: url(/thumbc/1920x962/src/tpl/assets/img/header-1.jpg) 50% 0% no-repeat;
-            background-size: cover;
             .carousel-item {
                 height: 100vh;
             }
@@ -231,6 +248,7 @@ body {
         @media (max-width: @lg) {
             .jumbotron {
                 margin-top: 4rem;
+
                 h1 {
                     font-size: 36px;
                     line-height: 48px;
@@ -242,6 +260,7 @@ body {
                     margin-top: 0;
                 }
             }
+
             .carousel-caption {
                 margin-top: 0 !importan;
             }
@@ -587,7 +606,7 @@ body {
                             margin: 0 auto;
                             text-align: center;
                             border-radius: 0;
-                            background: #17181ad4;
+                            background: #17181a80;
                             backdrop-filter: blur(20px);
 
                             .dropdown-item {
@@ -1044,6 +1063,7 @@ body {
         &.menu-open {
             height: 100vh;
             overflow: hidden;
+
             .bg-topmenu {
                 height: 100vh;
                 overflow-y: auto;
@@ -1201,5 +1221,5 @@ body {
         height: 6px;
         width: 10px;
     }
-
 }
+

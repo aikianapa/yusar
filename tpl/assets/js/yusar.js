@@ -154,4 +154,5 @@ wbapp.on('ready-js', function () {
     yusar.slick();
     yusar.anchor();
     window.addEventListener('selectstart', function (e) { e.preventDefault(); });
+    $('[data-youtube]').youtube_background();
 })

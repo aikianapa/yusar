@@ -7,6 +7,8 @@
 
 <link rel="preload" href="/engine/lib/bootstrap/js/bootstrap.min.js" as="script">
 <link rel="preload" href="/tpl/assets/slick/slick.min.js" as="script">
+<link rel="preload" href="/tpl/assets/js/jquery.youtube-background.js" as="script">
+
 <title>{{header}}</title>
 <meta name="description" content="{{header}}">
 </head>

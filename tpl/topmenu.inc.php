@@ -70,6 +70,7 @@
 </nav>
 </div>
 </div>
+
 <wb-lang>
     [ru]
         search = Поиск

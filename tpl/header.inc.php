@@ -10,6 +10,7 @@
             </ol>
         </div>
         <div class="carousel-inner">
+            <div data-youtube="https://youtu.be/yr7wLdQ-RlE" data-ytbg-play-button="false" data-ytbg-mute-button="false" data-ytbg-mobile="true" ></div>
             <wb-foreach wb-count="3">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
             <div class="carousel-item {{_var.active}}">
@@ -36,8 +37,9 @@
     </div>
 </header>
 <header wb-if="id !== 'home'">
-    <div class="carousel" style="background-image: url(/thumbc/1920x529/src/tpl/assets/img/{{_var.bkg}})">
+    <div class="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
+                <div data-youtube="https://youtu.be/qXfd2kK3hgQ" data-ytbg-play-button="false" data-ytbg-mute-button="false" data-ytbg-mobile="true" ></div>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row mb-0 pb-1r no-home">
