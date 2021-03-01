@@ -137,6 +137,19 @@ body {
 
             .breadcrumb {
                 .breadcrumb-item {
+                    +.breadcrumb-item::before {
+content: '';
+background: url(/tpl/assets/img/breadcrumb.svg) 50% 50% no-repeat;
+width: 10px;
+height: 25px;
+margin-right: 10px;
+display: inline;
+                    }
+
+                    &.active {
+                        color: @color-gray;
+                    }
+
                     &.active {
                         color: @color-gray;
                     }
