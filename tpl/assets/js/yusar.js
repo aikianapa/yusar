@@ -1,4 +1,5 @@
 var yusar = {};
+
 yusar.listmode = function(type) {
     $(this).parents('.container');
     document.cookie = "listtype=" + type;
@@ -148,14 +149,14 @@ yusar.slick = function() {
     }
 }
 
-wbapp.lazyload();
-wbapp.loadPreload();
-wbapp.on('ready-js', function () {
-    yusar.slick();
-    yusar.anchor();
-    window.addEventListener('selectstart', function (e) { e.preventDefault(); });
-    $('[data-youtube]').youtube_background();
-    setTimeout(function(){
-        window.dispatchEvent(new Event('resize'));
-    },10)
-})
+    wbapp.loadPreload();
+    wbapp.lazyload();
+    wbapp.on('preloaded-js', function () {
+        yusar.slick();
+        yusar.anchor();
+        window.addEventListener('selectstart', function (e) { e.preventDefault(); });
+        $('[data-youtube]').youtube_background();
+        setTimeout(function () {
+            window.dispatchEvent(new Event('resize'));
+        }, 10)
+    });
