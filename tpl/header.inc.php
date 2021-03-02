@@ -10,7 +10,7 @@
             </ol>
         </div>
         <div class="carousel-inner">
-            <div data-youtube="https://youtu.be/yr7wLdQ-RlE" data-ytbg-play-button="false" data-ytbg-mute-button="false"></div>
+            <div data-youtube="https://youtu.be/yr7wLdQ-RlE" data-ytbg-play-button="false" data-ytbg-mute-button="false" data-ytbg-mobile="true" ></div>
             <wb-foreach wb-count="3">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
             <div class="carousel-item {{_var.active}}">
