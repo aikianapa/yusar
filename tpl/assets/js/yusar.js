@@ -94,8 +94,6 @@ yusar.slick = function() {
                         $(nav).find(".slick-slide:eq("+currentSlide+")").addClass('slick-current');
                     }
                 }
-                
-                
             });
         })
     }
@@ -152,11 +150,16 @@ yusar.slick = function() {
     wbapp.loadPreload();
     wbapp.lazyload();
     wbapp.on('preloaded-js', function () {
-        yusar.slick();
-        yusar.anchor();
-        window.addEventListener('selectstart', function (e) { e.preventDefault(); });
-        $('[data-youtube]').youtube_background();
+        //$('[data-youtube]').youtube_background();
         setTimeout(function () {
+            $('.loader').css('opacity', 0);
+            window.addEventListener('selectstart', function (e) { e.preventDefault(); });
             window.dispatchEvent(new Event('resize'));
+            yusar.slick();
+            yusar.anchor();
         }, 10)
+        setTimeout(function () {
+            $('.loader').remove();
+        }, 600)
+
     });

@@ -10,7 +10,10 @@
             </ol>
         </div>
         <div class="carousel-inner">
-            <div data-youtube="https://youtu.be/yr7wLdQ-RlE" data-ytbg-play-button="false" data-ytbg-mute-button="false" data-ytbg-mobile="true" ></div>
+            
+            <video src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
+            <!--video class="slideGallery__video" src="/assets/video/3.mp4" autoplay="" muted="" playsinline="" loop="" style="width: 1601.78px; height: 901px; margin-top: 0px; margin-left: -198.389px;"></video-->
+
             <wb-foreach wb-count="3">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
             <div class="carousel-item {{_var.active}}">
@@ -39,7 +42,8 @@
 <header wb-if="id !== 'home'">
     <div class="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
-                <div data-youtube="https://youtu.be/qXfd2kK3hgQ" data-ytbg-play-button="false" data-ytbg-mute-button="false" data-ytbg-mobile="true" ></div>
+            <div class="carousel-inner">
+                <video src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row mb-0 pb-1r no-home">
@@ -61,5 +65,6 @@
                         </div>
                     </div>
                 </div>
+            </div>
     </div>
 </header>
