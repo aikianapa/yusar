@@ -1,0 +1,23 @@
+{
+	"name": "ЮСАР+",
+	"short_name": "ЮСАР+",
+	"theme_color": "#2196f3",
+	"background_color": "#2196f3",
+	"display": "fullscreen",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "/",
+
+
+	"icons": [{
+		"src": "/tpl/assets/img/logo.svg",
+		"sizes": "64x64"
+	},{
+		"src": "/tpl/assets/img/logo.svg",
+		"sizes": "128x128"
+	}, {
+		"src": "/tpl/assets/img/logo.svg",
+		"sizes": "256x256"
+	}]
+
+}

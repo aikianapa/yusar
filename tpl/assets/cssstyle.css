@@ -194,10 +194,14 @@ body header.homepage .carousel-item {
     margin-top: 0 !importan;
   }
 }
-@media (max-width: 575px) {
+@media (max-width: 767px) and (orientation: landscape) {
   body header .jumbotron h1 {
+    margin-bottom: 1rem !important;
     font-size: 20px;
     line-height: 28px;
+  }
+  body header .carousel-caption .btn {
+    float: right;
   }
 }
 body header nav.navbar.top {

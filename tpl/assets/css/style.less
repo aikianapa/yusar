@@ -264,11 +264,17 @@ body {
             }
         }
 
-        @media (max-width: @sm) {
+        @media (max-width: @md) and (orientation: landscape) {
             .jumbotron {
                 h1 {
+                    margin-bottom: 1rem!important;
                     font-size: 20px;
                     line-height: 28px;
+                }
+            }
+            .carousel-caption {
+                .btn {
+                    float: right;
                 }
             }
         }
