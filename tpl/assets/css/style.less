@@ -125,6 +125,9 @@ body {
                 right: auto;
                 left: auto;
                 bottom: auto;
+                height: 100vh;
+                align-items: center;
+                display: flex;
             }
         }
 
@@ -210,9 +213,6 @@ body {
             }
 
             @media (min-width: @lg-min) {
-                .carousel-caption {
-                    margin-top: 30vh;
-                }
 
                 .jumbotron {
                     color: @color-white;
@@ -253,8 +253,8 @@ body {
                 }
 
                 p {
-                    font-size: 14px;
-                    line-height: 20px;
+                    font-size: 18px;
+                    line-height: 24px;
                     margin-top: 0;
                 }
             }
@@ -270,6 +270,10 @@ body {
                     margin-bottom: 1rem!important;
                     font-size: 20px;
                     line-height: 28px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 20px;
                 }
             }
             .carousel-caption {

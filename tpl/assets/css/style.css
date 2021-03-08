@@ -86,6 +86,9 @@ body header .carousel .carousel-caption {
   right: auto;
   left: auto;
   bottom: auto;
+  height: 100vh;
+  align-items: center;
+  display: flex;
 }
 body header .jumbotron {
   color: #ffffff;
@@ -150,9 +153,6 @@ body header.homepage .carousel-item {
   height: 100vh;
 }
 @media (min-width: 992px) {
-  body header.homepage .carousel-caption {
-    margin-top: 30vh;
-  }
   body header.homepage .jumbotron {
     color: #ffffff;
     margin-top: 6rem;
@@ -186,8 +186,8 @@ body header.homepage .carousel-item {
     line-height: 48px;
   }
   body header .jumbotron p {
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
     margin-top: 0;
   }
   body header .carousel-caption {
@@ -199,6 +199,10 @@ body header.homepage .carousel-item {
     margin-bottom: 1rem !important;
     font-size: 20px;
     line-height: 28px;
+  }
+  body header .jumbotron p {
+    font-size: 16px;
+    line-height: 20px;
   }
   body header .carousel-caption .btn {
     float: right;
