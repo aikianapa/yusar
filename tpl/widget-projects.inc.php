@@ -10,12 +10,12 @@
             <h3>Реализованные проекты</h3>
         </div>
 
-        <div class="slick pb-1r">
-            <wb-foreach wb-count="10">
+        <div class="slick pb-1r" id="widgetProjectsList">
+            <wb-foreach wb="table=pages&render=client">
                 <div class="card">
-                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">Vfhn 2017</h4>
+                        <h4 class="card-title">Март 2017</h4>
                         <p class="card-text">ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...</p>
                     </div>
                 </div>

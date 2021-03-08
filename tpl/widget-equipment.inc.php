@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Медицинское оборудование</p>
                     </div>
@@ -15,7 +15,7 @@
 
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Системная интеграция</p>
                     </div>
@@ -24,7 +24,7 @@
 
         <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="/thumb/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <p class="card-text">Комплексные инжинерные системы</p>
                     </div>

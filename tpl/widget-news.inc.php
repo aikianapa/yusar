@@ -10,8 +10,8 @@
             <h3>Новости компании</h3>
         </div>
 
-        <div class="slick news-grid pb-1r">
-            <wb-foreach wb-count="10">
+        <div class="slick news-grid pb-1r" id="widgetNewsList">
+            <wb-foreach wb="table=pages&render=client">
                 <div class="card">
                     <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt="">
                     <div class="card-body">

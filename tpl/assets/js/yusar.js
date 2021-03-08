@@ -47,7 +47,7 @@ yusar.dataOptions = function(el) {
 
 yusar.slick = function() {
     if ($('.slick').length) {
-        $('.slick').each(function(){
+        $('.slick:not(.slick-initialized)').each(function(){
             this.options = {
                 infinite: true,
                 lazyLoad: 'ondemand',
@@ -86,8 +86,8 @@ yusar.slick = function() {
                 }
             }
 
-            $(this).slick(this.options).on('afterChange', (event, slick, currentSlide, nextSlide)=>{
-                if ($(this).is('.slick-for')) {
+            $(this).slick(this.options).on('afterChange', function(event, slick, currentSlide, nextSlide) {
+                if ($(this).hasClass('slick-for')) {
                     let nav = $(this).parents('.row').find('.slick-nav');
                     if (nav) {
                         $(nav).find('.slick-current').removeClass('slick-current');
@@ -147,17 +147,21 @@ yusar.slick = function() {
     }
 }
 
-    wbapp.loadPreload();
-    wbapp.lazyload();
+    $(document).ready(function(){
+        setTimeout(function () {
+        wbapp.loadPreload();
+        wbapp.lazyload();
+        },100);
+    })
     wbapp.on('preloaded-js', function () {
         //$('[data-youtube]').youtube_background();
+        $('.loader').css('opacity', 0);
         setTimeout(function () {
-            $('.loader').css('opacity', 0);
             window.addEventListener('selectstart', function (e) { e.preventDefault(); });
             window.dispatchEvent(new Event('resize'));
             yusar.slick();
             yusar.anchor();
-        }, 10)
+        }, 100)
         setTimeout(function () {
             $('.loader').remove();
         }, 600)

@@ -7,8 +7,6 @@
 	"orientation": "portrait",
 	"scope": "/",
 	"start_url": "/",
-
-
 	"icons": [{
 		"src": "/tpl/assets/img/logo.svg",
 		"sizes": "64x64"
