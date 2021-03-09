@@ -68,3 +68,4 @@
             </div>
     </div>
 </header>
+<wb-include wb-tpl="widget-loader.inc.php" />

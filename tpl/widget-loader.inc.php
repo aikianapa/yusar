@@ -1,4 +1,10 @@
 <style>
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100vw;
+  height: 101vh;
+}
 .loader {
     display: block;
     position: absolute;

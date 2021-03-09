@@ -6,8 +6,10 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 500;
   background-color: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto !important;
   width: 100vw;
-  height: auto;
+  height: auto !important;
 }
 body >* {
   overflow-x: hidden;
