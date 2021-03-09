@@ -208,6 +208,17 @@ body header.homepage .carousel-item {
     float: right;
   }
 }
+@media (max-width: 374px) and (orientation: portrait) {
+  body header .jumbotron h1 {
+    margin-bottom: 1rem !important;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  body header .jumbotron p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
 body header nav.navbar.top {
   align-items: end;
 }

@@ -11,7 +11,7 @@
         </div>
         <div class="carousel-inner">
             
-            <video data-src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
+            <video src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
             <!--video class="slideGallery__video" src="/assets/video/3.mp4" autoplay="" muted="" playsinline="" loop="" style="width: 1601.78px; height: 901px; margin-top: 0px; margin-left: -198.389px;"></video-->
 
             <wb-foreach wb-count="3">
@@ -43,7 +43,7 @@
     <div class="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
             <div class="carousel-inner">
-                <video data-src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
+                <video src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row mb-0 pb-1r no-home">
