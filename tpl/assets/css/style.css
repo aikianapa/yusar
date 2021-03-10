@@ -599,6 +599,10 @@ body .widget.widget-products .card-text {
   font-size: 14px;
   font-weight: 500;
 }
+body .widget.widget-globe {
+  background: url(../img/space.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
 body .widget label.favorite {
   position: absolute;
   display: block;

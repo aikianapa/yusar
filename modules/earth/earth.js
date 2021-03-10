@@ -22,18 +22,24 @@ window.addEventListener("earthjsload", function () {
     var center = cities[0];
 
     myearth = new Earth('myearth', {
-
-        location: { lat: center[0], lng: center[1] },
-
-        light: 'none',
-
-        mapImage: '/modules/earth/hologram-map.svg',
-        transparent: false,
-
-        autoRotate: false,
+        location: { lat: 60.921841, lng: 76.632464 },
+        //location: { lat: center[0], lng: center[1] },
+//        mapImage: '/modules/earth/hologram-map.svg',
+        zoom: 1.15,
+        zoomMin: 1,
+        zoomMax: 1.8,
+        quality: (window.innerWidth <= 1024) ? 4 : 5,
+        light: 'simple',
+        mapLandColor: 'RGBA(0,156,255,0.07)',
+        mapSeaColor: 'RGBA(0,0,0,0.2)',
+        mapBorderColor: 'RGBA(0,156,255,0.9)',
+        mapBorderWidth: 0.4,
+        transparent: true,
+        autoRotate: true,
         autoRotateSpeed: 1.2,
         autoRotateDelay: 100,
         autoRotateStart: 2000,
+        mapStyles: '#RU {fill:RGBA(0,156,255,0.4)}'
 
     });
 
@@ -110,12 +116,11 @@ window.addEventListener("earthjsload", function () {
                 var marker = earth.addMarker({
 
                     mesh: "Marker",
-                    color: '#009CFF',
+                    color: '#dc3545',
                     location: {lat: cities[i][0], lng: cities[i][1]},
                     scale: 0.01,
                     offset: 1.6,
                     visible: false,
-                    transparent: true,
                     hotspot: true,
                     hotspotRadius: 0.5,
                     hotspotHeight: 0.5,
