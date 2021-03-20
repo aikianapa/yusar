@@ -91,9 +91,6 @@ body header .carousel .carousel-caption {
   align-items: center;
   display: flex;
 }
-body header .carousel .carousel-caption#homeCarousel {
-  height: 100vh;
-}
 body header .jumbotron {
   color: #ffffff;
   margin-top: 12rem;
@@ -155,6 +152,8 @@ body header .video-background-controls {
 }
 body header.homepage .carousel-item {
   height: 100vh;
+  align-items: center;
+  display: flex;
 }
 @media (min-width: 992px) {
   body header.homepage .jumbotron {
