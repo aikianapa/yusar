@@ -3,7 +3,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   width: 100vw;
-  height: 101vh;
+  height: 100vh;
 }
 .loader {
     display: block;
@@ -11,7 +11,7 @@ body {
     top:0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 101vh;
     z-index: 9999;
     text-align: center;
     background: #073659;
