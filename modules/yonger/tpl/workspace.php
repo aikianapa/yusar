@@ -17,14 +17,13 @@
                     <wb-include wb-src="/tpl/assets/img/logo.svg" alt="Логотип" />
                 </a>
 
-                <svg class="icon logo-menu aside-menu-link">
-                    <use xlink:href="/tpl/assets/img/svg/sprite.svg#menu"></use>
+                <svg wb-module="myicons" class="icon logo-menu aside-menu-link mi mi-menu-burger">
                 </svg>
             </div>
 
             <div class="aside-body ps">
                 <ul class="nav nav-aside">
-                    <li>
+                    <li class="nav-label">
                         <div class="mg-y-20">Навигация</div>
                     </li>
                     <li class="nav-item">
@@ -71,7 +70,7 @@
                             <span>Разделы</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="nav-label">
                         <div class="mg-y-20">Система</div>
                     </li>
                     <li class="nav-item">
