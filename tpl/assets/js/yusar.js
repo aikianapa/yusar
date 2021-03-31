@@ -1,11 +1,11 @@
 var yusar = {};
 
-yusar.listmode = function(type) {
+yusar.listmode = function (type) {
     $(this).parents('.container');
     document.cookie = "listtype=" + type;
     //document.location.href = document.location.href;
-    wbapp.post(document.location.href,{},function(data){
-        $(data).find(`.${type}`).each(function(i,el){
+    wbapp.post(document.location.href, {}, function (data) {
+        $(data).find(`.${type}`).each(function (i, el) {
             if (type == 'list') {
                 $(document).find(`.grid:eq(${i})`).parent().html($(el).outer())
             } else {
@@ -16,13 +16,13 @@ yusar.listmode = function(type) {
     })
 }
 
-yusar.anchor = function() {
+yusar.anchor = function () {
     let hash = document.location.hash;
     if (hash == '') return;
     $(document).find(`a[href='${hash}']:eq(0)`).trigger('click');
 }
 
-yusar.dataOptions = function(el) {
+yusar.dataOptions = function (el) {
 
     var strToBool = function (string) {
         if (typeof string === "string") {
@@ -45,35 +45,51 @@ yusar.dataOptions = function(el) {
     return el.options;
 }
 
-yusar.slick = function() {
+yusar.scrollup = function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+}
+
+
+yusar.slick = function () {
     if ($('.slick').length) {
-        $('.slick:not(.slick-initialized)').each(function(){
+        $('.slick:not(.slick-initialized)').each(function () {
             this.options = {
                 infinite: true,
                 lazyLoad: 'ondemand',
-                    responsive: [{
-                        breakpoint: 992,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    }, {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    }, {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }],
-                        slidesToShow: 4,
-                        slidesToScroll: 4
+                responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }],
+                slidesToShow: 4,
+                slidesToScroll: 4
             }
             yusar.dataOptions(this);
             if ($(this).hasClass('slick-nav')) {
@@ -86,12 +102,12 @@ yusar.slick = function() {
                 }
             }
 
-            $(this).slick(this.options).on('afterChange', function(event, slick, currentSlide, nextSlide) {
+            $(this).slick(this.options).on('afterChange', function (event, slick, currentSlide, nextSlide) {
                 if ($(this).hasClass('slick-for')) {
                     let nav = $(this).parents('.row').find('.slick-nav');
                     if (nav) {
                         $(nav).find('.slick-current').removeClass('slick-current');
-                        $(nav).find(".slick-slide:eq("+currentSlide+")").addClass('slick-current');
+                        $(nav).find(".slick-slide:eq(" + currentSlide + ")").addClass('slick-current');
                     }
                 }
             });
@@ -99,22 +115,22 @@ yusar.slick = function() {
     }
 
     if ($('.slick-uninit.slick-nav').length) {
-        $('.slick-uninit.slick-nav').each(function(){
+        $('.slick-uninit.slick-nav').each(function () {
             $(this).find('.slick-slide:first-child').addClass('slick-current');
             let navslick = this;
             let forslick = $(this).parents('.row').find('.slick-for')[0];
-            $(this).find('.slick-slide').on('tap click',function(){
+            $(this).find('.slick-slide').on('tap click', function () {
                 $(navslick).find('.slick-current').removeClass('slick-current');
                 $(this).addClass('slick-current');
-                $(forslick).slick('slickGoTo',$(this).index());
+                $(forslick).slick('slickGoTo', $(this).index());
             })
         })
     }
 
-    
+
 
     if ($('.slider.slider-for').length) {
-        $('.slider.slider-for').each(function() {
+        $('.slider.slider-for').each(function () {
             this.options = {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -128,42 +144,43 @@ yusar.slick = function() {
             $(this).slick(this.options);
         })
     }
-    
+
     if ($('.slider.slider-nav').length) {
         $('.slider.slider-nav').each(function () {
-        this.options = {
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            variableWidth: true,
-            asNavFor: '.slider-for',
-            lazyLoad: 'ondemand',
-            dots: false,
-            focusOnSelect: true
-        };
-        yusar.dataOptions(this);
-        $(this).slick(this.options);
+            this.options = {
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                variableWidth: true,
+                asNavFor: '.slider-for',
+                lazyLoad: 'ondemand',
+                dots: false,
+                focusOnSelect: true
+            };
+            yusar.dataOptions(this);
+            $(this).slick(this.options);
         });
     }
 }
 
-    $(document).ready(function(){
-        setTimeout(function () {
+$(document).ready(function () {
+    setTimeout(function () {
         wbapp.loadPreload();
         wbapp.lazyload();
-        },100);
-    })
-    wbapp.on('preloaded-js', function () {
-        //$('[data-youtube]').youtube_background();
-        $('.loader').css('opacity', 0);
-        setTimeout(function () {
-            window.addEventListener('selectstart', function (e) { e.preventDefault(); });
-            window.dispatchEvent(new Event('resize'));
-            yusar.slick();
-            yusar.anchor();
-        }, 100)
-        setTimeout(function () {
-            $('.loader').remove();
-        }, 600)
+    }, 100);
+})
+wbapp.on('preloaded-js', function () {
+    //$('[data-youtube]').youtube_background();
+    $('.loader').css('opacity', 0);
+    setTimeout(function () {
+        window.addEventListener('selectstart', function (e) { e.preventDefault(); });
+        window.dispatchEvent(new Event('resize'));
+        yusar.slick();
+        yusar.anchor();
+    }, 100)
+    setTimeout(function () {
+        $('.loader').remove();
+        yusar.scrollup();
+    }, 600)
 
-    });
+});
