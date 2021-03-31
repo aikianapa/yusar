@@ -772,8 +772,17 @@ body {
             }
 
             .card-text {
-                font-size: 20px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 20px;
+                letter-spacing: 0em;
+                text-align: left;
             }
+        }
+
+        a {
+            color: @link-gray;
         }
 
         &.widget-products {
@@ -918,15 +927,6 @@ body {
             line-height: 24px;
             letter-spacing: 0em;
         }
-
-        .card-text {
-            font-size: 16px !important;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 20px;
-            letter-spacing: 0em;
-            text-align: left;
-        }
     }
 
     .slick-arrow:before {
@@ -934,7 +934,7 @@ body {
     }
 
     .slick {
-        color: @btn-def;
+        color: @link-gray;
 
         .slick-arrow:before {
             display: block;

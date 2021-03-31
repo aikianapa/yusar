@@ -588,7 +588,15 @@ body .widget .card .card-body {
   padding: 1rem 0 0 0;
 }
 body .widget .card .card-text {
-  font-size: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+body .widget a {
+  color: #4F4F4F;
 }
 body .widget.widget-products .card-title {
   font-weight: 700;
@@ -701,19 +709,11 @@ body .news-grid .card-title {
   line-height: 24px;
   letter-spacing: 0em;
 }
-body .news-grid .card-text {
-  font-size: 16px !important;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: left;
-}
 body .slick-arrow:before {
   color: #2BA8DD;
 }
 body .slick {
-  color: #2BA8DD;
+  color: #4F4F4F;
 }
 body .slick .slick-arrow:before {
   display: block;
