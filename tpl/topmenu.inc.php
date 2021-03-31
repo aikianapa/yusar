@@ -48,11 +48,9 @@
             <li class="nav-item dropdown w-auto d-xl-inline" wb-if="children > ''">
                 <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>
                 <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
-                    <div class="container-xl text-left justify-content-md-start">
                     <wb-foreach wb="from=children">
-                        <a class="dropdown-item w-auto d-md-inline" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
+                        <a class="dropdown-item w-auto" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </wb-foreach>
-                    </div>
                 </div>
             </li>
 

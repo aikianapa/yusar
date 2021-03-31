@@ -13,7 +13,7 @@
 @input-gray: #828282;
 @input-dark: #333333;
 @menu-border: #ffffff25 1px solid;
-@color-topmenu-xl: #8CB0E012;
+@color-topmenu-xl: rgba(140, 176, 224, 0.1);
 @color-topmenu: #020e1fdd;
 
 
@@ -631,27 +631,20 @@ body {
                         }
 
                         >.dropdown-menu.show {
-                            position: fixed;
-                            top: 8rem;
-                            left: 0;
-                            z-index: 1000;
-                            height: 4rem;
-                            padding-top: 1rem !important;
-                            float: left;
-                            width: 100%;
-                            padding: 5px 0;
-                            margin: 0 auto;
+                            top:50px;
+                            width: auto;
+                            padding: 20px;
                             text-align: center;
                             border-radius: 0;
-                            background: #17181a80;
-                            backdrop-filter: blur(20px);
-                            -webkit-backdrop-filter: blur(20px);
-
+                            background: #8CB0E012;
+                            backdrop-filter: blur(50px);
+                            -webkit-backdrop-filter: blur(50px);
+                            z-index: 100!important;
                             .dropdown-item {
-                                display: inline;
-                                vertical-align: middle;
-                                color: @input-gray;
-                                padding: 0 1.5rem 0 0.5rem;
+                                display: block;
+                                color: @color-white;
+                                padding: 0.5rem 0.5rem;
+                                text-align: left;
 
                                 &:hover,
                                 &:active {
@@ -1095,9 +1088,8 @@ body {
         @media (min-width: @xl-min) {
             background: @color-topmenu-xl;
         }
-
-        backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
         z-index: 100 !important;
     }
 
