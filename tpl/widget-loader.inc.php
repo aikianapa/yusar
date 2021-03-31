@@ -14,7 +14,7 @@ body {
     height: 101vh;
     z-index: 9999;
     text-align: center;
-    background: #073659;
+    background: #123b77;
     transition-delay: 0.3s;
 }
 .loader p {
