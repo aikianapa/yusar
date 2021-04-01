@@ -48,9 +48,9 @@ yusar.dataOptions = function (el) {
 yusar.scrollup = function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.scrollup').fadeIn();
+            $('.scrollup').show();
         } else {
-            $('.scrollup').fadeOut();
+            $('.scrollup').hide();
         }
     });
 
