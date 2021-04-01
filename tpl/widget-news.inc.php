@@ -1,5 +1,5 @@
 <div class="pt-3r pb-3r">
-    <div class="container widget">
+    <div class="container widget widget-news">
         <div class="border-bottom pb-1r mb-2r">
             <a class="position-absilute float-right link-arrow pt-1r" href="/news">
                 Все новости

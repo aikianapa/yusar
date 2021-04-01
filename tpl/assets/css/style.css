@@ -625,6 +625,14 @@ body .widget.widget-products .card-text {
   font-size: 14px;
   font-weight: 500;
 }
+body .widget.widget-projects .slick-prev,
+body .widget.widget-projects .slick-next {
+  top: 27%;
+}
+body .widget.widget-news .slick-prev,
+body .widget.widget-news .slick-next {
+  top: 27%;
+}
 body .widget.widget-globe {
   background: url(../img/space.jpg) 50% 50% no-repeat;
   background-size: cover;
