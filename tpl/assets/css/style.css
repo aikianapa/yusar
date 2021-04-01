@@ -835,21 +835,17 @@ body #Profile .form-profile .form-control {
   border-radius: 0;
 }
 body .bg-topmenu {
-  background: #020e1fdd;
+  background: rgba(140,176,224,0.1);
   z-index: 100 !important;
 }
-@media (min-width: 1200px) {
-  body .bg-topmenu {
-    background: rgba(140,176,224,0.1);
-  }
-}
 body .bg-topmenu:before {
-  content: '';
+  display: block;
+  position: absolute;
+  content: ' ';
   width: 100%;
   height: 100%;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-  z-index: 10;
 }
 @media (max-width: 1199px) {
   body.menu-open {
