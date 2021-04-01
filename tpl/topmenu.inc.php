@@ -32,7 +32,7 @@
         <ul class="navbar-nav my-2 my-lg-0 right">
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{strtoupper({{_sess.lang}})}}</a>
-            <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-{{id}}">
                 <a class="dropdown-item" href="/module/lang/ru">RU</a>
                 <a class="dropdown-item" href="/module/lang/en">EN</a>
             </div>

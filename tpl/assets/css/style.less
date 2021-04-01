@@ -30,30 +30,31 @@
 html {
     overflow-x: hidden;
 }
+
 body {
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 500;
     background-color: @color-white;
     overflow-x: hidden;
-    overflow-y: auto!important;
+    overflow-y: auto !important;
     width: 100vw;
-    height: auto!important;
+    height: auto !important;
 
     >* {
         overflow-x: hidden;
     }
 
-    .scrollup{
-        width:40px;
-        height:40px;
-        opacity:0.3;
-        position:fixed;
-        bottom:30px;
-        right:30px;
-        display:none; 
-        text-indent:-9999px;
+    .scrollup {
+        width: 40px;
+        height: 40px;
+        opacity: 0.3;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: none;
+        text-indent: -9999px;
         background: url('/tpl/assets/img/scrollup.png') no-repeat;
-        z-index:100;
+        z-index: 100;
     }
 
     .elipsis {
@@ -282,15 +283,17 @@ body {
         @media (max-width: @md) and (orientation: landscape) {
             .jumbotron {
                 h1 {
-                    margin-bottom: 1rem!important;
+                    margin-bottom: 1rem !important;
                     font-size: 20px;
                     line-height: 28px;
                 }
+
                 p {
                     font-size: 16px;
                     line-height: 20px;
                 }
             }
+
             .carousel-caption {
                 .btn {
                     float: right;
@@ -316,6 +319,11 @@ body {
         /* Main menu */
 
         nav.navbar {
+            height: 100%;
+            .navbar-nav li:hover .dropdown-menu {
+                display: block;
+            }
+
             &.top {
                 align-items: end;
 
@@ -337,6 +345,7 @@ body {
 
                 .left {
                     margin-left: auto;
+
                     .dropdown-toggle {
                         color: @color-white;
                     }
@@ -395,6 +404,7 @@ body {
                     .left {
                         height: 2.4rem;
                     }
+
                     .right {
                         text-align: right;
                         padding-right: 1rem;
@@ -443,7 +453,7 @@ body {
 
                             .dropdown-item {
                                 display: block;
-                                color: @input-gray;
+                                color: @color-gray;
                                 font-size: 14px;
                                 font-weight: 500;
                                 padding: 0.5rem 0;
@@ -496,6 +506,7 @@ body {
 
                         &.right {
                             text-align: right;
+
                             .nav-item {
                                 display: inline;
                                 padding-left: 1rem;
@@ -555,8 +566,7 @@ body {
                                 }
                             }
 
-                            .dropdown-menu,
-                            .dropdown-menu.show {
+                            .dropdown-menu {
                                 position: relative !important;
                                 display: inline-block;
                                 background: transparent !important;
@@ -617,10 +627,16 @@ body {
                     padding-bottom: 0;
                 }
 
-                &.bot .navbar-nav {
+                &.bot {
+                    padding-top:0;
+                    padding-bottom:0;
+                    height: 100%;
+                .navbar-nav {
+                    height: 100%;
                     .nav-item {
                         margin-right: 2rem;
-                        padding-left: 0;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
 
                         .nav-link {
                             color: @color-white;
@@ -630,8 +646,8 @@ body {
                             margin-right: 0;
                         }
 
-                        >.dropdown-menu.show {
-                            top:50px;
+                        >.dropdown-menu {
+                            top: 70px;
                             width: auto;
                             padding: 20px;
                             text-align: center;
@@ -639,7 +655,8 @@ body {
                             background: @color-topmenu-xl;
                             backdrop-filter: blur(50px);
                             -webkit-backdrop-filter: blur(50px);
-                            z-index: 100!important;
+                            z-index: 100 !important;
+
                             .dropdown-item {
                                 display: block;
                                 color: @color-white;
@@ -649,12 +666,13 @@ body {
                                 &:hover,
                                 &:active {
                                     color: @color-white;
-                                    font-weight: 700;
+                                    text-shadow: 0 0 1px #fff;
                                     background: transparent;
                                 }
                             }
                         }
                     }
+                }
                 }
             }
         }
@@ -1084,6 +1102,7 @@ body {
 
     .bg-topmenu {
         background: @color-topmenu-xl;
+
         &:before {
             display: block;
             position: absolute;
@@ -1093,6 +1112,7 @@ body {
             backdrop-filter: blur(50px);
             -webkit-backdrop-filter: blur(50px);
         }
+
         z-index: 100 !important;
     }
 
@@ -1100,9 +1120,11 @@ body {
         &.menu-open {
             height: 100vh;
             overflow: hidden;
+
             header {
                 height: 100vh;
             }
+
             .bg-topmenu {
                 height: 100vh;
                 overflow-y: auto;
@@ -1261,18 +1283,17 @@ body {
         align-self: center;
     }
 
-  .carousel-inner video {
-      height: 100%;
-      width: 177.77777778vh;
-      min-width: 100%;
-      min-height: 56.25vw;
-      overflow: hidden;
-      position: absolute;
-      left: 50%;
-      /* % of surrounding element */
-      top: 50%;
-      transform: translate(-50%, -50%);
-  }
+    .carousel-inner video {
+        height: 100%;
+        width: 177.77777778vh;
+        min-width: 100%;
+        min-height: 56.25vw;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        /* % of surrounding element */
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
 }
-
