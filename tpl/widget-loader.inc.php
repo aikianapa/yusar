@@ -1,17 +1,14 @@
 <style>
-body {
-  overflow-x: hidden;
-  overflow-y: hidden;
-  width: 100vw;
-  height: 100vh;
-}
 .loader {
     display: block;
     position: absolute;
     top:0;
     left: 0;
-    width: 100vw;
-    height: 101vh;
+    width: 100%;
+    height: 100%;
+    min-width: 101vw;
+    min-height: 101vh;
+    overflow: hidden;
     z-index: 9999;
     text-align: center;
     background: #123b77;
