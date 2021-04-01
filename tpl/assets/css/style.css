@@ -21,6 +21,7 @@ body .scrollup {
   position: fixed;
   bottom: 30px;
   right: 30px;
+  display: none;
   text-indent: -9999px;
   background: url('/tpl/assets/img/scrollup.png') no-repeat;
   z-index: 100;

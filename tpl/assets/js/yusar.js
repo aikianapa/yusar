@@ -46,11 +46,11 @@ yusar.dataOptions = function (el) {
 }
 
 yusar.scrollup = function () {
-    $(window).scroll(function () {
+    $(document).scroll(function () {
         if ($(this).scrollTop() > 100) {
-            $('.scrollup').show();
+            $('.scrollup').fadeIn();
         } else {
-            $('.scrollup').hide();
+            $('.scrollup').fadeOut();
         }
     });
 
