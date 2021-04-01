@@ -6,7 +6,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    min-width: 101vw;
+    min-width: 102vw;
     min-height: 101vh;
     overflow: hidden;
     z-index: 9999;
@@ -102,6 +102,7 @@
 }
 
 </style>
+<wb-jq wb="$dom->find('body')->addClass('loading');" />
 <div class="loader">
     <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     <br>

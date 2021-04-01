@@ -179,6 +179,7 @@ wbapp.on('preloaded-js', function () {
         yusar.anchor();
     }, 100)
     setTimeout(function () {
+        $('body.loaded').removeClass('.loaded');
         $('.loader').remove();
         yusar.scrollup();
     }, 600)
