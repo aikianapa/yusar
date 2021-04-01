@@ -15,8 +15,8 @@
                 <div class="card">
                     <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt="">
                     <div class="card-body">
-                        <h4 class="card-title">6 декабря</h4>
-                        <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
+                        <h4 class="card-title">{{_ndx}} декабря</h4>
+                        <p class="card-text">{{_ndx}}) ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
                     </div>
                 </div>
             </wb-foreach>

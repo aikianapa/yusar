@@ -16,7 +16,7 @@
                     <img class="card-img-top p-1" width="254" height="164" data-src="/thumbc/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
                     <div class="card-body">
                         <h4 class="card-title">Март 2017</h4>
-                        <p class="card-text">ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...</p>
+                        <p class="card-text">{{_ndx}}) ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...</p>
                     </div>
                 </div>
             </wb-foreach>
