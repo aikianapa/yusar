@@ -25,7 +25,7 @@
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row">
-                            <h1 class="mb-3r">25 лет рядом с вами {{lang.ru.header}}</h1>
+                            <h1 class="mb-3r">({{_ndx}}) 25 лет рядом с вами {{lang.ru.header}}</h1>
                             <div class="col-12 col-lg-6 px-0">
                                 <p class="lead">Основной задачей ЮСАР+ является поддержка текущих решений и выпуск новейших высокотехнологичных
                                     программных продуктов на рынке медицинских информационных технологий за счет накопленного

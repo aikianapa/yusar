@@ -165,6 +165,10 @@ body header .video-background-controls {
 body header.homepage .carousel-item {
   height: 100vh;
   align-items: center;
+}
+body header.homepage .carousel-item .container {
+  height: 100vh;
+  align-items: center;
   display: flex;
 }
 @media (min-width: 992px) {
