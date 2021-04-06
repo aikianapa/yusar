@@ -1,7 +1,7 @@
 <style wb-module="scss">
 .loader {
-    --path: #2F3545;
-    --dot: #5628EE;
+    --path: #FFFFFF;
+    --dot: #ff5722;
     --duration: 3s;
     width: 48px;
     height: auto;
@@ -156,7 +156,7 @@ body.loading {
     height: 100vh !important;
     width: 100vw;
     overflow: hidden !important;
-    background: #F5F9FF;
+    background: #123b77;
 
     * {
         visibility: hidden;
