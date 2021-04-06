@@ -1,6 +1,6 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
-<body>
+<body class="loading">
     <wb-var bkg="header-4.jpg" />
     <wb-include wb-tpl="header.inc.php" />
     <wb-include wb-tpl="block-equipment.inc.php" class="pt-3r" />

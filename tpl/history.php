@@ -1,7 +1,7 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
-<body>
+<body class="loading">
     <wb-var bkg="header-2.jpg" />
     <wb-include wb-tpl="header.inc.php" />
 
