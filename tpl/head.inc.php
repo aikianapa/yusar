@@ -1,4 +1,5 @@
 <head>
+<wb-include wb-tpl="widget-loader.inc.php" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <link rel="preload" href="/engine/lib/bootstrap/css/bootstrap.min.css" as="style">
 <link rel="preload" href="/tpl/assets/slick/slick-theme.css" as="style">

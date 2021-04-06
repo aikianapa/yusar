@@ -171,7 +171,7 @@ $(document).ready(function () {
 })
 wbapp.on('preloaded-js', function () {
     //$('[data-youtube]').youtube_background();
-    $('.loader').css('opacity', 0);
+    $('body.loading .preloader').css('opacity', 0);
     setTimeout(function () {
         window.addEventListener('selectstart', function (e) { e.preventDefault(); });
         window.dispatchEvent(new Event('resize'));
@@ -179,8 +179,8 @@ wbapp.on('preloaded-js', function () {
         yusar.anchor();
     }, 100)
     setTimeout(function () {
-        $('body.loaded').removeClass('.loaded');
-        $('.loader').remove();
+        $('body.loading').removeClass('loading');
+        $('.preloader').remove();
         yusar.scrollup();
     }, 600)
 

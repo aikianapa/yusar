@@ -1,6 +1,6 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
-<body>
+<body class="loading">
     <wb-include wb-tpl="header.inc.php" class="homepage" />
     
     <wb-include wb-tpl="widget-news.inc.php" />
