@@ -183,6 +183,8 @@ body.loading {
             width: 100%;
             color: white;
             text-align: center;
+            font-family: sans!important;
+            font-size: 16px;
         }
         * {
             visibility: visible;
