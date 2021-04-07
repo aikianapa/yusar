@@ -48,6 +48,10 @@
                     <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
                     <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
                 </video>
+                <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" == ""'>
+                    <source src="{{_var.path_video}}/about.webm" type="video/webm">
+                    <source src="{{_var.path_video}}/about.mp4" type="video/mp4">
+                </video>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row mb-0 pb-1r no-home">
