@@ -34,6 +34,17 @@
                         </div>
                     </div>
 
+                    <div class="form-group row">
+                        <label class="col-sm-2 form-control-label">Видео</label>
+                        <div class="col-sm-10">
+                            <select class="form-control" name="video" placeholder="Видео">
+                                <wb-foreach wb='call=getVideoList()'>
+                                    <option value="{{_val}}">{{_val}}</option>
+                                </wb-foreach>
+                            </select>
+                        </div>
+                    </div>
+
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#{{_form}}EditForm-tab1" role="tab"
