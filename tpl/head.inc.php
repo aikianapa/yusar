@@ -1,5 +1,4 @@
 <head>
-<wb-include wb-tpl="widget-loader.inc.php" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 <link rel="preload" href="/engine/lib/bootstrap/css/bootstrap.min.css" as="style">
 <link rel="preload" href="/tpl/assets/slick/slick-theme.css" as="style">
@@ -13,4 +12,5 @@
 <meta name="description" content="{{lang.ru.header}}">
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<wb-include wb-tpl="widget-loader.inc.php" />
 </head>
