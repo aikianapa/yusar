@@ -1,3 +1,4 @@
+<wb-var path_video='/tpl/assets/video' />
 <header wb-if="id == 'home'">
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
@@ -10,11 +11,10 @@
             </ol>
         </div>
         <div class="carousel-inner">
-
-			<video class="slideGallery__video" autoplay="true" muted="true" playsinline="true" loop="true">
-                                <source src="/tpl/assets/video/yusar-plus.webm" type="video/webm">
-                                <source src="/tpl/assets/video/yusar-plus.mp4" type="video/mp4">
-                            </video>
+			<video class="slideGallery__video" autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
+                    <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
+                    <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+            </video>
 
 
             <!--video class="slideGallery__video" src="/assets/video/3.mp4" autoplay="" muted="" playsinline="" loop="" style="width: 1601.78px; height: 901px; margin-top: 0px; margin-left: -198.389px;"></video-->
@@ -44,7 +44,10 @@
     <div class="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
             <div class="carousel-inner">
-                <video src="/tpl/assets/video/yusar-plus.webm" autoplay="" muted="" playsinline="" loop=""></video>
+                <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
+                    <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
+                    <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+                </video>
                 <div class="container">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row mb-0 pb-1r no-home">
