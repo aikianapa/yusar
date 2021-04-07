@@ -1,5 +1,5 @@
 <wb-var path_video='/tpl/assets/video' />
-<header wb-if="id == 'home'">
+<header wb-if="id == 'home'" class="homepage">
     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="container p-0">
@@ -11,7 +11,7 @@
             </ol>
         </div>
         <div class="carousel-inner">
-			<video class="slideGallery__video" autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
+			<video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
                     <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
                     <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
