@@ -176,7 +176,14 @@ body.loading {
         width: 100vw;
         transition: .6s;
         visibility: visible;
-
+        p {
+            display: block;
+            position: absolute;
+            top: 55vh;
+            width: 100%;
+            color: white;
+            text-align: center;
+        }
         * {
             visibility: visible;
         }
@@ -201,4 +208,7 @@ body.loading {
             <rect x="8" y="8" width="64" height="64"></rect>
         </svg>
     </div>
+    <p>
+        Страница загружается...
+    </p>
 </div>

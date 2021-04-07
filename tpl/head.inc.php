@@ -16,5 +16,5 @@
 <meta name="description" content="{{lang.ru.header}}">
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<wb-include wb-tpl="widget-loader.inc.php" />
 </head>
+<wb-include wb-tpl="widget-loader.inc.php" />
