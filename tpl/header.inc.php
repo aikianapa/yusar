@@ -12,8 +12,8 @@
         </div>
         <div class="carousel-inner">
 			<video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
-                    <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
-                    <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+                    <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
+                    <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
 
 
@@ -45,12 +45,12 @@
         <wb-include wb-tpl="topmenu.inc.php" />
             <div class="carousel-inner">
                 <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
-                    <source src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
-                    <source src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+                    <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
+                    <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
                 </video>
                 <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" == ""'>
-                    <source src="{{_var.path_video}}/about.webm" type="video/webm">
-                    <source src="{{_var.path_video}}/about.mp4" type="video/mp4">
+                    <source data-src="{{_var.path_video}}/about.webm" type="video/webm">
+                    <source data-src="{{_var.path_video}}/about.mp4" type="video/mp4">
                 </video>
                 <div class="container">
                     <div class="carousel-caption text-left">

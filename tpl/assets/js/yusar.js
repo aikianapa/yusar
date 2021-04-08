@@ -171,6 +171,13 @@ $(document).ready(function () {
 })
 wbapp.on('preloaded-js', function () {
     //$('[data-youtube]').youtube_background();
+    $('source[data-src]').each(function(){
+        $(this).attr('src',$(this).attr('data-src'));
+        $(this).removeAttr('data-src');
+    });
+    $('video').each(function(){
+        this.load();
+    });
     $('body.loading .preloader').css('opacity', 0);
     setTimeout(function () {
         window.addEventListener('selectstart', function (e) { e.preventDefault(); });
