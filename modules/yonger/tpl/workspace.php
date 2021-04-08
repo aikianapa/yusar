@@ -32,6 +32,12 @@
                             <span>Рабочий стол</span>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="#" data-ajax="{'url':'/cms/ajax/form/catalogs/edit/menu','html':'.content-body'}" class="nav-link">
+                            <svg class="mi mi-programing-data.9" wb-module="myicons"></svg>
+                            <span>Меню сайта</span>
+                        </a>
+                    </li>
                     <li class="nav-item with-sub">
                         <a href="#" data-ajax="{'url':'/cms/ajax/form/pages/list/','html':'.content-body'}" class="nav-link">
                             <svg class="mi mi-content-08" wb-module="myicons"></svg>
@@ -62,12 +68,6 @@
                         <a href="#" data-ajax="{'url':'/cms/ajax/form/comments/list/','html':'.content-body'}" class="nav-link">
                             <svg class="mi mi-messages-chat.1" wb-module="myicons"></svg>
                             <span>Коментарии</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" data-ajax="{{data.ajax}}" class="nav-link">
-                            <svg class="mi mi-programing-data.9" wb-module="myicons"></svg>
-                            <span>Разделы</span>
                         </a>
                     </li>
                     <li class="nav-label">
