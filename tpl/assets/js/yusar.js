@@ -62,6 +62,15 @@ yusar.scrollup = function () {
 
 
 yusar.slick = function () {
+    if ($('.carousel').length) {
+        $('.carousel').each(function () {
+            if (this.done == true) return;
+            this.done = true;
+            let interval = 1000;
+            if (parseInt($(this).attr('data-interval')) > 0) interval = parseInt($(this).attr('data-interval'));
+            $(this).carousel({'interval':interval});
+        })
+    }
     if ($('.slick').length) {
         $('.slick:not(.slick-initialized)').each(function () {
             this.options = {

@@ -5,7 +5,7 @@
 
             <div class="slick pb-1r border-bottom border-top pt-3r pb-3r">
                 <wb-foreach wb-from="images">
-                        <img width="150" height="100" data-src="/thumb/150x100/src{{img}}" alt="">
+                        <img width="150" height="100" data-src="/thumb/300x200/src{{img}}" alt="">
                 </wb-foreach>
             </div>
         </wb-data>

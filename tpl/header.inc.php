@@ -1,6 +1,6 @@
 <wb-var path_video='/tpl/assets/video' />
 <header wb-if="id == 'home'" class="homepage">
-    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+    <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="container p-0">
             <ol class="carousel-indicators">
@@ -41,7 +41,7 @@
     </div>
 </header>
 <header wb-if="id !== 'home'">
-    <div class="carousel">
+    <div class="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
             <div class="carousel-inner">
                 <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
