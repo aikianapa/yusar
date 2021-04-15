@@ -27,7 +27,7 @@
         </div>
 
 
-        <a href="#" class="su-link">
+        <a href="/sign-in" class="su-link">
           Войти?
         </a>
       </form>

@@ -23,7 +23,7 @@
         </div>
 
 
-        <a href="#" class="si-link">
+        <a href="/password-recovery" class="si-link">
           Забыли пароль?
         </a>
       </form>
