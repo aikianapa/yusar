@@ -139,7 +139,7 @@
 
         <div class="third-block row pt-1r">
             <div class="pb-1r col-xl-3 col-md-6 order-xl-1 order-3 order-md-2 text-md-right text-xl-left">
-                <a href="/">Copyright 1996-<?php echo date("Y"); ?>, ЮСАР+</a>
+                <a href="/">Copyright 1996-{{date("Y")}}, ЮСАР+</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-2 order-1">
                 <a href="/policy">Политика конфиденциальности</a>
