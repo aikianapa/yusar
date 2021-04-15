@@ -1,8 +1,8 @@
 <footer>
     <div class="container">
-        <div class="row pb-3r">
+        <div class="row">
             <div class="col-md-3">
-                <ul class="navbar-nav" wb-tree="item=menu&branch=mainmenu->company">
+                <ul class="navbar-nav navbar-nav--top" wb-tree="item=menu&branch=mainmenu->company">
                     <li class="nav-item">
                         <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </li>
@@ -14,14 +14,14 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <ul class="navbar-nav" wb-tree="item=menu&branch=mainmenu->products">
+                <ul class="navbar-nav navbar-nav--top" wb-tree="item=menu&branch=mainmenu->products">
                     <li class="nav-item">
                         <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <ul class="navbar-nav" wb-tree="item=menu&branch=mainmenu->equipment">
+                <ul class="navbar-nav navbar-nav--top" wb-tree="item=menu&branch=mainmenu->equipment">
                     <li class="nav-item">
                         <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </li>
@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="col-md-3">
-                <ul class="navbar-nav" wb-tree="item=menu&branch=mainmenu->projects">
+                <ul class="navbar-nav navbar-nav--top" wb-tree="item=menu&branch=mainmenu->projects">
                     <li class="nav-item">
                         <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
                     </li>
@@ -45,15 +45,14 @@
                 </ul>
             </div>
         </div>
-        <div class="border-bottom d-block">
-            <div class="d-inline-block mr-25 pb-1r">
-                Адрес:
-                <span>{{_sett.address}}</span>
+        <div class="second-block pb-1r">
+            <div class="address-block">
+                Адрес: <span>{{_sett.address}}</span>
             </div>
-            <div class="d-inline-block">
-                <div class="d-inline-block mr-25 pb-1r">
-                    <ul class="list-inline m-0 nobr" wb-tree="item=menu&branch=social&parent=false&children=false">
-                        <li class="d-inline">
+            <div class="info-block">
+                <div class="mr-25">
+                    <ul class="d-flex list-inline m-0 nobr" wb-tree="item=menu&branch=social&parent=false&children=false">
+                        <li>
                             <a href="{{data.link}}" target="_blank">
                                 <svg width="24" height="24">
                                     <image width="24" height="24" xlink:href="/tpl/assets/img/social-{{id}}.svg" />
@@ -62,16 +61,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="d-inline-block nobr mr-25 pb-1r text-right">
-                    <a href="mailto:{{_sett.email}}">
+                <div class="nobr mr-25">
+                    <a href="mailto:{{_sett.email}}" class="svg-link">
                         <svg width="24" height="24">
                             <image width="24" height="24" xlink:href="/tpl/assets/img/social-email.svg" />
                         </svg>
                         {{_sett.email}}
                     </a>
                 </div>
-                <div class="d-inline-block nobr pb-1r text-right">
-                    <a href="mailto:{{_sett.email}}">
+                <div class="nobr">
+                    <a href="mailto:{{_sett.email}}" class="svg-link">
                         <svg width="24" height="24">
                             <image width="24" height="24" xlink:href="/tpl/assets/img/social-phone.svg" />
                         </svg>
@@ -81,7 +80,7 @@
             </div>
         </div>
 
-        <div class="row pt-1r">
+        <div class="third-block row pt-1r">
             <div class="pb-1r col-xl-3 col-md-6 order-xl-1 order-3 order-md-2 text-md-right text-xl-left">
                 <a href="/">Copyright 1996-<?php echo date("Y"); ?>, ЮСАР+</a>
             </div>

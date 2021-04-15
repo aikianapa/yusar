@@ -701,8 +701,39 @@ body {
         background: #123b77;
         color: @color-white;
 
-        .border-bottom {
-            border-color: @link-footer;
+        .second-block {
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+
+            .address-block {
+                margin-bottom: 12px;
+            }
+
+            .info-block {
+                display: flex;
+            }
+
+            @media (min-width: @lg) {
+                flex-direction: row;
+                border-bottom: 1px solid @link-footer;
+
+                .address-block {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .third-block {
+            a {
+                svg {
+                    margin-left: 12px;
+                }
+            }
         }
 
         span {
@@ -711,9 +742,18 @@ body {
 
         a {
             color: @link-footer;
+            display: flex;
+            align-items: center;
+
+            &.svg-link {
+                svg {
+                    margin-right: 12px;
+                }
+            }
 
             svg {
                 vertical-align: bottom;
+                margin-right: 8px;
             }
 
             &:hover {
@@ -723,30 +763,38 @@ body {
         }
 
         .navbar-nav {
+            &--top {
+                margin-bottom: 24px;
+            }
+
             .nav-link {
                 font-size: 20px;
-                font-weight: 700;
+                font-weight: bold;
                 line-height: 28px;
-                letter-spacing: 0em;
+                letter-spacing: 0;
                 color: @color-white;
-                padding-top: 8px;
-                padding-bottom: 8px;
+                padding: 0;
+            }
+
+            & > .nav-item {
+                & > .nav-link {
+                    margin-bottom: 16px;
+                }
             }
 
             ul {
                 list-style: none;
                 padding: 0;
 
+                .nav-item:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+
                 .nav-link {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
-                    letter-spacing: 0em;
-                    padding-bottom: 0px;
-
-                    &:last-child {
-                        padding-bottom: 8px;
-                    }
+                    letter-spacing: 0;
                 }
             }
 
