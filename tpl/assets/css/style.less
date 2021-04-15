@@ -1386,4 +1386,158 @@ body {
     }
     }
 
+
+    .password-recovery {
+        h1 {
+            .aik-title();
+        }
+
+        .pr-info {
+            .aik-info();
+        }
+
+        .pr-form {
+          .aik-form();
+        }
+
+        .pr-input {
+            .aik-input();
+        }
+
+        .pr-button {
+            .aik-button();
+        }
+    }
+
+    .sign-in {
+        h1 {
+            .aik-title();
+            text-align: center;
+        }
+
+        .si-form {
+          .aik-form();
+        }
+
+        .si-input {
+            .aik-input();
+
+            & + .si-input {
+                margin-top: 24px;
+            }
+
+        }
+
+        .si-button {
+            .aik-button();
+        }
+
+        .si-link {
+            .aik-link();
+            margin-top: 24px;
+        }
+    }
+
+    .sign-up {
+        h1 {
+            .aik-title();
+            text-align: center;
+        }
+
+        .su-form {
+          .aik-form();
+        }
+
+        .su-input {
+            .aik-input();
+
+            & + .su-input {
+                margin-top: 24px;
+            }
+
+        }
+
+        .su-button {
+            .aik-button();
+        }
+
+        .su-link {
+            .aik-link();
+            margin-top: 24px;
+        }
+    }
+
+    .sign-up-success {
+        h1 {
+            .aik-title();
+            text-align: center;
+            margin-top: 36px;
+        }
+
+        .sus-info {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            margin-top: 24px;
+        }
+    }
+}
+
+.aik-title() {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #3E444E;
+}
+
+.aik-info() {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 12px;
+}
+
+.aik-form {
+  margin-top: 36px;
+}
+
+.aik-button() {
+    margin-top: 36px;
+    padding-left: 36px;
+    padding-right: 36px;
+    height: 44px;
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+.aik-input() {
+    input {
+      border: 2px solid #AFBCCE;
+      width: 100%;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 16px;
+      letter-spacing: 0.1px;
+      height: 54px;
+      box-sizing: border-box;
+      padding: 0 24px;
+
+      &::-webkit-input-placeholder,
+      &:-moz-placeholder,
+      &::-moz-placeholder,
+      &:-ms-input-placeholder,
+      &::-ms-input-placeholder,
+      &::placeholder {
+        color: #B0B0B0;
+      }
+    }
+}
+
+.aik-link() {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: @input-gray;
 }
