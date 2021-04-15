@@ -83,7 +83,7 @@
 
         <div class="row pt-1r">
             <div class="pb-1r col-xl-3 col-md-6 order-xl-1 order-3 order-md-2 text-md-right text-xl-left">
-                <a href="/">Copyright 1996-2020, ЮСАР+</a>
+                <a href="/">Copyright 1996-<?php echo date("Y"); ?>, ЮСАР+</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-2 order-1">
                 <a href="/policy">Политика конфиденциальности</a>
@@ -93,10 +93,10 @@
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-4 order-4 text-md-right">
                 <a href="//idees.ru">Создавайте сайты у нас
-                                <svg width="24" height="24">
-                                    <image width="24" height="24" xlink:href="/tpl/assets/img/logo-id.svg" />
-                                </svg>
-            </a>
+                    <svg width="24" height="24">
+                        <image width="24" height="24" xlink:href="/tpl/assets/img/logo-id.svg" />
+                    </svg>
+                </a>
             </div>
         </div>
 
