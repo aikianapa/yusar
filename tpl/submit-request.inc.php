@@ -2,7 +2,7 @@
   <h3 class="mt-0 pb-2r">{{_lang.feedback}}</h3>
   <form method="post">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <input type="text" name="fullname" class="form-control" placeholder="{{_lang.fullname}}">
       </div>
       <div class="col-md-3">
