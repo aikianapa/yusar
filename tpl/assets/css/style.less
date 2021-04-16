@@ -966,6 +966,7 @@ body {
             width: 24px;
             height: 24px;
             display: inline-flex;
+            margin-right: 12px;
         }
     }
 
@@ -1063,22 +1064,30 @@ body {
         }
     }
 
-    .form-control {
-        border-radius: 0;
-        border-color: @form-gray;
-        background-color: @form-gray;
-        color: @input-gray;
-        margin-bottom: 1.5rem;
-        padding: 1.3rem 1.5rem;
+  .form-control {
+    border-radius: 0;
+    border-color: @form-gray;
+    background-color: @form-gray;
+    color: @input-gray;
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
 
-        &:active,
-        &:focus {
-            border-radius: 0;
-            border-color: @form-gray;
-            background-color: @form-gray;
-            box-shadow: none;
-        }
+    &:active,
+    &:focus {
+      border-radius: 0;
+      border-color: @form-gray;
+      background-color: @form-gray;
+      box-shadow: none;
     }
+  }
+
+  input.form-control {
+    height: 54px;
+  }
+
+  textarea.form-control {
+    padding: 1.3rem 1.5rem;
+  }
 
     #History {
         .slick.slick-for {
@@ -1479,6 +1488,85 @@ body {
             font-size: 24px;
             line-height: 32px;
             margin-top: 24px;
+        }
+    }
+
+    .submit-request-widget {
+        margin-top: 56px;
+    }
+
+    .system-integration {
+        &--gallery {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &--info {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color:@input-dark;
+            margin-top: 36px;
+
+            > div {
+                div {
+                    display: flex;
+                    line-height: 40px;
+                    align-items: center;
+
+                    &:before {
+                        content: '';
+                        background: url(/tpl/assets/img/mdi_check-bold.svg) 50% 50% no-repeat;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 8px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .comprehensive-engineering-solutions {
+        &--items {
+            > div {
+                display: flex;
+                margin-bottom: 48px;
+
+                img {
+                    width: 120px;
+                    height: 120px;
+                    margin-right: 24px;
+                }
+
+                div {
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 129%;
+                    color: @input-dark;
+
+                    a {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: @input-dark;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 8px;
+
+                        svg {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+
+            &:last-child {
+                > div {
+                    margin-bottom: 0;
+                }
+            }
         }
     }
 }
