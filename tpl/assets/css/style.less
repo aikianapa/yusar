@@ -1512,8 +1512,7 @@ body {
             > div {
                 div {
                     display: flex;
-                    line-height: 40px;
-                    align-items: center;
+                    padding: 6px 0;
 
                     &:before {
                         content: '';
@@ -1565,6 +1564,47 @@ body {
             &:last-child {
                 > div {
                     margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .service-equipment {
+        &--gallery {
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &--info {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: @input-dark;
+            margin-top: 36px;
+
+            &--title {
+                font-weight: bold;
+                margin-bottom: 12px;
+
+                &__last {
+                    margin-top: 36px;
+                }
+            }
+
+            &--ul {
+                div {
+                    display: flex;
+                    padding: 6px 0;
+
+                    &:before {
+                        content: '';
+                        background: url(/tpl/assets/img/mdi_check-bold.svg) 50% 50% no-repeat;
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 8px;
+                        display: block;
+                    }
                 }
             }
         }
