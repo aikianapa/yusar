@@ -73,7 +73,7 @@ yusar.slick = function () {
     }
     if ($('.slick').length) {
         $('.slick:not(.slick-initialized)').each(function () {
-            this.options = {
+            let options = {
                 infinite: true,
                 lazyLoad: 'ondemand',
                 responsive: [{
@@ -99,7 +99,17 @@ yusar.slick = function () {
                 }],
                 slidesToShow: 4,
                 slidesToScroll: 4
+            };
+
+            try {
+                if (typeof this.dataset.slickOptions === 'string') {
+                    options = JSON.parse(this.dataset.slickOptions);
+                }
+            } catch (err) {
+                console.log(err);
             }
+
+            this.options = options;
             yusar.dataOptions(this);
             if ($(this).hasClass('slick-nav')) {
                 if (this.options.asNavFor == undefined) this.options.asNavFor = '.slick-for';
