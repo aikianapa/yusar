@@ -888,12 +888,6 @@ body {
             }
         }
 
-        &.widget-quote {
-            .btn-link {
-                height: 44px;
-            }
-        }
-
         &.widget-news {
             .slick-prev, .slick-next {
                 top: 27%;
@@ -987,18 +981,15 @@ body {
     }
 
     .btn-link {
+        padding: 0 5rem;
         border-color: @btn-def;
         background-color: @btn-def;
         border-radius: 0;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        //styleName: Main headers/ H5 16\24 BOLD;
         font-size: 16px;
         font-style: normal;
         font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0em;
         color: @color-white;
+        height: 44px;
 
         &.active,
         &:hover {
@@ -1607,6 +1598,31 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    .software-service {
+
+        &--content {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: @input-dark;
+
+            video {
+                max-width: 540px;
+                width: 100%;
+                height: 291px;
+                background: #000;
+            }
+        }
+
+        &--info {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            color: @input-dark;
+            margin-top: 36px;
         }
     }
 }
