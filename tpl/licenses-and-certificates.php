@@ -6,7 +6,7 @@
 <wb-include wb-tpl="header.inc.php" />
 
 <div class="container pt-3r pb-3r licenses-and-certificates">
-  <h3>{{_lang.title}}</h3>
+  <h3 class="mt-0">{{_lang.title}}</h3>
 
   <div
      class="slick"

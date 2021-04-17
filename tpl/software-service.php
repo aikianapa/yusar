@@ -6,7 +6,7 @@
 <wb-include wb-tpl="header.inc.php" />
 
 <div class="container pt-3r software-service">
-  <h3>{{_lang.title}}</h3>
+  <h3 class="mt-0">{{_lang.title}}</h3>
 
   <div class="row align-items-center software-service--content">
     <div class="col-12 col-md-6">
