@@ -54,70 +54,70 @@
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"</div>
+        <div><a href="/project">ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Краевая клиническая больница № 1 им. С.В. Очаповского (г. Краснодар, Россия)</div>
+        <div><a href="/project">Краевая клиническая больница № 1 им. С.В. Очаповского (г. Краснодар, Россия)</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Новый уровень диагностики в Мурманской области</div>
+        <div><a href="/project">Новый уровень диагностики в Мурманской области</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Реализация программы снижения смертности от рака молочной железы</div>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-        <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Республиканский онкологический диспансер им. Тимошкаевой Э.С.</div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-        <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Перинатальный центр г. Брянск</div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-        <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Курская область</div>
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
-        <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Модернизация системы удаленных телемедицинских консультаций</div>
+        <div><a href="/project">Реализация программы снижения смертности от рака молочной железы</a></div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Телемедицина в Приморском крае</div>
+        <div><a href="/project">Республиканский онкологический диспансер им. Тимошкаевой Э.С.</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Цереброваскулярной патологии и инсульта МЗ РФ"</div>
+        <div><a href="/project">Перинатальный центр г. Брянск</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Травматологии, ортопедии и эндопротезирования</div>
+        <div><a href="/project">Курская область</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Травматологии, ортопедии и эндопротезирования</div>
+        <div><a href="/project">Модернизация системы удаленных телемедицинских консультаций</a></div>
       </div>
 
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Телемедицина в Приморском крае</div>
+        <div><a href="/project">Телемедицина в Приморском крае</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Цереброваскулярной патологии и инсульта МЗ РФ"</div>
+        <div><a href="/project">Федеральный центр "Цереброваскулярной патологии и инсульта МЗ РФ"</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Травматологии, ортопедии и эндопротезирования</div>
+        <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
-        <div>Федеральный центр "Травматологии, ортопедии и эндопротезирования</div>
+        <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <img src="https://via.placeholder.com/510x328.png" alt="">
+        <div><a href="/project">Телемедицина в Приморском крае</a></div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <img src="https://via.placeholder.com/510x328.png" alt="">
+        <div><a href="/project">Федеральный центр "Цереброваскулярной патологии и инсульта МЗ РФ"</a></div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <img src="https://via.placeholder.com/510x328.png" alt="">
+        <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-xl-3">
+        <img src="https://via.placeholder.com/510x328.png" alt="">
+        <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
       </div>
     </div>
   </div>
