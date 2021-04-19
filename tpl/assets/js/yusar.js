@@ -22,6 +22,14 @@ yusar.anchor = function () {
     $(document).find(`a[href='${hash}']:eq(0)`).trigger('click');
 }
 
+yusar.linkfix = function () {
+    $('a[data-toggle="dropdown"][href*="/"]').off('tap click');
+    $('a[data-toggle="dropdown"][href*="/"]').on('tap click',function(){
+        document.location.href = $(this).attr('href');
+    })
+}
+
+
 yusar.dataOptions = function (el) {
 
     var strToBool = function (string) {
@@ -203,6 +211,7 @@ wbapp.on('preloaded-js', function () {
         window.dispatchEvent(new Event('resize'));
         yusar.slick();
         yusar.anchor();
+        yusar.linkfix();
     }, 100)
     setTimeout(function () {
         $('body.loading').removeClass('loading');

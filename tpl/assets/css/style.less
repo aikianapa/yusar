@@ -115,10 +115,13 @@ body {
 
         .carousel {
             .carousel-item {
-                height: 100vh;
+                height: 30vh;
             }
 
             background-size: cover;
+            .carousel-inner {
+                height: 500px;
+            }
 
             .carousel-indicators {
                 justify-content: left;
@@ -230,6 +233,10 @@ body {
         }
 
         &.homepage {
+
+            .carousel-inner {
+                height: 100vh;
+            }
             .carousel-item {
                 .container {
                     height: 100vh;
