@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="ui system-integration--info">
+  <div class="ul system-integration--info">
     <div class="li">
       Аудит и предпроектное обследование сетей и информационной инфраструктуры предприятия;
     </div>
