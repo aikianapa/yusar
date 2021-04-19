@@ -10,52 +10,52 @@
 
   <div
      class="slick"
-     data-slick-options='{"infinite":true,"lazyLoad":"ondemand","responsive":[{"breakpoint":1200,"settings":{"slidesToShow":5,"slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":4,"slidesToScroll":1}},{"breakpoint":768,"settings":{"slidesToShow":3,"slidesToScroll":1}},{"breakpoint":640,"settings":{"slidesToShow":2,"slidesToScroll":1}},{"breakpoint":480,"settings":{"slidesToShow":1,"slidesToScroll":1}}],"slidesToShow":6,"slidesToScroll":1}'
+     data-slick-options='{"infinite":true,"lazyLoad":"ondemand","responsive":[{"breakpoint":1800,"settings":{"slidesToShow":6,"slidesToScroll":1}},{"breakpoint":1200,"settings":{"slidesToShow":5,"slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":4,"slidesToScroll":1}},{"breakpoint":768,"settings":{"slidesToShow":3,"slidesToScroll":1}},{"breakpoint":640,"settings":{"slidesToShow":2,"slidesToScroll":1}},{"breakpoint":480,"settings":{"slidesToShow":1,"slidesToScroll":1}}],"slidesToShow":7,"slidesToScroll":1}'
   >
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+1" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+1" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+2" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+2" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+3" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+3" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+4" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+4" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+5" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+5" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+6" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+6" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+7" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+7" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+8" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+8" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+9" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+9" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+10" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+10" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+11" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+11" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+12" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+12" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+13" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+13" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+14" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+14" alt="">
     </div>
     <div>
-      <img src="https://via.placeholder.com/160x200.png?text=Лицензия+15" alt="">
+      <img src="https://via.placeholder.com/320x400.png?text=Лицензия+15" alt="">
     </div>
   </div>
 </div>
