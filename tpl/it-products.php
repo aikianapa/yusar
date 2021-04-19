@@ -10,22 +10,22 @@
 
   <div class="slick">
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
-      <img width="510" height="328" class="img-fluid" src="https://via.placeholder.com/255x164.png" alt="">
+      <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
   </div>
 
