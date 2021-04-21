@@ -1,10 +1,10 @@
 <div class="pt-3r pb-3r">
-    <div class="container widget news-grid">
+    <div class="container widget news-grid news-page">
 
         <div class="row pb-3r">
             <div class="col-12 col-md-6 col-lg-4 nobr">
                 <b>Сортировать:</b>
-                <select>
+                <select class="sort-select">
                     <option>По новизне</option>
                     <option>По популярности</option>
                 </select>

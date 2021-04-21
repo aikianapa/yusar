@@ -10,10 +10,11 @@
                 </wb-foreach>
             </ol>
         </div>
+
         <div class="carousel-inner">
 			<video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
-                    <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
-                    <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+                <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
+                <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
 
 
@@ -21,12 +22,28 @@
             <wb-foreach wb-from="prop.data.slider.children">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
             <div class="carousel-item {{_var.active}}">
-                <div class="container">
+                <div class="container position-relative">
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row">
-                            <h1 class="mb-3r">{{name}}</h1>
+                            <h1 class="mb-3r">
+                                <div class="arrow-prev">
+                                    <svg width="21" height="42" class="ml-10">
+                                        <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
+                                    </svg>
+                                </div>
+
+                                {{name}}
+                                <div class="arrow-next">
+                                    <svg width="21" height="42" class="ml-10">
+                                        <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
+                                    </svg>
+                                </div>
+                            </h1>
+
                             <div class="col-12 col-lg-6 px-0">
-                                <p class="lead">{{data.text}}</p>
+                                <p class="lead">
+                                    {{data.text}}
+                                </p>
 
                                 <p class="lead mt-3r">
                                     <a class="btn btn-primary rounded-30 btn-lg" href="Jumbo action link" role="button">Подробнее</a>

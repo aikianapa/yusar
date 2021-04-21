@@ -4,3 +4,4 @@
 engine
 *.pid
 *.log
+.vscode
