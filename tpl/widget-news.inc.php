@@ -11,14 +11,19 @@
         </div>
 
         <div class="slick news-grid pb-1r" id="widgetNewsList">
-            <wb-foreach wb="count=10">
-                <div class="card">
-                    <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">{{_ndx}} декабря</h4>
-                        <p class="card-text">{{_ndx}}) ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
+            <wb-foreach wb="from=images">
+                <a href="http://yusar.yonger.ru/news/id603273b10a95/">
+                    <div class="card">
+                        <div class="image__container">
+                            <!-- <img class="card-img-top" width="500" height="320" src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->
+                            <img src="/thumbc/500x320/src{{img}}" class="card-img-top">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">{{_ndx}} декабря</h4>
+                            <p class="card-text">{{_ndx}}) ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </wb-foreach>
         </div>
     </div>

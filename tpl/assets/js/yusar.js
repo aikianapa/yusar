@@ -68,6 +68,24 @@ yusar.scrollup = function () {
     });
 }
 
+$(function() {
+    $("a[href^='/#map_presence']").click(function() {
+        // let id = $(this).attr('href'),
+        let top = $('#map_presence').offset().top;
+        $('body, html').animate({ scrollTop: top }, 1200);
+    });
+});
+
+document.addEventListener("ready", function() {
+    let target = window.location.hash; 
+    if (target) {
+        document.querySelector(target).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
+})
+
 
 yusar.slick = function () {
     if ($('.carousel').length) {

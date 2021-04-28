@@ -6,10 +6,11 @@
   ],"earth-js");
 </script>
 
-
+<a id="map_presence">
 	<div id="myearth">
 		<div id="glow"></div>
 	</div>
+</a>
 
 <style>
 

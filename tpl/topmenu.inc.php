@@ -25,28 +25,23 @@
                 </ul>
             </div>
             <!-- End Sections -->
-            <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target=".mainmenu" aria-controls="mainMenu"
-                aria-expanded="false" aria-label="Toggle navigation" onclick="$('body').toggleClass('menu-open');">
-                <span>{{_lang.menu}}</span>
-            </button>
 
             <div class="collapse navbar-collapse mainmenu" id="mainMenu">
                 <ul class="navbar-nav my-2 my-lg-0 left">
-                    <li class="nav-item">
-                        <a class="nav-link icon-link">
+                    <li class="nav-item icon-small">
+                        <a class="nav-link icon-link icon-search">
                             <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/search.svg" /></svg>
                         </a>
-                    </li>
-                <!-- <li class="nav-item"> 
-                    <a class="nav-link">
-                        <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/phone.svg" /></svg>
-                        {{_sett.phone}}</a>
-                </li> -->
-                    <li class="nav-item">
+
                         <a class="nav-link icon-link" href="/account">
                             <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/user.svg" /></svg>
                         </a>
                     </li>
+                    <!-- <li class="nav-item icon-small">
+                        <a class="nav-link icon-link" href="/account">
+                            <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/user.svg" /></svg>
+                        </a>
+                    </li> -->
                 </ul>
 
                 <ul class="navbar-nav my-2 my-lg-0 right">
@@ -60,6 +55,11 @@
                     </li>
                 </ul>
             </div>
+
+            <button class="navbar-toggler d-xl-none tx-16" type="button" data-toggle="collapse" data-target=".mainmenu" aria-controls="mainMenu"
+                aria-expanded="false" aria-label="Toggle navigation" style="cursor: pointer">
+                <span>{{_lang.menu}}</span>
+            </button>
         </nav>
 
         <!-- <nav class="navbar navbar-expand-xl navbar-dark px-0 bot">
@@ -83,6 +83,35 @@
         </nav> -->
     </div>
 </div>
+
+<script wb-app>
+    // let button = document.querySelector(".navbar-toggler");
+    // let body = document.querySelector("body");
+
+    // button.addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     body.classList.toggle('menu-open');
+    // })
+    // $('.navbar-toggler').tappable(function() {
+        // $('body').toggleClass('menu-open');
+    // })
+
+    // button.addEventListener("touchstart", () => {
+    //     body.classList.toggle('menu-open');
+    // })
+
+
+    // $(".navbar-toggler").on('touchstart', function() {
+        // $('body').toggleClass('menu-open');
+    // })
+
+	$(".navbar-toggler").off('touchstart click');
+    $(".navbar-toggler").on('touchstart click', function (e) {
+		$('body').toggleClass('menu-open');
+        $('.mainmenu').toggleClass('show');
+        return false; 
+    })
+</script>
 
 <wb-lang>
     [ru]

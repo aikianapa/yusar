@@ -1,6 +1,19 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
+<style>
+.mad {
+  display: block;
+  width: 100%; 
+  height: auto; 
+  object-fit: contain;
+}
+
+.img2 {
+  max-height: 520px;
+}
+</style>
+
 <body class="loading">
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
@@ -8,8 +21,8 @@
 <div class="container pt-3r hardware-and-integration">
   <div class="row">
     <div class="col-12">
-      <a href="" class="position-relative">
-        <img src="/tpl/assets/img/hardware-and-integration/1.png" alt="">
+      <a href="" class="" style="display: block">
+        <img src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad">
         <div>
           Медицинское оборудование
         </div>
@@ -18,16 +31,16 @@
   </div>
   <div class="row hardware-and-integration--row2">
     <div class="col-12 col-md-6">
-      <a href="" class="position-relative">
-        <img src="/tpl/assets/img/hardware-and-integration/2.png" alt="">
+      <a href="" class="" style="display: block">
+        <img src="tpl/assets/img/inger-2.jpg" alt="" class="img2">
         <div>
           Комплексные инжинерные системы
         </div>
       </a>
     </div>
     <div class="col-12 col-md-6">
-      <a href="" class="position-relative">
-        <img src="/tpl/assets/img/hardware-and-integration/3.png" alt="">
+      <a href="" class="" style="display: block">
+        <img src="/tpl/assets/img/integr-2.jpg" alt="" class="img2">
         <div>
           Системная интеграция
         </div>

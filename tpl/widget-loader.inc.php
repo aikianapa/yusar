@@ -1,216 +1,83 @@
 <style wb-module="scss">
-.loader {
-    --path: #FFFFFF;
-    --dot: #ff5722;
-    --duration: 3s;
-    width: 48px;
-    height: auto;
-    position: relative;
-
-    display: inline-block;
-    margin: 0 16px;
-
-    &:before {
-        content: '';
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        position: absolute;
-        display: block;
-        background: var(--dot);
-        top: 37px;
-        left: 19px;
-        transform: translate(-18px, -18px);
-        animation: dotRect var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-    }
-
-    svg {
-        display: block;
-        width: 100%;
-        height: 100%;
-
-        rect,
-        polygon,
-        circle {
-            fill: none;
-            stroke: var(--path);
-            stroke-width: 10px;
-            stroke-linejoin: round;
-            stroke-linecap: round;
-        }
-
-        polygon {
-            stroke-dasharray: 145 (221 - 145) 145 (221 - 145);
-            stroke-dashoffset: 0;
-            animation: pathTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        }
-
-        rect {
-            stroke-dasharray: (256 / 4 * 3) (256 / 4) (256 / 4 * 3) (256 / 4);
-            stroke-dashoffset: 0;
-            animation: pathRect 3s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        }
-
-        circle {
-            stroke-dasharray: (200 / 4 * 3) (200 / 4) (200 / 4 * 3) (200 / 4);
-            stroke-dashoffset: 75;
-            animation: pathCircle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        }
-    }
-
-    &.triangle {
-        width: 48px;
-
-        &:before {
-            left: 21px;
-            transform: translate(-10px, -18px);
-            animation: dotTriangle var(--duration) cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        }
-    }
-}
-
-@keyframes pathTriangle {
-    33% {
-        stroke-dashoffset: 74;
-    }
-
-    66% {
-        stroke-dashoffset: 147;
-    }
-
-    100% {
-        stroke-dashoffset: 221;
-    }
-}
-
-@keyframes dotTriangle {
-    33% {
-        transform: translate(0, 0);
-    }
-
-    66% {
-        transform: translate(10px, -18px);
-    }
-
-    100% {
-        transform: translate(-10px, -18px);
-    }
-}
-
-@keyframes pathRect {
-    25% {
-        stroke-dashoffset: 64;
-    }
-
-    50% {
-        stroke-dashoffset: 128;
-    }
-
-    75% {
-        stroke-dashoffset: 192;
-    }
-
-    100% {
-        stroke-dashoffset: 256;
-    }
-}
-
-@keyframes dotRect {
-    25% {
-        transform: translate(0, 0);
-    }
-
-    50% {
-        transform: translate(18px, -18px);
-    }
-
-    75% {
-        transform: translate(0, -36px);
-    }
-
-    100% {
-        transform: translate(-18px, -18px);
-    }
-}
-
-@keyframes pathCircle {
-    25% {
-        stroke-dashoffset: 125;
-    }
-
-    50% {
-        stroke-dashoffset: 175;
-    }
-
-    75% {
-        stroke-dashoffset: 225;
-    }
-
-    100% {
-        stroke-dashoffset: 275;
-    }
-}
-
-
 body.loading {
+  height: 100vh !important;
+  width: 100vw;
+  overflow: hidden !important;
+  background: #123b77;
+  margin: 0 !important;
+
+  * {
+    visibility: hidden;
+    box-sizing: border-box;
+
+    &:before,
+    &:after {
+      box-sizing: border-box;
+    }
+  }
+
+  .preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh !important;
     width: 100vw;
-    overflow: hidden !important;
-    background: #123b77;
+    transition: .3s;
+    visibility: visible;
+
+    img {
+      margin-left: 15px;
+    }
 
     * {
-        visibility: hidden;
-        box-sizing: border-box;
-
-        &:before,
-        &:after {
-            box-sizing: border-box;
-        }
+      visibility: visible;
     }
+  }
+}
 
-    >.preloader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh !important;
-        width: 100vw;
-        transition: .6s;
-        visibility: visible;
-        p {
-            display: block;
-            position: absolute;
-            top: 55vh;
-            width: 100%;
-            color: white;
-            text-align: center;
-            font-family: sans!important;
-            font-size: 16px;
-        }
-        * {
-            visibility: visible;
-        }
-    }
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
+
 <div class="preloader">
-    <div class="loader">
-        <svg viewBox="0 0 80 80">
-            <circle id="test" cx="40" cy="40" r="32"></circle>
-        </svg>
-    </div>
-
-    <div class="loader triangle">
-        <svg viewBox="0 0 86 80">
-            <polygon points="43 8 79 72 7 72"></polygon>
-        </svg>
-    </div>
-
-    <div class="loader">
-        <svg viewBox="0 0 80 80">
-            <rect x="8" y="8" width="64" height="64"></rect>
-        </svg>
-    </div>
-    <p>
-        Страница загружается...
-    </p>
+  <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+  <img src="/tpl/assets/img/preloader-logo.svg" alt="">
 </div>

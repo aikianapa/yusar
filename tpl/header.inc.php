@@ -5,8 +5,8 @@
         <div class="container p-0">
             <ol class="carousel-indicators">
                 <wb-foreach wb-count="3">
-                <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
-                <li data-target="#homeCarousel" data-slide-to="{{_idx}}" class="{{_var.active}}"></li>
+                    <wb-var active="active" wb-if='"{{_idx}}" == "0"' else='' />
+                    <li data-target="#homeCarousel" data-slide-to="{{_idx}}" class="{{_var.active}}"></li>
                 </wb-foreach>
             </ol>
         </div>
@@ -17,7 +17,6 @@
                 <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
 
-
             <!--video class="slideGallery__video" src="/assets/video/3.mp4" autoplay="" muted="" playsinline="" loop="" style="width: 1601.78px; height: 901px; margin-top: 0px; margin-left: -198.389px;"></video-->
             <wb-foreach wb-from="prop.data.slider.children">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
@@ -26,18 +25,7 @@
                     <div class="carousel-caption text-left">
                         <div class="jumbotron transparent row">
                             <h1 class="mb-3r">
-                                <div class="arrow-prev">
-                                    <svg width="21" height="42" class="ml-10">
-                                        <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
-                                    </svg>
-                                </div>
-
                                 {{name}}
-                                <div class="arrow-next">
-                                    <svg width="21" height="42" class="ml-10">
-                                        <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
-                                    </svg>
-                                </div>
                             </h1>
 
                             <div class="col-12 col-lg-6 px-0">
@@ -55,6 +43,34 @@
             </div>
             </wb-foreach>
         </div>
+
+        <!-- <button class="arrow-prev" data-target="#homeCarousel" data-slide="prev">
+            <svg width="21" height="42" class="ml-10">
+                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
+            </svg>
+        </button>
+
+        <button class="arrow-next" data-target="#homeCarousel" data-slide="next">
+            <svg width="21" height="42" class="ml-10">
+                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
+            </svg>
+        </button> -->
+
+        <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <svg width="21" height="42" class="ml-10">
+                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
+            </svg>
+            <span class="sr-only">Предыдущий</span>
+        </a>   
+        
+        <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <svg width="21" height="42" class="ml-10">
+                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
+            </svg>
+            <span class="sr-only">Следующий</span>
+        </a>
     </div>
 </header>
 <header wb-if="id !== 'home'">
@@ -81,7 +97,7 @@
                             </nav>
 
                             <div class="col-12 px-0">
-                                <h1>Новости ЮСАР</h1>
+                                <h1>{{lang.ru.header}}</h1>
                             </div>
                             <div class="col-12 col-lg-6 px-0">
                                 <p class="lead">В жизни нашей компании регулярно случаются интересные события. 

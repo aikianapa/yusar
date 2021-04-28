@@ -1,5 +1,5 @@
 <div class="container">
-        <h3>{{_lang.vacancy}}</h3>
+    <h3>{{_lang.vacancy}}</h3>
     <div class="row">
         <wb-foreach wb="table=news&sort=date:d&render=server&offset=-100" wb-filter="{'active':'on'}">
             <div class="col-sm-6 mb-3r">

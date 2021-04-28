@@ -5,30 +5,36 @@
         </div>
     <div class="row">
         <div class="col-md-4">
+            <a href="/equipment">
                 <div class="card">
-                    <img class="card-img-top" width="254" height="164" data-src="/thumbc/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/med-equipment.jpg" alt="">
                     <div class="card-body">
-                        <p class="card-text">Медицинское оборудование</p>
+                        <p class="card-text" style="margin-top: 15px;">Медицинское оборудование</p>
                     </div>
                 </div>
+            </a>
         </div>
 
         <div class="col-md-4">
+            <a href="/system">
                 <div class="card">
-                    <img class="card-img-top" width="254" height="164" data-src="/thumbc/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="/tpl/assets/img/integr-2.jpg" alt="">
                     <div class="card-body">
-                        <p class="card-text">Системная интеграция</p>
+                        <p class="card-text" style="margin-top: 15px;">Системная интеграция</p>
                     </div>
                 </div>
+            </a>
         </div>
 
         <div class="col-md-4">
+            <a href="/complex">
                 <div class="card">
-                    <img class="card-img-top" width="254" height="164" data-src="/thumbc/254x164/src/tpl/assets/img/widget-holder.jpg" alt="">
+                    <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/inger-2.jpg" alt="">
                     <div class="card-body">
-                        <p class="card-text">Комплексные инжинерные системы</p>
+                        <p class="card-text" style="margin-top: 15px;">Комплексные инжинерные системы</p>
                     </div>
                 </div>
+            </a>   
         </div>        
 
     </div>

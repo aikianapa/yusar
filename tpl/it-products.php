@@ -169,11 +169,11 @@
 </body>
 
 </html>
-<wb-lang>
+<!-- <wb-lang>
   [en]
   title1 = Галерея
   title2 = Наши продукты
   [ru]
   title1 = Галерея
   title2 = Наши продукты
-</wb-lang>
+</wb-lang> -->

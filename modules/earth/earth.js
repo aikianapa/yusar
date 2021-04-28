@@ -45,8 +45,6 @@ window.addEventListener("earthjsload", function () {
 
 
     myearth.addEventListener("ready", function () {
-
-
         function lines(earth) {
             // connections
             var connections = [];

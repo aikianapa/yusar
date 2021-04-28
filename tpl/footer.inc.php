@@ -18,6 +18,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/partners">Наши партнёры</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/reviews">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/licenses-and-certificates">Лицензии и сертификаты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/documentation">Документация</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/vacancy">Вакансии</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -148,9 +160,10 @@
                 <a href="/rules">Пользовательское соглашение</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-4 order-4 text-md-right">
-                <a href="//idees.ru">Создавайте сайты у нас
-                    <svg width="24" height="24">
-                        <image width="24" height="24" xlink:href="/tpl/assets/img/logo-id.svg" />
+                <a href="//idees.ru" class="studio-link">
+                    Создавайте сайты у нас
+                    <svg width="24" height="24" style="margin-right: 0;">
+                        <image width="24" height="24" xlink:href="/tpl/assets/img/logo-id.svg"/>
                     </svg>
                 </a>
             </div>
