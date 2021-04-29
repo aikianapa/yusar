@@ -940,6 +940,12 @@ body {
                 display: flex;
             }
 
+            @media (max-width: 767px) {
+                & {
+                    margin-top: 0;
+                }
+            }
+
             @media (max-width: 529px) {
                 .info-block {
                     min-width: 100%;
@@ -1076,15 +1082,27 @@ body {
         li {
             line-height: 36px;
             display: inline-flex;
-
-            &:before {
-                content: ' ';
-                background: url(/tpl/assets/img/icon-pdf.svg) 0 0 no-repeat;
-                width: 50px !important;
-                height: 36px;
+            
+            img {
                 margin-right: 1.5rem;
-                display: inline-flex;
             }
+            
+
+            // &:before {
+            //     content: ' ';
+            //     background: url(/tpl/assets/img/icon-pdf.svg) 0 0 no-repeat;
+            //     background-size: contain;
+            //     width: 50px !important;
+            //     height: 36px;
+            //     margin-right: 1.5rem;
+            //     display: inline-block;
+
+            //     @media (max-width: 516px) {
+            //         &:before {
+            //             margin-right: 0rem;
+            //         }
+            //     } 
+            // }
 
             a {
                 color: @color-black;
@@ -1361,7 +1379,7 @@ body {
     }
 
     .btn-link {
-        padding: 0 5rem;
+        // padding: 0 5rem;
         border-color: @btn-def;
         background-color: @btn-def;
         border-radius: 0;
@@ -1369,7 +1387,7 @@ body {
         font-style: normal;
         font-weight: 700;
         color: @color-white;
-        height: 44px;
+        // height: 44px;
 
         &.active,
         &:hover {
@@ -1549,6 +1567,16 @@ body {
                     left: 0;
                 }
             }
+        }
+
+        @media (max-width: 991px) {
+            .dates {
+                padding-top: 0 !important;
+            }
+        }
+        .dates-slider {
+            display: flex;
+            align-items: center
         }
     }
 
@@ -1805,13 +1833,7 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
     }
-
-    // @media (max-width: 1800px) {
-    //     .left {
-
-    //     }
-    // }
-
+    
     @media (max-width: 2000px) {
         .carousel-control-prev{
             max-width: 200px;
@@ -1940,10 +1962,11 @@ body {
         &--gallery {
             img {
                 max-width: 100%;
-                margin-bottom: 20px;
 
-                &:last-child {
-                    margin-bottom: 0;
+                @media (max-width: 767px) {
+                    & {
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }
@@ -1989,6 +2012,12 @@ body {
         &--gallery {
             img {
                 max-width: 100%;
+            }
+
+            @media (max-width: 767px) {
+                img {
+                    margin-bottom: 20px;
+                }
             }
         }
 
@@ -2057,7 +2086,7 @@ body {
                 color: @input-dark;
                 font-weight: 500;
 
-                svg {
+                img {
                     margin-right: 24px;
                 }
 
@@ -2415,9 +2444,19 @@ body {
                 }
             }
         }
+
+        @media (max-width: 460px) {
+            .tabs {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
         .tabs {
             margin-bottom: 36px;
         }
+
         .breadcrumbs {
             margin-top: 40px;
         }
@@ -2429,17 +2468,65 @@ body {
             color: @input-dark;
             margin-bottom: 48px;
             justify-content: space-between;
-            flex-direction: column;
 
-            @media (min-width:@xl-min ) {
-                flex-direction: row;
+            &--sorting {
+                display: inline-flex;
+            }
+
+            &--categories {
+                display: flex;
+                margin-left: 32px;
+
+                > div {
+                    display: inline-flex;
+                }
+            }
+
+            @media (max-width: @xl) {
+                &--sorting,
+                &--category,
+                &--year {
+                    flex-direction: column;
+                }
+            }
+
+            @media (max-width: 536px) {
+                &--categories {
+                    flex-direction: column;
+                }
+
+                &--year {
+                    margin-left: 0px !important;
+                }
+            }
+            
+            @media (max-width: 460px) {
+                > div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start !important;
+                }
+
+                &--categories {
+                    margin-left: 0px;
+                    margin-top: 20px;
+                }
+
+                &--year {
+                    margin-top: 12px;
+                }
+
+                .sorting-selector {
+                    flex-direction: row;
+                }
             }
 
             &--sort {
                 cursor: pointer;
+                max-width: 170px;
 
                 &:not(:last-child) {
-                    margin-right: 16px;
+                    margin-right: 14px;
                 }
 
                 &--active {
@@ -2452,21 +2539,19 @@ body {
                 margin-right: 16px;
             }
 
+            &--year {
+                margin-left: 36px;
+            }
+
             > div {
                 display: flex;
-
-                > div {
-                    display: flex;
-
-                    &:not(:last-child) {
-                        margin-right: 48px;
-                    }
-                }
+                justify-content: space-between;
             }
 
             select {
                 background: none;
                 border: none;
+                padding: 0;
             }
 
             svg {

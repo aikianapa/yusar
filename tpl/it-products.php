@@ -8,11 +8,25 @@
 <div class="container pt-3r it-products">
   <h3 class="mt-0">{{_lang.title1}}</h3>
 
-  <div
-      class="slick"
-      data-slick-options='{"infinite":true,"lazyLoad":"ondemand","responsive":[{"breakpoint":1800,"settings":{"slidesToShow":4,"slidesToScroll":1}},{"breakpoint":1200,"settings":{"slidesToShow":4,"slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":3,"slidesToScroll":1}},{"breakpoint":768,"settings":{"slidesToShow":2,"slidesToScroll":1}},{"breakpoint":640,"settings":{"slidesToShow":1,"slidesToScroll":1}}],"slidesToShow":5,"slidesToScroll":1}'
-  >
-    <div>
+  <div class="slick" data-slick-options='{"infinite":
+    true,"lazyLoad":"ondemand","responsive":
+    [{"breakpoint":1800,"settings":{
+      "slidesToShow":4,"slidesToScroll":1}},
+      {"breakpoint":1200,"settings":
+        {"slidesToShow":4,"slidesToScroll":1}},
+        {"breakpoint":992,"settings":
+          {"slidesToShow":3,"slidesToScroll":1}},
+          {"breakpoint":768,"settings":{"slidesToShow":2,
+            "slidesToScroll":1}},{"breakpoint":640,"settings":
+              {"slidesToShow":1,"slidesToScroll":1}}],
+              "slidesToShow":5,"slidesToScroll":1}'>
+              <wb-foreach wb="from=images">
+              <div>
+                <img src="thumbc/318x164/src{{img}}" alt="">
+              </div>
+            </wb-foreach>
+            </div>
+    <!-- <div>
       <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
     <div>
@@ -42,10 +56,7 @@
     <div>
       <img src="https://via.placeholder.com/255x164.png" alt="">
     </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-  </div>
+  </div> -->
 
   <h3>{{_lang.title2}}</h3>
 

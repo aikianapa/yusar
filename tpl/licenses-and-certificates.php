@@ -76,10 +76,10 @@
 <wb-include wb-tpl="footer.inc.php" />
 </body>
 
-</html>
 <wb-lang>
-  [en]
+[en]
   title = Gallery
-  [ru]
+[ru]
   title = Галерея
 </wb-lang>
+</html>

@@ -141,7 +141,6 @@
 <wb-include wb-tpl="footer.inc.php" />
 </body>
 
-</html>
 <wb-lang>
   [en]
   title1 = Медицина
@@ -152,3 +151,5 @@
   title2 = Управление производством
   title3 = Системная интеграция
 </wb-lang>
+
+</html>

@@ -15,49 +15,49 @@
   <div class="documentation--files">
 
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Презентация компании</span>
       <span>PDF</span>
       <span>130 кб.</span>
     </a>
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Проектная документация</span>
       <span>PDF</span>
       <span>2307 кб.</span>
     </a>
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Свидетельства, допкуски, сертификации</span>
       <span>PDF</span>
       <span>14122 кб.</span>
     </a>
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Перечень рекомендуемых мероприятий по улучшению условий труда</span>
       <span>PDF</span>
       <span>1227 кб.</span>
     </a>
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Сводную ведомость результатов проведения специальной оценки условий труда</span>
       <span>PDF</span>
       <span>14307 кб.</span>
     </a>
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Пазрешения на ввод объектов в эксплутацию</span>
       <span>PDF</span>
       <span>44407 кб.</span>

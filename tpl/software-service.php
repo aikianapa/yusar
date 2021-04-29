@@ -1,6 +1,14 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
+<style>
+  @media (max-width: 767px) {
+    .service-text {
+      margin-top: 14px;
+    }
+  }
+</style>
+
 <body class="loading">
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
@@ -12,7 +20,7 @@
     <div class="col-12 col-md-6">
       <video />
     </div>
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 service-text">
       ЮСАР+ осуществляет поставку медицинского оборудования "под ключ", 
       включая новейшие мобильные диагностические комплексы ПЭТ/КТ. 
       Обеспечивает полный комплекс работ: от проектирования (стадия П и РД) 

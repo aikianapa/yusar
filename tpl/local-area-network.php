@@ -142,18 +142,18 @@
   <div class="documentation--files">
 
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Принципиальная схема ЛВС</span>
       <span>PDF</span>
       <span>172 кб.</span>
     </a>
 
     <a href="#">
-      <svg width="36" height="36" class="ml-10">
-        <image width="36" height="36" xlink:href="/tpl/assets/img/pdf.svg" />
-      </svg>
+      <!-- <svg width="36" height="36" class="ml-10"> -->
+        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+      <!-- </svg> -->
       <span>Схема размещения оборудования</span>
       <span>PDF</span>
       <span>172 кб.</span>

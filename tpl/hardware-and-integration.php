@@ -21,7 +21,7 @@
 <div class="container pt-3r hardware-and-integration">
   <div class="row">
     <div class="col-12">
-      <a href="" class="" style="display: block">
+      <a href="/equipment" class="" style="display: block">
         <img src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad">
         <div>
           Медицинское оборудование
@@ -31,7 +31,7 @@
   </div>
   <div class="row hardware-and-integration--row2">
     <div class="col-12 col-md-6">
-      <a href="" class="" style="display: block">
+      <a href="/complex" class="" style="display: block">
         <img src="tpl/assets/img/inger-2.jpg" alt="" class="img2">
         <div>
           Комплексные инжинерные системы
@@ -39,7 +39,7 @@
       </a>
     </div>
     <div class="col-12 col-md-6">
-      <a href="" class="" style="display: block">
+      <a href="/system" class="" style="display: block">
         <img src="/tpl/assets/img/integr-2.jpg" alt="" class="img2">
         <div>
           Системная интеграция

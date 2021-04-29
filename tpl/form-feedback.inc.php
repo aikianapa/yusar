@@ -19,7 +19,7 @@
             <a href="#" class="add-file pb-1r">Приложить документ до 10 мб.</a></div>
         <div class="col-12">
               <!-- <button type="button" class="btn btn-link w-100">{{_lang.quotebtn}}</button> -->
-              <button type="button" class="btn btn-link w-100" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px;">{{_lang.quotebtn}}</button>
+              <button type="button" class="btn btn-link w-100 feedback" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px;">{{_lang.quotebtn}}</button>
         </div>
 
     </div>

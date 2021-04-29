@@ -15,7 +15,7 @@
       <div>Сервис программного обеспечения</div>
       <div>Сервис программного обеспечения</div>
 
-      <a href="#" class="link-more-detailed">
+      <a href="/service-software" class="link-more-detailed">
         Подробнее
         <svg width="24" height="24">
           <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
@@ -28,7 +28,7 @@
       <div>Сервис оборудования</div>
       <div>Сервис оборудования</div>
 
-      <a href="#" class="link-more-detailed">
+      <a href="/service-equipment" class="link-more-detailed">
         Подробнее
         <svg width="24" height="24">
           <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />

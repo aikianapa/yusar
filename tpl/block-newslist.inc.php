@@ -46,7 +46,7 @@
             <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'">
                 <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
                     <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
-                        <a class="d-flex" href="/news/{{id}}/">
+                        <a class="d-flex" href="/news/id603273b10a95/">
                             <div class="card">
                                 <div class="image__container">
                                     <!-- <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->
@@ -66,7 +66,7 @@
                 <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
                     <div class="col-12 col-lg-6 mb-3r">
                         <div class="media">
-                            <a class="d-flex" href="/news/{{id}}/">
+                            <a class="d-flex" href="/news/id603273b10a95/">
                                 <img class="card-img-top" width="255" height="118" data-src="/thumbc/255x118/src{{img}}" alt="">
                             </a>
                             <div class="media-body" style="margin-left: 15px;">
@@ -81,3 +81,5 @@
     </div>
 </wb-data>
 </div>
+
+<script src="/tpl/assets/js/yusar.js"></script>

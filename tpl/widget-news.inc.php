@@ -12,7 +12,7 @@
 
         <div class="slick news-grid pb-1r" id="widgetNewsList">
             <wb-foreach wb="from=images">
-                <a href="http://yusar.yonger.ru/news/id603273b10a95/">
+                <a href="/news/id603273b10a95/">
                     <div class="card">
                         <div class="image__container">
                             <!-- <img class="card-img-top" width="500" height="320" src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->

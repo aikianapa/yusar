@@ -14,7 +14,7 @@
 
   <div class="filters">
     <div>
-      <div>
+      <div class=filters--sorting>
         <div class="filters--title">Сортировать:</div>
         <div class="filters--sort filters--sort--active">
           По популярности
@@ -23,41 +23,46 @@
           По новизне
         </div>
       </div>
-      <div>
-        <div class="filters--title">Категории:</div>
-
-        <select>
-          <option value="">Образование</option>
-        </select><img data-src="/tpl/assets/img/arrow-select.svg">
+      <div class="filters--categories">
+        <div class="filters--category">
+          <div class="filters--title">Категории:</div>
+          <div class="selector">
+            <select>
+              <option value="">Образование</option>
+            </select>
+            <img data-src="/tpl/assets/img/arrow-select.svg">
+          </div>
+        </div>
+        <div class="filters--year">
+          <div class="filters--title">Год:</div>
+          <div class="selector">
+          <select>
+            <option value="">2020</option>
+            <option value="">2021</option>
+          </select>
+          <img data-src="/tpl/assets/img/arrow-select.svg">
+        </div>
       </div>
-      <div>
-        <div class="filters--title">Год:</div>
-
-        <select>
-          <option value="">2020</option>
-          <option value="">2021</option>
-        </select><img data-src="/tpl/assets/img/arrow-select.svg">
-      </div>
-    </div>
-
-    <div>
-      <a href="javascript:yusar.listmode('grid');">
-        <svg width="24" height="24" class="ml-10">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/sort-rows.svg" />
-        </svg>
-      </a>
-
-      <a href="javascript:yusar.listmode('list');">
-        <svg width="24" height="24" class="ml-10">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/sort-cols.svg" />
-        </svg>
-      </a>
     </div>
   </div>
+  <div class="sorting-selector">
+    <a href="javascript:yusar.listmode('grid');">
+      <svg width="24" height="24" class="ml-10">
+        <image width="24" height="24" xlink:href="/tpl/assets/img/sort-rows.svg" />
+      </svg>
+    </a>
 
-  <wb-var listtype="{{_cook.listtype}}" wb-if="'{{_cook.listtype}}' > ''" else="list" />
+    <a href="javascript:yusar.listmode('list');">
+      <svg width="24" height="24" class="ml-10">
+        <image width="24" height="24" xlink:href="/tpl/assets/img/sort-cols.svg" />
+      </svg>
+    </a>
+  </div>
+</div>
 
-  <div class="projects--list">
+<wb-var listtype="{{_cook.listtype}}" wb-if="'{{_cook.listtype}}' > ''" else="list" />
+
+<div class="projects--list">
     <!-- <div class="row"">
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
@@ -133,7 +138,7 @@
       <!-- <wb-foreach wb="from=images" wb-filer="{'active': 'on'}"> -->
         <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
           <div class="card-project">
-            <a class="d-flex" href="/news/{{id}}/">
+            <a class="d-flex" href="/news/id603273b10a95/">
             <div class="image__container">
               <!-- <img class="card-img-top" src="https://via.placeholder.com/510x328.png" alt=""> -->
               <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
@@ -154,7 +159,7 @@
       <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
         <div class="col-12 col-lg-6 mb-3r">
         <div class="media">
-            <a class="d-flex" href="/news/{{id}}/" style="margin-right: 30px;">
+            <a class="d-flex" href="/news/id603273b10a95/" style="margin-right: 30px;">
               <!-- <img class="card-img-top" src="https://via.placeholder.com/240x118.png" alt=""> -->
               <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
             </a>

@@ -16,7 +16,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="row">
-                    <div class="col-3 col-sm-2 pt-3r" style="height:100%;">
+                    <div class="col-3 col-sm-2 pt-3r dates" style="height:100%;">
                         <wb-var start='1996' />
                         <wb-var year='{{ date("Y") - 1}}' />
                         <wb-var navs='{{ {{_var.year}} - {{_var.start}} }}' />
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <div class="col-9 col-sm-10">
-                        <div class="slick slick-for" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=false&arrows=false&adaptiveHeight&true">
+                        <div class="slick slick-for dates-slider" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=false&arrows=false&adaptiveHeight&true">
                             <!-- обязательно через src !!! -->
                             <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
                                 <div>
