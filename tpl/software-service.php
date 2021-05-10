@@ -18,7 +18,9 @@
 
   <div class="row software-service--content">
     <div class="col-12 col-md-6">
-      <video />
+      <div class="image__container">
+        <img src="/tpl/assets/img/video-image.png" alt="">
+      </div>
     </div>
     <div class="col-12 col-md-6 service-text">
       ЮСАР+ осуществляет поставку медицинского оборудования "под ключ", 

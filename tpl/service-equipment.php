@@ -5,14 +5,65 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r service-equipment">
-  <div class="row service-equipment--gallery">
+<style>
+  .slick-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+.slick-prev {
+  top: 42%;
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+/* .slick-track {
+  width: 1500px !important;
+} */
+
+/* .slick-slide {
+  width: 405px !important;
+  height: auto;
+} */
+
+  .service-grid {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .picture {
+    width: 810px !important;
+    height: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+</style>
+
+<div class="container pt-3r service-equipment" style="overflow-x: visible !important">
+  <!-- <div class="row service-equipment--gallery">
     <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/service-equipment/1.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/service-equipment/1.png" alt="" />
+      </div>
     </div>
     <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/service-equipment/2.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/service-equipment/2.png" alt="" />
+      </div>
     </div>
+  </div> -->
+
+  <div class="slick mb-3r service-grid" data-autoplay="2000" data-scroll="1">
+    <wb-foreach wb="from=images">
+      <div class="picture">
+        <div class="image__container">
+          <img class="img-fluid" src="/780x420/src{{img}}" alt="">
+            </div>
+          </div>
+      </wb-foreach>
   </div>
 
   <div class="row service-equipment--info">
@@ -57,6 +108,14 @@
     </div>
   </div>
 </div>
+
+<script wb-app>
+$(document).one('ready-all', function (e) {
+    $(".slick").slick({
+      slidesToShow: 2,
+    })
+})
+</script>
 
 <wb-include wb-tpl="submit-request.inc.php" />
 

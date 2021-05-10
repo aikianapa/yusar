@@ -14,7 +14,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -26,7 +26,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -40,7 +40,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -52,7 +52,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -66,7 +66,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -78,7 +78,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -92,7 +92,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -104,7 +104,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -118,7 +118,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -130,7 +130,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -144,7 +144,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -156,7 +156,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -170,7 +170,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -182,7 +182,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>
@@ -196,7 +196,7 @@
         <a href="/local-area-network" class="link-more-detailed">
           Подробнее
           <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
           </svg>
         </a>
       </div>

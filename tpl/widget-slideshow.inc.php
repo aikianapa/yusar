@@ -33,41 +33,58 @@
         margin-bottom: 20px;
     }
 
+	.image__container {
+		overflow: hidden;
+	}
+
+	.image__container img {
+		transition: .3s ease-in-out;
+	}
+
+	.image__container img:hover {
+		transform: scale(1.1);
+	}
+
 	@media (max-width: 991px) {
 		.blocks {
 			margin-top: 20px;
 		}
 	}
 </style>
-<div class="slider slider-for slide-pics" data-options="arrows=false">
-	<wb-foreach wb="count=10">
-		<div class="slider-block">
 
-			<!-- <button class="button-prev slick-prev" aria-label="Previous" type="button">
+<!-- <button class="button-prev slick-prev" aria-label="Previous" type="button">
 				"Previous"
 				<svg width="21" height="42" class="ml-10">
     				<image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
     			</svg>
 			</button> -->
-
+<div class="slider slider-for slide-pics container" data-options="arrows=false">
+	<wb-foreach wb="count=10">
+		<div class="slider-block">
 			<div class="row">
 				<div class="col-lg-8 col-lg-7">
+					<div class="image__container">
+						<img src="/tpl/assets/img/team/team-1.jpg" alt="" class="big-img">
+					</div>
 					<!-- <img data-src="/tpl/assets/img/exam-bigimg.png" alt=""> -->
 					<!-- <img data-src="https://via.placeholder.com/756x494.png" -->
-					<img src="/tpl/assets/img/team/team-1.jpg" alt="" class="big-img">
 				</div>
 
 				<div class="col-lg-4 blocks">
 					<div class="block">
+						<div class="image__container">
+							<img src="/tpl/assets/img/team/team-2.jpg" alt="">
+						</div>
 						<!-- <img data-src="/tpl/assets/img/exam-smallimg.png" alt=""> -->
 						<!-- <img src="https://via.placeholder.com/510x250.png" alt=""> -->
-						<img src="/tpl/assets/img/team/team-2.jpg" alt="">
 					</div>
 
 					<div class="block">
+						<div class="image__container">
+							<img src="/tpl/assets/img/team/team-3.jpg" alt="">
+						</div>
 						<!-- <img data-src="/tpl/assets/img/exam-smallimg.png" alt=""> -->
 						<!-- <img src="https://via.placeholder.com/510x250.png" alt=""> -->
-						<img src="/tpl/assets/img/team/team-3.jpg" alt="">
 					</div>
 				</div>
 			</div>

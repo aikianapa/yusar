@@ -1,6 +1,7 @@
 <wb-var path_video='/tpl/assets/video' />
+
 <header wb-if="id == 'home'" class="homepage">
-    <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="none">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="container p-0">
             <ol class="carousel-indicators">
@@ -17,7 +18,6 @@
                 <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
 
-            <!--video class="slideGallery__video" src="/assets/video/3.mp4" autoplay="" muted="" playsinline="" loop="" style="width: 1601.78px; height: 901px; margin-top: 0px; margin-left: -198.389px;"></video-->
             <wb-foreach wb-from="prop.data.slider.children">
             <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
             <div class="carousel-item {{_var.active}}">
@@ -29,11 +29,11 @@
                             </h1>
 
                             <div class="col-12 col-lg-6 px-0">
-                                <p class="lead">
+                                <p class="lead lead-text">
                                     {{data.text}}
                                 </p>
 
-                                <p class="lead mt-3r">
+                                <p class="lead lead-button mt-3r">
                                     <a class="btn btn-primary rounded-30 btn-lg" href="Jumbo action link" role="button">Подробнее</a>
                                 </p>
                             </div>
@@ -44,20 +44,7 @@
             </wb-foreach>
         </div>
 
-        <!-- <button class="arrow-prev" data-target="#homeCarousel" data-slide="prev">
-            <svg width="21" height="42" class="ml-10">
-                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
-            </svg>
-        </button>
-
-        <button class="arrow-next" data-target="#homeCarousel" data-slide="next">
-            <svg width="21" height="42" class="ml-10">
-                <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
-            </svg>
-        </button> -->
-
         <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
             <svg width="21" height="42" class="ml-10">
                 <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
             </svg>
@@ -65,7 +52,6 @@
         </a>   
         
         <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
             <svg width="21" height="42" class="ml-10">
                 <image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-next.svg" />
             </svg>
@@ -100,7 +86,7 @@
                                 <h1>{{lang.ru.header}}</h1>
                             </div>
                             <div class="col-12 col-lg-6 px-0">
-                                <p class="lead">В жизни нашей компании регулярно случаются интересные события. 
+                                <p class="lead-text">В жизни нашей компании регулярно случаются интересные события. 
                                 Мы с удовольствием делимся ими с вами в этом разделе. </p>
                             </div>
                         </div>

@@ -1,4 +1,10 @@
 <wb-include wb-tpl="popup.php" />
+<style>
+.btn-link {
+    max-width: 200px;
+    margin-top: 16px;
+}
+</style>
 <div class="container pb-3r widget submit-request-widget">
   <h3 class="mt-0 pb-2r">{{_lang.feedback}}</h3>
   <form method="post">
@@ -18,7 +24,7 @@
       <div class="col-12">
         <a href="#" class="add-file pb-1r">Приложить документ до 10 мб.</a>
       </div>
-      <div class="col-12">
+      <div class="col-2">
         <!-- <button type="button" class="btn btn-link">{{_lang.quotebtn}}</button> -->
         <button type="button" class="btn btn-link w-100" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px;">{{_lang.quotebtn}}</button>
       </div>

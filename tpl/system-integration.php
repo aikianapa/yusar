@@ -5,20 +5,64 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r system-integration">
-  <div class="row system-integration--gallery">
+<style>
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev {
+  top: 42%;
+  left: -45px;
+}
+
+.slick-next {
+  right: -45px;
+}
+
+.system-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.picture {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+</style>
+
+<div class="container pt-3r system-integration" style="overflow-x: visible !important">
+  <!-- <div class="row system-integration--gallery">
     <div class="col-12 col-md-3">
-      <img src="/tpl/assets/img/system-integration/1.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/system-integration/1.png" alt="" />
+      </div>
     </div>
     <div class="col-12 col-md-3">
-      <img src="/tpl/assets/img/system-integration/2.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/system-integration/2.png" alt="" />
+      </div>
     </div>
     <div class="col-12 col-md-3">
-      <img src="/tpl/assets/img/system-integration/3.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/system-integration/3.png" alt="" />
+      </div>
     </div>
     <div class="col-12 col-md-3">
-      <img src="/tpl/assets/img/system-integration/4.png" alt="" />
+      <div class="image__container">
+        <img src="/tpl/assets/img/system-integration/4.png" alt="" />
+      </div>
     </div>
+  </div> -->
+
+  <div class="slick mb-3r system-grid" data-autoplay="2000" data-scroll="1">
+    <wb-foreach wb="from=images">
+      <div class="picture">
+        <div class="image__container">
+          <img class="img-fluid" src="/thumbc/500x320/src{{img}}" alt="">
+        </div>
+      </div>
+      </wb-foreach>
   </div>
 
   <div class="ul system-integration--info">

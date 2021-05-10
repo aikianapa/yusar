@@ -29,12 +29,19 @@
             <div class="collapse navbar-collapse mainmenu" id="mainMenu">
                 <ul class="navbar-nav my-2 my-lg-0 left">
                     <li class="nav-item icon-small">
-                        <a class="nav-link icon-link icon-search">
-                            <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/search.svg" /></svg>
+                        <a class="nav-link icon-link icon-search" href="#">
+                            <!-- <svg width="21" height="21"> -->
+                            <img width="26" height="26" src="/tpl/assets/img/header-icons/search-icon.png" />
+                            <!-- </svg> -->
+                            <div class="dropdown-menu dropdown-menu-right" style="top: 62px;">
+                                <span class="dropdown-item">Поиск</span>
+                            </div>
                         </a>
 
                         <a class="nav-link icon-link" href="/account">
-                            <svg width="21" height="21"><image width="21" height="21" xlink:href="/tpl/assets/img/user.svg" /></svg>
+                            <!-- <svg width="21" height="21"> -->
+                                <img width="22" height="23" src="/tpl/assets/img/header-icons/auth-icon.png" />
+                            <!-- </svg> -->
                         </a>
                     </li>
                     <!-- <li class="nav-item icon-small">
@@ -46,7 +53,10 @@
 
                 <ul class="navbar-nav my-2 my-lg-0 right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{strtoupper({{_sess.lang}})}}</a>
+                        <a class="nav-link dropdown-toggle lang-icon" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <!-- {{strtoupper({{_sess.lang}})}} -->
+                            <img width="21" height="21" src="/tpl/assets/img/header-icons/lang-icon.png" />
+                        </a>
 
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-{{id}}">
                             <a class="dropdown-item" href="/module/lang/ru">RU</a>

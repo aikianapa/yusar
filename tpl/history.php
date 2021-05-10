@@ -1,4 +1,23 @@
 <html lang="ru">
+<style>
+.slick-slide {
+    transition: .2s ease-in-out;
+}
+
+.slick-slide:hover {
+    font-size: 20px !important;
+}
+
+.slick-current {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+}
+
+.slick-current:before {
+    font-weight: 700 !important;
+}
+</style>
+
 <wb-include wb-tpl="head.inc.php" />
 
 <body class="loading">
@@ -10,9 +29,7 @@
             <div class="col-lg-6">
                 <h1 class="mt-3r">2018</h1>
                 <h3 class="tx-28 mt-2r">Активное развитие</h3>
-                <p class="tx-16">
-                    {{text}}
-                </p>
+                <p class="tx-16">{{text}}</p>
             </div>
             <div class="col-lg-6">
                 <div class="row">

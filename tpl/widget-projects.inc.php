@@ -1,13 +1,21 @@
+<style>
+    @media (max-width: 767px) {
+        .realize-projects {
+            max-width: 50%;
+        }
+    }
+</style>
+
 <div class="pt-3r pb-3r">
     <wb-data wb="table=pages&item=widget-projects">
         <div class="container widget widget-projects">
             <div class="border-bottom pb-1r mb-2r position-relative">
-                <h3>Реализованные проекты</h3>
+                <h3 class="realize-projects">Реализованные проекты</h3>
 
-                <a class="float-right link-arrow" href="/news">
+                <a class="float-right link-arrow link-projects" href="/news">
                     Все проекты
                     <svg width="24" height="24" class="ml-10">
-                        <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+                        <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
                     </svg>
                 </a>
             </div>
@@ -23,7 +31,7 @@
                             <div class="card-body">
                                 <h4 class="card-title">Март 2017</h4>
                                 <p class="card-text">
-                                    {{_ndx}}) ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...
+                                    ГБУ "Российский онкологический научный центр имени Н.Н. Блохина"...
                                 </p>
                             </div>
                         </div>

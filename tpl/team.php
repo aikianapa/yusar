@@ -17,7 +17,7 @@
                 <div class="col-sm-6">
                     <div class="bg-gray p-2r d-flex align-items-center tx-20">
                         <img src="/tpl/assets/img/team-2.svg" class="mr-2r">
-                        Каждая спортивная победа - результат философии лидерства.
+                        Каждая спортивная победа - результат философии лидерства.</div>
                     </div>
                 </div>
             </div>

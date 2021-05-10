@@ -3,6 +3,10 @@
         height: 150px;
     }
 
+    .media-body {
+        margin-left: 14px;
+    }
+
     .med-arrow {
         bottom: -20px !important;
         right: 60px !important;
@@ -24,9 +28,9 @@
 
                             <a class="link-arrow med-arrow" href="/thermal-imagers">
                                 Подробнее
-                                <!-- <svg width="24" height="24" class="ml-10"> -->
-                                    <img width="24" height="24" src="/tpl/assets/img/right-arrow.svg" />
-                                <!-- </svg> -->
+                                <svg width="24" height="24" class="ml-10">
+                                    <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
+                                </svg>
                             </a>
                         </div>
                     </div>

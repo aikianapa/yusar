@@ -13,9 +13,9 @@
   </div>
 
   <div class="filters">
-    <div>
+    <div class="filter--sorting-all">
       <div class=filters--sorting>
-        <div class="filters--title">Сортировать:</div>
+        <div class="filters--title">Сортировать |</div>
         <div class="filters--sort filters--sort--active">
           По популярности
         </div>
@@ -25,7 +25,7 @@
       </div>
       <div class="filters--categories">
         <div class="filters--category">
-          <div class="filters--title">Категории:</div>
+          <div class="filters--title">Категории |</div>
           <div class="selector">
             <select>
               <option value="">Образование</option>
@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="filters--year">
-          <div class="filters--title">Год:</div>
+          <div class="filters--title">Год |</div>
           <div class="selector">
           <select>
             <option value="">2020</option>
@@ -61,8 +61,6 @@
 </div>
 
 <wb-var listtype="{{_cook.listtype}}" wb-if="'{{_cook.listtype}}' > ''" else="list" />
-
-<div class="projects--list">
     <!-- <div class="row"">
       <div class="col-12 col-sm-6 col-md-4 col-xl-3">
         <img src="https://via.placeholder.com/510x328.png" alt="">
@@ -132,18 +130,18 @@
         <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
       </div>
     </div> -->
-
+  <div class="projects--list">
     <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'">
       <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
       <!-- <wb-foreach wb="from=images" wb-filer="{'active': 'on'}"> -->
         <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
           <div class="card-project">
             <a class="d-flex" href="/news/id603273b10a95/">
-            <div class="image__container">
+              <div class="image__container">
               <!-- <img class="card-img-top" src="https://via.placeholder.com/510x328.png" alt=""> -->
-              <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
+                <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
                 <!-- <img class="card-img-top p-1" width="254" height="164" data-src="/thumbc/254x164/src/tpl/assets/img/widget-holder.jpg" alt=""> -->
-            </div>
+              </div>
             </a>
 
             <div class="card-body" style="padding-left: 0;">
@@ -160,12 +158,14 @@
         <div class="col-12 col-lg-6 mb-3r">
         <div class="media">
             <a class="d-flex" href="/news/id603273b10a95/" style="margin-right: 30px;">
+              <div class="image__container">
               <!-- <img class="card-img-top" src="https://via.placeholder.com/240x118.png" alt=""> -->
-              <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
+                <img src="/thumbc/510x328/src{{img}}" class="card-img-top">
+              </div>
             </a>
 
             <div class="media-body">
-                <h4>6 декабря</h4>
+                <h4 class="card-title" style="margin-top: 0 !important;">6 декабря</h4>
                 <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
             </div>
           </div>

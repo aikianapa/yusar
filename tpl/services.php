@@ -10,7 +10,9 @@
 
   <div class="row services--info">
     <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/services/1.png" alt="">
+      <div class="image__container">
+        <img src="/tpl/assets/img/services/1.png" alt="">
+      </div>
 
       <div>Сервис программного обеспечения</div>
       <div>Сервис программного обеспечения</div>
@@ -18,12 +20,14 @@
       <a href="/service-software" class="link-more-detailed">
         Подробнее
         <svg width="24" height="24">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+          <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
         </svg>
       </a>
     </div>
     <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/services/2.png" alt="">
+      <div class="image__container">
+        <img src="/tpl/assets/img/services/2.png" alt="">
+      </div>
 
       <div>Сервис оборудования</div>
       <div>Сервис оборудования</div>
@@ -31,7 +35,7 @@
       <a href="/service-equipment" class="link-more-detailed">
         Подробнее
         <svg width="24" height="24">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
+          <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
         </svg>
       </a>
     </div>

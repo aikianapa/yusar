@@ -29,10 +29,10 @@
                     </wb-foreach>
                     <div class="col-12">
                         <a class="link-arrow" href="/news">
-                            Все новости
-                            <svg width="24" height="24" class="ml-10">
-                                <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" />
-                            </svg>
+                            Все новости >
+                            <!-- <svg width="24" height="24" class="ml-10"> -->
+                                <!-- <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow.svg" /> -->
+                            <!-- </svg> -->
                         </a>
                     </div>
                 </div>
