@@ -12,31 +12,6 @@
     padding-left: 10px;
     padding-right: 10px;
   }
-
-  .slick-arrow {
-    width: 40px;
-    height: 40px;
-    top: 42%;
-  }
-
-  .slick-prev {
-    left: -45px;
-  }
-
-  .slick-next {
-    top: 52%;
-    right: -45px;
-  }
-
-  .integration {
-    margin-left: -40px !important; 
-    margin-right: -40px !important;
-  }
-
-  .integration a {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
   </style>
 
   <body class="loading">
@@ -124,10 +99,10 @@
 
   <div class="slick integration" data-slick-options='{"infinite":true,"lazyLoad":"ondemand",
     "responsive":[{"breakpoint":1800,"settings":{"slidesToShow":6,"slidesToScroll":1}},
-    {"breakpoint":1200,"settings":{"slidesToShow":5,"slidesToScroll":1}},{"breakpoint":992,"settings":
+    {"breakpoint":1200,"settings":{"slidesToShow":4,"slidesToScroll":1}},{"breakpoint":992,"settings":
     "slidesToShow":4,"slidesToScroll":1}},{"breakpoint":768,"settings":{"slidesToShow":3,"slidesToScroll":1}},
     {"breakpoint":640,"settings":{"slidesToShow":2,"slidesToScroll":1}},{"breakpoint":480,"settings":
-    {"slidesToShow":1,"slidesToScroll":1}}],"slidesToShow":7,"slidesToScroll":1}'>
+    {"slidesToShow":1,"slidesToScroll":1}}],"slidesToShow":4,"slidesToScroll":1}'>
     <wb-foreach wb="count=10">
       <a data-fslightbox="medicine" href="/tpl/assets/img/certificate.jpg">
         <img src="/tpl/assets/img/certificate.jpg" alt="">

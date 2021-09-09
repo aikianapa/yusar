@@ -6,20 +6,6 @@
 <wb-include wb-tpl="header.inc.php" />
 
 <style>
-.slick-arrow {
-  width: 40px;
-  height: 40px;
-}
-
-.slick-prev {
-  top: 42%;
-  left: -45px;
-}
-
-.slick-next {
-  right: -45px;
-}
-
 .system-grid {
   margin-left: -15px;
   margin-right: -15px;

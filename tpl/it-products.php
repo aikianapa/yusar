@@ -5,7 +5,7 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r it-products">
+<!-- <div class="container pt-3r it-products">
   <h3 class="mt-0">{{_lang.title1}}</h3>
 
   <div class="slick" data-slick-options='{"infinite":
@@ -26,37 +26,6 @@
               </div>
             </wb-foreach>
             </div>
-    <!-- <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-    <div>
-      <img src="https://via.placeholder.com/255x164.png" alt="">
-    </div>
-  </div> -->
 
   <h3>{{_lang.title2}}</h3>
 
@@ -172,9 +141,12 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<wb-include wb-tpl="submit-request.inc.php" />
+<!-- <wb-include wb-tpl="submit-request.inc.php" /> -->
+<div class="container" style="min-height: 500px; display: flex; font-size: 24px; margin-top: 30px;">
+Страница не найдена, перейдите в другие разделы
+</div>
 
 <wb-include wb-tpl="footer.inc.php" />
 </body>

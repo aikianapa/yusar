@@ -5,8 +5,8 @@
 .mad {
   display: block;
   width: 100%; 
-  height: auto; 
-  object-fit: contain;
+  height: 400px;
+  object-fit: cover;
 }
 
 .img2 {
@@ -24,7 +24,8 @@
       <div class="image__container">
         <a href="/equipment" class="" style="display: block">
           <!-- <div class="image__container"> -->
-            <img src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad">
+            <!-- <img src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad"> -->
+            <img data-src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad">
             <div>Медицинское оборудование</div>
           <!-- </div> -->
         </a>
@@ -34,16 +35,18 @@
   <div class="row hardware-and-integration--row2">
     <div class="col-12 col-md-6">
       <div class="image__container">
-        <a href="/complex" class="" style="display: block">
-          <img src="tpl/assets/img/inger-2.jpg" alt="" class="img2">
+        <a href="/complex" class="" style="display: block; max-height: 400px">
+          <!-- <img src="tpl/assets/img/inger-2.jpg" alt="" class="img2"> -->
+          <img class="card-img-top" data-src="/tpl/assets/img/inger-2.jpg" alt="">
           <div>Комплексные инжинерные системы</div>
         </a>
       </div>
     </div>
     <div class="col-12 col-md-6">
       <div class="image__container">
-        <a href="/system" class="" style="display: block">
-          <img src="/tpl/assets/img/integr-2.jpg" alt="" class="img2">
+        <a href="/system" class="" style="display: block; max-height: 400px;">
+          <!-- <img src="/tpl/assets/img/integr-2.jpg" alt="" class="img2"> -->
+          <img class="card-img-top" data-src="/tpl/assets/img/integr-2.jpg" alt="">
           <div>Системная интеграция</div>
         </a>
       </div>

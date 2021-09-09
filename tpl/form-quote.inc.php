@@ -6,7 +6,7 @@
 }
 </style>
 
-<div class="container widget widget-quote">
+<div class="container widget widget-quote" style="margin-top: 56px;">
     <h3 class="mt-0 pb-2r">{{_lang.getquote}}</h3>
     <form method="post">
         <div class="row">
@@ -30,9 +30,9 @@
                 <a href="#" class="add-file pb-1r">Приложить документ до 10 мб.</a>
             </div>
 
-            <div class="col-2">
+            <div class="col-12">
               <!-- <button type="button" class="btn btn-link w-100">{{_lang.quotebtn}}</button> -->
-              <button type="button" class="btn btn-link w-100" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px;">{{_lang.quotebtn}}</button>
+              <button type="button" class="btn btn-link" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px;">{{_lang.quotebtn}}</button>
             </div>
         </div>
     </form>
@@ -47,7 +47,7 @@ email = Your Email
 comment = Comment
 [ru]
 getquote = Оставьте свою заявку здесь
-quotebtn = Оставить заявку
+quotebtn = Отправить заявку
 fullname = Ф.И.О.
 phone = Ваш Телефон
 email = Ваш Email

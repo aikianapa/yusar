@@ -16,6 +16,12 @@
 .slick-current:before {
     font-weight: 700 !important;
 }
+
+.slick-vertical, .slick-slide {
+    border: none !important;
+}
+
+
 </style>
 
 <wb-include wb-tpl="head.inc.php" />
@@ -32,8 +38,8 @@
                 <p class="tx-16">{{text}}</p>
             </div>
             <div class="col-lg-6">
-                <div class="row">
-                    <div class="col-3 col-sm-2 pt-3r dates" style="height:100%;">
+                <div class="row" style="height:100%;">
+                    <div class="col-3 col-sm-2 pt-3r dates">
                         <wb-var start='1996' />
                         <wb-var year='{{ date("Y") - 1}}' />
                         <wb-var navs='{{ {{_var.year}} - {{_var.start}} }}' />
@@ -43,17 +49,17 @@
                             </wb-foreach>
                         </div>
                     </div>
-                    <div class="col-9 col-sm-10">
-                        <div class="slick slick-for dates-slider" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=false&arrows=false&adaptiveHeight&true">
+                    <div class="col-9 col-sm-10" style="padding-left: 0 !important;">
+                        <div class="slick slick-for dates-slider" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=true&arrows=false&adaptiveHeight&true">
                             <!-- обязательно через src !!! -->
-                            <wb-foreach wb-count="{{_var.start}};{{_var.year}}">
+                            <wb-foreach wb-count="{{_var.start}}; {{_var.year}};">
                                 <div>
                                     <div>
-                                      <img class="img-fluid" width="640" height="480" src="/thumbc/640x480/src/{{_parent.images.{{_idx}}.img}}" alt="{{_value}}">
+                                        <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{_parent.images.{{_idx}}.img}}" alt="{{_value}}">
                                     </div>
 
                                     <div data-year="{{_value + 1}}">
-                                      <img class="img-fluid" width="640" height="480" src="/thumbc/640x480/src/{{_parent.images.{{_ndx}}.img}}" alt="{{_value + 1}}">
+                                      <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{_parent.images.{{_ndx}}.img}}" alt="{{_value + 1}}">
                                     </div>
                                 </div>
                             </wb-foreach>

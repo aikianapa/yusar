@@ -7,6 +7,11 @@
       margin-top: 14px;
     }
   }
+
+  iframe {
+    min-width: 780px;
+    min-height: 420px;
+  }
 </style>
 
 <body class="loading">
@@ -17,12 +22,18 @@
   <h3 class="mt-0">{{_lang.title}}</h3>
 
   <div class="row software-service--content">
-    <div class="col-12 col-md-6">
-      <div class="image__container">
-        <img src="/tpl/assets/img/video-image.png" alt="">
+    <div class="col-lg-6 col-md-12">
+      <!-- <div class="image__container" style="overflow: hidden;"> -->
+      <div style="border-radius: 10px; height: 420px; overflow: hidden;">
+        <!-- <img src="/tpl/assets/img/video-image.png" alt=""> -->
+
+        <iframe src="https://www.youtube.com/embed/XlT9aoylb74?modestbranding=1;iv_load_policy=3;rel=0;autohide=1;" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+
       </div>
     </div>
-    <div class="col-12 col-md-6 service-text">
+    <div class="col-lg-6 col-md-12 service-text">
       ЮСАР+ осуществляет поставку медицинского оборудования "под ключ", 
       включая новейшие мобильные диагностические комплексы ПЭТ/КТ. 
       Обеспечивает полный комплекс работ: от проектирования (стадия П и РД) 

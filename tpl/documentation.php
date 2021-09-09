@@ -15,52 +15,77 @@
   <div class="documentation--files">
 
     <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Презентация компании</span>
-      <span>PDF</span>
-      <span>130 кб.</span>
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Презентация компании</span>
+
+        <div>
+          <span>PDF</span>
+          <span>130 кб.</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="#">
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Проектная документация</span>
+
+        <div>
+          <span>PDF</span>
+          <span>2307 кб.</span>
+        </div>
+      </div>
     </a>
     <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Проектная документация</span>
-      <span>PDF</span>
-      <span>2307 кб.</span>
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Свидетельства, допкуски, сертификации</span>
+        
+        <div>
+          <span>PDF</span>
+          <span>14122 кб.</span>
+        </div>
+      </div>
     </a>
     <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Свидетельства, допкуски, сертификации</span>
-      <span>PDF</span>
-      <span>14122 кб.</span>
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Перечень рекомендуемых мероприятий по улучшению условий труда</span>
+
+        <div>
+          <span>PDF</span>
+          <span>1227 кб.</span>
+        </div>
+      </div>
     </a>
     <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Перечень рекомендуемых мероприятий по улучшению условий труда</span>
-      <span>PDF</span>
-      <span>1227 кб.</span>
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Сводную ведомость результатов проведения специальной оценки условий труда</span>
+        
+        <div>
+          <span>PDF</span>
+          <span>14307 кб.</span>
+        </div>
+      </div>
     </a>
     <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Сводную ведомость результатов проведения специальной оценки условий труда</span>
-      <span>PDF</span>
-      <span>14307 кб.</span>
-    </a>
-    <a href="#">
-      <!-- <svg width="36" height="36" class="ml-10"> -->
-        <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
-      <!-- </svg> -->
-      <span>Пазрешения на ввод объектов в эксплутацию</span>
-      <span>PDF</span>
-      <span>44407 кб.</span>
+      <img width="36" height="36" src="/tpl/assets/img/pdf.svg" />
+
+      <div>
+        <span>Пазрешения на ввод объектов в эксплутацию</span>
+        
+        <div>
+          <span>PDF</span>
+          <span>44407 кб.</span>
+        </div>
+      </div>
     </a>
   </div>
 </div>

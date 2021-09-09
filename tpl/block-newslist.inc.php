@@ -1,61 +1,119 @@
-<style>
-    .category {
-        padding-left: 7rem;
-    }
-
-    .year {
-        padding-left: 5rem;
-    }
-
-    @media (max-width: 767px) {
-        .category {
-            padding-left: 1rem;
-        }
-
-        .year {
-            padding-left: 1rem;
-        }
-    }
-</style>
 <div class="pt-3r pb-3r">
 <wb-data wb="table=pages&item=widget-news">
     <div class="container widget news-grid news-page">
-
         <div class="row pb-3r">
-            <div class="col-12 col-md-6 col-lg-4 nobr">
-                <b>Сортировать |</b>
-                <button class="sort-but">По новизне</button>
-                <button class="sort-but" style="margin-left: 2px;">По популярности</button>
-                <!-- <select class="sort-select">
-                    <option>По новизне</option>
-                    <option>По популярности</option>
-                </select> -->
+            <!-- <div class="col-12 col-md-6 col-lg-2 nobr sorting">
+                <span>Сортировать</span>
+
+                <div class="custom-select-wrapper">
+                    <div class="select-block">
+                        По популярности
+                    </div>
+
+                    <div class="select-block-options">
+                        <span class="custom-option" data-value="">По новизне</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 nobr text-left text-md-right text-lg-left category">
-                <b>Категории |</b>
-                <select>
-                    <option>Медицина</option>
-                    <option>Образование</option>
-                </select><img data-src="/tpl/assets/img/arrow-select.svg">
+
+            <div class="col-12 col-md-6 col-lg-2 nobr category">
+                <span>Категории</span>
+
+                <div class="custom-select-wrapper">
+                    <div class="select-block">
+                        Образование
+                    </div>
+
+                    <div class="select-block-options">
+                        <span class="custom-option" data-value="">Технологии</span>
+                        <span class="custom-option" data-value="">Открытия</span>
+                        <span class="custom-option" data-value="">Наука</span>
+                    </div>
+                </div>
             </div>
+
             <div class="col-12 col-md-6 col-lg-2 nobr year">
-                <b>Год |</b>
-                <select>
-                    <option>2021</option>
-                    <option>2020</option>
-                </select><img data-src="/tpl/assets/img/arrow-select.svg">
+                <span>Год</span>
+
+                <div class="custom-select-wrapper">
+                    <div class="select-block">
+                        2020
+                    </div>
+
+                    <div class="select-block-options">
+                        <span class="custom-option" data-value="">2021</span>
+                        <span class="custom-option" data-value="">2022</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-2 nobr text-right">
+
+            <div class="col-12 col-md-6 col-lg-2 d-flex" style="justify-content: flex-end;">
                 <a href="javascript:yusar.listmode('grid');">
-                    <svg width="24" height="24" class="ml-10">
-                        <image width="24" height="24" xlink:href="/tpl/assets/img/icon-list.svg" />
-                    </svg>
+                    <div class="icon-list ml-10"></div>
                 </a>
                 <a href="javascript:yusar.listmode('list');">
-                    <svg width="24" height="24" class="ml-10">
-                        <image width="24" height="24" xlink:href="/tpl/assets/img/icon-grid.svg" />
-                    </svg>
+                    <div class="icon-grid ml-10"></div>
                 </a>
+            </div> -->
+
+            <div class="col-lg-12">
+                <div style="width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap;" class="sorting-block">
+                    <div class="item-inner sorting">
+                        <span>Сортировать</span>
+
+                        <div class="custom-select-wrapper">
+                            <div class="select-block">
+                                По популярности
+                            </div>
+
+                            <div class="select-block-options">
+                                <span class="custom-option" data-value="">По новизне</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-inner category">
+                        <span>Категории</span>
+                        <div class="custom-select-wrapper">
+                            <div class="select-block">
+                                Образование
+                            </div>
+
+                            <div class="select-block-options">
+                                <span class="custom-option" data-value="">Технологии</span>
+                                <span class="custom-option" data-value="">Открытия</span>
+                                <span class="custom-option" data-value="">Наука</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-inner year">
+                        <span>Год</span>
+
+                        <div class="custom-select-wrapper">
+                            <div class="select-block">
+                                2020
+                            </div>
+
+                            <div class="select-block-options">
+                                <span class="custom-option" data-value="">2017</span>
+                                <span class="custom-option" data-value="">2018</span>
+                                <span class="custom-option" data-value="">2019</span>
+                                <span class="custom-option" data-value="">2020</span>
+                                <span class="custom-option" data-value="">2021</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item-inner" style="margin-left: auto;">
+                        <a href="javascript:yusar.listmode('grid');">
+                            <div class="icon-list ml-10"></div>
+                        </a>
+                        <a href="javascript:yusar.listmode('list');">
+                            <div class="icon-grid ml-10"></div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -72,7 +130,7 @@
                                     <img class="card-img-top" width="500" height="320" data-src="/thumbc/500x320/src{{img}}" alt="" >
                                 </div>
 
-                                <div class="card-body">
+                                <div class="card-body mt-1r">
                                     <h4 class="card-title">6 декабря</h4>
                                     <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
                                 </div>
@@ -89,11 +147,12 @@
                                 <div class="image__container">
                                     <img class="card-img-top" width="255" height="118" data-src="/thumbc/255x118/src{{img}}" alt="">
                                 </div>
+
+                                <div class="media-body" style="margin-left: 15px;">
+                                    <h4 class="card-title" style="margin-top: 0 !important;">6 декабря</h4>
+                                    <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
+                                </div>
                             </a>
-                            <div class="media-body" style="margin-left: 15px;">
-                                <h4 class="card-title" style="margin-top: 0 !important;">6 декабря</h4>
-                                <p class="card-text">ЮСАР+ на международной конференции «Рак груди: наука на стороне женщины»</p>
-                            </div>
                         </div>
                     </div>
                 </wb-foreach>
@@ -102,3 +161,5 @@
     </div>
 </wb-data>
 </div>
+
+<script src="/tpl/assets/js/yusar.js"></script>

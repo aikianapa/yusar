@@ -5,6 +5,25 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
+<style>
+  .jumbotron {
+    margin-top: 9rem !important;
+  }
+
+  @media (max-width: 767px) {
+    .jumbotron {
+      margin-top: 64px !important;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .jumbotron h1 {
+      font-size: 28px !important;
+      line-height: 40px !important;
+    }
+  }
+</style>
+
 <div class="container pt-3r pb-3r project">
 
   <div class="row align-items-start">
@@ -14,7 +33,10 @@
       <p>В 2000 году компания ЮСАР+ оборудовала и совместно с администрацией онкологического центра организовала учебный
         компьютерный класс.</p>
 
-      <img src="/tpl/assets/img/project/1.png" alt="">
+      
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/1.png" alt="">
+      </div>
 
       <h3>
         Внедрение новой версии программного обеспечения в регистратуру
@@ -27,7 +49,9 @@
         лечения НИИ клинической онкологии.
       </p>
 
-      <img src="/tpl/assets/img/project/2.png" alt="">
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/2.png" alt="">
+      </div>
 
       <h3>Автоматизация отделения лучевой диагностики</h3>
       <p>
@@ -37,7 +61,10 @@
         взаимодействует с различными типами диагностического оборудования с возможностью последующего сохранения в
         центральном цифровом архиве онкологического центра.
       </p>
-      <img src="/tpl/assets/img/project/3.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/3.png" alt="">
+      </div>
 
       <h3>Цифровые операционные</h3>
 
@@ -46,13 +73,20 @@
         видео и звуковой информации, поступающей из операционных по компьютерной сети на рабочие места врачей и в
         конференц-зал.
       </p>
-      <img src="/tpl/assets/img/project/4.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/4.png" alt="">
+      </div>
+
       <h3>Инфраструктурное решение</h3>
       <p>
         В 2004 году компания ЮСАР+ выполнила проектные, монтажные и пуско-наладочные работы локально вычислительной,
         телефонной и электрической сетей, рассчитанных на 1700 пользователей в комплексе зданий онкологического центра.
       </p>
-      <img src="/tpl/assets/img/project/5.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/5.png" alt="">
+      </div>
 
       <h3>Автоматизация Аптеки</h3>
 
@@ -74,7 +108,10 @@
         как внутреннего документооборота, так и для выгрузки необходимых данных во внешние финансово-экономические
         программы.
       </p>
-      <img src="/tpl/assets/img/project/6.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/6.png" alt="">
+      </div>
 
       <h3>Внедрение модуля «Клинико-экспертная комиссия»</h3>
       <p>
@@ -84,7 +121,12 @@
         диагноза пациенту, правильность проведенного лечения, оценка состояния пациента на момент выписки, дальнейшие
         рекомендации.
       </p>
-      <img src="/tpl/assets/img/project/7.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/7.png" alt="">
+      </div>
+
+
       <h3>Комплекс информационных систем (КИС) обеспечивающих жизнедеятельность и безопасность персонала и пациентов в
         корпусах «А», «Б», «В» </h3>
       <p>
@@ -98,7 +140,12 @@
         компьютерной сети (WF), настройка серверов и активного оборудования первой очереди госпитального здания, ГУ РОНЦ
         с 7 по 23 этажи.
       </p>
-      <img src="/tpl/assets/img/project/8.png" alt="">
+
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/8.png" alt="">
+      </div>
+
+
       <h3>3D-модели для онко-нейрохирургов</h3>
       <p>
         В своей работе специалисты нейрохирурги активно используют функционал системы ЮСАР+ в части обработки и создания
@@ -112,7 +159,9 @@
         исследуют полученное изображение.
       </p>
 
-      <img src="/tpl/assets/img/project/9.png" alt="">
+      <div class="image__container">
+        <img src="/tpl/assets/img/project/9.png" alt="">
+      </div>
 
       <h3>Автоматизация эндоскопического отделения</h3>
 
@@ -129,22 +178,22 @@
 
       <div class="slick">
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+          <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+        <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+        <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+        <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+        <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
         <div>
-          <img src="https://via.placeholder.com/160x200.png" alt="">
+        <img src="/tpl/assets/img/certificate.jpg" alt="">
         </div>
       </div>
     </div>
@@ -155,35 +204,45 @@
         </div>
 
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>Перинатальный центр г. Брянск</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-1.jpeg" alt="">
+            <div>Перинатальный центр г. Брянск</div>
+          </a>
         </div>
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>Краевая клиническая больница № 1 им. С.В. Очаповского (г. Краснодар, Россия)</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-2.jpeg" alt="">
+            <div>Краевая клиническая больница № 1 им. С.В. Очаповского (г. Краснодар, Россия)</div>
+          </a>
         </div>
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>Новый уровень диагностики в Мурманской области</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-2.jpeg" alt="">
+            <div>Новый уровень диагностики в Мурманской области</div>
+          </a>
         </div>
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>Реализация программы снижения смертности от рака молочной железы</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-4.jpeg" alt="">
+            <div>Реализация программы снижения смертности от рака молочной железы</div>
+          </a>
         </div>
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>Республиканский онкологический диспансер им. Тимошкаевой Э.С.</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-5.jpeg" alt="">
+            <div>Республиканский онкологический диспансер им. Тимошкаевой Э.С.</div>
+          </a>
         </div>
         <div class="project--sidebar--item">
-          <img src="https://via.placeholder.com/60x60.png" alt="">
-          <div>ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина" Министерства здравоохранения Российской Федерации</div>
+          <a href="/project" class="d-flex">
+            <img src="/thumbc/60x60/src/tpl/assets/img/project/project-6.jpeg" alt="">
+            <div>ФГБУ "Российский онкологический научный центр имени Н.Н. Блохина" Министерства здравоохранения Российской Федерации</div>
+          </a>
         </div>
 
-        <a href="#" class="link-more-detailed bold">
-          Все новости
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/right-arrow-blue.svg" />
-          </svg>
+        <a href="/projects" class="link-more-detailed bold">
+          Все проекты
+          <div class="arrow-mask"></div>
         </a>
 
       </div>

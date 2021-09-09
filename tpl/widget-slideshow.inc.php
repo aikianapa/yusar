@@ -38,7 +38,7 @@
 	}
 
 	.image__container img {
-		transition: .3s ease-in-out;
+		transition: transform 1.2s cubic-bezier(.215,.61,.355,1);
 	}
 
 	.image__container img:hover {
@@ -58,10 +58,10 @@
     				<image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
     			</svg>
 			</button> -->
-<div class="slider slider-for slide-pics container" data-options="arrows=false">
+<div class="slider slider-for slide-pics pb-2r" data-options="arrows=false" style="max-width: 1620px; margin: 0 auto;">
 	<wb-foreach wb="count=10">
-		<div class="slider-block">
-			<div class="row">
+		<div class="slider-block" style="margin-top: 0;">
+			<div class="row " style="margin: 0 auto;">
 				<div class="col-lg-8 col-lg-7">
 					<div class="image__container">
 						<img src="/tpl/assets/img/team/team-1.jpg" alt="" class="big-img">
@@ -92,7 +92,7 @@
 	</wb-foreach>
 </div>
 
-<div class="slider slider-nav pb-3r" data-options="arrows=false">
+<div class="slider slider-nav" data-options="arrows=false">
     <wb-foreach wb="from=images">
 		<div style="background-image:url(/thumbc/8x10/src{{img}});background-size:cover;">
 			<!-- <img data-lazy="/thumbc/128x96/src{{img}}" class="img-fluid" width="128" height="96">  -->

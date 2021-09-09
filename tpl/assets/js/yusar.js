@@ -69,22 +69,53 @@ yusar.scrollup = function () {
 }
 
 $(function() {
-    $("a[href^='/#map_presence']").click(function() {
-        // let id = $(this).attr('href'),
-        let top = $('#map_presence').offset().top;
-        $('body, html').animate({ scrollTop: top }, 1200);
-    });
-});
+    function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
 
-document.addEventListener("ready", function() {
-    let target = window.location.hash; 
-    if (target) {
-        document.querySelector(target).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        });
+        if (begin == -1) {
+            begin = dc.indexOf(prefix);
+            if (begin != 0) return null;
+        }
+
+        else {
+            begin += 2;
+            var end = document.cookie.indexOf(";", begin);
+            if (end == -1) {
+            end = dc.length;
+            }
+        }
+
+        return decodeURI(dc.substring(begin + prefix.length, end));
+    } 
+    
+    function doSomething() {
+        var myCookie = getCookie("listtype");
+    
+        if (myCookie == "grid") {
+            $(".icon-list").addClass("sorting-active");
+            $(".icon-grid").removeClass("sorting-active");
+        }
+
+        if (myCookie == "list") {
+            $(".icon-list").removeClass("sorting-active");
+            $(".icon-grid").addClass("sorting-active");
+        }
     }
-})
+
+    doSomething();
+
+    $(".icon-list").click(() => {
+        $(".icon-list").addClass("sorting-active");
+        $(".icon-grid").removeClass("sorting-active");
+    })
+
+    $(".icon-grid").click(() => {
+        $(".icon-list").removeClass("sorting-active");
+        $(".icon-grid").addClass("sorting-active");
+    })
+});
 
 yusar.slick = function () {
     if ($('.carousel').length) {
@@ -222,6 +253,7 @@ $(document).ready(function () {
         wbapp.lazyload();
     }, 100);
 })
+
 wbapp.on('preloaded-js', function () {
     //$('[data-youtube]').youtube_background();
     $('source[data-src]').each(function(){
@@ -233,7 +265,7 @@ wbapp.on('preloaded-js', function () {
     });
     $('body.loading .preloader').css('opacity', 0);
     setTimeout(function () {
-        window.addEventListener('selectstart', function (e) { e.preventDefault(); });
+        // window.addEventListener('selectstart', function (e) { e.preventDefault(); });
         window.dispatchEvent(new Event('resize'));
         yusar.slick();
         yusar.anchor();

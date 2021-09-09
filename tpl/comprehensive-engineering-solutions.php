@@ -7,199 +7,291 @@
 
 <div class="container pt-3r comprehensive-engineering-solutions">
   <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/1.png" alt="">
-      <div>
-        Структурируемая кабельная система
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/1.png" alt="">
+
+        <div class="inger-block">
+          <h4>Структурируемая кабельная система</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/2.png" alt="">
-      <div>
-        Локальная вычислительная сеть
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/3.png" alt="">
-      <div>
-        Система телефонной связи
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/4.png" alt="">
-      <div>
-        Система широковещательного телевидения и проводного радиовещания
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
+
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/2.png" alt="">
+
+        <div class="inger-block">
+          <h4>Локальная вычислительная сеть</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
         </a>
       </div>
     </div>
   </div>
   <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/5.png" alt="">
-      <div>
-        Система электрочасофикации
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/3.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система телефонной связи</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
         </a>
       </div>
     </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/6.png" alt="">
-      <div>
-        Система палатной связи и сигнализации
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/7.png" alt="">
-      <div>
-        Система охранного телевизионного наблюдения
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/8.png" alt="">
-      <div>
-        Система контроля доступа
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/4.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система широковещательного телевидения и проводного радиовещания</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
   <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/9.png" alt="">
-      <div>
-        Система охранного видеонаблюдения
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/5.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система электрочасофикации</h4>
+
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/10.png" alt="">
-      <div>
-        Система диспетчеризации инженерных систем
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/11.png" alt="">
-      <div>
-        Система пожарной сигнализации
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/12.png" alt="">
-      <div>
-        Система охранной сигнализация
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/6.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система палатной связи и сигнализации</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a> 
     </div>
   </div>
   <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/13.png" alt="">
-      <div>
-        Системы оповещения и управления эвакуацией людей при пожаре
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/7.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система охранного телевизионного наблюдения</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+            
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/14.png" alt="">
-      <div>
-        Система связи в конференц-зале
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/8.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система контроля доступа</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
   <div class="row comprehensive-engineering-solutions--items">
-    <div class="col-12 col-md-6">
-      <img src="/tpl/assets/img/comprehensive-engineering-solutions/15.png" alt="">
-      <div>
-        Автоматическая противопожарная защита
-        <a href="/local-area-network" class="link-more-detailed">
-          Подробнее
-          <svg width="24" height="24">
-            <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-          </svg>
-        </a>
-      </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/9.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система охранного видеонаблюдения</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+          
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/10.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система диспетчеризации инженерных систем</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row comprehensive-engineering-solutions--items">
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/11.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система пожарной сигнализации</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/12.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система охранной сигнализация</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row comprehensive-engineering-solutions--items">
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/13.png" alt="">
+
+        <div class="inger-block">
+          <h4>Системы оповещения и управления эвакуацией людей при пожаре</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/14.png" alt="">
+
+        <div class="inger-block">
+          <h4>Система связи в конференц-зале</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row comprehensive-engineering-solutions--items">
+    <!-- <div class="col-12 col-md-6"> -->
+    <div class="col-md-12 col-lg-6">
+      <a href="/local-area-network">
+        <img src="/tpl/assets/img/comprehensive-engineering-solutions/15.png" alt="">
+
+        <div class="inger-block">
+          <h4>Автоматическая противопожарная защита</h4>
+
+          <!-- <p class="tx-16">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p> -->
+          <span class="tx-16" style="font-weight: 400;">Тепловизорная система с функцией определения лиц</span>
+
+          <div class="inger-block-button">
+            <span class="link-more-detailed">Подробнее</span>
+            <div class="arrow-mask"></div>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </div>

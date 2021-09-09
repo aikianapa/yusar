@@ -6,40 +6,28 @@
 <wb-include wb-tpl="header.inc.php" />
 
 <style>
-  .slick-arrow {
-    width: 40px;
-    height: 40px;
-  }
-
-.slick-prev {
-  top: 42%;
-  left: -45px;
+.service-grid {
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
-.slick-next {
-  right: -45px;
-}
-
-/* .slick-track {
-  width: 1500px !important;
-} */
-
-/* .slick-slide {
-  width: 405px !important;
+.picture {
   height: auto;
-} */
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
-  .service-grid {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
+.image__container {
+  overflow: hidden;
+}
 
-  .picture {
-    width: 810px !important;
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.image__container img {
+  transition: transform 1.2s cubic-bezier(.215,.61,.355,1);
+}
+
+.image__container img:hover {
+  transform: scale(1.1);
+}
 </style>
 
 <div class="container pt-3r service-equipment" style="overflow-x: visible !important">

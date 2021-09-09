@@ -10,33 +10,34 @@
 
   <div class="row services--info">
     <div class="col-12 col-md-6">
-      <div class="image__container">
-        <img src="/tpl/assets/img/services/1.png" alt="">
-      </div>
+      <a href="/service-software">
+        <div class="image__container">
+          <img src="/tpl/assets/img/services/1.png" alt="">
+        </div>
 
-      <div>Сервис программного обеспечения</div>
-      <div>Сервис программного обеспечения</div>
+        <div class="services--title">Сервис программного обеспечения</div>
+        <div class="services--subtitle">Сервис программного обеспечения</div>
 
-      <a href="/service-software" class="link-more-detailed">
-        Подробнее
-        <svg width="24" height="24">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-        </svg>
+        <div class="services--button">
+          <span>Подробнее</span>
+          <div class="arrow-mask"></div>
+        </div>
       </a>
     </div>
+
     <div class="col-12 col-md-6">
-      <div class="image__container">
-        <img src="/tpl/assets/img/services/2.png" alt="">
-      </div>
+      <a href="/service-equipment">
+        <div class="image__container">
+          <img src="/tpl/assets/img/services/2.png" alt="">
+        </div>
 
-      <div>Сервис оборудования</div>
-      <div>Сервис оборудования</div>
+        <div class="services--title">Сервис оборудования</div>
+        <div class="services--subtitle">Сервис оборудования</div>
 
-      <a href="/service-equipment" class="link-more-detailed">
-        Подробнее
-        <svg width="24" height="24">
-          <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-        </svg>
+        <div class="services--button">
+          <span>Подробнее</span>
+          <div class="arrow-mask"></div>
+        </div>
       </a>
     </div>
   </div>

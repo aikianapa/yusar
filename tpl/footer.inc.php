@@ -114,18 +114,23 @@
         </div>
 
         <div class="second-block pb-1r">
-            <div class="address-block">
-                Адрес: <span>{{_sett.address}}</span>
-            </div>
+            <span class="address-block">
+                Адрес: <span style="margin-left: 3px;">{{_sett.address}}</span>
+            </span>
             <div class="info-block">
                 <div class="mr-25">
                     <ul class="d-flex list-inline m-0 nobr"
                         wb-tree="item=menu&branch=social&parent=false&children=false">
-                        <li>
+                        <li style="margin-right: 8px;">
                             <a href="{{data.link}}" target="_blank">
-                                <svg width="24" height="24">
+                                <!-- <svg width="24" height="24">
                                     <image width="24" height="24" xlink:href="/tpl/assets/img/social-{{id}}.svg" />
-                                </svg>
+                                </svg> -->
+
+                                <div style="
+                                -webkit-mask: url('/tpl/assets/img/social-{{id}}.svg') center center; 
+                                -webkit-mask-repeat: no-repeat;
+                                -webkit-mask-size: cover;" class="mask-div"></div>
                             </a>
                         </li>
                     </ul>
@@ -139,7 +144,7 @@
                     </a>
                 </div>
                 <div class="nobr">
-                    <a href="mailto:{{_sett.email}}" class="svg-link">
+                    <a href="tel:{{_sett.phone}}" class="svg-link">
                         <svg width="24" height="24">
                             <image width="24" height="24" xlink:href="/tpl/assets/img/social-phone.svg" />
                         </svg>
@@ -151,7 +156,7 @@
 
         <div class="third-block row pt-1r">
             <div class="pb-1r col-xl-3 col-md-6 order-xl-1 order-3 order-md-2 text-md-right text-xl-left">
-                <a href="/">Copyright 1996-{{date("Y")}}, ЮСАР+</a>
+                <a>Copyright 1996-{{date("Y")}}, ЮСАР+</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-2 order-1">
                 <a href="/policy">Политика конфиденциальности</a>

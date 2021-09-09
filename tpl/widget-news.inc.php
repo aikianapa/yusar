@@ -3,9 +3,8 @@
         <div class="border-bottom pb-1r mb-2r position-relative">
             <a class="position-absolute float-right link-arrow link-news" href="/news">
                 Все новости
-                <svg width="24" height="24" class="ml-10">
-                    <image width="24" height="24" xlink:href="/tpl/assets/img/arrow-blue.svg" />
-                </svg>
+                <!-- <img width="24" height="24" src="/tpl/assets/img/black-arrow.svg" class="ml-10"> -->
+                <div class="arrow-mask ml-10"></div>
             </a>
             <h3>Новости компании</h3>
         </div>

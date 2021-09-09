@@ -8,7 +8,7 @@
       <a href="http://yusar.yonger.ru/service-software">
         <div class="card">
           <div class="image__container">
-            <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/notebook-pic.webp" alt="">
+            <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/notebook-pic.jpg" alt="">
           </div>
           <div class="card-body">
             <p class="card-text" style="margin-top: 15px;">Сервис программного обеспечения</p>
@@ -21,7 +21,7 @@
       <a href="http://yusar.yonger.ru/service-equipment">
         <div class="card">
           <div class="image__container">
-            <img class="card-img-top" data-src="tpl/assets/img/data-centre.webp" alt="">
+            <img class="card-img-top" data-src="tpl/assets/img/data-centre.jpg" alt="">
           </div>
           <div class="card-body">
             <p class="card-text" style="margin-top: 15px;">Сервис оборудования</p>

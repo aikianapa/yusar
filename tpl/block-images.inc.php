@@ -1,28 +1,4 @@
 <style>
-.slick-arrow {
-    width: 40px;
-    height: 40px;
-}
-
-.slick-prev {
-    top: 42%;
-    left: -45px;
-}
-
-.slick-next {
-    right: -45px;
-}
-
-.company-grid {
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-.picture {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 .image__container {
     overflow: hidden;
 }
@@ -46,17 +22,6 @@
         </wb-foreach>
     </div>
 </div>
-
-<script wb-app>
-// $(document).one('ready-all',function(e){
-//     $(".slick").slick({
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//         autoplay: true,
-//         autoplaySpeed: 2000,
-//     })
-// })
-</script>
             <!-- <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
                 <div class="image__container">
                     <img class="img-fluid" data-src="/thumbc/500x320/src/tpl/assets/img/about/about-1.jpg" alt="">

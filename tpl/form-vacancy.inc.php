@@ -45,7 +45,7 @@ email = Your Email
 comment = Comment
 [ru]
 getquote = Оставьте свою заявку здесь
-quotebtn = Оставить заявку
+quotebtn = Отправить заявку
 fullname = Ф.И.О.
 vacancy = Вакансия на должность
 phone - Ваш Телефон
