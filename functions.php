@@ -1,6 +1,8 @@
 <?php
 !isset($_COOKIE['listtype']) ? $_COOKIE['listtype'] = 'grid' : null;
 
+include_once(__DIR__ . '/modules/yonger/common/scripts/functions.php');
+
 function getVideoList() {
     $app = &$_ENV['app'];
     $path = $app->vars('_env.path_app').'/tpl/assets/video/';

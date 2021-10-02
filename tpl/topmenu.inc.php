@@ -1,3 +1,4 @@
+<div id="topMenu">
 <div class="bg-topmenu position-absolute w-100" style=z-index:1;>
     <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark px-0 top">
@@ -231,7 +232,9 @@ style="-webkit-backdrop-filter: blur(10px);">
   </div>
 </div>
 
-<script wb-app>
+<script wb-app remove>
+    $('#topMenu').prependTo('header');
+
   	$(".navbar-toggler").off('touchstart click');
     $(".navbar-toggler").on('touchstart click', function (e) {
         $('.bg-topmenu').css("opacity", "0");
@@ -266,3 +269,4 @@ style="-webkit-backdrop-filter: blur(10px);">
         signin = Signin
         menu = Menu
 </wb-lang>
+</div>

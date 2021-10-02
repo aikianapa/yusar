@@ -20,8 +20,6 @@
 .slick-vertical, .slick-slide {
     border: none !important;
 }
-
-
 </style>
 
 <wb-include wb-tpl="head.inc.php" />
