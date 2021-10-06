@@ -1,7 +1,7 @@
 <?php
 !isset($_COOKIE['listtype']) ? $_COOKIE['listtype'] = 'grid' : null;
 
-@include_once(__DIR__ . '/engine/modules/yonger/common/scripts/functions.php');
+//@include_once(__DIR__ . '/engine/modules/yonger/common/scripts/functions.php');
 
 function getVideoList() {
     $app = &$_ENV['app'];
