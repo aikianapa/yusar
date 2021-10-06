@@ -1,20 +1,14 @@
-<html lang="ru">
-<wb-include wb-tpl="head.inc.php" />
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
 
-<body class="loading">
-    <wb-var bkg="header-4.jpg" />
-    <wb-include wb-tpl="header.inc.php" />
+<body>
+    <wb-module wb="module=yonger&mode=render&view=header" />
 
-   <div class="container pt-3r pb-3r">
-        <div class="row">
-            <div class="col-12">
-                <div class="pb-2r">{{lang.{{_sess.lang}}.text}}</div>
-            </div>
-        </div>
-    </div>
+    <wb-module wb="module=yonger&mode=render" />
 
+    <wb-module wb="module=yonger&mode=render&view=footer" />
 
-    <wb-include wb-tpl="footer.inc.php" />
 </body>
-
 </html>
