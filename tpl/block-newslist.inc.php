@@ -121,7 +121,7 @@
 
         <div>
             <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'">
-                <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
+                <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100" wb-filter="{'active':'on'}">
                     <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
                         <a class="d-flex" href="/news/id603273b10a95/">
                             <div class="card">
@@ -140,7 +140,7 @@
                 </wb-foreach>
             </div>
             <div class="row list" wb-if=" '{{_var.listtype}}' == 'list'">
-                <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100&from=images" wb-filter="{'active':'on'}">
+                <wb-foreach wb="table=news&size=4&sort=date:d&render=server&offset=-100" wb-filter="{'active':'on'}">
                     <div class="col-12 col-lg-6 mb-3r">
                         <div class="media">
                             <a class="d-flex" href="/news/id603273b10a95/">
