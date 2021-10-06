@@ -8,7 +8,7 @@
             <a href="/equipment">
                 <div class="card">
                     <div class="image__container">
-                        <img class="card-img-top" data-src="tpl/assets/img/med-equipment.jpg" alt="">
+                        <img class="card-img-top" data-src="/thumbc/548x680/src/tpl/assets/img/med-equipment.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <p class="card-text" style="margin-top: 15px;">Медицинское оборудование</p>
@@ -21,7 +21,7 @@
             <a href="/system">
                 <div class="card">
                     <div class="image__container">
-                        <img class="card-img-top" data-src="/tpl/assets/img/integr-2.jpg" alt="">
+                        <img class="card-img-top" data-src="/thumbc/548x680/src/tpl/assets/img/integr-2.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <p class="card-text" style="margin-top: 15px;">Системная интеграция</p>
@@ -34,7 +34,7 @@
             <a href="/complex">
                 <div class="card">
                     <div class="image__container">
-                        <img class="card-img-top" data-src="tpl/assets/img/inger-2.jpg" alt="">
+                        <img class="card-img-top" data-src="/thumbc/548x680/src/tpl/assets/img/inger-2.jpg" alt="">
                     </div>
                     <div class="card-body">
                         <p class="card-text" style="margin-top: 15px;">Комплексные инжинерные системы</p>
