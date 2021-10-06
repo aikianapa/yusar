@@ -1,87 +1,438 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
-<body class="loading">
-<wb-var bkg="header-4.jpg" />
-<wb-include wb-tpl="header.inc.php" />
-
-<div class="container pt-3r pb-3r services">
-  <h3 class="mt-0">Самые популярные</h3>
-
-  <div class="row services--info">
-    <div class="col-12 col-md-6">
-      <a href="/service-software">
-        <div class="image__container">
-          <img src="/tpl/assets/img/services/1.png" alt="">
-        </div>
-
-        <div class="services--title">Сервис программного обеспечения</div>
-        <div class="services--subtitle">Сервис программного обеспечения</div>
-
-        <div class="services--button">
-          <span>Подробнее</span>
-          <div class="arrow-mask"></div>
-        </div>
+<body class="loading body-services" style="background:black;color:white;">
+  <wb-var bkg="header-4.jpg" />
+  <wb-include wb-tpl="header.inc.php" />
+    <div class="card cable container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+      <img class="background" src="tpl/assets/img/cable.png" alt="background">
+      <div class="wrapper">
+        <h3 class="card-title">
+          Структурируемая кабельная система
+        </h3>
+        <p class="card-text">
+          Заполнить ее данными организации, приобретавшей продукт. Обязательно указать электронный адрес, для получения
+          обратной
+          связи!
+        </p>
+      </div>
+      <a href="#">
+        <span class="link-text">Подробнее</span>
+        <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
     </div>
 
-    <div class="col-12 col-md-6">
-      <a href="/service-equipment">
-        <div class="image__container">
-          <img src="/tpl/assets/img/services/2.png" alt="">
+    <section class="lan container">
+
+      <div class="double-card hours">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/lan.png" alt="background">
+          <div class="wrapper">
+            <h3 class="card-title">
+              Локальная вычислительная сеть
+            </h3>
+            <p class="card-text">Тепловизорная система с функцией определения лиц</p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
         </div>
 
-        <div class="services--title">Сервис оборудования</div>
-        <div class="services--subtitle">Сервис оборудования</div>
-
-        <div class="services--button">
-          <span>Подробнее</span>
-          <div class="arrow-mask"></div>
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система электрочасофикации
+            </h3>
+            <p class="card-text card-text_first">Заполнить ее данными организации, приобретавшей продукт. Обязательно
+              указать
+              электронный
+              адрес, для получения обратной
+              связи!</p>
+            <h2 class="card-title_big">
+              ЛВС должна:
+            </h2>
+            <br>
+            <p class="card-text"> — &nbsp; Отвечать современным стандартам безопасности;
+            </p>
+            <br>
+            <p class="card-text"> — &nbsp; Позволять получать доступ к необходимой информации;
+            </p>
+            <br>
+            <p class="card-text"> — &nbsp; Обеспечивать защиту от несанкционированного доступа к данным;
+            </p>
+            <br>
+            <p class="card-text"> — &nbsp; Обеспечивать стабильное информационное взаимодействие между&nbsp;абонентами.
+            </p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
         </div>
-      </a>
-    </div>
-  </div>
+      </div>
 
-  <h3>Продукты и компетенции</h3>
+      <div class="double-card phone">
 
-  <div class="ul">
-    <div class="li">
-      Проектирование инженерной инфраструктуры, поставка, монтаж и пуско-наладка медицинского оборудования, включая мобильные комплексы ПЭТ/КТ
-    </div>
-    <div class="li">
-      Поставка и инсталляция медицинского оборудования
-    </div>
-    <div class="li">
-      Сервисное обслуживание медицинского оборудования
-    </div>
-    <div class="li">
-      Разработка и внедрение систем комплексной автоматизации деятельности медицинских организаций и органов управления здравоохранением
-    </div>
-    <div class="li">
-      Создание и реализация концепций комплексной автоматизации здравоохранения на уровне региона (области)
-    </div>
-    <div class="li">
-      Разработка и внедрение инновационных технологий для решения задач телемедицины
-    </div>
-    <div class="li">
-      Проектирование инженерной инфраструктуры, поставка, монтаж и пуско-наладка  инженерно-технических сетей
-    </div>
-    <div class="li">
-      Поставка и инсталляция общего и прикладного программного обеспечения, компьютерного и периферийного оборудования
-    </div>
-    <div class="li">
-      Создание и внедрение корпоративных систем управления предприятием, включая автоматизацию бухгалтерского и налогового учета, зарплаты и кадров, оперативного учета
-    </div>
-    <div class="li">
-      Информационное и техническое обслуживание
-    </div>
-    <div class="li">
-      Сервис  и сопровождение систем
-    </div>
-  </div>
-</div>
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/phone.png" alt="background">
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система телефонной связи
+            </h3>
+            <p class="card-text">Заполнить ее данными организации, приобретавшей продукт.</p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
 
-<wb-include wb-tpl="footer.inc.php" />
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система широковещательного телевидения и&nbsp;проводного радиовещания
+            </h3>
+            <h2 class="card-title_big">
+              ЛВС обеспечивает следующие преимущества:
+            </h2>
+
+            <div class="components">
+
+              <div class="components__item">
+                <img src="tpl/assets/img/description-1.svg" alt="">
+                <div class="components__wrapper">
+                  <span class="components__title">Общесистемные механизмы</span>
+                  <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение взаимно. Катахреза
+                    обретает системный феномен толпы.</span>
+                </div>
+              </div>
+              <div class="hr"></div>
+
+              <div class="components__item">
+                <img src="tpl/assets/img/description-2.svg" alt="">
+                <div class="components__wrapper">
+                  <span class="components__title">Интеграционная платформа</span>
+                  <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение взаимно. Катахреза
+                    обретает системный феномен толпы.</span>
+                </div>
+              </div>
+              <div class="hr"></div>
+
+            </div>
+
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+
+        <div class="card card-3" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система палатной связи и сигнализации
+            </h3>
+            <p class="card-text">Онлайн реализация</p>
+            <div class="icon-wrapper">
+              <img class="icon" src="tpl/assets/img/ward.svg" alt="icon">
+              <img class="icon" src="tpl/assets/img/headphones.svg" alt="icon">
+              <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
+            </div>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+
+    <div class="television container double-card">
+      <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+        <img class="background" src="tpl/assets/img/television.png" alt="background">
+        <div class="wrapper">
+          <h3 class="card-title">
+            Система охранного телевизионного наблюдения
+          </h3>
+          <p class="card-text">Заполнить ее данными организации, приобретавшей продукт. Обязательно указать электронный
+            адрес, для получения обратной
+            связи!</p>
+        </div>
+        <a href="#">
+          <span class="link-text">Подробнее</span>
+          <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+        </a>
+      </div>
+
+      <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+        <img class="background" src="tpl/assets/img/control.png" alt="background">
+        <div class="wrapper">
+          <h3 class="card-title">
+            Ситема контроля доступа
+          </h3>
+          <p class="card-text">Заполнить ее данными организации, приобретавшей продукт. Обязательно указать электронный
+            адрес, для получения обратной
+            связи!</p>
+        </div>
+        <a href="#">
+          <span class="link-text">Подробнее</span>
+          <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+        </a>
+      </div>
+    </div>
+
+    <section class="camera container">
+
+      <div class="double-card fire-alarm">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/camera.png" alt="background">
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система охранного видеонаблюдения
+            </h3>
+            <p class="card-text">Онлайн реализация</p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/fire-alarm.png" alt="background">
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система пожарной сигнализации
+            </h3>
+            <p class="card-text">Заполнить ее данными организации, приобретавшей продукт. Обязательно указать
+              электронный
+              адрес, для получения обратной
+              связи!</p>
+
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+      </div>
+
+      <div class="double-card dispatcher">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/dispatcher.png" alt="background">
+          <div class="wrapper">
+            <h3 class="card-title">
+              Система диспетчеризации инженерных систем
+            </h3>
+            <p class="card-text">Заполнить ее данными организации, приобретавшей продукт. Обязательно указать
+              электронный
+              адрес, для получения обратной
+              связи!</p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <div class="wrapper">
+            <h3 class="card-title">
+              Ситема охранной сигналицазии
+            </h3>
+            <p class="card-text">Онлайн реализация</p>
+            <div class="icon-wrapper">
+              <img class="icon" src="tpl/assets/img/three.svg" alt="icon">
+              <img class="icon" src="tpl/assets/img/headphones.svg" alt="icon">
+              <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
+            </div>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="evacuation container">
+
+      <div class="double-card">
+        <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <div class="card-wrapper">
+            <h3 class="card-title">
+              Система оповещения и управления эвакуацией людей при пожаре
+            </h3>
+            <p class="card-text">
+              Заполнить ее данными организации, приобретавшей продукт.
+            </p>
+          </div>
+          <div class="columns">
+            <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+              <span class="number-1" data-max="87">0</span>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
+              <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="400"></div>
+            </div>
+            <div class="column-2" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+              <span class="number-2" data-max="58">0</span>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
+            </div>
+            <div class="column-3" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+              <span class="number-3" data-max="50">0</span>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+            </div>
+            <div class="column-4" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+              <span class="number-4" data-max="52">0</span>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+              <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <img class="background" src="tpl/assets/img/conference.png" alt="background">
+          <div class="card-wrapper">
+            <h3 class="card-title">
+              Система связи в конферец-зале
+            </h3>
+            <p class="card-text">
+              Тепловизорная система с функцией определения лиц
+            </p>
+          </div>
+          <a href="#">
+            <span class="link-text">Подробнее</span>
+            <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+          </a>
+        </div>
+
+
+      </div>
+    </section>
+
+    <div class="automation container double-card">
+      <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+        <img class="background" src="tpl/assets/img/automation.png" alt="background">
+        <div class="wrapper">
+          <h3 class="card-title">
+            Автоматическая противопожарная защита
+          </h3>
+          <p class="card-text">Заполнить ее данными организации, приобретавшей продукт. Обязательно указать электронный
+            адрес, для получения обратной
+            связи!</p>
+        </div>
+        <a href="#">
+          <span class="link-text">Подробнее</span>
+          <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+        </a>
+      </div>
+
+      <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+        <img class="background" src="tpl/assets/img/digital.png" alt="background">
+        <div class="wrapper">
+          <h3 class="card-title">
+            Цифровые операционные комплексы
+          </h3>
+          <p class="card-text">Тепловизорная система с функцией определения лиц</p>
+        </div>
+        <a href="#">
+          <span class="link-text">Подробнее</span>
+          <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer container">
+      <span class="card-text request">Оставить заявку</span>
+
+      <form action="send.php" method="POST" class="footer__form form">
+
+        <div class="footer__top-wrapper">
+          <div class="footer__input-group">
+            <input type="text" class="input footer__input" placeholder="Ф.И.О." name="name" required minlength="2">
+          </div>
+          <div class="footer__input-group">
+            <input type="tel" class="input footer__input phone" placeholder="Ваш телефон" name="phone" required
+              minlength="5">
+          </div>
+          <div class="footer__input-group">
+            <input type="tel" class="input footer__input email" placeholder="Ваш E-mail*" name="email" required>
+          </div>
+        </div>
+
+        <div class="footer__bottom-wrapper">
+          <textarea class="message footer__message" placeholder="Комментарий" name="message"></textarea>
+          <div class="add-doc">
+            <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
+            <span class="card-text">Приложить документ до 10 мб</span>
+          </div>
+          <button class="btn footer__button" type="submit">Оформить заявку</button>
+        </div>
+      </form>
+    </div>
+  <wb-include wb-tpl="footer.inc.php" />
 </body>
 
 </html>

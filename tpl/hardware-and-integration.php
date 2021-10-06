@@ -14,47 +14,127 @@
 }
 </style>
 
-<body class="loading">
+<body class="loading body-hardware" style="background:black;color:white;">
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r hardware-and-integration">
-  <div class="row">
-    <div class="col-12">
-      <div class="image__container">
-        <a href="/equipment" class="" style="display: block">
-          <!-- <div class="image__container"> -->
-            <!-- <img src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad"> -->
-            <img data-src="/tpl/assets/img/med-equipment.jpg" alt="" class="mad">
-            <div>Медицинское оборудование</div>
-          <!-- </div> -->
-        </a>
-      </div>
+<div class="mo card container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+    <img class="background" src="tpl/assets/img/mo.png" alt="background">
+    <div class="wrapper">
+      <h3 class="card-title">
+        Медицинское оборудование
+      </h3>
     </div>
+    <a href="#">
+      <span class="link-text">Подробнее</span>
+      <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+    </a>
   </div>
-  <div class="row hardware-and-integration--row2">
-    <div class="col-12 col-md-6">
-      <div class="image__container">
-        <a href="/complex" class="" style="display: block; max-height: 400px">
-          <!-- <img src="tpl/assets/img/inger-2.jpg" alt="" class="img2"> -->
-          <img class="card-img-top" data-src="/tpl/assets/img/inger-2.jpg" alt="">
-          <div>Комплексные инжинерные системы</div>
-        </a>
-      </div>
-    </div>
-    <div class="col-12 col-md-6">
-      <div class="image__container">
-        <a href="/system" class="" style="display: block; max-height: 400px;">
-          <!-- <img src="/tpl/assets/img/integr-2.jpg" alt="" class="img2"> -->
-          <img class="card-img-top" data-src="/tpl/assets/img/integr-2.jpg" alt="">
-          <div>Системная интеграция</div>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
 
-<wb-include wb-tpl="submit-request.inc.php" />
+  <div class="complex container double-card">
+
+    <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+      <img class="background" src="tpl/assets/img/complex.png" alt="background">
+      <div class="wrapper">
+        <h3 class="card-title">
+          Комплексные инжинерные системы
+        </h3>
+        <p class="card-text">Тепловизорная система с функцией определения лиц</p>
+      </div>
+      <a href="#">
+        <span class="link-text">Подробнее</span>
+        <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+      </a>
+    </div>
+
+    <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+      <div class="wrapper">
+        <div class="section-title">68</div>
+        <div class="card-title">Инжинерных систем</div>
+      </div>
+      <div class="wrapper">
+        <div class="section-title">7 млн</div>
+        <div class="card-title">Постоянных пользователей</div>
+      </div>
+      <div class="wrapper">
+        <div class="section-title">340</div>
+        <div class="card-title">Количество установок</div>
+      </div>
+      <div class="wrapper">
+        <div class="section-title">24/7</div>
+        <div class="card-title">Круглосуточная поддержка</div>
+      </div>
+      <div class="wrapper">
+        <div class="section-title">24/7</div>
+        <div class="card-title">Круглосуточная поддержка</div>
+      </div>
+      <div class="wrapper">
+        <div class="section-title">24/7</div>
+        <div class="card-title">Круглосуточная поддержка</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="system-integration container double-card">
+
+    <div class="card card-1 swiper-container integration-swiper" data-aos="fade-up" data-aos-duration="1700"
+      data-aos-offset='200'>
+      <div class="swiper-wrapper">
+        <h2 class="card-title_big swiper-slide">
+          Обследование сетей
+        </h2>
+        <h2 class="card-title_big swiper-slide">
+          Согласование документов
+        </h2>
+        <h2 class="card-title_big swiper-slide">
+          Поставка оборудования
+        </h2>
+      </div>
+    </div>
+
+    <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+      <img class="background" src="tpl/assets/img/system-integration.png" alt="background">
+      <div class="wrapper">
+        <h3 class="card-title">
+          Системная интеграция
+        </h3>
+      </div>
+      <a href="#">
+        <span class="link-text">Подробнее</span>
+        <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+      </a>
+    </div>
+  </div>
+
+  <div class="footer container">
+    <span class="card-text request">Оставить заявку</span>
+
+    <form action="send.php" method="POST" class="footer__form form">
+
+      <div class="footer__top-wrapper">
+        <div class="footer__input-group">
+          <input type="text" class="input footer__input" placeholder="Ф.И.О." name="name" required minlength="2">
+        </div>
+        <div class="footer__input-group">
+          <input type="tel" class="input footer__input phone" placeholder="Ваш телефон" name="phone" required
+            minlength="5">
+        </div>
+        <div class="footer__input-group">
+          <input type="tel" class="input footer__input email" placeholder="Ваш E-mail*" name="email" required>
+        </div>
+      </div>
+
+      <div class="footer__bottom-wrapper">
+        <textarea class="message footer__message" placeholder="Комментарий" name="message"></textarea>
+        <div class="add-doc">
+          <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
+          <span class="card-text">Приложить документ до 10 мб</span>
+        </div>
+        <button class="btn footer__button" type="submit">Оформить заявку</button>
+      </div>
+    </form>
+  </div>
+
 <wb-include wb-tpl="footer.inc.php" />
 
 </body>

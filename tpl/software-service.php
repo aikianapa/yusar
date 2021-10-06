@@ -50,12 +50,12 @@
 <wb-include wb-tpl="submit-request.inc.php" />
 
 <wb-include wb-tpl="footer.inc.php" />
-</body>
-
-</html>
 <wb-lang>
   [en]
   title = Как мы работаем
   [ru]
   title = Как мы работаем
 </wb-lang>
+</body>
+
+</html>

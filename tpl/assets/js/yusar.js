@@ -157,17 +157,13 @@ yusar.slick = function () {
                 slidesToScroll: 4
             };
 
-			if ($(this).attr('data-autoplay') > '0') {
+			if ($(this).attr('data-autoplay') > '') {
 				options.autoplay = true;
 				options.autoplaySpeed = $(this).attr('data-autoplay') * 1;
 			}
 
 			if ($(this).attr('data-scroll') > '') {
 				options.slidesToScroll = $(this).attr('data-scroll') * 1;
-			}
-
-			if ($(this).attr('data-show') > '') {
-				options.slidesToShow = $(this).attr('data-show') * 1;
 			}
 
             try {
