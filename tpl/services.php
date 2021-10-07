@@ -411,7 +411,7 @@
 
         <div class="footer__top-wrapper">
           <div class="footer__input-group">
-            <input type="text" class="input footer__input" placeholder="Ф.И.О." name="name" required minlength="2">
+            <input type="text" class="input footer__input" placeholder="Ф.И.О." name="fullname" required minlength="2">
           </div>
           <div class="footer__input-group">
             <input type="tel" class="input footer__input phone" placeholder="Ваш телефон" name="phone" required

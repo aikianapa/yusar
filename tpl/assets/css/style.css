@@ -229,7 +229,15 @@ body.body-services .container {
     padding: 0;
     max-width: unset !important;
 }
-body.body-services .container.card{
+body.body-about >*,
+body.body-hardware >*,
+body.body-equipment >*,
+body.body-services >* {
+    overflow: hidden;
+}
+body.body-hardware .container.card,
+body.body-services .container.card,
+body.body-equipment .container.ultrasound{
     padding-top: 42px;
     padding-right: 36px;
     padding-bottom: 42px;
@@ -2187,7 +2195,8 @@ main .tsami .card-text {
 
 body.body-about h3,
 body.body-equipment h3,
-body.body-services h3 {
+body.body-services h3,
+body.body-hardware h3 {
     margin-top: 0;
 }
 body.body-services .hours .card-2 p{
@@ -2630,7 +2639,8 @@ body.body-equipment .card .icon {
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    margin-top: 3em;
 }
 
 .thermal-imager .card-text {
@@ -3355,7 +3365,8 @@ body.body-equipment .card .icon {
     background-repeat: no-repeat;
     z-index: 1;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 3em;
 }
 
 .mo .background {
@@ -3698,7 +3709,8 @@ body.body-equipment .card .icon {
     margin-bottom: 30px;
     z-index: 1;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 3em;
 }
 
 .cable .background {

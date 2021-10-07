@@ -35,9 +35,6 @@
 
 <div class="pt-3r pb-3r">
     <div class="container widget widget-products">
-        <div class="border-bottom pb-1r">
-            <h3>IT-Продукты</h3>
-        </div>
         <main class="main main__it-products">
             <div class="mis card">
                 <img class="background" src="tpl/assets/img/mis.png" alt="background">

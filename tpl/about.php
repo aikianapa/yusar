@@ -166,7 +166,7 @@
 
             <div class="footer__top-wrapper">
                 <div class="footer__input-group">
-                    <input type="text" class="input footer__input" placeholder="Ф.И.О." name="name" required
+                    <input type="text" class="input footer__input" placeholder="Ф.И.О." name="fullname" required
                         minlength="2">
                 </div>
                 <div class="footer__input-group">
