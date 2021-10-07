@@ -229,20 +229,27 @@ body.body-services .container {
     padding: 0;
     max-width: unset !important;
 }
-body.body-about >*,
-body.body-hardware >*,
-body.body-equipment >*,
-body.body-services >* {
+
+body.body-about>*,
+body.body-hardware>*,
+body.body-equipment>*,
+body.body-services>* {
     overflow: hidden;
 }
+
+body.body-about .team {
+    margin-top: 3em;
+}
+
 body.body-hardware .container.card,
 body.body-services .container.card,
-body.body-equipment .container.ultrasound{
+body.body-equipment .container.ultrasound {
     padding-top: 42px;
     padding-right: 36px;
     padding-bottom: 42px;
     padding-left: 42px;
-} 
+}
+
 .section-label {
     margin-bottom: 0.75rem;
     display: block;
@@ -961,6 +968,7 @@ main .tsami .card-text {
         /* padding-right: 4vw;
         padding-left: 4vw */
     }
+
     body main.main__it-products .card {
         width: 90vw;
         min-height: -webkit-min-content;
@@ -2199,31 +2207,37 @@ body.body-services h3,
 body.body-hardware h3 {
     margin-top: 0;
 }
-body.body-services .hours .card-2 p{
+
+body.body-services .hours .card-2 p {
     margin-bottom: 0;
 }
 
 body.body-about .card .card-title {
     cursor: text;
 }
+
 body.body-about .card,
 body.body-hardware .card,
 body.body-equipment .card,
-body.body-services .card{
+body.body-services .card {
     border: unset;
 }
-body.body-services .evacuation .card{
+
+body.body-services .evacuation .card {
     background-color: black;
 }
+
 body.body-services .components__item img,
-body.body-services .card img.icon{
+body.body-services .card img.icon {
     transform: scale(1);
 }
+
 body.body-about .card:hover .swiper-wrapper img,
 body.body-equipment .card .circle__img,
 body.body-equipment .card .icon {
-    transform:scale(1);
+    transform: scale(1);
 }
+
 .body-about .team .card-title_big {
     width: unset;
 }
@@ -2572,14 +2586,14 @@ body.body-equipment .card .icon {
     .realization .card {
         padding: 4vw
     }
-    
-    body.body-about .mis-container, 
+
+    body.body-about .mis-container,
     body.body-about .container,
     body.body-hardware .container,
     body.body-equipment .container,
-    body.body-services .container{
+    body.body-services .container {
         margin-right: 4vw;
-        margin-left: 4vw;   
+        margin-left: 4vw;
     }
 }
 

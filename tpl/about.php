@@ -4,9 +4,6 @@
 <body class="loading body-about" style ="background: #000; color:white;">
     <wb-var bkg="header-2.jpg" />
     <wb-include wb-tpl="header.inc.php" />
-    <div class="container mb-2r">
-        <h3>{{prop.data.ru.name}}</h3>
-    </div>
     <section class="team container">
         <div class="double-card">
             <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
