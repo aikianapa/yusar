@@ -17,7 +17,7 @@
             <div class="border-bottom pb-1r mb-2r position-relative">
                 <h3 class="realize-projects">Реализованные проекты</h3>
 
-                <a class="float-right link-arrow link-projects" href="/news">
+                <a class="float-right link-arrow link-projects" href="/projects">
                     Все проекты
                     <!-- <img width="24" height="24" src="/tpl/assets/img/arrow-right-link.png" class="ml-10"> -->
                     <div class="arrow-mask ml-10"></div>
