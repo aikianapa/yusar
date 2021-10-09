@@ -660,7 +660,11 @@ body main.main__it-products .card {
     -ms-flex-pack: justify;
     justify-content: space-between
 }
-
+body main.main__it-products .card .link-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
 body .main__it-products .card-wrapper .card-title {
     margin-bottom: 16px;
     font-size: 1.75rem;
@@ -1086,6 +1090,7 @@ main .tsami .card-text {
         grid-row: 1 / 2
     }
 
+
     body main.main__it-products .paks {
         -ms-grid-column: 1;
         grid-column: 1 / 1;
@@ -1122,11 +1127,13 @@ main .tsami .card-text {
         border-radius: 0;
         border: none;
     }
+
     body.body-equipment .ultrasound.card,
     body.body-hardware .mo.card,
     body.body-services .card.cable {
         padding: 4vw;
     }
+
     body.body-mis .mob-nav-flex {
         display: -webkit-box;
         display: -ms-flexbox;
