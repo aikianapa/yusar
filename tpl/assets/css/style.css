@@ -230,11 +230,70 @@ body.body-services .container {
     max-width: unset !important;
 }
 
+body.body-mis .mis-container {
+    width: auto;
+    margin-right: 7.8vw;
+    margin-left: 7.8vw;
+}
+
+body.body-mis .mob-nav {
+    display: none;
+}
+
+body.body-mis #descriprion .components img,
+body.body-mis .sistem .card-bottom .card-icon,
+body.body-mis .technical .card .card-icon,
+body.body-mis .benefits.mis-container .card .card-icon,
+body.body-mis .products .link-icon {
+    transform: scale(1);
+}
+
+body.body-mis .products a:hover {
+    color: white;
+}
+
+body.body-mis .benefits.mis-container .card {
+    background-color: unset;
+}
+
 body.body-about>*,
 body.body-hardware>*,
 body.body-equipment>*,
-body.body-services>* {
+body.body-services>*,
+body.body-mis>*,
+.main__it-products>* {
     overflow: hidden;
+}
+
+body.body-mis .body-mis__container>div:not(.mis-menu-wrapper),
+body.body-mis .body-mis__container>section:not(.mis-menu-wrapper),
+body.body-mis>div:not(.body-mis__container) {
+    overflow-x: hidden !important;
+}
+
+body.body-mis,
+body.body-mis .body-mis__container {
+    overflow-y: visible !important;
+    overflow-x: visible !important;
+}
+
+body.body-mis .body-mis__container>div,
+body.body-mis .body-mis__container>section {
+    overflow: visible;
+}
+
+body.body-mis .technical,
+body.body-mis .technical>* {
+    overflow: unset;
+}
+
+body.body-mis .qbody h3 {
+    line-height: 1.15;
+}
+
+body.body-mis .btn:hover,
+body.body-mis .qbody .staging .to-fix .stage .scene-1 .btn:hover {
+    color: white;
 }
 
 body.body-about .team {
@@ -948,6 +1007,14 @@ main .tsami::after {
     z-index: -1
 }
 
+.mobile-menu-list {
+    display: none;
+}
+
+.mobile-menu-list.mobile-menu-list-active {
+    display: block;
+}
+
 main .tsami .card-text {
     width: 319px
 }
@@ -1040,6 +1107,66 @@ main .tsami .card-text {
         -ms-grid-row: 6;
         -ms-grid-row-span: 1;
         grid-row: 6 / 7
+    }
+
+    body.body-mis .mob-nav {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 20px;
+        top: 0px;
+        z-index: 10;
+        background: #000;
+        border-radius: 0;
+        border: none;
+    }
+    body.body-equipment .ultrasound.card,
+    body.body-hardware .mo.card,
+    body.body-services .card.cable {
+        padding: 4vw;
+    }
+    body.body-mis .mob-nav-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .btn-video {
+        display: inline;
+    }
+
+    body.body-mis .mob-nav-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    body.body-mis .drop-down-list {
+        cursor: pointer;
+        font-size: 1.15rem;
+    }
+
+    body.body-mis .drop-down-list-arrow {
+        padding-top: 19px;
+        padding-right: 0;
+        padding-bottom: 19px;
+        padding-left: 15px;
+        cursor: pointer;
+    }
+
+    body.body-mis .mis-menu-wrapper {
+        display: none;
     }
 
     body main.main__it-products .pharmacy {
@@ -1223,11 +1350,10 @@ main .tsami .card-text {
 .mis-menu-wrapper {
     padding-top: 16px;
     padding-bottom: 16px;
-    position: -webkit-sticky;
     position: sticky;
     background: #111;
     top: 0;
-    z-index: 2
+    z-index: 2;
 }
 
 .mis-menu__item {
@@ -2204,7 +2330,8 @@ main .tsami .card-text {
 body.body-about h3,
 body.body-equipment h3,
 body.body-services h3,
-body.body-hardware h3 {
+body.body-hardware h3,
+body.body-mis h3 {
     margin-top: 0;
 }
 
@@ -2219,7 +2346,8 @@ body.body-about .card .card-title {
 body.body-about .card,
 body.body-hardware .card,
 body.body-equipment .card,
-body.body-services .card {
+body.body-services .card,
+body.body-mis .card {
     border: unset;
 }
 
@@ -2591,7 +2719,8 @@ body.body-equipment .card .icon {
     body.body-about .container,
     body.body-hardware .container,
     body.body-equipment .container,
-    body.body-services .container {
+    body.body-services .container,
+    body.body-mis .mis-container {
         margin-right: 4vw;
         margin-left: 4vw;
     }
@@ -4430,27 +4559,46 @@ body.body-services .hours .card-2 .card-text_first {
 
 .qbody {
     padding-top: 0px;
-    min-height: 100vh
+    min-height: 600px
+}
+
+.qbody article {
+    position: relative;
+}
+
+.qbody article h2 {
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 0;
+    height: 140px;
+    border-color: white;
+}
+
+.qbody article .content {
+    white-space: pre-line;
+    font-size: 16px;
+    line-height: 2em;
+    margin: 0 1em;
 }
 
 .qbody .staging {
-    height: 4000px;
+    height: 6000px;
     position: relative;
     margin: 0
 }
 
 .qbody .staging .to-fix {
     position: static;
-    top: auto;
-    height: 100vh;
+    top: 0;
+    height: 600px;
     width: 100%
 }
 
 .qbody .staging .to-fix .stage {
     position: relative;
-    height: 100vh;
+    height: 600px;
     width: 100%;
-    overflow: hidden
 }
 
 .qbody .staging .to-fix .stage .statistics {
@@ -4474,6 +4622,8 @@ body.body-services .hours .card-2 .card-text_first {
 }
 
 .qbody .staging .to-fix .stage .statistics .statistics-1 {
+    position: absolute;
+    top: 0;
     height: 25vh;
     padding-right: 25px;
     padding-left: 25px;
@@ -4489,10 +4639,12 @@ body.body-services .hours .card-2 .card-text_first {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: auto;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .qbody .staging .to-fix .stage .statistics .statistics-2 {
+    position: absolute;
+    top: 0;
     height: 25vh;
     padding-right: 25px;
     padding-left: 25px;
@@ -4508,7 +4660,7 @@ body.body-services .hours .card-2 .card-text_first {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: auto;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .qbody .staging .to-fix .stage .statistics__item {
@@ -4638,7 +4790,7 @@ body.body-services .hours .card-2 .card-text_first {
 }
 
 .qbody .staging .to-fix .stage .scene-2 img:nth-child(1) {
-    opacity: 1;
+    /* opacity: 1; */
 }
 
 .qbody .staging .to-fix .stage .scene-3 {

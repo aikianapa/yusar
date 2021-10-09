@@ -123,7 +123,7 @@
             <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'">
                 <wb-foreach wb="table=pages&item=widget-news&from=images&size=4&render=server&offset=-100">
                     <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
-                        <a class="d-flex" href="/news/{{_id}}/">
+                        <a class="d-flex" href="/news-show/">
                             <div class="card">
                                 <div class="image__container">
                                     <!-- <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->
@@ -143,7 +143,7 @@
                 <wb-foreach wb="table=pages&item=widget-news&from=images&size=4&render=server&offset=-100">
                     <div class="col-12 col-lg-6 mb-3r">
                         <div class="media">
-                            <a class="d-flex" href="/news/{{_id}}/">
+                            <a class="d-flex" href="/news-show/">
                                 <div class="image__container">
                                     <img class="card-img-top" width="255" height="118" data-src="/thumbc/255x118/src{{img}}" alt="">
                                 </div>

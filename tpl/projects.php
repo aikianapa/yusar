@@ -200,10 +200,10 @@
         <div><a href="/project">Федеральный центр "Травматологии, ортопедии и эндопротезирования</a></div>
       </div>
     </div> -->
-    <wb-data wb="table=pages&item=widget-projects">
+     <wb-data wb="table=pages&item=widget-projects">
     <div class="projects--list">
       <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'">
-        <wb-foreach wb="from=images&size=4&sort=date:d&render=server&offset=-100" >
+         <wb-foreach wb="from=images&size=4&sort=date:d&render=server&offset=-100" >
         <!-- <wb-foreach wb="from=images" wb-filer="{'active': 'on'}"> -->
           <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
             <div class="card-project">
@@ -225,7 +225,7 @@
       </div>
 
       <div class="row list" wb-if="'{{_var.listtype}}' == 'list'">
-        <wb-foreach wb="from=images&size=4&sort=date:d&render=server&offset=-100">
+         <wb-foreach wb="from=images&size=4&sort=date:d&render=server&offset=-100" >
           <div class="col-12 col-lg-6 mb-3r">
           <div class="media">
               <a class="d-flex" href="/projects/{{_id}}" style="color: #4F4F4F;">
