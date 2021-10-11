@@ -267,7 +267,7 @@ body.body-mis>*,
 
 body.body-mis .mis-container,
 body.body-mis .container{
-    overflow: hidden !important;
+    /* overflow: hidden !important; */
 }
 
 body.body-mis .body-mis__container>div:not(.mis-menu-wrapper),
@@ -304,7 +304,11 @@ body.body-mis .qbody .staging .to-fix .stage .scene-1 .btn:hover {
 body.body-mis ul.mis-menu{
     margin-bottom: 0;
 }
-body.body-mis .purpose.mis-container{
+body.body-mis .purpose.mis-container,
+body.body-mis .description.mis-container,
+body.body-mis .sistem.mis-container,
+body.body-mis .benefits.mis-container
+{
     overflow: hidden;
 }
 body.body-about .team {
