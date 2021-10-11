@@ -222,7 +222,7 @@ var lunitInit = function () {
 
       // второй блок плашек
       plates = $('.staging-1 .statistics-2 .statistics__item').length;
-      top = stop1 + vh;
+      top = stop1 + vh ;
       for (i = 1; i <= plates; i++) {
         let start = Math.ceil(top + (i * ((ht / 2.5 - off) / plates)));
         let stop = stop2 = Math.ceil(start + height * 1.2);
@@ -246,7 +246,7 @@ var lunitInit = function () {
       }
 
       // весь блок плашек наверх
-      let start = Math.ceil(stop1 ) + vh;
+      let start = Math.ceil(stop1 ) + vh / 2.5;
       let stop = start + vh;
       $(".staging-1 .statistics-1").scroolly(
         [
@@ -266,7 +266,7 @@ var lunitInit = function () {
         $(".staging-1")
       );
 
-      start = Math.ceil(stop2 ) + vh;
+      start = Math.ceil(stop2 ) + vh /2;
       stop = start + vh;
       $(".staging-1 .statistics-2").scroolly(
         [

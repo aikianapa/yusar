@@ -217,7 +217,7 @@ var lunitInit = function lunitInit() {
       } // весь блок плашек наверх
 
 
-      var _start = Math.ceil(stop1) + vh;
+      var _start = Math.ceil(stop1) + vh / 2.5;
 
       var _stop = _start + vh;
 
@@ -233,7 +233,7 @@ var lunitInit = function lunitInit() {
           opacity: "0"
         }
       }], $(".staging-1"));
-      _start = Math.ceil(stop2) + vh;
+      _start = Math.ceil(stop2) + vh / 2;
       _stop = _start + vh;
       $(".staging-1 .statistics-2").scroolly([{
         from: "con-top + " + _start + " = top",

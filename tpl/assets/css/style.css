@@ -4703,8 +4703,8 @@ body.body-services .hours .card-2 .card-text_first {
     justify-content: space-between;
     -webkit-transform: translateY(24vh);
     transform: translateY(24vh);
-    -webkit-transition: all 0.5s ease 0.5s;
-    transition: all 0.5s ease 0.5s
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .qbody .staging .to-fix .stage .statistics__value {
@@ -4971,8 +4971,8 @@ body.body-services .hours .card-2 .card-text_first {
         width: 100%;
         display: block;
         top: 100px;
-        -webkit-transition: all 0.2s;
-        transition: all 0.2s;
+        -webkit-transition: all 0.2s ease;
+        transition: all 0.2s ease;
     }
 
     .qbody .staging .to-fix .stage .statistics__value {
