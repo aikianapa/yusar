@@ -48,6 +48,11 @@ var lunitInit = function lunitInit() {
       to: "con-top",
       css: {
         top: "216px"
+      },
+      onScroll: function onScroll($el, $ofs, length) {
+        $('.staging-1 .scene-2 img').css({
+          "opacity": "0.001"
+        });
       }
     }, {
       // alias: "slide1",
@@ -62,39 +67,17 @@ var lunitInit = function lunitInit() {
         transform: "translateY(-" + vh + "px)"
       }
     }], $(".staging-1"));
-    offset = 55;
-    $(window).width() > 767 ? offset = 37 : null;
-    $(window).width() > 1425 ? offset = 50 : null;
-    $(window).height() > 800 ? offset = 25 : null;
-    $(window).height() > 1000 ? offset = 0 : null;
-
-    if ($(window).width() < 768) {
-      vh >= 499 ? offset = 70 : null;
-      vh >= 560 ? offset = 55 : null;
-      vh >= 610 ? offset = 48 : null;
-      vh >= 660 ? offset = 40 : null;
-      vh >= 690 ? offset = 25 : null;
-      vh >= 730 ? offset = 30 : null;
-      vh >= 810 ? offset = 26 : null;
-      vh >= 900 ? offset = 15 : null;
-      vh >= 950 ? offset = 10 : null;
-      vh >= 1000 ? offset = 5 : null;
-      vh >= 1100 ? offset = 3 : null;
-      vh >= 1200 ? offset = 2 : null;
-      vh >= 1300 ? offset = 0 : null;
-    }
-
-    $(".staging-1 .scene-2").attr('style', "top: 37vh; transform: translateY(-0.01vh);");
+    $(".staging-1 .scene-2").attr('style', "transform: translateY(-0.01vh);");
+    ih = $(".scene.scene-2.mis-container img:first-child").height();
+    var ofy = Math.ceil(vh / 2 - 450 - ih / 2);
     $(".staging-1 .scene-2").scroolly([{
       from: "con-top",
       to: "con-top + 500 = top",
       cssFrom: {
-        top: "37vh",
-        transform: "translateY(-0.01vh)"
+        transform: "translateY(-0.01px)"
       },
       cssTo: {
-        top: "37vh",
-        transform: "translateY(-" + offset + "vh)"
+        transform: "translateY(-" + ofy + "px)"
       }
     }], $(".staging-1")); // Картинки //
 
@@ -107,7 +90,6 @@ var lunitInit = function lunitInit() {
     }
 
     var images = $(".staging-1 .scene-2 img").length + 1;
-    $(".staging-1 .scene-2 img:eq(0)").css('opacity', '0.999');
     offset = [];
 
     for (i = 1; i <= images; i++) {
@@ -152,7 +134,7 @@ var lunitInit = function lunitInit() {
     // Плашки //  
 
 
-    var height = $(".staging-1 .statistics-1 .statistics__item:eq(0)").height();
+    var height = $(".staging-1 .statistics-1 .statistics__item:eq(0)").height() * 2;
     var off = height;
     var top = stop;
     var stop1;
@@ -242,17 +224,16 @@ var lunitInit = function lunitInit() {
         }
       }], $(".staging-1"));
     } else {
-      var top = Math.ceil(ht - vh);
-      top = vh;
+      var top = Math.ceil(vh / 2 - height / 2);
       var _offset = [];
       var _plates = $('.statistics.mis-container').find('.statistics__item').length;
 
-      var _os = Math.ceil((ht - top - vh) / _plates);
+      var _os = Math.ceil((ht - vh * 2) / _plates);
 
       _offset[0] = top;
 
       for (i = 1; i <= _plates; i++) {
-        _offset[i] = top + _os * i;
+        _offset[i] = top + (_os * i - 1);
         _offset[i + 1] = _offset[i] + _os;
         $('.statistics.mis-container').height(height);
         $('.statistics.mis-container > div').height(height);
