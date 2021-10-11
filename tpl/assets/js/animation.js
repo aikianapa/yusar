@@ -5,7 +5,7 @@ var lunitInit = function () {
   var ht = 5000;
   var vh = $(window).height();
   var vw = $(window).width();
-  var ih // image height
+  var ih = $(".scene.scene-2.mis-container img:first-child").height();
   var offset;
   $('.qbody .staging ').height(ht);
   if ($(window).width() > 0) {
@@ -35,7 +35,7 @@ var lunitInit = function () {
         },
         {
           alias: "unfixing",
-          from: "con-top + " + ht + " = bottom",
+          from: "con-top + " + Math.ceil(ht * 1.5) + " = bottom",
           to: "doc-bottom",
           css: {
             position: "absolute",
@@ -94,13 +94,9 @@ var lunitInit = function () {
       vh >= 1200 ? offset = 2 : null;
       vh >= 1300 ? offset = 0 : null;
     }
-    /*
-    1000 = -18
-    736 = -30 2.18
-    667 = -40 2.11
-    568 = - 55 2.18
-    500 = -70
-    */
+
+
+    $(".staging-1 .scene-2").attr('style', "top: 37vh; transform: translateY(-0.01vh);");
     $(".staging-1 .scene-2").scroolly(
       [
         {
@@ -126,9 +122,10 @@ var lunitInit = function () {
       var stop = Math.ceil(ht / 2 - start);
     } else {
       var start = 0;
-      var stop = Math.ceil(ht);
+      var stop = Math.ceil(ht) + start;
     }
     var images = $(".staging-1 .scene-2 img").length + 1;
+    $(".staging-1 .scene-2 img:eq(0)").css('opacity','0.999');
     offset = [];
 
 
@@ -148,6 +145,9 @@ var lunitInit = function () {
                 "opacity": "0.001",
                 "z-index": "0"
               },
+              onScroll: function ($el, $ofs, length) {
+                $('.staging-1 .statistics__item').css({ "opacity": "0", "transition":"translateY(24vh)" });
+              }
             }
           ],
             $(".staging-1")
@@ -157,8 +157,8 @@ var lunitInit = function () {
         $(".staging-1 .scene-2 img:eq(" + i + ")").scroolly(
           [
             {
-              from: "con-top + " + (offset[i - 1]) + " = top",
-              to: "con-top + " + (offset[i]) + " = top",
+              from: "con-top + " + (offset[i - 1] + 1) + " = top",
+              to: "con-top + " + (offset[i] + 1) + " = top",
               cssFrom: {
                 "opacity": "0.001",
                 "z-index": 1 + i
@@ -166,19 +166,8 @@ var lunitInit = function () {
               cssTo: {
                 "opacity": "0.999",
                 "z-index": 1 + i
-              },
-            },
-            {
-              from: "con-top + " + (offset[i + 1]) + 1 + " = top",
-              to: "con-top + " + (offset[i + 1] + 2) + " = top",
-              cssFrom: {
-                "opacity": "0.999",
-              },
-              cssTo: {
-                "opacity": "0.001",
               },
             }
-
           ],
           $(".staging-1")
         );
@@ -189,9 +178,8 @@ var lunitInit = function () {
 
     // Плашки //  
     var height = $(".staging-1 .statistics-1 .statistics__item:eq(0)").height();
-    console.log(height);
-    var off = stop;
-    var top = Math.ceil(ht / 2.5);
+    var off = height;
+    var top = stop;
     var stop1;
     var stop2;
     var plates;
@@ -199,7 +187,7 @@ var lunitInit = function () {
       // первый блок плашек
       plates = $('.staging-1 .statistics-1 .statistics__item').length;
       for (i = 1; i <= plates; i++) {
-        let start = Math.ceil(top + (i * ((ht / 2.5 - off) / plates)));
+        let start = Math.ceil(top + (i *  height));
         let stop = stop1 = start + height;
         $(".staging-1 .statistics-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
           [
@@ -214,6 +202,10 @@ var lunitInit = function () {
                 transform: "translateY(1vh)",
                 opacity: "0.7"
               },
+              onScroll: function ($el, $ofs, length) {
+                if ($ofs <= 81) $('.staging-1 .scene-2 img').css({ "opacity": "0.001" });
+              }
+
             }
           ],
           $(".staging-1")
@@ -222,10 +214,10 @@ var lunitInit = function () {
 
       // второй блок плашек
       plates = $('.staging-1 .statistics-2 .statistics__item').length;
-      top = stop1 + vh ;
+      top = stop1 + height ;
       for (i = 1; i <= plates; i++) {
-        let start = Math.ceil(top + (i * ((ht / 2.5 - off) / plates)));
-        let stop = stop2 = Math.ceil(start + height * 1.2);
+        let start = Math.ceil(top + (i * height));
+        let stop = stop2 = start + height;
         $(".staging-1 .statistics-2 .statistics__item:eq(" + (i - 1) + ")").scroolly(
           [
             {
@@ -246,7 +238,7 @@ var lunitInit = function () {
       }
 
       // весь блок плашек наверх
-      let start = Math.ceil(stop1 ) + vh / 2.5;
+      let start = Math.ceil(stop1);
       let stop = start + vh;
       $(".staging-1 .statistics-1").scroolly(
         [
@@ -266,7 +258,7 @@ var lunitInit = function () {
         $(".staging-1")
       );
 
-      start = Math.ceil(stop2 ) + vh /2;
+      start = Math.ceil(stop2 ) ;
       stop = start + vh;
       $(".staging-1 .statistics-2").scroolly(
         [
