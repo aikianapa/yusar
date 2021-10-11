@@ -265,6 +265,11 @@ body.body-mis>*,
     overflow: hidden;
 }
 
+body.body-mis .mis-container,
+body.body-mis .container{
+    overflow: hidden !important;
+}
+
 body.body-mis .body-mis__container>div:not(.mis-menu-wrapper),
 body.body-mis .body-mis__container>section:not(.mis-menu-wrapper),
 body.body-mis>div:not(.body-mis__container) {
@@ -296,6 +301,12 @@ body.body-mis .qbody .staging .to-fix .stage .scene-1 .btn:hover {
     color: white;
 }
 
+body.body-mis ul.mis-menu{
+    margin-bottom: 0;
+}
+body.body-mis .purpose.mis-container{
+    overflow: hidden;
+}
 body.body-about .team {
     margin-top: 3em;
 }
