@@ -2,7 +2,7 @@ var width = $(window).width();
 
 var lunitInit = function () {
   window.scrollTo(0, 0);
-  var ht = 10000;
+  var ht = 5000;
   var vh = $(window).height();
   var vw = $(window).width();
   var ih // image height
@@ -122,7 +122,7 @@ var lunitInit = function () {
 
     // Картинки //
     if ($(window).width() > 767) {
-      var start = 500;
+      var start = 400;
       var stop = Math.ceil(ht / 2 - start);
     } else {
       var start = 0;
@@ -132,7 +132,7 @@ var lunitInit = function () {
     offset = [];
 
 
-    for (i = 0; i <= images; i++) {
+    for (i = 1; i <= images; i++) {
       let os = Math.ceil((stop - start) / images);
       offset[i] = start + os * (i + 1);
       if (i !== 0) {
@@ -188,9 +188,10 @@ var lunitInit = function () {
 
 
     // Плашки //  
-    var height = $(".staging-1 .statistics-1").height();
+    var height = $(".staging-1 .statistics-1 .statistics__item:eq(0)").height();
+    console.log(height);
     var off = stop;
-    var top = ht / 2;
+    var top = Math.ceil(ht / 2.5);
     var stop1;
     var stop2;
     var plates;
@@ -198,7 +199,7 @@ var lunitInit = function () {
       // первый блок плашек
       plates = $('.staging-1 .statistics-1 .statistics__item').length;
       for (i = 1; i <= plates; i++) {
-        let start = Math.ceil(top + (i * ((ht / 2 - off) / plates)));
+        let start = Math.ceil(top + (i * ((ht / 2.5 - off) / plates)));
         let stop = stop1 = start + height;
         $(".staging-1 .statistics-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
           [
@@ -223,7 +224,7 @@ var lunitInit = function () {
       plates = $('.staging-1 .statistics-2 .statistics__item').length;
       top = stop1 + vh;
       for (i = 1; i <= plates; i++) {
-        let start = Math.ceil(top + (i * ((ht / 2 - off) / plates)));
+        let start = Math.ceil(top + (i * ((ht / 2.5 - off) / plates)));
         let stop = stop2 = Math.ceil(start + height * 1.2);
         $(".staging-1 .statistics-2 .statistics__item:eq(" + (i - 1) + ")").scroolly(
           [
@@ -257,7 +258,7 @@ var lunitInit = function () {
               opacity: "0.999"
             },
             cssTo: {
-              top: "-100vh",
+              top: "-24vh",
               opacity: "0"
             },
           }
@@ -277,7 +278,7 @@ var lunitInit = function () {
               opacity: "0.999"
             },
             cssTo: {
-              top: "-100vh",
+              top: "-24vh",
               opacity: "0"
             },
           }
