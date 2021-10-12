@@ -13,7 +13,7 @@
 <link rel="preload" href="/tpl/assets/css/style.css" as="style">
 
 
-
+<link rel="preload" href="/engine/lib/bootstrap/js/bootstrap.min.js" as="script">
 <link rel="preload" href="/tpl/assets/slick/slick.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/swiper-bundle.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/aos.js" as="script">
