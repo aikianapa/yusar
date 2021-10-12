@@ -27,7 +27,7 @@
             <div class="slick pb-1r projects-grid" id="widgetProjectsList">
                 <wb-foreach wb="table=pages&from=images">
                     <a href="http://yusar.yonger.ru/news/id603273b10a95/">
-                        <div class="card">
+                        <div class="card card--second">
                             <div class="image__container">
                             <!-- <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->
                                 <img class="card-img-top" width="254" height="164" src="/thumbc/254x164/src{{img}}" alt="">

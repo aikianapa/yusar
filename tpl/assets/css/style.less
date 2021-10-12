@@ -4084,12 +4084,19 @@ body {
     }
 
     .card {
-        &.card--second:hover {
-
+        &.card--second
+        {
+            .card-title,
+            .card-text {
+                color: #1d1d1d;
+            }
+            &:hover {
             .card-title,
             .card-text {
                 color: #2B8DDD;
             }
+        }
+
         }
     }
 
@@ -4098,6 +4105,13 @@ body {
             a {
                 color: #333333;
             }
+        }
+    }
+    .widget-service,
+    .widget-equipment{
+        .row{
+            margin-left: -57px;
+            width: calc(~'100% + 2 * 53px');
         }
     }
 }
