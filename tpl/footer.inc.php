@@ -4,7 +4,7 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="">О Компании</a>
+                        <a class="nav-link" href="">О компании</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">Наша компания</a>
