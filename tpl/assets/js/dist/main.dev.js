@@ -187,6 +187,7 @@ $(document).ready(function () {
 
   function Counters() {
     var card = document.querySelector(".description .card-1 .columns");
+    if (!card.length) return;
     var top = card.getBoundingClientRect().top;
     var bot = card.getBoundingClientRect().bottom;
     var work = false;

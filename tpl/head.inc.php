@@ -1,4 +1,3 @@
-<wb-include wb-tpl="widget-loader.inc.php" />
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
@@ -14,7 +13,7 @@
 <link rel="preload" href="/tpl/assets/css/style.css" as="style">
 
 
-<link rel="preload" href="/engine/lib/bootstrap/js/bootstrap.min.js" as="script">
+
 <link rel="preload" href="/tpl/assets/slick/slick.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/swiper-bundle.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/aos.js" as="script">
@@ -25,3 +24,12 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
+<style>
+    body {
+        opacity:0;
+        transition: all .5s easy;
+    }
+</style>
+<script wb-app>
+
+</script>

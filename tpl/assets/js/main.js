@@ -201,6 +201,7 @@ $(document).ready(function () {
 
   function Counters() {
     var card = document.querySelector(".description .card-1 .columns");
+    if (!card.length) return;
     let top = card.getBoundingClientRect().top;
     let bot = card.getBoundingClientRect().bottom;
     var work = false;

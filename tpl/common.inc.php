@@ -1,3 +1,4 @@
+<wb-include wb-tpl="widget-loader.inc.php" />
 <wb-include wb-snippet="wbapp" />
 <script type="wbapp">
 	wbapp.loader = false;

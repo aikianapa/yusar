@@ -1,9 +1,9 @@
 <style wb-module="scss">
-body.loading {
+body.preloading {
   height: 100vh !important;
   width: 100vw;
   overflow: hidden !important;
-  background: #123b77;
+  background: #123b77!important;
   margin: 0 !important;
 
   * {
@@ -17,11 +17,13 @@ body.loading {
   }
 
   .preloader {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh !important;
     width: 100vw;
+    top:0;
     transition: .3s;
     visibility: visible;
 
@@ -76,6 +78,11 @@ body.loading {
   }
 }
 </style>
+
+<script>
+      document.body.classList.add("preloading");
+      document.body.style.opacity = "1";
+</script>
 
 <div class="preloader">
   <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
