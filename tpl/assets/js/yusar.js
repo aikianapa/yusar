@@ -211,8 +211,6 @@ yusar.slick = function () {
         })
     }
 
-
-
     if ($('.slider.slider-for').length) {
         $('.slider.slider-for').each(function () {
             this.options = {
@@ -263,7 +261,7 @@ wbapp.on('preloaded-js', function () {
     $('video').each(function(){
         this.load();
     });
-    $('body.loading .preloader').css('opacity', 0);
+
     setTimeout(function () {
         // window.addEventListener('selectstart', function (e) { e.preventDefault(); });
         window.dispatchEvent(new Event('resize'));
@@ -272,7 +270,7 @@ wbapp.on('preloaded-js', function () {
         yusar.linkfix();
     }, 100)
     setTimeout(function () {
-        $('body.loading').removeClass('loading');
+        $('body.preloading').removeClass('preloading');
         $('.preloader').remove();
         yusar.scrollup();
     }, 600)

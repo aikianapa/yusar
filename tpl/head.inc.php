@@ -1,4 +1,3 @@
-<wb-include wb-tpl="widget-loader.inc.php" />
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
@@ -25,3 +24,12 @@
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
+<style>
+    body {
+        opacity:0;
+        transition: all 0.5s ease 0.5s;
+    }
+</style>
+<script wb-app>
+
+</script>

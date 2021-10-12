@@ -24,9 +24,7 @@ $(document).ready(function () {
     }, 800);
   }); // инициализация библиотеки анимации
 
-  AOS.init({
-    mirror: true
-  }); //слайдер Отзывы
+  AOS.init(); //слайдер Отзывы
 
   var reviewsSlider = new Swiper(".reviews__swiper-container", {
     // slidesPerView: 4,
@@ -187,13 +185,13 @@ $(document).ready(function () {
 
   function Counters() {
     var card = document.querySelector(".description .card-1 .columns");
+    if (!card) return;
     var top = card.getBoundingClientRect().top;
     var bot = card.getBoundingClientRect().bottom;
     var work = false;
     window.addEventListener("scroll", function onScroll() {
       top = card.getBoundingClientRect().top;
       bot = card.getBoundingClientRect().bottom;
-      console.log(window.pageYOffset, top, card.getBoundingClientRect());
 
       if (bot < 0) {
         $(card).find('[data-max]').text(0);
@@ -330,7 +328,7 @@ $(document).ready(function () {
           animItemPoint = window.innerHeight - window.innerHeight / animStart;
         }
 
-        if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) {
+        if (window.pageYOffset > animItemOffset - animItemPoint && window.pageYOffset < animItemOffset + animItemHeight) {
           animItem.classList.add("_active");
         } else {
           animItem.classList.remove("_active");
@@ -346,9 +344,9 @@ $(document).ready(function () {
         top: rect.top + scrollTop,
         left: rect.left + scrollLeft
       };
-    }; // animOnScroll();
+    };
 
-
+    animOnScroll();
     window.addEventListener("scroll", animOnScroll);
   }
 });

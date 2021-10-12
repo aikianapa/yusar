@@ -23,7 +23,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: dn }, 800);
   });
   // инициализация библиотеки анимации
-  AOS.init({mirror:true});
+  AOS.init();
 
   //слайдер Отзывы
   const reviewsSlider = new Swiper(".reviews__swiper-container", {
@@ -201,6 +201,7 @@ $(document).ready(function () {
 
   function Counters() {
     var card = document.querySelector(".description .card-1 .columns");
+    if (!card) return;
     let top = card.getBoundingClientRect().top;
     let bot = card.getBoundingClientRect().bottom;
     var work = false;
@@ -208,7 +209,6 @@ $(document).ready(function () {
     window.addEventListener("scroll", function onScroll() {
       top = card.getBoundingClientRect().top;
       bot = card.getBoundingClientRect().bottom;
-      console.log(window.pageYOffset, top, card.getBoundingClientRect());
 
       if (bot < 0) {
         $(card).find('[data-max]').text(0);
@@ -350,8 +350,8 @@ $(document).ready(function () {
         }
 
         if (
-          pageYOffset > animItemOffset - animItemPoint &&
-          pageYOffset < animItemOffset + animItemHeight
+          window.pageYOffset > animItemOffset - animItemPoint &&
+          window.pageYOffset < animItemOffset + animItemHeight
         ) {
           animItem.classList.add("_active");
         } else {
@@ -365,7 +365,7 @@ $(document).ready(function () {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
     }
-    // animOnScroll();
+    animOnScroll();
     window.addEventListener("scroll", animOnScroll);
   }
 });
