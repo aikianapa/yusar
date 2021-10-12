@@ -250,18 +250,19 @@ $(document).ready(function () {
 
   $(document).scroll(function () {
     const top = window.pageYOffset;
+    if (top > 600 && aosref == false) {
+      // fix problems
+      AOS.init();
+      aosref = true;
+    }
+
+
+
     const item1 = $("#purpose").offset().top - 120;
     const item2 = $("#descriprion").offset().top - 120;
     const item3 = $("#benefits").offset().top - 120;
     const item4 = $("#news").offset().top - 120;
     const item5 = $("#reviews").offset().top - 120;
-
-
-    if (top > 600 && aosref == false) {
-      // fix problems
-      AOS.refresh;
-      aosref = true;
-    }
 
     function menuItemHover() {
       $(".mis-menu__item").mouseover(function (e) {

@@ -234,17 +234,18 @@ $(document).ready(function () {
   Counters();
   $(document).scroll(function () {
     var top = window.pageYOffset;
+
+    if (top > 600 && aosref == false) {
+      // fix problems
+      AOS.init();
+      aosref = true;
+    }
+
     var item1 = $("#purpose").offset().top - 120;
     var item2 = $("#descriprion").offset().top - 120;
     var item3 = $("#benefits").offset().top - 120;
     var item4 = $("#news").offset().top - 120;
     var item5 = $("#reviews").offset().top - 120;
-
-    if (top > 600 && aosref == false) {
-      // fix problems
-      AOS.refresh;
-      aosref = true;
-    }
 
     function menuItemHover() {
       $(".mis-menu__item").mouseover(function (e) {
