@@ -105,7 +105,7 @@ var lunitInit = function () {
       var stop = Math.ceil(ht / 2 - start);
     } else {
       var start = 0;
-      var stop = Math.ceil(ht) + start;
+      var stop = Math.ceil(ht) - 450 - vh;
     }
     var images = $(".staging-1 .scene-2 img").length + 1;
 
@@ -261,8 +261,7 @@ var lunitInit = function () {
       );
 
     } else {
-      var top = Math.ceil(ht - vh);
-      top = vh;
+      top = start;
       let offset = [];
       let plates = $('.statistics.mis-container').find('.statistics__item').length;
       let os = Math.ceil((ht - top - vh) / plates);
@@ -270,8 +269,8 @@ var lunitInit = function () {
       for (i = 1; i <= plates; i++) {
         offset[i] = top + (os * i);
         offset[i + 1] = offset[i] + os;
-        $('.statistics.mis-container').height(height);
-        $('.statistics.mis-container > div').height(height);
+        $('.statistics.mis-container').height(height*2);
+        $('.statistics.mis-container > div').height(height*2);
         $('.statistics.mis-container .statistics__item').height(height);
         $(".staging-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
           [
@@ -283,7 +282,7 @@ var lunitInit = function () {
                 "opacity": "0.001"
               },
               cssTo: {
-                "top": "-0.001vh",
+                "top": "-11.001vh",
                 opacity: "0.999"
               },
             },
@@ -291,11 +290,11 @@ var lunitInit = function () {
               from: "con-top + " + (offset[i]) + " = top",
               to: "con-top + " + (offset[i + 1]) + " = top",
               cssFrom: {
-                "top": "-0.001vh",
+                "top": "-11.001vh",
                 "opacity": "0.999"
               },
               cssTo: {
-                "top": "-20.001vh",
+                "top": "-25.001vh",
                 "opacity": "0.001"
               },
             }

@@ -1,3 +1,4 @@
+"use strict"
 $(document).ready(function () {
   //плавное перемещение по странице
   $(window).scroll(function () {
@@ -22,7 +23,7 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: dn }, 800);
   });
   // инициализация библиотеки анимации
-  AOS.init();
+  AOS.init({mirror:true});
 
   //слайдер Отзывы
   const reviewsSlider = new Swiper(".reviews__swiper-container", {
@@ -198,73 +199,54 @@ $(document).ready(function () {
     });
   }
 
-  var number3 = document.querySelector(".number-3"),
-    number3Top = number3.getBoundingClientRect().top,
-    start3 = +number3.innerHTML,
-    end3 = +number3.dataset.max;
+  function Counters() {
+    var card = document.querySelector(".description .card-1 .columns");
+    let top = card.getBoundingClientRect().top;
+    let bot = card.getBoundingClientRect().bottom;
+    var work = false;
 
-  window.addEventListener("scroll", function onScroll() {
-    if (window.pageYOffset > number3Top - window.innerHeight / 2 - 1100) {
-      this.removeEventListener("scroll", onScroll);
-      var interval3 = setInterval(function () {
-        number3.innerHTML = ++start3 + "%";
-        if (start3 == end3) {
-          clearInterval(interval3);
-        }
-      }, 40);
-    }
-  });
+    window.addEventListener("scroll", function onScroll() {
+      top = card.getBoundingClientRect().top;
+      bot = card.getBoundingClientRect().bottom;
+      console.log(window.pageYOffset, top, card.getBoundingClientRect());
 
-  var number4 = document.querySelector(".number-4"),
-    number4Top = number4.getBoundingClientRect().top,
-    start4 = +number4.innerHTML,
-    end4 = +number4.dataset.max;
+      if (bot < 0) {
+        $(card).find('[data-max]').text(0);
+        work = false
+        $(card).find('.aos-init').removeClass('aos-animate');
+        AOS.refres;
+      }
+      //this.removeEventListener("scroll", onScroll);
+      if (work == false && $(card).find('.aos-init').hasClass('aos-animate')) {
+        $(".card-1 .columns [data-max]").each(function (i) {
+            work = true;
+            var that = this;
+            var start = +$(this).text();
+            var end = +$(this).attr('data-max');
+            if (start == 0) {
+              let inter;
+              setTimeout(function(){
+              inter = setInterval(function () {
+                start = (+start + 1);
+                $(that).text(start + "%");
+                if (start >= end) {
+                  clearInterval(inter);
+                  work = false;
+                }
+              }, 40);
+              },600);
 
-  window.addEventListener("scroll", function onScroll() {
-    if (window.pageYOffset > number4Top - window.innerHeight / 2 - 1100) {
-      this.removeEventListener("scroll", onScroll);
-      var interval4 = setInterval(function () {
-        number4.innerHTML = ++start4 + "%";
-        if (start4 == end4) {
-          clearInterval(interval4);
-        }
-      }, 100);
-    }
-  });
+            }
+          
+        })
+      } else if (!$(card).find('.aos-init').hasClass('aos-animate')) {
+        $(card).find('[data-max]').text(0);
+        work = false;
+      }
+    });
+  }
+  Counters();
 
-  var number5 = document.querySelector(".number-5"),
-    number5Top = number5.getBoundingClientRect().top,
-    start5 = +number5.innerHTML,
-    end5 = +number5.dataset.max;
-
-  window.addEventListener("scroll", function onScroll() {
-    if (window.pageYOffset > number5Top - window.innerHeight / 2 - 1100) {
-      this.removeEventListener("scroll", onScroll);
-      var interval5 = setInterval(function () {
-        number5.innerHTML = ++start5 + "%";
-        if (start5 == end5) {
-          clearInterval(interval5);
-        }
-      }, 120);
-    }
-  });
-
-  var number6 = document.querySelector(".number-6"),
-    number6Top = number6.getBoundingClientRect().top,
-    start6 = +number6.innerHTML,
-    end6 = +number6.dataset.max;
-
-  window.addEventListener("scroll", function onScroll() {
-    if (window.pageYOffset > number6Top - window.innerHeight / 2 - 1100) {
-      this.removeEventListener("scroll", onScroll);
-      var interval6 = setInterval(function () {
-        number6.innerHTML = ++start6 + "%";
-        if (start6 == end6) {
-          clearInterval(interval6);
-        }
-      }, 120);
-    }
-  });
 
   $(document).scroll(function () {
     const top = window.pageYOffset;
