@@ -24,7 +24,8 @@ $(document).ready(function () {
     }, 800);
   }); // инициализация библиотеки анимации
 
-  AOS.init(); //слайдер Отзывы
+  AOS.init();
+  var aosref = false; //слайдер Отзывы
 
   var reviewsSlider = new Swiper(".reviews__swiper-container", {
     // slidesPerView: 4,
@@ -238,6 +239,12 @@ $(document).ready(function () {
     var item3 = $("#benefits").offset().top - 120;
     var item4 = $("#news").offset().top - 120;
     var item5 = $("#reviews").offset().top - 120;
+
+    if (top > 600 && aosref == false) {
+      // fix problems
+      AOS.refresh;
+      aosref = true;
+    }
 
     function menuItemHover() {
       $(".mis-menu__item").mouseover(function (e) {
