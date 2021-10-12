@@ -1131,18 +1131,22 @@ main .tsami .card-text {
 
     body.body-mis .mob-nav {
         display: block;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
         position: -webkit-sticky;
         position: sticky;
         top: 20px;
         top: 0px;
-        z-index: 10;
+        z-index: 103;
         background: #000;
         border-radius: 0;
         border: none;
+        padding: 10px 4vw;
     }
-
+    body.body-mis .mis-container.mob-nav{
+        margin-right: 0;
+        margin-left: 0;
+    }
     body.body-equipment .ultrasound.card,
     body.body-hardware .mo.card,
     body.body-services .card.cable {
@@ -1375,7 +1379,7 @@ main .tsami .card-text {
     position: sticky;
     background: #111;
     top: 0;
-    z-index: 2;
+    z-index: 103;
 }
 
 .mis-menu__item {

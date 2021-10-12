@@ -1,4 +1,4 @@
-<div class="bg-topmenu position-absolute w-100" style=z-index:1;>
+<div class="bg-topmenu position-fixed w-100" style=z-index:1;>
     <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark px-0 top">
             <a class="navbar-brand" href="/">
