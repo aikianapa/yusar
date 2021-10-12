@@ -44,7 +44,7 @@ $(document).ready(function () {
   });
   // инициализация библиотеки анимации
   AOS.init();
-
+  var aosref = false;
   //слайдер Отзывы
   const reviewsSlider = new Swiper(".reviews__swiper-container", {
     // slidesPerView: 4,
@@ -289,6 +289,14 @@ $(document).ready(function () {
 
   $(document).scroll(function () {
     const top = window.pageYOffset;
+    if (top > 600 && aosref == false) {
+      // fix problems
+      AOS.init();
+      aosref = true;
+    }
+
+
+
     const item1 = $("#purpose").offset().top - 120;
     const item2 = $("#descriprion").offset().top - 120;
     const item3 = $("#benefits").offset().top - 120;
