@@ -1,29 +1,28 @@
 $(document).ready(function () {
   //плавное перемещение по странице
-  $(function(){
-  })
+  $(function () {});
   $(window).scroll(function () {
     if ($(this).scrollTop() != 0) {
       $("#toTop").fadeIn();
     } else {
       $("#toTop").fadeOut();
     }
-    if($('body').hasClass('body-mis')){
+    if ($("body").hasClass("body-mis")) {
       var toScroll;
-      if($(window).width()>767){
-        toScroll = $('.mis-menu-wrapper').offset().top;
-      }else{
-        toScroll = $('.mob-nav').offset().top;
+      if ($(window).width() > 767) {
+        toScroll = $(".mis-menu-wrapper").offset().top;
+      } else {
+        toScroll = $(".mob-nav").offset().top;
       }
       // console.log( 'Высота до меню: ' + $('.mis-menu-wrapper').offset().top);
       // console.log( 'Прокрутили на: ' + $(this).scrollTop());
       // console.log( 'Высота страницы: ' + $(this).height());
-      if($(this).scrollTop() < toScroll - $('.bg-topmenu').height()){
+      if ($(this).scrollTop() < toScroll - $(".bg-topmenu").height()) {
         // console.log('не долшло');
-        $('.bg-topmenu').show('slow');
-      }else{
+        $(".bg-topmenu").show("slow");
+      } else {
         // $('.bg-topmenu').addClass('header-hidden');
-        $('.bg-topmenu').hide('slow');
+        $(".bg-topmenu").hide("slow");
         // console.log('долшло');
       }
     }
@@ -62,6 +61,7 @@ $(document).ready(function () {
     //   onlyInViewport: true,
     // },
     speed: 2000,
+    spaceBetween: 15,
 
     autoplay: {
       delay: 1200,
@@ -139,6 +139,7 @@ $(document).ready(function () {
       prevEl: ".products__button-prev",
     },
     speed: 2000,
+    spaceBetween: 15,
 
     keyboard: {
       enabled: true,
@@ -294,8 +295,6 @@ $(document).ready(function () {
       AOS.init();
       aosref = true;
     }
-
-
 
     const item1 = $("#purpose").offset().top - 120;
     const item2 = $("#descriprion").offset().top - 120;
