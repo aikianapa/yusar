@@ -175,6 +175,6 @@
         </div>
 
     </div>
-    <a href="#" class="scrollup">Наверх</a>
+    <a href="" class="scrollup">Наверх</a>
 </footer>
 <wb-include wb-tpl="common.inc.php" />
