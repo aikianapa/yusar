@@ -1420,10 +1420,7 @@ main .tsami .card-text {
 }
 
 .card {
-    padding-top: 42px;
-    padding-right: 36px;
-    padding-bottom: 42px;
-    padding-left: 42px;
+    padding: 42px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
