@@ -5,7 +5,7 @@
 <wb-include wb-tpl="head.inc.php" />
 <link rel="preload" href="/tpl/assets/js/main-mobile.js" as="script">
 
-<body class="loading body-mis" style="background:black;color:white;">
+<body class="loading body-mis cont-color-w" >
     <wb-include wb-tpl="header.inc.php" />
     <div class="body-mis__container">
         <div class="qbody" id="qbody">

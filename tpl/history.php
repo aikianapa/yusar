@@ -30,9 +30,9 @@
     <wb-var bkg="header-2.jpg" />
     <wb-include wb-tpl="header.inc.php" />
 
-    <div class="container" id="History">
+    <div class="container history" id="History">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 history__description">
                 <h1 class="mt-3r">2018</h1>
                 <h3 class="tx-28 mt-2r">Активное развитие</h3>
                 <p class="tx-16">{{text}}</p>

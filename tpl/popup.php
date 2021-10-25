@@ -29,8 +29,12 @@
     font-weight: 500;
 }
 
+.modal-body .btn {
+  margin: 0 auto;
+}
+
 .btn {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border-radius: 0;
     background-color: #2BA8DD;
     border-color: #2BA8DD;

@@ -4,7 +4,7 @@
         <wb-var bkg="header-2.jpg" />
         <wb-include wb-tpl="header.inc.php" />
 
-        <div class="container pb-3r">
+        <div class="container">
             <h3>Наша команда</h3>
             <div class="row">
                 <div class="col-sm-6">

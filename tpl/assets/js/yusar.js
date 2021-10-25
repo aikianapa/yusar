@@ -134,6 +134,9 @@ yusar.slick = function () {
             let options = {
                 infinite: true,
                 lazyLoad: 'ondemand',
+                autoplay: true,
+                speed: 1000,
+                // slidesToShow: 4,
                 responsive: [{
                     breakpoint: 992,
                     settings: {

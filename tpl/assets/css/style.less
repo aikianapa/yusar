@@ -15,9 +15,9 @@
 @input-gray: #828282;
 @input-dark: #333333;
 @menu-border: #ffffff25 1px solid;
-@color-topmenu-xl: rgba(140, 176, 224, 0.1);
+// @color-topmenu-xl: rgba(140, 176, 224, 0.1);
+@color-topmenu-xl: rgba(6, 25, 50, 0.81);
 @color-topmenu: #020e1fdd;
-
 
 @sm: 575px;
 @md: 767px;
@@ -57,7 +57,7 @@ body {
     background-color: @color-white;
     overflow-x: hidden;
     overflow-y: auto !important;
-    width: 100vw;
+    width: 100%;
     height: auto !important;
 
     >* {
@@ -1426,6 +1426,7 @@ body {
         padding: 48px 0;
         background: #123b77;
         color: @color-white;
+        margin-top: 120px;
 
         .second-block {
             margin-top: 50px;
@@ -1904,15 +1905,16 @@ body {
             .slick-next {
                 width: 35px;
                 height: 40px;
+                top: 168px;
             }
 
             .slick-prev {
-                top: 108px;
+                // top: 108px;
                 left: -45px;
             }
 
             .slick-next {
-                top: 120px;
+                // top: 120px;
                 right: -45px;
             }
 
@@ -1949,15 +1951,16 @@ body {
             .slick-next {
                 width: 50px;
                 height: 50px;
+                top: 166px;
             }
 
             .slick-prev {
-                top: 98px;
+                // top: 98px;
                 left: -55px;
             }
 
             .slick-next {
-                top: 122.5px;
+                // top: 122.5px;
                 right: -55px;
             }
 
@@ -2199,8 +2202,21 @@ body {
     .slick {
         color: @link-gray;
 
+        .slick-prev,
+        .slick-next {
+            margin-top: -24px;
+        }
+
+        .slick-prev::before {
+            background-image: url('../img/chevron-prev.svg');
+        }
+
+        .slick-next::before {
+            background-image: url('../img/chevron.svg');
+        }
+
         .slick-prev:hover::before {
-            transform: translateX(5px)
+            transform: translateX(-5px)
         }
 
         .slick-next:hover::before {
@@ -2210,7 +2226,6 @@ body {
         .slick-arrow:before {
             display: block;
             content: ' ';
-            background-image: url('../img/chevron.svg');
             background-size: 48px 48px;
             color: #000;
             height: 48px;
@@ -2220,11 +2235,11 @@ body {
         }
 
         .slick-prev {
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
+            // -webkit-transform: rotate(180deg);
+            // -moz-transform: rotate(180deg);
+            // -ms-transform: rotate(180deg);
+            // -o-transform: rotate(180deg);
+            // transform: rotate(180deg);
         }
     }
 
@@ -2950,17 +2965,18 @@ body {
         }
 
         .slick-next {
-            top: 116px;
+            // top: 116px;
             right: -45px;
         }
 
         .slick-arrow {
             width: 40px;
             height: 40px;
+            top: 127px;
         }
 
         .slick-prev {
-            top: 104px;
+            // top: 104px;
             left: -45px;
         }
 
@@ -3145,15 +3161,16 @@ body {
         .slick-arrow {
             width: 40px;
             height: 40px;
+            // top: 196px;
         }
 
         .slick-prev {
-            top: 196px;
+            // top: 196px;
             left: -45px;
         }
 
         .slick-next {
-            top: 208px;
+            // top: 208px;
             right: -45px;
         }
 
@@ -3339,12 +3356,12 @@ body {
         }
 
         .slick-prev {
-            top: 140px;
+            // top: 140px;
             left: -45px;
         }
 
         .slick-next {
-            top: 152px;
+            // top: 152px;
             right: -45px;
         }
 
@@ -4173,4 +4190,12 @@ body {
     line-height: 20px;
     text-align: center;
     color: @input-gray;
+}
+
+.history {
+    &__description {
+        @media(min-width: 993px) {
+            padding-right: 40px;
+        }
+    }
 }

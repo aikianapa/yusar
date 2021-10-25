@@ -5,6 +5,8 @@
     <wb-var bkg="header-4.jpg" />
     <wb-include wb-tpl="header.inc.php" />
 
+    <wb-include wb-tpl="widget-news.inc.php" />
+
     <div class="container pt-3r pb-3r projects">
       <div class="tabs">
       <div class="tabs--item tabs--item--active">Российские</div>

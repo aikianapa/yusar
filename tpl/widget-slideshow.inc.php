@@ -58,7 +58,7 @@
     				<image width="21" height="42" xlink:href="/tpl/assets/img/slider-arrow-prev.svg" />
     			</svg>
 			</button> -->
-<div class="slider slider-for slide-pics pb-2r" data-options="arrows=false" style="max-width: 1620px; margin: 0 auto;">
+<div class="slider slider-for slide-pics" data-options="arrows=false" style="max-width: 1620px; margin: 0 auto;">
 	<wb-foreach wb="count=10">
 		<div class="slider-block" style="margin-top: 0;">
 			<div class="row " style="margin: 0 auto;">

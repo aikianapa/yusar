@@ -28,7 +28,7 @@
             </div>
 
             <div class="col-12">
-                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#feedbackModal" style="margin-bottom: 72px; margin-top: 16px;">{{_lang.quotebtn}}</button>
+                <button type="button" class="btn btn-link" data-toggle="modal" data-target="#feedbackModal" style=" margin-top: 16px;">{{_lang.quotebtn}}</button>
             </div>
         </div>
     </form>
