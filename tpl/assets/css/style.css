@@ -183,6 +183,10 @@ template {
     display: none
 }
 
+.hide {
+    display: none;
+}
+
 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -326,11 +330,10 @@ body.cont-color-w .mrt,
 body.cont-color-w .angiography,
 body.cont-color-w .thermal-imager,
 body.cont-color-w .ultrasound,
-body.cont-color-w .purpose,
-body.cont-color-w .description,
-body.cont-color-w .benefits ,
-body.cont-color-w .technical ,
-body.cont-color-w .sistem  {
+body.cont-color-w .description .card,
+body.cont-color-w .benefits .card,
+body.cont-color-w .technical .card,
+body.cont-color-w .card {
     color: #fff;
 }
 
@@ -1823,6 +1826,10 @@ main .tsami .card-text {
     padding-top: 9rem
 }
 
+.special a {
+    color: #000;
+}
+
 .special .hr {
     width: 100%;
     height: 1px;
@@ -1925,8 +1932,8 @@ main .tsami .card-text {
 }
 
 .reviews {
-    padding-top: 9rem;
-    /* padding-bottom: 6rem; */
+    padding-top: 4rem;
+    padding-bottom: 6rem;
     margin-left: 7.8vw;
     margin-right: 7.8vw;
     position: relative;
@@ -2023,7 +2030,7 @@ main .tsami .card-text {
 }
 
 .products {
-    padding-bottom: 3em;
+    /* padding-bottom: 3em; */
     margin-left: 7.8vw;
     margin-right: 7.8vw;
     position: relative;
@@ -3620,7 +3627,7 @@ body.body-equipment .card .icon {
     max-height: -webkit-min-content;
     max-height: -moz-min-content;
     max-height: min-content;
-    padding-top: 111px;
+    padding-top: 100px;
     padding-right: 90px;
     padding-bottom: 66px;
     padding-left: 90px;
@@ -3683,7 +3690,6 @@ body.body-equipment .card .icon {
 }
 
 .system-integration .card-1 .card-title_big {
-    width: 50%;
     height: 270px;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;

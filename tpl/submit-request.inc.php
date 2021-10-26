@@ -5,7 +5,7 @@
     margin-top: 16px;
 }
 </style>
-<div class="container pb-3r widget submit-request-widget">
+<div class="container widget submit-request-widget">
   <h3 class="mt-0 pb-2r">{{_lang.feedback}}</h3>
   <form method="post">
     <div class="row">

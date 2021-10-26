@@ -5,7 +5,7 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r pb-3r documentation">
+<div class="container pt-3r documentation">
   <div class="documentation--info">
     Согласно п.6. статьи 15 Федерального закона от 28.12.2013 г. №426-ФЗ "О специальной оценке условий труда" размещаем
     <span>"Перечень рекомендуемых мероприятий по улучшению условий труда" и "Сводную ведомость результатов проведения

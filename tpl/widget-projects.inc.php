@@ -11,7 +11,7 @@
 }
 </style>
 
-<div class="pt-3r pb-3r">
+<div class="pt-3r">
     <wb-data wb="table=pages&item=widget-projects">
         <div class="container widget widget-projects">
             <div class="border-bottom pb-1r mb-2r position-relative">

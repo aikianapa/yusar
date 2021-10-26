@@ -18,7 +18,7 @@
     <wb-var bkg="header-4.jpg" />
     <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r reviews">
+<div class="container pt-3r reviews pb-0">
   <h3 class="mt-0">{{_lang.title1}}</h3>
 
   <div class="slick" data-slick-options='{"infinite":true,

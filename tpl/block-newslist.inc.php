@@ -1,4 +1,4 @@
-<div class="pt-3r pb-3r">
+<div class="pt-3r">
 <wb-data wb="table=pages&item=widget-news">
     <div class="container widget news-grid news-page">
         <div class="row pb-3r">

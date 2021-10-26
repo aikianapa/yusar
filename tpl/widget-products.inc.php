@@ -33,7 +33,7 @@
     @media (max-width: 1200px) {}
 </style>
 
-<div class="pt-3r pb-3r ">
+<div class="pt-3r">
     <div class="container widget widget-products">
         <main class="main main__it-products">
             <div class="mis card">

@@ -1,7 +1,7 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
 
-<body class="loading body-services" style="background:black;color:white;">
+<body class="loading body-services cont-color-w">
   <wb-var bkg="header-4.jpg" />
   <wb-include wb-tpl="header.inc.php" />
     <div class="card cable container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>

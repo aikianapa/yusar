@@ -5,12 +5,12 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r pb-3r licenses-and-certificates">
+<div class="container pt-3r licenses-and-certificates">
   <h3 class="mt-0">{{_lang.title}}</h3>
 
   <div
      class="slick"
-     data-slick-options='{"infinite":true,"lazyLoad":"ondemand",
+     data-slick-options='{"autoplay: true,infinite":true,"lazyLoad":"ondemand",
      "responsive":[{"breakpoint":1800,"settings":{"slidesToShow":6,
      "slidesToScroll":1}},{"breakpoint":1200,"settings":{"slidesToShow":5,
      "slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":4,

@@ -14,7 +14,7 @@
 }
 </style>
 
-<body class="loading body-hardware" style="background:black;color:white;">
+<body class="loading body-hardware cont-color-w">
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 

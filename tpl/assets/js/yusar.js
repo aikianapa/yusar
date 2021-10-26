@@ -225,7 +225,8 @@ yusar.slick = function () {
                 centerMode: true,
                 fade: true,
                 lazyLoad: 'ondemand',
-                asNavFor: '.slider-nav'
+                asNavFor: '.slider-nav',
+                autoplay: true
             }
             yusar.dataOptions(this);
             $(this).slick(this.options);
