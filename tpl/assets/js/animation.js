@@ -1,7 +1,8 @@
 var animationHeight = 7000;
 var vh = $(window).height();
 var vw = $(window).width();
-var sh = (vw - vh) / 2;
+var sh = vw - vh;
+sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
 
 var lunitInit = function() {
     animReset();
@@ -295,6 +296,8 @@ var lunitInit = function() {
 
 var animReset = function() {
     setTimeout(function() {
+        let sh = vw - vh;
+        sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
         let ih = document.querySelector(".scene.scene-2.mis-container img:first-child").naturalHeight;
         let ofy = Math.ceil((vh - ih) / 2 + sh);
         $(".staging-1 .scene-1").css({ 'top': '216px' });
