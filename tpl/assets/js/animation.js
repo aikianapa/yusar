@@ -1,10 +1,12 @@
 var width = $(window).width();
+var animationHeight = 7000;
+var vh = $(window).height();
+var vw = $(window).width();
 
 var lunitInit = function() {
+    animReset();
     window.scrollTo(0, 0);
-    var ht = 7000;
-    var vh = $(window).height();
-    var vw = $(window).width();
+    var ht = animationHeight;
     var ih = $(".scene.scene-2.mis-container img:first-child").height();
     var offset;
     $('.qbody .staging ').height(ht);
@@ -75,8 +77,6 @@ var lunitInit = function() {
             $(".staging-1")
         );
 
-
-        $(".staging-1 .scene-2").attr('style', "transform: translateY(-0.01vh);");
         ih = $(".scene.scene-2.mis-container img:first-child").height();
         var ofy = Math.ceil(vh / 2 - 450 - ih / 2);
 
@@ -124,7 +124,7 @@ var lunitInit = function() {
                                 "z-index": "0"
                             },
                             onScroll: function($el, $ofs, length) {
-                                //$('.staging-1 .statistics__item').css({ "opacity": "0", "transition": "translateY(24vh)" });
+
                             }
                         }],
                         $(".staging-1")
@@ -252,7 +252,7 @@ var lunitInit = function() {
             top = start;
             let offset = [];
             let plates = $('.statistics.mis-container').find('.statistics__item').length;
-            let os = Math.ceil((ht - top - vh) / plates);
+            let os = Math.ceil((ht - top - (vh * 1.5)) / plates);
             offset[0] = top;
             for (i = 1; i <= plates; i++) {
                 offset[i] = top + (os * i);
@@ -290,12 +290,26 @@ var lunitInit = function() {
                 );
             }
         }
-
     }
 }
 
-function Counters() {
+var animReset = function() {
+    ih = $(".scene.scene-2.mis-container img:first-child").height();
+    var ofy = Math.ceil(vh / 2 - 450 - ih / 2);
+
+    $(".staging-1 .scene-1").css({ 'top': '216px' });
+    $(".staging-1 .scene-2").css({ 'transform': 'translateY(' + ofy + ')' });
+    $(".staging-1 .scene-2 img").css({ 'opacity': '0', 'z-index': '0' });
+    if ($(window).width() > 767) {
+        $(".staging-1 .statistics__item").css({ 'opacity': '0', 'transform': 'translateY(14.999vh)' });
+    } else {
+        $(".staging-1 .statistics__item").css({ 'opacity': '0.001', 'transform': 'translateY(25.000vh)' });
+    }
+}
+
+var Counters = function() {
     var card = document.querySelector(".description .card-1 .columns");
+    var body = document.querySelector("body");
     if (!card) return;
     let top = card.getBoundingClientRect().top;
     let bot = card.getBoundingClientRect().bottom;
@@ -304,6 +318,11 @@ function Counters() {
     window.addEventListener("scroll", function onScroll() {
         top = card.getBoundingClientRect().top;
         bot = card.getBoundingClientRect().bottom;
+        let offset = 0 - body.getBoundingClientRect().top;
+        if (offset > animationHeight || offset == 0) {
+            animReset();
+        }
+
 
         if (bot < 0) {
             $(card).find('[data-max]').text(0);
