@@ -294,10 +294,60 @@ var lunitInit = function() {
     }
 }
 
+function Counters() {
+    var card = document.querySelector(".description .card-1 .columns");
+    let top = card.getBoundingClientRect().top;
+    let bot = card.getBoundingClientRect().bottom;
+    var work = false;
+
+    window.addEventListener("scroll", function onScroll() {
+        top = card.getBoundingClientRect().top;
+        bot = card.getBoundingClientRect().bottom;
+        console.log(window.pageYOffset, top, card.getBoundingClientRect());
+
+        if (bot < 0) {
+            $(card).find('[data-max]').text(0);
+            work = false
+            $(card).find('.aos-init').removeClass('aos-animate');
+            AOS.refres;
+        }
+        //this.removeEventListener("scroll", onScroll);
+        if (work == false && $(card).find('.aos-init').hasClass('aos-animate')) {
+            $(".card-1 .columns [data-max]").each(function(i) {
+                work = true;
+                var that = this;
+                var start = +$(this).text();
+                var end = +$(this).attr('data-max');
+                if (start == 0) {
+                    let inter;
+                    setTimeout(function() {
+                        inter = setInterval(function() {
+                            start = (+start + 1);
+                            $(that).text(start + "%");
+                            if (start >= end) {
+                                clearInterval(inter);
+                                work = false;
+                            }
+                        }, 40);
+                    }, 600);
+
+                }
+
+            })
+        } else if (!$(card).find('.aos-init').hasClass('aos-animate')) {
+            $(card).find('[data-max]').text(0);
+            work = false;
+        }
+    });
+}
+
+
+
 $(window).on('resize', function() {
     if (Math.abs(width - $(window).width()) > width / 10) lunitInit();
 })
 
 setTimeout(function() {
     lunitInit();
+    Counters();
 }, 400)
