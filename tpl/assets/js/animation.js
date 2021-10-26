@@ -296,6 +296,7 @@ var lunitInit = function() {
 
 function Counters() {
     var card = document.querySelector(".description .card-1 .columns");
+    if (!card) return;
     let top = card.getBoundingClientRect().top;
     let bot = card.getBoundingClientRect().bottom;
     var work = false;
@@ -303,7 +304,6 @@ function Counters() {
     window.addEventListener("scroll", function onScroll() {
         top = card.getBoundingClientRect().top;
         bot = card.getBoundingClientRect().bottom;
-        console.log(window.pageYOffset, top, card.getBoundingClientRect());
 
         if (bot < 0) {
             $(card).find('[data-max]').text(0);
@@ -340,8 +340,6 @@ function Counters() {
         }
     });
 }
-
-
 
 $(window).on('resize', function() {
     if (Math.abs(width - $(window).width()) > width / 10) lunitInit();
