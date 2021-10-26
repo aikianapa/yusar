@@ -252,7 +252,7 @@ var lunitInit = function() {
             top = start;
             let offset = [];
             let plates = $('.statistics.mis-container').find('.statistics__item').length;
-            let os = Math.ceil((ht - top - vh) / plates);
+            let os = Math.ceil((ht - vh * 2) / plates);
             offset[0] = top;
             for (i = 1; i <= plates; i++) {
                 offset[i] = top + (os * i);
@@ -274,7 +274,7 @@ var lunitInit = function() {
                             },
                         },
                         {
-                            from: "con-top + " + (offset[i]) + " = top",
+                            from: "con-top + " + (offset[i] + 400) + " = top",
                             to: "con-top + " + (offset[i + 1]) + " = top",
                             cssFrom: {
                                 "top": "-11.001vh",
