@@ -252,7 +252,7 @@
       </wb-data>
     </div>
     </div>
-    <wb-include wb-tpl="footer.inc.php" />
+    <wb-include wb-tpl="footer.inc.php" class="footer--mt-sm"/>
     
     <script src="/tpl/assets/js/yusar.js"></script>
     

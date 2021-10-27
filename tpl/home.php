@@ -17,7 +17,7 @@
     <wb-include wb-tpl="widget-globe.inc.php" />
 
     <wb-include wb-tpl="widget-projects.inc.php" />
-    <wb-include wb-tpl="footer.inc.php" />
+    <wb-include wb-tpl="footer.inc.php" class="footer--mt-sm"/>
 </body>
 
 </html>
