@@ -10,6 +10,7 @@
         </div>
 
         <div class="slick news-grid pb-1r" id="widgetNewsList">
+            <wb-data wb="table=pages&item=home">
             <wb-foreach wb="from=images">
                 <a href="/news/id603273b10a95/">
                     <div class="card card--second">
@@ -24,6 +25,7 @@
                     </div>
                 </a>
             </wb-foreach>
+            </wb-data>
         </div>
     </div>
 </div>
