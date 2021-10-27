@@ -1,10 +1,11 @@
-var animationHeight = 7000;
+var animationHeight = 8000;
 var vh = $(window).height();
 var vw = $(window).width();
 var sh = vw - vh;
 sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
 
-var lunitInit = function() {
+
+var animInit = function() {
     animReset();
     window.scrollTo(0, 0);
     var ht = animationHeight;
@@ -81,6 +82,7 @@ var lunitInit = function() {
         ih = document.querySelector(".scene.scene-2.mis-container img:first-child").naturalHeight;
         var ofy = Math.ceil((vh - ih) / 2 + sh);
 
+        vw > 767 ? ofy = 430 : ofy = 330;
         $(".staging-1 .scene-2").scroolly(
             [{
                 from: "con-top",
@@ -98,14 +100,15 @@ var lunitInit = function() {
 
         // Картинки //
         if ($(window).width() > 767) {
-            var start = 400;
+            var start = ofy;
             var stop = Math.ceil(ht - start - vh);
         } else {
             var start = 0;
-            var stop = Math.ceil(ht) - 450 - vh;
+            var stop = Math.ceil(ht) - ofy - vh;
         }
         var images = $(".staging-1 .scene-2 img").length + 1;
-
+        var ofi = Math.ceil((vh - ih) / 2);
+        $(".staging-1 .scene-2 img").css({ "margin-top": ofi + "px" });
         offset = [];
 
 
@@ -159,7 +162,10 @@ var lunitInit = function() {
         var stop1;
         var stop2;
         var plates;
-        if ($(window).width() > 767) {
+
+
+
+        if (vw > 767) {
             // первый блок плашек
             plates = $('.staging-1 .statistics-1 .statistics__item').length;
             for (i = 1; i <= plates; i++) {
@@ -171,11 +177,11 @@ var lunitInit = function() {
                         to: "con-top + " + stop + " = top",
                         cssFrom: {
                             transform: "translateY(14.999vh)",
-                            opacity: "0"
+                            opacity: "0.001"
                         },
                         cssTo: {
                             transform: "translateY(0.001vh)",
-                            opacity: "0.7"
+                            opacity: "0.701"
                         },
                         onScroll: function($el, $ofs, length) {
                             //     if ($ofs <= 81) $('.staging-1 .scene-2 img').css({ "opacity": "0.001" });
@@ -199,11 +205,11 @@ var lunitInit = function() {
                         to: "con-top + " + stop + " = top",
                         cssFrom: {
                             transform: "translateY(14.999vh)",
-                            opacity: "0"
+                            opacity: "0.001"
                         },
                         cssTo: {
                             transform: "translateY(0.001vh)",
-                            opacity: "0.7"
+                            opacity: "0.701"
                         },
                     }],
                     $(".staging-1")
@@ -220,57 +226,55 @@ var lunitInit = function() {
                     from: "con-top + " + start + " = top",
                     to: "con-top + " + stop + " = top",
                     cssFrom: {
-                        top: "-0.000vh",
+                        top: "33vh",
                         opacity: "0.999"
                     },
                     cssTo: {
-                        top: "-24vh",
-                        opacity: "0"
+                        top: "10vh",
+                        opacity: "0.001"
                     },
                 }],
                 $(".staging-1")
             );
 
             start = Math.ceil(stop2 + vh);
-            stop = start + vh;
+            stop = ht - vh;
             $(".staging-1 .statistics-2").scroolly(
                 [{
                     from: "con-top + " + start + " = top",
                     to: "con-top + " + stop + " = top",
                     cssFrom: {
-                        top: "-0.000vh",
+                        top: "33vh",
                         opacity: "0.999"
                     },
                     cssTo: {
-                        top: "-24vh",
-                        opacity: "0"
+                        top: "10vh",
+                        opacity: "0.001"
                     },
                 }],
                 $(".staging-1")
             );
 
         } else {
-            top = start;
+            top = start + vh;
             let offset = [];
             let plates = $('.statistics.mis-container').find('.statistics__item').length;
             let os = Math.ceil((ht - top - vh) / plates);
             offset[0] = top;
             for (i = 1; i <= plates; i++) {
-                offset[i] = top + (os * i);
+                offset[i] = Math.ceil(top + (os * i));
                 offset[i + 1] = offset[i] + os;
-                $('.statistics.mis-container').height(height * 2);
-                $('.statistics.mis-container > div').height(height * 2);
                 $('.statistics.mis-container .statistics__item').height(height);
                 $(".staging-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                     [{
                             from: "con-top + " + (offset[i - 1]) + " = top",
                             to: "con-top + " + (offset[i]) + " = top",
                             cssFrom: {
-                                "top": "25.000vh",
+                                "top": vh - 400 + "px",
                                 "opacity": "0.001"
                             },
                             cssTo: {
-                                "top": "-11.001vh",
+                                "top": ofi + "px",
                                 opacity: "0.999"
                             },
                         },
@@ -278,11 +282,11 @@ var lunitInit = function() {
                             from: "con-top + " + (offset[i]) + " = top",
                             to: "con-top + " + (offset[i + 1]) + " = top",
                             cssFrom: {
-                                "top": "-11.001vh",
+                                "top": ofi + "px",
                                 "opacity": "0.999"
                             },
                             cssTo: {
-                                "top": "-25.001vh",
+                                "top": "0px",
                                 "opacity": "0.001"
                             },
                         }
@@ -296,18 +300,15 @@ var lunitInit = function() {
 
 var animReset = function() {
     setTimeout(function() {
-        let sh = vw - vh;
-        sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
         let ih = document.querySelector(".scene.scene-2.mis-container img:first-child").naturalHeight;
-        let ofy = Math.ceil((vh - ih) / 2 + sh);
+        let ofy;
+        vw > 767 ? ofy = 430 : ofy = 330;
+        var ofi = Math.ceil((vh - ih) / 2);
         $(".staging-1 .scene-1").css({ 'top': '216px' });
-        $(".staging-1 .scene-2").css({ 'transform': 'translateY(' + ofy + ')' });
-        $(".staging-1 .scene-2 img").css({ 'opacity': '0', 'z-index': '0' });
-        if ($(window).width() > 767) {
-            $(".staging-1 .statistics__item").css({ 'opacity': '0', 'transform': 'translateY(14.999vh)' });
-        } else {
-            $(".staging-1 .statistics__item").css({ 'opacity': '0.001', 'transform': 'translateY(25.000vh)' });
-        }
+        //$(".staging-1 .scene-2").css({ 'transform': 'translateY(' + ofy + ')' });
+        $(".staging-1 .scene-2").css({ 'transform': 'translateY(-' + ofy + 'px)' });
+        $(".staging-1 .scene-2 img").css({ 'opacity': '0', 'z-index': '0', "margin-top": ofi + "px" });
+        $(".staging-1 .statistics__item").css({ 'opacity': '0' });
     }, 10)
 }
 
@@ -324,7 +325,7 @@ var Counters = function() {
         bot = card.getBoundingClientRect().bottom;
         let offset = 0 - body.getBoundingClientRect().top;
         if (offset > animationHeight || offset == 0) {
-            animReset();
+            // animReset();
         }
 
 
@@ -365,10 +366,10 @@ var Counters = function() {
 }
 
 $(window).on('resize', function() {
-    if (Math.abs(vw - $(window).width()) > vw / 10) lunitInit();
+    if (Math.abs(vw - $(window).width()) > vw / 10) animInit();
 })
 
 setTimeout(function() {
-    lunitInit();
+    animInit();
     Counters();
 }, 400)
