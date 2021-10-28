@@ -6,7 +6,7 @@
     <wb-include wb-tpl="header.inc.php" />
 
  
-      <div class="container pt-3r pb-3r projects">
+      <div class="container pt-3r  projects">
         <div class="tabs">
         <div class="tabs--item tabs--item--active">Российские</div>
         <div class="separator"></div>
@@ -250,7 +250,7 @@
       </wb-data>
    
     </div>
-    <wb-include wb-tpl="footer.inc.php" class="footer--mt-sm"/>
+    <wb-include wb-tpl="footer.inc.php"/>
     
     <script src="/tpl/assets/js/yusar.js"></script>
     
