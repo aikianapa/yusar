@@ -60,7 +60,7 @@
                                 <a class="nav-link" href="/cami">ЦАМИ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/telemed">Телемедицина</a>
+                                <a class="nav-link" href="/telemedicine">Телемедицина</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/artificial-intelligence">Искусственный интеллект</a>
