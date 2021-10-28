@@ -6,6 +6,7 @@ sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
 
 
 var animInit = function() {
+    if (!$(".to-fix").length) return;
     animReset();
     window.scrollTo(0, 0);
     var ht = animationHeight;
@@ -313,7 +314,7 @@ var animReset = function() {
 }
 
 var Counters = function() {
-    var card = document.querySelector(".description .card-1 .columns");
+    var card = document.querySelector(".columns.percent-columns");
     var body = document.querySelector("body");
     if (!card) return;
     let top = card.getBoundingClientRect().top;

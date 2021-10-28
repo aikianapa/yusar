@@ -72,26 +72,22 @@
                         </div>
 
                         <div class="scene scene-2 mis-container">
-                            <img src="tpl/assets/img/Covid/Covid_01.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_02.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_03.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_04.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_05.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_06.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_07.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_08.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_09.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_10.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_11.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_12.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_13.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_14.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_15.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_16.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_17.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_18.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_19.jpg" alt="covid">
-                            <img src="tpl/assets/img/Covid/Covid_20.jpg" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_1.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_2.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_3.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_4.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_5.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_6.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_7.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_8.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_9.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_10.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_11.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_12.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_13.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_14.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_15.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_16.png" alt="covid">
                         </div>
 
                     </div>
@@ -275,7 +271,7 @@
                         </p>
                     </div>
 
-                    <div class="columns">
+                    <div class="columns percent-columns">
                         <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
                             <span class="number-3" data-max="20">0</span>
                             <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
