@@ -253,6 +253,10 @@ body.body-mis .products .link-icon {
     transform: scale(1);
 }
 
+body.body-mis .products {
+    padding-top: 8rem;
+}
+
 body.body-mis .products a:hover {
     color: white;
 }
@@ -285,8 +289,8 @@ body.body-mis,
 body.body-mis .body-mis__container {
     overflow-y: visible !important;
     overflow-x: visible !important;
-    background: #000;
-    color: #fff;
+    /* background: #000;
+    color: #fff; */
 }
 
 body.body-mis .body-mis__container>div,
@@ -1385,9 +1389,9 @@ main .tsami .card-text {
 
 .mis-menu__item {
     padding-top: 12px;
-    padding-right: 15px;
+    padding-right: 22px;
+    padding-left: 22px;
     padding-bottom: 12px;
-    padding-left: 15px;
     font-size: 1rem;
     line-height: 125%;
     font-weight: 500;

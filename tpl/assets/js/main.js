@@ -301,6 +301,7 @@ $(document).ready(function () {
     const item3 = $("#benefits").offset().top - 120;
     const item4 = $("#news").offset().top - 120;
     const item5 = $("#reviews").offset().top - 120;
+    const item6 = $("#products").offset().top - 120;
 
     function menuItemHover() {
       $(".mis-menu__item").mouseover(function (e) {
@@ -323,8 +324,12 @@ $(document).ready(function () {
     $(".mis-menu__item").css("background", "none");
     $(".mis-menu__item").css("color", "#444");
     $(".mis-menu__item").removeClass("mis-menu__item-active");
-
-    if (top > item5) {
+    
+    if (top > item6) {
+      $("#item-5").css("background", "#7A7F83");
+      $("#item-5").css("color", "#fff");
+      $("#item-5").toggleClass("mis-menu__item-active");
+    } else if (top > item5) {
       $("#item-5").css("background", "#7A7F83");
       $("#item-5").css("color", "#fff");
       $("#item-5").toggleClass("mis-menu__item-active");
@@ -344,7 +349,7 @@ $(document).ready(function () {
       $("#item-1").css("background", "#7A7F83");
       $("#item-1").css("color", "#fff");
       $("#item-1").toggleClass("mis-menu__item-active");
-    }
+    } 
   });
 
   //   if (top > item1) {

@@ -150,7 +150,11 @@
                     <a href="/mis">МИС</a>
                     <a href="/ris">РИС</a>
                     <a href="/paks">ПАКС</a>
+                    <a href="/endoscopy">Эндоскопия</a>
+                    <a href="/cami">ЦАМИ</a>
                     <a href="/telemedicine">Телемедицина</a>
+                    <a href="/artificial-intelligence">Искусственный интеллект</a>
+                    <a href="/pharmacy">Аптека</a>
                 </div>
             </li>
 

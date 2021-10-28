@@ -54,19 +54,19 @@
                                 <a class="nav-link" href="/paks">ПАКС</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Эндоскопия</a>
+                                <a class="nav-link" href="/endoscopy">Эндоскопия</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">ЦАМИ</a>
+                                <a class="nav-link" href="/cami">ЦАМИ</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/telemed">Телемедицина</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Искусственный интеллект</a>
+                                <a class="nav-link" href="/artificial-intelligence">Искусственный интеллект</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">Аптека</a>
+                                <a class="nav-link" href="/pharmacy">Аптека</a>
                             </li>
                         </ul>
                     </li>

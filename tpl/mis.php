@@ -126,6 +126,11 @@
                             Отзывы
                         </li>
                     </a>
+                    <a href="#products">
+                        <li class="mis-menu__item" id='item-6'>
+                            Продукты
+                        </li>
+                    </a>
                 </ul>
                 <a href="#" class="btn btn-video">
                     <span class="btn-text">Смотреть видео</span>
@@ -496,7 +501,10 @@
         </section>
         <section class="special mis-container" id="news">
             <div class="special__item-top">
-                <h2 class="section-title">Специальные условия</h2>
+                <div>
+                    <span class="section-label" id="news">Новости</span>
+                    <h2 class="section-title">Специальные условия</h2>
+                </div>
                 <a href="#">
                     <span class="link-text">В&nbsp;раздел</span>
                     <img class="link-icon" src="tpl/assets/img/chapter.svg" alt="icon">
@@ -537,7 +545,7 @@
             <div class="hr"></div>
 
         </section>
-        <section class="reviews" id="reviews">
+        <section class="reviews pb-0" id="reviews">
             <div class="reviews__button-prev"></div>
             <div class="reviews__button-next"></div>
             <h4 class="card-text">Отзывы</h4>
@@ -637,40 +645,8 @@
                 </div>
             </div>
         </section>
-        <div class="footer mis-container">
-
-            <span class="card-text request">Оставить заявку</span>
-
-            <form action="send.php" method="POST" class="footer__form form">
-
-                <div class="footer__top-wrapper">
-                    <div class="footer__input-group">
-                        <input type="text" class="input footer__input" placeholder="Ф.И.О." name="fullname" required
-                            minlength="2">
-                    </div>
-                    <div class="footer__input-group">
-                        <input type="tel" class="input footer__input phone" placeholder="Ваш телефон" name="phone"
-                            required minlength="5">
-                    </div>
-                    <div class="footer__input-group">
-                        <input type="tel" class="input footer__input email" placeholder="Ваш E-mail*" name="email"
-                            required>
-                    </div>
-                </div>
-
-                <div class="footer__bottom-wrapper">
-                    <textarea class="message footer__message" placeholder="Комментарий" name="message"></textarea>
-                    <div class="add-doc">
-                        <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
-                        <span class="card-text">Приложить документ до 10 мб</span>
-                    </div>
-                    <button class="btn footer__button" type="submit">Оформить заявку</button>
-                </div>
-
-            </form>
-
-        </div>
-        <section class="products">
+        
+        <section class="products" id="products">
             <div class="products__button-prev"></div>
             <div class="products__button-next"></div>
             <h4 class="card-text">Продукты</h4>
@@ -786,6 +762,40 @@
                 </div>
             </div>
         </section>
+
+        <div class="footer mis-container pb-0 pt-5">
+
+            <span class="card-text request">Оставить заявку</span>
+
+            <form action="send.php" method="POST" class="footer__form form">
+
+                <div class="footer__top-wrapper">
+                    <div class="footer__input-group">
+                        <input type="text" class="input footer__input" placeholder="Ф.И.О." name="fullname" required
+                            minlength="2">
+                    </div>
+                    <div class="footer__input-group">
+                        <input type="tel" class="input footer__input phone" placeholder="Ваш телефон" name="phone"
+                            required minlength="5">
+                    </div>
+                    <div class="footer__input-group">
+                        <input type="tel" class="input footer__input email" placeholder="Ваш E-mail*" name="email"
+                            required>
+                    </div>
+                </div>
+
+                <div class="footer__bottom-wrapper">
+                    <textarea class="message footer__message" placeholder="Комментарий" name="message"></textarea>
+                    <div class="add-doc">
+                        <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
+                        <span class="card-text">Приложить документ до 10 мб</span>
+                    </div>
+                    <button class="btn footer__button" type="submit">Оформить заявку</button>
+                </div>
+
+            </form>
+
+        </div>
     </div>
     <wb-include wb-tpl="footer.inc.php" />
 </body>
