@@ -338,7 +338,7 @@ var Counters = function() {
         }
         //this.removeEventListener("scroll", onScroll);
         if (work == false && $(card).find('.aos-init').hasClass('aos-animate')) {
-            $(".card-1 .columns [data-max]").each(function(i) {
+            $(".columns.percent-columns [data-max]").each(function(i) {
                 work = true;
                 var that = this;
                 var start = +$(this).text();

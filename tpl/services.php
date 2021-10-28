@@ -1,6 +1,6 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
-
+<link rel="preload" href="/tpl/assets/js/animation.js" as="script">
 <body class="loading body-services cont-color-w">
   <wb-var bkg="header-4.jpg" />
   <wb-include wb-tpl="header.inc.php" />
@@ -270,7 +270,7 @@
               Заполнить ее данными организации, приобретавшей продукт.
             </p>
           </div>
-          <div class="columns">
+          <div class="columns percent-columns">
             <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
               <span class="number-1" data-max="87">0</span>
               <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>

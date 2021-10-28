@@ -1,5 +1,6 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
+<link rel="preload" href="/tpl/assets/js/animation.js" as="script">
 <body class="loading body-equipment cont-color-w" >
     <wb-var bkg="header-4.jpg" />
     <wb-include wb-tpl="header.inc.php" />
@@ -116,86 +117,82 @@
             исследованиях
           </p>
         </div>
-        <div class="columns">
-          <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
-            <span class="number-1" data-max="87">0</span>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
-            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="400"></div>
-          </div>
-          <div class="column-2" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
-            <span class="number-2" data-max="58">0</span>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
-          </div>
-          <div class="column-3" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
-            <span class="number-3" data-max="50">0</span>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-          </div>
-          <div class="column-4" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
-            <span class="number-4" data-max="52">0</span>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
-          </div>
-
-        </div>
-
+                    <div class="columns percent-columns">
+                        <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+                            <span class="number-3" data-max="20">0</span>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+                        </div>
+                        <div class="column-2" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800">
+                            <span class="number-4" data-max="87">0</span>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
+                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
+                        </div>
+                        <div class="column-3" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700">
+                            <span class="number-5" data-max="50">0</span>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+                        </div>
+                        <div class="column-4" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900">
+                            <span class="number-6" data-max="60">0</span>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                        </div>
+                    </div>
       </div>
     </div>
   </section>
