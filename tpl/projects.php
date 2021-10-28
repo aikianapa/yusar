@@ -5,9 +5,7 @@
     <wb-var bkg="header-4.jpg" />
     <wb-include wb-tpl="header.inc.php" />
 
-    <wb-include wb-tpl="widget-projects.inc.php" />
-
-    <div class="hide">
+ 
       <div class="container pt-3r pb-3r projects">
         <div class="tabs">
         <div class="tabs--item tabs--item--active">Российские</div>
@@ -250,7 +248,7 @@
         </div>
       </div>
       </wb-data>
-    </div>
+   
     </div>
     <wb-include wb-tpl="footer.inc.php" class="footer--mt-sm"/>
     

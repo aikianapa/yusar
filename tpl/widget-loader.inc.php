@@ -3,7 +3,7 @@ body.preloading {
   height: 100vh !important;
   width: 100vw;
   overflow: hidden !important;
-  background: #123b77!important;
+
   margin: 0 !important;
 
   * {
@@ -22,10 +22,12 @@ body.preloading {
     justify-content: center;
     align-items: center;
     height: 100vh !important;
-    width: 100vw;
+    width: 100vw !important;
     top:0;
-    transition: .3s;
+    transition: 0s;
     visibility: visible;
+    background: #123b77!important; 
+    border-radius: 0;
 
     img {
       margin-left: 15px;
