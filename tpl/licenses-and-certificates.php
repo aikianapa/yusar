@@ -10,7 +10,7 @@
 
   <div
      class="slick"
-     data-slick-options='{"autoplay: true,infinite":true,"lazyLoad":"ondemand",
+     data-slick-options='{"autoplay": true,"infinite":true,"lazyLoad":"ondemand",
      "responsive":[{"breakpoint":1800,"settings":{"slidesToShow":6,
      "slidesToScroll":1}},{"breakpoint":1200,"settings":{"slidesToShow":5,
      "slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":4,
