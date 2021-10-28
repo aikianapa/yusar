@@ -1986,31 +1986,32 @@ main .tsami .card-text {
     background: #E5E5E5
 }
 
-.reviews__button-prev {
+.reviews__button-prev {    
+    right: 50px;
+}
+
+.reviews__button-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    z-index: 1
+}
+
+.reviews__button-prev ,
+.reviews__button-next {
     width: 10px;
     height: 20px;
     position: absolute;
-    top: 80px;
-    right: 50px;
     background-image: url(../img/slider-arrow.svg);
+    top: 101px;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer
 }
 
-.reviews__button-next {
-    width: 10px;
-    height: 20px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    background-image: url(../img/slider-arrow.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-    cursor: pointer;
-    z-index: 1
+.reviews__button-prev:hover ,
+.reviews__button-next:hover {
+    background-image: url(../img/slider-arrow-h.svg);
 }
 
 .products {
@@ -2098,9 +2099,7 @@ main .tsami .card-text {
     width: 10px;
     height: 20px;
     position: absolute;
-    top: 0;
     right: 50px;
-    background-image: url(../img/slider-arrow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
@@ -2111,15 +2110,36 @@ main .tsami .card-text {
     width: 10px;
     height: 20px;
     position: absolute;
-    top: 0;
+    
     right: 0;
-    background-image: url(../img/slider-arrow.svg);
+    
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
     cursor: pointer;
     z-index: 1
+}
+
+.products__button-prev:before,
+.products__button-next:before {
+    background-image: url(../img/slider-arrow.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.products__button-prev,
+.products__button-next {
+    background-image: url(../img/slider-arrow.svg);
+    top: 132px;
+}
+
+
+.products__button-prev:hover,
+.products__button-next:hover {
+    background-image: url(../img/slider-arrow-h.svg);
 }
 
 @media (max-width: 1199px) {

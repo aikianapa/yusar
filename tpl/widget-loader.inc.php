@@ -1,7 +1,7 @@
 <style wb-module="scss">
 body.preloading {
   height: 100vh !important;
-  width: 100vw;
+  width: 100%;
   overflow: hidden !important;
 
   margin: 0 !important;
@@ -22,7 +22,7 @@ body.preloading {
     justify-content: center;
     align-items: center;
     height: 100vh !important;
-    width: 100vw !important;
+    width: 100% !important;
     top:0;
     transition: 0s;
     visibility: visible;
