@@ -1,6 +1,5 @@
 <html lang="ru">
 <wb-include wb-tpl="head.inc.php" />
-<link rel="preload" href="/tpl/assets/js/animation.js" as="script">
 <body class="loading body-services cont-color-w">
   <wb-var bkg="header-4.jpg" />
   <wb-include wb-tpl="header.inc.php" />

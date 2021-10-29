@@ -1,9 +1,6 @@
 <html lang="ru">
-<!-- <link rel="preload" href="/tpl/assets/js/scroolly.demo.min.js" as="script"> -->
 <link rel="preload" href="/tpl/assets/js/jquery.scroolly.js" as="script">
-<link rel="preload" href="/tpl/assets/js/animation.js" as="script">
 <wb-include wb-tpl="head.inc.php" />
-<link rel="preload" href="/tpl/assets/js/main-mobile.js" as="script">
 
 <body class="loading body-mis cont-color-w" >
     <wb-include wb-tpl="header.inc.php" />
