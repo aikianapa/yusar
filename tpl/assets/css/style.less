@@ -1794,10 +1794,19 @@ body {
             .card {
                 position: relative;
 
+                .card-title {
+                    position: absolute;
+                    color: #fff !important;
+                    top: 0;
+                    left: 0;
+                    padding: 42px;
+                    z-index: 10;
+                }
+
                 .more {
                     position: absolute;
                     right: 57px;
-                    bottom: 75px;
+                    bottom: 42px;
                     z-index: 10;
                     transition: 0.3s all ease;
 
@@ -1823,7 +1832,7 @@ body {
                 .card {
                     .more {
                         right: 25px;
-                        bottom: 50px;
+                        bottom: 30px;
 
                         .link-text {
                             margin-right: 10px;
@@ -1833,7 +1842,7 @@ body {
                     &:hover {
                         .more {
                             right: 25px;
-                            bottom: 50px;
+                            bottom: 30px;
                             
                             .link-text {
                                 margin-right: 10px;

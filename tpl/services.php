@@ -404,7 +404,7 @@
       </div>
     </div> -->
 
-    <div class="pt-3r pb-3r widget-service widget-service--service">
+    <div class="pb-3r widget-service widget-service--service">
       <div class="container widget ">
         <div class="row">
           <div class="col-md-6" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
@@ -414,7 +414,7 @@
                 <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/notebook-pic.jpg" alt="">
               </div>
               <div class="card-body">
-                <p class="card-text" style="margin-top: 15px;">Сервис программного обеспечения</p>
+                <p class="card-title">Сервис программного обеспечения</p>
               </div>
               <div class="more">
                 <span class="link-text">Подробнее</span>
@@ -431,7 +431,7 @@
                 <img class="card-img-top" data-src="tpl/assets/img/data-centre.jpg" alt="">
               </div>
               <div class="card-body">
-                <p class="card-text" style="margin-top: 15px;">Сервис оборудования</p>
+                <p class="card-title">Сервис оборудования</p>
               </div>
               <div class="more">
                 <span class="link-text">Подробнее</span>
