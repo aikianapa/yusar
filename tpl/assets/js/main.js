@@ -326,9 +326,9 @@ $(document).ready(function () {
     $(".mis-menu__item").removeClass("mis-menu__item-active");
     
     if (top > item6) {
-      $("#item-5").css("background", "#7A7F83");
-      $("#item-5").css("color", "#fff");
-      $("#item-5").toggleClass("mis-menu__item-active");
+      $("#item-6").css("background", "#7A7F83");
+      $("#item-6").css("color", "#fff");
+      $("#item-6").toggleClass("mis-menu__item-active");
     } else if (top > item5) {
       $("#item-5").css("background", "#7A7F83");
       $("#item-5").css("color", "#fff");
