@@ -5,7 +5,7 @@
   <wb-var bkg="header-4.jpg" />
   <wb-include wb-tpl="header.inc.php" />
 
-    <div class="card cable container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+    <!-- <div class="card cable container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
       <img class="background" src="tpl/assets/img/cable.png" alt="background">
       <div class="wrapper">
         <h3 class="card-title">
@@ -370,7 +370,7 @@
 
 
       </div>
-    </section>
+    </section> -->
 <!-- 
     <div class="automation container double-card">
       <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
