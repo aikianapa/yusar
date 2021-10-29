@@ -4,6 +4,7 @@
 <body class="loading body-services cont-color-w">
   <wb-var bkg="header-4.jpg" />
   <wb-include wb-tpl="header.inc.php" />
+
     <div class="card cable container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
       <img class="background" src="tpl/assets/img/cable.png" alt="background">
       <div class="wrapper">
@@ -148,7 +149,6 @@
       </div>
 
     </section>
-
 
     <div class="television container double-card">
       <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
@@ -371,7 +371,7 @@
 
       </div>
     </section>
-
+<!-- 
     <div class="automation container double-card">
       <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
         <img class="background" src="tpl/assets/img/automation.png" alt="background">
@@ -401,6 +401,46 @@
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
+      </div>
+    </div> -->
+
+    <div class="pt-3r pb-3r widget-service widget-service--service">
+      <div class="container widget ">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <a href="http://yusar.yonger.ru/service-software">
+            <div class="card card--second">
+              <div class="image__container">
+                <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/notebook-pic.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text" style="margin-top: 15px;">Сервис программного обеспечения</p>
+              </div>
+              <div class="more">
+                <span class="link-text">Подробнее</span>
+                <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+              </div>
+            </div>
+          </a>
+          </div>
+
+          <div class="col-md-6" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+          <a href="http://yusar.yonger.ru/service-equipment">
+            <div class="card card--second">
+              <div class="image__container">
+                <img class="card-img-top" data-src="tpl/assets/img/data-centre.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p class="card-text" style="margin-top: 15px;">Сервис оборудования</p>
+              </div>
+              <div class="more">
+                <span class="link-text">Подробнее</span>
+                <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+              </div>
+            </div>
+          </a>
+          </div>
+        </div>
       </div>
     </div>
 
