@@ -83,7 +83,8 @@
                             </nav>
 
                             <div class="col-12 px-0">
-                                <h1>{{lang.ru.header}}</h1>
+                                <h1 wb-if="'{{lang.ru.header}}'>''">{{lang.ru.header}}</h1>
+                                <h1 wb-if="'{{lang.ru.header}}'==''">{{header}}</h1>
                             </div>
                             <div class="col-12 col-lg-6 px-0">
                                 <p class="lead-text" wb-if="'{{_route.uri}}'!=='/project'">
