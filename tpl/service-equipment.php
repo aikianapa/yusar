@@ -105,7 +105,7 @@ $(document).one('ready-all', function (e) {
         {
           breakpoint: 568,
           settings: {
-            lidesToShow: 1
+            slidesToShow: 1
           }
         }
       ]
