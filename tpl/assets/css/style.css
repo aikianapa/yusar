@@ -1924,6 +1924,13 @@ main .tsami .card-text {
     overflow: hidden
 }
 
+@media(max-width: 568px) {
+    .reviews {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 .reviews .card-text {
     margin-bottom: 3rem
 }
@@ -2343,7 +2350,8 @@ main .tsami .card-text {
     color: #BDBDBD
 }
 
-.team {
+.team,
+.team-benefits {
     margin-bottom: 30px
 }
 

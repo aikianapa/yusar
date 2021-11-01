@@ -8,7 +8,8 @@
    <div class="container pt-3r pb-3r">
         <div class="row">
             <div class="col-md-8">
-                <wb-include wb-tpl="widget-slideshow.inc.php" />
+                <div class="slideshow-wrap"><wb-include wb-tpl="widget-slideshow.inc.php"/></div>
+                
                 <div class="pb-2r">{{text}}</div>
                 <wb-include wb-tpl="widget-uploads.inc.php" />
             </div>

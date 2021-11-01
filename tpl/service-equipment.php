@@ -101,6 +101,14 @@
 $(document).one('ready-all', function (e) {
     $(".slick").slick({
       slidesToShow: 2,
+      responsive: [
+        {
+          breakpoint: 568,
+          settings: {
+            lidesToShow: 1
+          }
+        }
+      ]
     })
 })
 </script>
