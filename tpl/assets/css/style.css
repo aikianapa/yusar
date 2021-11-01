@@ -1924,13 +1924,6 @@ main .tsami .card-text {
     overflow: hidden
 }
 
-@media(max-width: 568px) {
-    .reviews {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-
 .reviews .card-text {
     margin-bottom: 3rem
 }
@@ -5336,6 +5329,23 @@ body.body-services .hours .card-2 .card-text_first {
     }
 }
 
+@media(max-width: 568px) {
+    .reviews {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .body-mis .reviews,
+    .body-mis .products {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    body.body-mis .products {
+        padding-top: 4rem;
+    }
+}
+
 @media (max-width: 454px) {
     main .mis,
     main .pharmacy,
@@ -5353,3 +5363,4 @@ body.body-services .hours .card-2 .card-text_first {
 
 
 /*# sourceMappingURL=style.css.map */
+
