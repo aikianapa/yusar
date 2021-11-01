@@ -1786,6 +1786,8 @@ body {
         }
 
         &--service {
+            padding-top: 30px;
+
             .row {
                 margin: 0 -15px !important;
                 width: auto !important;
@@ -1801,6 +1803,10 @@ body {
                     left: 0;
                     padding: 42px;
                     z-index: 10;
+
+                    @media(max-width: 768px) {
+                        padding: 4vw;
+                    }
                 }
 
                 .more {

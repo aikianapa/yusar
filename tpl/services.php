@@ -403,7 +403,7 @@
       </div>
     </div> -->
 
-    <div class="pb-3r pt-4 widget-service widget-service--service">
+    <div class="pb-3r widget-service widget-service--service">
       <div class="container widget ">
         <div class="row">
           <div class="col-md-6" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
