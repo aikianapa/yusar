@@ -24,7 +24,7 @@
   }
 </style>
 
-<div class="container pt-3r pb-3r project">
+<div class="container pt-3r project">
 
   <div class="row align-items-start">
     <div class="col-12 col-md-8">

@@ -170,10 +170,12 @@
                         Отзывы
                     </a>
                 </li>
+                <li class="mobile-menu-list__item">
+                    <a href="#products" class="mobile-menu-list__link">
+                        Продукты
+                    </a>
+                </li>
             </ul>
-
-
-
         </div>
         <section class="purpose mis-container" id="purpose">
             <span class="section-label">Цель</span>
@@ -244,231 +246,236 @@
                 </div>
             </div>
         </section>
-        <section class="description mis-container" id="descriprion">
-            <span class="section-label" id="description">Описание</span>
-            <h2 class="section-title">Реализация процесса автоматизации деятельности медицинских учреждений</h2>
-            <div class="double-card">
 
-                <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
-                    data-aos-easing="ease-in-out">
+        <div id="descriprion">
+            <section class="description mis-container" >
+                <span class="section-label" id="description">Описание</span>
+                <h2 class="section-title">Реализация процесса автоматизации деятельности медицинских учреждений</h2>
+                <div class="double-card">
 
-                    <div class="card-wrapper">
-                        <h3 class="card-title">
-                            Общее описание системы
-                        </h3>
-                        <p class="card-text">
-                            МИС представляет собой автоматизированную информационную систему, основанную на принципах
-                            сервисно-ориентированной
-                            архитектупы (SOA). Система реализует процессный подход к&nbsp;автоматизации деятельности
-                            медицинского
-                            учреждения
-                            и&nbsp;обеспечивает сквозную многоуровневую поддержку лечебно&#8209;диагностического на всех
-                            его
-                            этапах
-                        </p>
+                    <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
+                        data-aos-easing="ease-in-out">
+
+                        <div class="card-wrapper">
+                            <h3 class="card-title">
+                                Общее описание системы
+                            </h3>
+                            <p class="card-text">
+                                МИС представляет собой автоматизированную информационную систему, основанную на принципах
+                                сервисно-ориентированной
+                                архитектупы (SOA). Система реализует процессный подход к&nbsp;автоматизации деятельности
+                                медицинского
+                                учреждения
+                                и&nbsp;обеспечивает сквозную многоуровневую поддержку лечебно&#8209;диагностического на всех
+                                его
+                                этапах
+                            </p>
+                        </div>
+
+                        <div class="columns percent-columns">
+                            <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
+                                <span class="number-3" data-max="20">0</span>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+                            </div>
+                            <div class="column-2" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800">
+                                <span class="number-4" data-max="87">0</span>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
+                                <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
+                            </div>
+                            <div class="column-3" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700">
+                                <span class="number-5" data-max="50">0</span>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
+                            </div>
+                            <div class="column-4" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900">
+                                <span class="number-6" data-max="60">0</span>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
+                                <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="columns percent-columns">
-                        <div class="column-1" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000">
-                            <span class="number-3" data-max="20">0</span>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
+                    <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
+                        data-aos-easing="ease-in-out">
+                        <div class="card-wrapper">
+                            <h3 class="card-title">
+                                Конфигурация
+                            </h3>
+                            <p class="card-text">
+                                Типовые конфигурации формируются из&nbsp;следующих подсистем, компонентов
+                                и&nbsp;модулей:
+                            </p>
                         </div>
-                        <div class="column-2" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800">
-                            <span class="number-4" data-max="87">0</span>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2700"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="600"></div>
-                            <div class="hr-blue" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="500"></div>
+
+                        <div class="components">
+
+                            <span class="card-text">Общесистемные компоненты:</span>
+
+                            <div class="components__item">
+                                <img src="tpl/assets/img/description-1.svg" alt="">
+                                <div class="components__wrapper">
+                                    <span class="components__title">Общесистемные механизмы</span>
+                                    <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
+                                        взаимно.
+                                        Катахреза
+                                        обретает системный феномен толпы.</span>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+
+                            <div class="components__item">
+                                <img src="tpl/assets/img/description-2.svg" alt="">
+                                <div class="components__wrapper">
+                                    <span class="components__title">Интеграционная платформа</span>
+                                    <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
+                                        взаимно.
+                                        Катахреза
+                                        обретает системный феномен толпы.</span>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+
+                            <div class="components__item">
+                                <img src="tpl/assets/img/description-3.svg" alt="">
+                                <div class="components__wrapper">
+                                    <span class="components__title">Средства администрирования</span>
+                                    <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
+                                        взаимно.
+                                        Катахреза
+                                        обретает системный феномен толпы.</span>
+                                </div>
+                            </div>
+                            <div class="hr"></div>
+
+                            <div class="components__item">
+                                <img src="tpl/assets/img/description-4.svg" alt="">
+                                <div class="components__wrapper">
+                                    <span class="components__title">Средства настройки и адаптации</span>
+                                    <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
+                                        взаимно.
+                                        Катахреза
+                                        обретает системный феномен толпы.</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="column-3" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="700">
-                            <span class="number-5" data-max="50">0</span>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="800"></div>
-                        </div>
-                        <div class="column-4" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900">
-                            <span class="number-6" data-max="60">0</span>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2600"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2500"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2400"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2300"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2200"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2100"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="2000"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1900"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1800"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1700"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1600"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1500"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1400"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1300"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1200"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1100"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="1000"></div>
-                            <div class="hr-gray" data-aos="zoom-in" data-aos-offset='-300' data-aos-delay="900"></div>
-                        </div>
+
+
                     </div>
                 </div>
-
-                <div class="card card-2" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
-                    data-aos-easing="ease-in-out">
-                    <div class="card-wrapper">
-                        <h3 class="card-title">
-                            Конфигурация
-                        </h3>
-                        <p class="card-text">
-                            Типовые конфигурации формируются из&nbsp;следующих подсистем, компонентов
-                            и&nbsp;модулей:
-                        </p>
-                    </div>
-
-                    <div class="components">
-
-                        <span class="card-text">Общесистемные компоненты:</span>
-
-                        <div class="components__item">
-                            <img src="tpl/assets/img/description-1.svg" alt="">
-                            <div class="components__wrapper">
-                                <span class="components__title">Общесистемные механизмы</span>
-                                <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
-                                    взаимно.
-                                    Катахреза
-                                    обретает системный феномен толпы.</span>
-                            </div>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div class="components__item">
-                            <img src="tpl/assets/img/description-2.svg" alt="">
-                            <div class="components__wrapper">
-                                <span class="components__title">Интеграционная платформа</span>
-                                <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
-                                    взаимно.
-                                    Катахреза
-                                    обретает системный феномен толпы.</span>
-                            </div>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div class="components__item">
-                            <img src="tpl/assets/img/description-3.svg" alt="">
-                            <div class="components__wrapper">
-                                <span class="components__title">Средства администрирования</span>
-                                <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
-                                    взаимно.
-                                    Катахреза
-                                    обретает системный феномен толпы.</span>
-                            </div>
-                        </div>
-                        <div class="hr"></div>
-
-                        <div class="components__item">
-                            <img src="tpl/assets/img/description-4.svg" alt="">
-                            <div class="components__wrapper">
-                                <span class="components__title">Средства настройки и адаптации</span>
-                                <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
-                                    взаимно.
-                                    Катахреза
-                                    обретает системный феномен толпы.</span>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </section>
-        <div class="sistem card mis-container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
-            data-aos-easing="ease-in-out">
-            <img class="background" src="tpl/assets/img/sistem.png" alt="background">
-            <div class="card-wrapper">
-                <h3 class="card-title">
-                    Функционал системы
-                </h3>
-                <p class="card-text">
-                    МИС представляет собой автоматизированную информационную систему, основанную на принципах
-                    сервисно-ориентированной
-                    архитектупы (SOA). Система реализует процессный подход к автоматизации деятельности медицинского
-                    учреждения и
-                    обеспечивает сквозную многоуровневую поддержку лечебно&#8209;диагностического на всех его этапах
-                </p>
-            </div>
-
-            <div class="card-bottom">
-                <img class="card-icon" src="tpl/assets/img/description-1.svg" alt="icon">
-                <a href="/thermal-imagers">
-                    <span class="link-text">Подробнее</span>
-                    <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
-                </a>
-            </div>
-        </div>
-        <section class="technical mis-container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
-
-            <div class="double-card">
-                <div class="card card-1 y-10">
-                    <img class="card-icon" src="tpl/assets/img/description-4.svg" alt="icon">
-                    <h2 class="card-title_big">
-                        Технические требования
-                    </h2>
+            </section>
+            
+            <div class="sistem card mis-container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
+                data-aos-easing="ease-in-out">
+                <img class="background" src="tpl/assets/img/sistem.png" alt="background">
+                <div class="card-wrapper">
                     <h3 class="card-title">
-                        Типовые конфигурации формируются из следующих подсистем, компонентов и модулей
+                        Функционал системы
                     </h3>
                     <p class="card-text">
-                        Общесистемные компоненты:
+                        МИС представляет собой автоматизированную информационную систему, основанную на принципах
+                        сервисно-ориентированной
+                        архитектупы (SOA). Система реализует процессный подход к автоматизации деятельности медицинского
+                        учреждения и
+                        обеспечивает сквозную многоуровневую поддержку лечебно&#8209;диагностического на всех его этапах
                     </p>
                 </div>
 
-                <div class="card card-2 y-10 swiper-mis-container technical-swiper">
-                    <div class="swiper-wrapper">
-                        <h2 class="card-title_big swiper-slide">
-                            Общесистемные механизмы
-                        </h2>
-                        <h2 class="card-title_big swiper-slide">
-                            Интеграционная платформа
-                        </h2>
-                        <h2 class="card-title_big swiper-slide">
-                            Средства администрирования
-                        </h2>
-                    </div>
+                <div class="card-bottom">
+                    <img class="card-icon" src="tpl/assets/img/description-1.svg" alt="icon">
+                    <a href="/thermal-imagers">
+                        <span class="link-text">Подробнее</span>
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
+                    </a>
                 </div>
             </div>
-        </section>
+            <section class="technical mis-container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
+
+                <div class="double-card">
+                    <div class="card card-1 y-10">
+                        <img class="card-icon" src="tpl/assets/img/description-4.svg" alt="icon">
+                        <h2 class="card-title_big">
+                            Технические требования
+                        </h2>
+                        <h3 class="card-title">
+                            Типовые конфигурации формируются из следующих подсистем, компонентов и модулей
+                        </h3>
+                        <p class="card-text">
+                            Общесистемные компоненты:
+                        </p>
+                    </div>
+
+                    <div class="card card-2 y-10 swiper-mis-container technical-swiper">
+                        <div class="swiper-wrapper">
+                            <h2 class="card-title_big swiper-slide">
+                                Общесистемные механизмы
+                            </h2>
+                            <h2 class="card-title_big swiper-slide">
+                                Интеграционная платформа
+                            </h2>
+                            <h2 class="card-title_big swiper-slide">
+                                Средства администрирования
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <section class="benefits mis-container" id="benefits">
             <span class="section-label" id="benefits">Преимущества</span>
             <h2 class="section-title">Реализация процесса автоматизации деятельности медицинских учреждений</h2>

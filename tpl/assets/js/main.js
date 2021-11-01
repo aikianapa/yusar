@@ -1,14 +1,123 @@
 $(document).ready(function() {
 
 
-    const top = window.pageYOffset;
-    var item1, item2, item3, item4, item5, item6;
-    $("#purpose").length ? item1 = $("#purpose").offset().top - 120 : null;
-    $("#descriprion").length ? item2 = $("#descriprion").offset().top - 120 : null;
-    $("#benefits").length ? item3 = $("#benefits").offset().top - 120 : null;
-    $("#news").length ? item4 = $("#news").offset().top - 120 : null;
-    $("#reviews").length ? item5 = $("#reviews").offset().top - 120 : null;
-    $("#products").length ? item6 = $("#products").offset().top - 120 : null;
+    const scrollTop = window.pageYOffset;
+    var a = -1800;
+     
+    var item1 = $("#purpose"), 
+        item1Poition = parseInt(item1.offset().top - a),
+        item1Height = item1.outerHeight(),
+
+        item2 = $("#descriprion"), 
+        item2Poition = parseInt(item2.offset().top - a),
+        item2Height = item2.outerHeight(),
+
+        item3 = $("#benefits"), 
+        item3Poition = parseInt(item3.offset().top - a),
+        item3Height = item3.outerHeight(),
+
+        item4 = $("#news"), 
+        item4Poition = parseInt(item4.offset().top - a),
+        item4Height = item4.outerHeight(),
+
+        item5 = $("#reviews"), 
+        item5Poition = parseInt(item5.offset().top - a),
+        item5Height = item5.outerHeight(),
+
+        item6 = $("#products"), 
+        item6Poition = parseInt(item6.offset().top - a),
+        item6Height = item6.outerHeight();
+
+     
+    // $("#purpose").length ? item1 = $("#purpose").offset().top - 120 : null;
+    // $("#descriprion").length ? item2 = $("#descriprion").offset().top - 120 : null;
+    // $("#benefits").length ? item3 = $("#benefits").offset().top - 120 : null;
+    // $("#news").length ? item4 = $("#news").offset().top - 120 : null;
+    // $("#reviews").length ? item5 = $("#reviews").offset().top - 120 : null;
+    // $("#products").length ? item6 = $("#products").offset().top - 120 : null;
+    
+    // $("#purpose").length ? item1.top - 120 : null;
+    // $("#descriprion").length ? item2.top - 120 : null;
+    // $("#benefits").length ? item3.top - 120 : null;
+    // $("#news").length ? item4.top - 120 : null;
+    // $("#reviews").length ? item5.top - 120 : null;
+    // $("#products").length ? item6.top - 120 : null;
+
+    $(document).scroll(function(){
+        var scrollTop = window.pageYOffset;
+
+        $(".mis-menu__item").css("background", "none");
+        $(".mis-menu__item").css("color", "#444");
+        $(".mis-menu__item").removeClass("mis-menu__item-active");
+
+        if(scrollTop >= item1Poition && scrollTop <= item1Poition + item1Height) {
+            $("#item-1").css("background", "#7A7F83");
+            $("#item-1").css("color", "#fff");
+            $("#item-1").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Цель ");
+        } 
+
+        if(scrollTop >= item2Poition && scrollTop <= item2Poition + item2Height) {
+            $("#item-2").css("background", "#7A7F83");
+            $("#item-2").css("color", "#fff");
+            $("#item-2").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Описание ");
+        } 
+        
+        if(scrollTop >= item3Poition && scrollTop <= item3Poition + item3Height) {
+            $("#item-3").css("background", "#7A7F83");
+            $("#item-3").css("color", "#fff");
+            $("#item-3").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Преимущества ");
+        } 
+        
+        if(scrollTop >= item4Poition && scrollTop <= item4Poition + item4Height) {
+            $("#item-4").css("background", "#7A7F83");
+            $("#item-4").css("color", "#fff");
+            $("#item-4").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Новости ");
+        } 
+        
+        if(scrollTop >= item5Poition && scrollTop <= item5Poition + item5Height) {
+            $("#item-5").css("background", "#7A7F83");
+            $("#item-5").css("color", "#fff");
+            $("#item-5").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Отзывы ");
+        } 
+        
+        if(scrollTop >= item6Poition && scrollTop <= item6Poition + item6Height) {
+            $("#item-6").css("background", "#7A7F83");
+            $("#item-6").css("color", "#fff");
+            $("#item-6").addClass("mis-menu__item-active");
+            $(".drop-down-list").text("Продукты ");
+        } 
+     
+        // if (scrollTop > item6) {
+        //     $("#item-6").css("background", "#7A7F83");
+        //     $("#item-6").css("color", "#fff");
+        //     $("#item-6").toggleClass("mis-menu__item-active");
+        // } else if (scrollTop > item5) {
+        //     $("#item-5").css("background", "#7A7F83");
+        //     $("#item-5").css("color", "#fff");
+        //     $("#item-5").toggleClass("mis-menu__item-active");
+        // } else if (scrollTop > item4) {
+        //     $("#item-4").css("background", "#7A7F83");
+        //     $("#item-4").css("color", "#fff");
+        //     $("#item-4").toggleClass("mis-menu__item-active");
+        // } else if (scrollTop > item3) {
+        //     $("#item-3").css("background", "#7A7F83");
+        //     $("#item-3").css("color", "#fff");
+        //     $("#item-3").toggleClass("mis-menu__item-active");
+        // } else if (scrollTop > item2) {
+        //     $("#item-2").css("background", "#7A7F83");
+        //     $("#item-2").css("color", "#fff");
+        //     $("#item-2").toggleClass("mis-menu__item-active");
+        // } else if (scrollTop > item1Poition) {
+        //     $("#item-1").css("background", "#7A7F83");
+        //     $("#item-1").css("color", "#fff");
+        //     $("#item-1").toggleClass("mis-menu__item-active");
+        // }
+    });
 
     // ****** Mobile ****** //
 
@@ -27,21 +136,6 @@ $(document).ready(function() {
             $(".mobile-menu-list").toggleClass("mobile-menu-list-active");
         });
     }) : null;
-
-    $(document).scroll(function() {
-        if (top > item5) {
-            $(".drop-down-list").text("Отзывы ");
-        } else if (top > item4) {
-            $(".drop-down-list").text("Новости ");
-        } else if (top > item3) {
-            $(".drop-down-list").text("Преимущества ");
-        } else if (top > item2) {
-            $(".drop-down-list").text("Описание ");
-        } else if (top > item1) {
-            $(".drop-down-list").text("Цель ");
-        }
-    });
-
 
     //плавное перемещение по странице
     $(function() {});
@@ -347,7 +441,6 @@ $(document).ready(function() {
             aosref = true;
         }
 
-
         function menuItemHover() {
             $(".mis-menu__item").mouseover(function(e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
@@ -365,36 +458,6 @@ $(document).ready(function() {
         }
 
         menuItemHover();
-
-        $(".mis-menu__item").css("background", "none");
-        $(".mis-menu__item").css("color", "#444");
-        $(".mis-menu__item").removeClass("mis-menu__item-active");
-
-        if (top > item6) {
-            $("#item-6").css("background", "#7A7F83");
-            $("#item-6").css("color", "#fff");
-            $("#item-6").toggleClass("mis-menu__item-active");
-        } else if (top > item5) {
-            $("#item-5").css("background", "#7A7F83");
-            $("#item-5").css("color", "#fff");
-            $("#item-5").toggleClass("mis-menu__item-active");
-        } else if (top > item4) {
-            $("#item-4").css("background", "#7A7F83");
-            $("#item-4").css("color", "#fff");
-            $("#item-4").toggleClass("mis-menu__item-active");
-        } else if (top > item3) {
-            $("#item-3").css("background", "#7A7F83");
-            $("#item-3").css("color", "#fff");
-            $("#item-3").toggleClass("mis-menu__item-active");
-        } else if (top > item2) {
-            $("#item-2").css("background", "#7A7F83");
-            $("#item-2").css("color", "#fff");
-            $("#item-2").toggleClass("mis-menu__item-active");
-        } else if (top > item1) {
-            $("#item-1").css("background", "#7A7F83");
-            $("#item-1").css("color", "#fff");
-            $("#item-1").toggleClass("mis-menu__item-active");
-        }
     });
 
     //   if (top > item1) {
