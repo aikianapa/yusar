@@ -201,7 +201,7 @@
                             статической отчетности.
                         </p>
                     </div>
-                    <a href="#">
+                    <a href="/thermal-imagers">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -237,7 +237,7 @@
                         </p>
                     </div>
 
-                    <a href="#">
+                    <a href="/thermal-imagers">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -432,7 +432,7 @@
 
             <div class="card-bottom">
                 <img class="card-icon" src="tpl/assets/img/description-1.svg" alt="icon">
-                <a href="#">
+                <a href="/thermal-imagers">
                     <span class="link-text">Подробнее</span>
                     <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                 </a>
@@ -498,7 +498,7 @@
                     <span class="section-label" id="news">Новости</span>
                     <h2 class="section-title">Специальные условия</h2>
                 </div>
-                <a href="#">
+                <a href="/thermal-imagers">
                     <span class="link-text">В&nbsp;раздел</span>
                     <img class="link-icon" src="tpl/assets/img/chapter.svg" alt="icon">
                 </a>
@@ -506,7 +506,7 @@
 
             <div class="special__item _anim-items">
                 <span class="card-date">12.10.2021</span>
-                <a class="special__article" href="#">
+                <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">ЮСАР+ на международном спортивном форуме ”SportForumLive”</span>
                     <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
@@ -514,7 +514,7 @@
             <div class="hr"></div>
             <div class="special__item _anim-items">
                 <span class="card-date">12.10.2021</span>
-                <a class="special__article" href="#">
+                <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Работа на результат</span>
                     <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
@@ -522,7 +522,7 @@
             <div class="hr"></div>
             <div class="special__item _anim-items">
                 <span class="card-date">12.10.2021</span>
-                <a class="special__article" href="#">
+                <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Онлайн-бизнес-миссия ЮСАР+ в Швейцарии</span>
                     <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
@@ -530,7 +530,7 @@
             <div class="hr"></div>
             <div class="special__item _anim-items">
                 <span class="card-date">12.10.2021</span>
-                <a class="special__article" href="#">
+                <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Катахреза обретает системный феномен толпы.</span>
                     <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
@@ -647,7 +647,7 @@
 
                 <div class="swiper-wrapper products__wrapper">
 
-                    <a href="#" class="card products__card-1 swiper-slide y-10">
+                    <a href="/ris" class="card products__card-1 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 РИС
@@ -660,7 +660,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-2 swiper-slide y-10">
+                    <a href="/paks" class="card products__card-2 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 ПАКС
@@ -673,7 +673,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-3 swiper-slide y-10">
+                    <a href="/pharmacy" class="card products__card-3 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 Аптека
@@ -686,7 +686,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-4 swiper-slide y-10">
+                    <a href="/telemedicine" class="card products__card-4 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 Телемедицина
@@ -699,7 +699,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-1 swiper-slide y-10">
+                    <a href="/ris" class="card products__card-1 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 РИС
@@ -712,7 +712,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-2 swiper-slide y-10">
+                    <a href="/paks" class="card products__card-2 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 ПАКС
@@ -725,7 +725,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-3 swiper-slide y-10">
+                    <a href="/pharmacy" class="card products__card-3 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 Аптека
@@ -738,7 +738,7 @@
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
-                    <a href="#" class="card products__card-4 swiper-slide y-10">
+                    <a href="/telemedicine" class="card products__card-4 swiper-slide y-10">
                         <div class="card-wrapper">
                             <h3 class="card-title">
                                 Телемедицина

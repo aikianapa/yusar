@@ -16,7 +16,7 @@
           </h3>
           <p class="card-text">Тепловизорная система с функцией определения лиц с повышенной температурой тела</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -47,7 +47,7 @@
           </h3>
           <p class="card-text">Устройство для измерения температуры тела</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -65,7 +65,7 @@
             <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
           </div>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -81,7 +81,7 @@
       </h3>
       <p class="card-text">Неинвазивное исследование организма человека или животного с помощью ультразвуковых волн</p>
     </div>
-    <a href="#">
+    <a href="/thermal-imagers">
       <span class="link-text">Подробнее</span>
       <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
     </a>
@@ -100,7 +100,7 @@
             Широкий ассортимент ангиографических систем для изображения высочайшего качества
           </p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -209,7 +209,7 @@
             тканей с использованием явления
             ядерного магнитного резонанса</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -224,7 +224,7 @@
           <p class="card-text">Комплексное оснащение операционных</p>
 
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -242,7 +242,7 @@
             обеспечивают получение качественных
             изображений с высокой скоростью и точностью</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -256,7 +256,7 @@
           </h3>
           <p class="card-text">Метод используется как для диагностики, так и для лечения различных заболеваний</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -272,7 +272,7 @@
         </h3>
         <p class="card-text">Система трансформации рентгеновского аппарата аналогового типа в цифровую систему</p>
       </div>
-      <a href="#">
+      <a href="/thermal-imagers">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
@@ -290,7 +290,7 @@
           <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
         </div>
       </div>
-      <a href="#">
+      <a href="/thermal-imagers">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
@@ -306,7 +306,7 @@
         </h3>
         <p class="card-text">Тепловизорная система с функцией определения лиц</p>
       </div>
-      <a href="#">
+      <a href="/thermal-imagers">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
@@ -320,7 +320,7 @@
         </h3>
         <p class="card-text">Тепловизорная система с функцией определения лиц</p>
       </div>
-      <a href="#">
+      <a href="/thermal-imagers">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>

@@ -24,7 +24,7 @@
                         с новейшими технологиями
                     </h3>
                 </div>
-                <a href="#">
+                <a href="/team">
                     <span class="link-text">Подробнее</span>
                     <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                 </a>
@@ -39,7 +39,7 @@
                         <span class="section-title">Мы работаем с 1964 года</span>
                     </div>
 
-                    <a href="#">
+                    <a href="/history">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -54,7 +54,7 @@
                         <p class="card-text">Заполнить ее данными организации, приобретавшей продукт.</p>
                     </div>
 
-                    <a href="#">
+                    <a href="/licenses-and-certificates">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -80,6 +80,10 @@
                         связи!
                     </p>
                 </div>
+                <a href="/partners">
+                    <span class="link-text">Подробнее</span>
+                    <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
+                </a>
             </div>
 
             <div class="card card-2 swiper-container partners-swiper" data-aos="fade-up" data-aos-duration="1700"
@@ -110,7 +114,7 @@
                             Онлайн реализация
                         </p>
                     </div>
-                    <a href="#">
+                    <a href="/reviews">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -130,7 +134,7 @@
                             новых вакансий
                         </h3>
                     </div>
-                    <a href="#">
+                    <a href="/vacancy">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
@@ -147,7 +151,7 @@
                         Тепловизорная система с функцией определения лиц
                     </p>
                 </div>
-                <a href="#">
+                <a href="/team">
                     <span class="link-text">Подробнее</span>
                     <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                 </a>

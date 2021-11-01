@@ -19,8 +19,8 @@
      "slidesToScroll":1}},{"breakpoint":480,"settings":{"slidesToShow":1,
      "slidesToScroll":1}}],"slidesToShow":7,"slidesToScroll":1}'>
      <wb-foreach wb="count=10">
-      <a data-fslightbox="medicine" href="/tpl/assets/img/certificate.jpg">
-        <img src="/tpl/assets/img/certificate.jpg" alt="">
+      <a data-fslightbox="medicine" href="/tpl/assets/img/full_s.jpg">
+        <img src="/tpl/assets/img/full_s.jpg" alt="">
       </a>
     </wb-foreach>
      <!-- <a data-fslightbox="license" href="https://via.placeholder.com/320x400.png?text=Лицензия+1">

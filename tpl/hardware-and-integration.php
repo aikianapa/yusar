@@ -25,7 +25,7 @@
         Медицинское оборудование
       </h3>
     </div>
-    <a href="#">
+    <a href="/equipment">
       <span class="link-text">Подробнее</span>
       <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
     </a>
@@ -37,11 +37,11 @@
       <img class="background" src="tpl/assets/img/complex.png" alt="background">
       <div class="wrapper">
         <h3 class="card-title">
-          Комплексные инжинерные системы
+          Комплексные инженерные системы
         </h3>
         <p class="card-text">Тепловизорная система с функцией определения лиц</p>
       </div>
-      <a href="#">
+      <a href="/complex">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
@@ -99,7 +99,7 @@
           Системная интеграция
         </h3>
       </div>
-      <a href="#">
+      <a href="/system">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>

@@ -44,7 +44,7 @@
                         электронный адрес, для получения обратной
                         связи!</p>
                 </div>
-                <a href="#">
+                <a href="/mis">
                     <span class="link-text">Подробнее</span>
                     <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                 </a>
@@ -67,7 +67,7 @@
                             <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="/ris">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -83,7 +83,7 @@
                             <img class="icon" src="tpl/assets/img/skyblue.svg" alt="icon">
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="/paks">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -102,7 +102,7 @@
                             <img class="icon" src="tpl/assets/img/two.svg" alt="icon">
                         </div>
                     </div>
-                    <a href="#">
+                    <a href="/telemedicine">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -116,7 +116,7 @@
                             электронный адрес, для получения обратной
                             связи!</p>
                     </div>
-                    <a href="#">
+                    <a href="/endoscopy">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -127,7 +127,7 @@
                         <h3 class="card-title">Аптека</h3>
                         <p class="card-text">Онлайн реализация</p>
                     </div>
-                    <a href="#">
+                    <a href="/pharmacy">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -138,7 +138,7 @@
                         <h3 class="card-title">Искусственный Интеллект</h3>
                         <p class="card-text">Нейросети в медицине</p>
                     </div>
-                    <a href="#">
+                    <a href="/artificial-intelligence">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>
@@ -149,7 +149,7 @@
                         <h3 class="card-title">ЦАМИ</h3>
                         <p class="card-text">Центральный архив медицинских изображений</p>
                     </div>
-                    <a href="#">
+                    <a href="/cami">
                         <span class="link-text">Подробнее</span>
                         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее"></a>
                 </div>

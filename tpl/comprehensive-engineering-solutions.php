@@ -18,7 +18,7 @@
           связи!
         </p>
       </div>
-      <a href="#">
+      <a href="/thermal-imagers">
         <span class="link-text">Подробнее</span>
         <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
       </a>
@@ -35,7 +35,7 @@
             </h3>
             <p class="card-text">Тепловизорная система с функцией определения лиц</p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -67,7 +67,7 @@
             <p class="card-text"> — &nbsp; Обеспечивать стабильное информационное взаимодействие между&nbsp;абонентами.
             </p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -84,7 +84,7 @@
             </h3>
             <p class="card-text">Заполнить ее данными организации, приобретавшей продукт.</p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -124,7 +124,7 @@
             </div>
 
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -142,7 +142,7 @@
               <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
             </div>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -162,7 +162,7 @@
             адрес, для получения обратной
             связи!</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -178,7 +178,7 @@
             адрес, для получения обратной
             связи!</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -196,7 +196,7 @@
             </h3>
             <p class="card-text">Онлайн реализация</p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -214,7 +214,7 @@
               связи!</p>
 
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -233,7 +233,7 @@
               адрес, для получения обратной
               связи!</p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -251,7 +251,7 @@
               <img class="icon" src="tpl/assets/img/orbit.svg" alt="icon">
             </div>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -363,7 +363,7 @@
               Тепловизорная система с функцией определения лиц
             </p>
           </div>
-          <a href="#">
+          <a href="/thermal-imagers">
             <span class="link-text">Подробнее</span>
             <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
           </a>
@@ -384,7 +384,7 @@
             адрес, для получения обратной
             связи!</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>
@@ -398,7 +398,7 @@
           </h3>
           <p class="card-text">Тепловизорная система с функцией определения лиц</p>
         </div>
-        <a href="#">
+        <a href="/thermal-imagers">
           <span class="link-text">Подробнее</span>
           <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
         </a>

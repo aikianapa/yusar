@@ -4,7 +4,7 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="">О компании</a>
+                        <a class="nav-link" href="/about">О компании</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about">Наша компания</a>
@@ -42,7 +42,7 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="">IT-продукты</a>
+                        <a class="nav-link" href="/it-products">IT-продукты</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/mis">МИС</a>
@@ -75,7 +75,7 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Оборудование и интеграция</a>
+                        <a class="nav-link" href="/hardware-and-integration">Оборудование и интеграция</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/equipment">Медицинское оборудование</a>
@@ -91,7 +91,7 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Услуги</a>
+                        <a class="nav-link" href="/services">Услуги</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/service-software">Сервис программного обеспечения</a>
@@ -106,7 +106,7 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="">Проекты</a>
+                        <a class="nav-link" href="/projects">Проекты</a>
                         <ul>
                             <li class="nav-item">
                                 <a class="nav-link" href="/map-presence">Карта присутствия</a>
@@ -178,7 +178,7 @@
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-4 order-4 text-md-right">
                 <a href="//idees.ru" class="studio-link">
-                    Создавайте сайты у нас
+                    Сделано в
                     <svg width="24" height="24" style="margin-right: 0;">
                         <image width="24" height="24" xlink:href="/tpl/assets/img/logo-id.svg"/>
                     </svg>
