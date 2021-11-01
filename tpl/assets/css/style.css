@@ -5344,6 +5344,12 @@ body.body-services .hours .card-2 .card-text_first {
     body.body-mis .products {
         padding-top: 4rem;
     }
+    
+    .products .card-text,
+    body .reviews .card-text {
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+    }
 }
 
 @media (max-width: 454px) {
