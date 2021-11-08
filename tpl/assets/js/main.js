@@ -2,10 +2,10 @@ $(document).ready(function() {
 
     if($('.body-mis').length) {
         const scrollTop = window.pageYOffset;
-        var a = -1800;
+        var a = 4000;
     
         if(window.innerWidth <= 568) {
-            var a = -1700;
+            var a = 3850;
         }
          
         var item1 = $("#purpose"), 
@@ -140,7 +140,8 @@ $(document).ready(function() {
         event.preventDefault();
 
         var sc = $(this).attr("href"),
-            dn = $(sc).offset().top;
+            dn = $(sc).offset().top - 80;
+            
 
         $("html, body").animate({ scrollTop: dn }, 800);
     });
