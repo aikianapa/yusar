@@ -1,9 +1,9 @@
 var animation = () => {
 
-    var animationHeight = 8000;
     var vh = $(window).height();
     var vw = $(window).width();
     var sh = vw - vh;
+    var animationHeight = vh * 3;
     sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
 
 
@@ -41,10 +41,9 @@ var animation = () => {
                     },
                     {
                         alias: "unfixing",
-                        from: "con-top + " + Math.ceil(ht * 1.5) + " = bottom",
+                        from: "con-top + " + Math.ceil(ht) + " = bottom",
                         to: "doc-bottom",
                         css: {
-                            position: "absolute",
                             top: "",
                             bottom: "0",
                         },
@@ -89,7 +88,7 @@ var animation = () => {
             $(".staging-1 .scene-2").scroolly(
                 [{
                     from: "con-top",
-                    to: "con-top + 500 = top",
+                    to: "con-top + 200 = top",
                     cssFrom: {
                         transform: "translateY(-0.01px)",
                     },
@@ -119,7 +118,7 @@ var animation = () => {
                 let os = Math.ceil((stop - start) / images);
                 offset[i] = start + os * (i + 1);
                 if (i !== 0) {
-                    if (i + 1 <= images) {
+                    if (i + 1 < images) {
                         $(".staging-1 .scene-2 img:eq(" + (i - 1) + ")").scroolly([{
                                 from: "con-top + " + (offset[i - 1]) + " = top",
                                 to: "con-top + " + (offset[i]) + " = top",
@@ -161,7 +160,7 @@ var animation = () => {
             // Плашки //  
             var height = $(".staging-1 .statistics-1 .statistics__item:eq(0)").height();
             var off = height;
-            var top = Math.ceil(ht / 8);
+            var top = 0;
             var stop1;
             var stop2;
             var plates;
@@ -172,14 +171,14 @@ var animation = () => {
                 // первый блок плашек
                 plates = $('.staging-1 .statistics-1 .statistics__item').length;
                 for (i = 1; i <= plates; i++) {
-                    let start = Math.ceil(top + ((i - 1) * height / 2));
+                    let start = Math.ceil(top + ((i - 1) * height));
                     let stop = stop1 = Math.ceil(top + (i * height));
                     $(".staging-1 .statistics-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                         [{
                             from: "con-top + " + start + " = top",
                             to: "con-top + " + stop + " = top",
                             cssFrom: {
-                                transform: "translateY(14.999vh)",
+                                transform: "translateY(10.999vh)",
                                 opacity: "0.001"
                             },
                             cssTo: {
@@ -194,20 +193,18 @@ var animation = () => {
                     );
                 }
 
-                stop1 = Math.ceil(stop1 + (vh / 3));
-
                 // второй блок плашек
                 plates = $('.staging-1 .statistics-2 .statistics__item').length;
-                top = stop1 + vh * 2;
+                top = stop1 + vh - height * 2;
                 for (i = 1; i <= plates; i++) {
-                    let start = Math.ceil(top + ((i - 1) * height / 2));
+                    let start = Math.ceil(top + ((i - 1) * height));
                     let stop = stop2 = Math.ceil(top + (i * height));
                     $(".staging-1 .statistics-2 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                         [{
                             from: "con-top + " + start + " = top",
                             to: "con-top + " + stop + " = top",
                             cssFrom: {
-                                transform: "translateY(14.999vh)",
+                                transform: "translateY(10.999vh)",
                                 opacity: "0.001"
                             },
                             cssTo: {
@@ -219,10 +216,10 @@ var animation = () => {
                     );
                 }
 
-                stop2 = Math.ceil(stop2 + (vh / 3));
+                stop2 = Math.ceil(stop2);
 
-                // весь блок плашек наверх
-                let start = Math.ceil(stop1 + vh);
+                // весь блок плашек 1 наверх
+                let start = Math.ceil(stop1);
                 let stop = start + vh;
                 $(".staging-1 .statistics-1").scroolly(
                     [{
@@ -239,9 +236,9 @@ var animation = () => {
                     }],
                     $(".staging-1")
                 );
-
-                start = Math.ceil(stop2 + vh);
-                stop = ht - vh;
+                // весь блок плашек 2 наверх
+                start = Math.ceil(stop2);
+                stop = start + vh / 2;
                 $(".staging-1 .statistics-2").scroolly(
                     [{
                         from: "con-top + " + start + " = top",
@@ -258,8 +255,22 @@ var animation = () => {
                     $(".staging-1")
                 );
 
+                // блок с картинками тоже наверх
+                $(".staging-1 .scene-2").scroolly(
+                    [{
+                        from: "con-top + " + start + " = top",
+                        to: "con-top + " + stop + " = top",
+                        cssFrom: {
+                            transform: "translateY(-" + ofy + "px)",
+                        },
+                        cssTo: {
+                            transform: "translateY(-" + (vh + ih) + "px)",
+                        }
+                    }, ],
+                    $(".staging-1")
+                );
             } else {
-                top = start + vh;
+                top = vh;
                 let offset = [];
                 let plates = $('.statistics.mis-container').find('.statistics__item').length;
                 let os = Math.ceil((ht - top - vh) / plates);
@@ -273,7 +284,7 @@ var animation = () => {
                                 from: "con-top + " + (offset[i - 1]) + " = top",
                                 to: "con-top + " + (offset[i]) + " = top",
                                 cssFrom: {
-                                    "top": vh - 400 + "px",
+                                    "top": vh - Math.ceil(vh / 4) + "px",
                                     "opacity": "0.001"
                                 },
                                 cssTo: {
@@ -297,6 +308,22 @@ var animation = () => {
                         $(".staging-1")
                     );
                 }
+                start = ht - Math.ceil(vh * 0.8);
+                stop = start + vh;
+                // блок с картинками тоже наверх
+                $(".staging-1 .scene-2").scroolly(
+                    [{
+                        from: "con-top + " + start + " = top",
+                        to: "con-top + " + stop + " = top",
+                        cssFrom: {
+                            transform: "translateY(-" + ofy + "px)",
+                        },
+                        cssTo: {
+                            transform: "translateY(-" + (vh + ih) + "px)",
+                        }
+                    }, ],
+                    $(".staging-1")
+                );
             }
         }
     }
@@ -309,7 +336,7 @@ var animation = () => {
             var ofi = Math.ceil((vh - ih) / 2);
             $(".staging-1 .scene-1").css({ 'top': '216px' });
             //$(".staging-1 .scene-2").css({ 'transform': 'translateY(' + ofy + ')' });
-            $(".staging-1 .scene-2").css({ 'transform': 'translateY(-' + ofy + 'px)' });
+            $(".staging-1 .scene-2").css({ 'transform': 'translateY(25vh)' });
             $(".staging-1 .scene-2 img").css({ 'opacity': '0', 'z-index': '0', "margin-top": ofi + "px" });
             $(".staging-1 .statistics__item").css({ 'opacity': '0' });
         }, 10)
