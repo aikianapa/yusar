@@ -282,7 +282,7 @@ body.body-mis .container {
 body.body-mis .body-mis__container>div:not(.mis-menu-wrapper),
 body.body-mis .body-mis__container>section:not(.mis-menu-wrapper),
 body.body-mis>div:not(.body-mis__container) {
-    overflow-x: hidden !important;
+    overflow: hidden !important;
 }
 
 body.body-mis,
