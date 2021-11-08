@@ -50,7 +50,7 @@
 
                         </div>
                     </div>
-                    <div class="col-9 col-sm-10" style="padding-left: 0 !important;">
+                    <div class="col-9 col-sm-10  history-slider__cont" style="padding-left: 0 !important;">
                         <div class="slick slick-for dates-slider" data-options="vertical=true&amp;verticalSwiping=true&amp;dots=false&amp;slidesToShow=1&amp;slidesToScroll=1&amp;responsive=false&amp;dots=false&amp;infinite=true&amp;arrows=false&amp;adaptiveHeight&amp;true" id="fp_id617bf3170ee9">
                             <!-- обязательно через src !!! -->
                             <div>
