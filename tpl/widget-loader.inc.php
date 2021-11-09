@@ -1,10 +1,11 @@
 <style wb-module="scss">
-body.preloading {
-  height: 100vh !important;
-  width: 100%;
-  overflow: hidden !important;
 
-  margin: 0 !important;
+body {
+  margin: 0;
+}
+
+body.preloading {
+ 
 
   * {
     visibility: hidden;
@@ -17,7 +18,7 @@ body.preloading {
   }
 
   .preloader {
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
