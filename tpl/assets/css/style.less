@@ -4339,11 +4339,19 @@ body {
     .history-slider {
         margin-left: 15px;
 
-        // & > .row {
-        //     margin-right: -20px;
-        // }
+        & > .row {
+            // margin-right: 0;
+            // margin-left: 0;
+        }
     }
-    // .history-slider__cont {
-    //     padding-right: 0;
-    // }
+
+    .history-slider__cont {
+        -ms-flex: 0 0 ~"calc(100% - 80px)";
+        flex: 0 0 ~"calc(100% - 80px)";
+        max-width: ~"calc(100% - 80px)";
+    }
+
+    body #History .dates {
+        
+    }
 }
