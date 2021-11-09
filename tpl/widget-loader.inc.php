@@ -5,7 +5,7 @@ body {
 }
 
 body.preloading {
- 
+  overflow: hidden;
 
   * {
     visibility: hidden;
