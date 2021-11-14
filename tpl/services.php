@@ -403,7 +403,7 @@
       </div>
     </div> -->
 
-    <div class="pb-3r pt-3r widget-service widget-service--service">
+    <div class="pt-3r s-indent-bottom widget-service widget-service--service">
       <div class="container widget ">
         <div class="row">
           <div class="col-md-6" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
@@ -467,7 +467,7 @@
             <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
             <span class="card-text">Приложить документ до 10 мб</span>
           </div>
-          <button class="btn footer__button" type="submit">Оформить заявку</button>
+          <button class="btn btn-link" type="submit">Оформить заявку</button>
         </div>
       </form>
     </div>

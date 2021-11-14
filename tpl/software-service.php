@@ -18,7 +18,7 @@
 <wb-var bkg="header-4.jpg" />
 <wb-include wb-tpl="header.inc.php" />
 
-<div class="container pt-3r software-service">
+<div class="container pt-3r s-indent-bottom software-service">
   <h3 class="mt-0">{{_lang.title}}</h3>
 
   <div class="row software-service--content">

@@ -5,7 +5,7 @@
 }
 </style>
 <div class="container widget widget-quote">
-    <h3 class="mt-0 pb-2r">{{_lang.feedback}}</h3>
+    <h3 class="mt-0 pb-3r">{{_lang.feedback}}</h3>
     <form method="post">
     <div class="row">
         <div class="col-12">
@@ -18,7 +18,7 @@
         <input type="email" name="email" class="form-control" placeholder="{{_lang.email}}">
         </div>
         <div class="col-12">
-              <textarea class="form-control" name="comment" rows="auto" placeholder="{{_lang.comment}}"></textarea>
+              <textarea class="form-control" name="comment" placeholder="{{_lang.comment}}"></textarea>
         </div>
         <div class="col-12">
             <a href="#" class="add-file pb-1r">Приложить документ до 10 мб.</a></div>

@@ -763,7 +763,7 @@
             </div>
         </section>
 
-        <div class="footer mis-container pb-0 pt-5">
+        <div class="footer mis-container pb-0 s-indent-top">
 
             <span class="card-text request">Оставить заявку</span>
 
@@ -790,7 +790,7 @@
                         <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
                         <span class="card-text">Приложить документ до 10 мб</span>
                     </div>
-                    <button class="btn footer__button" type="submit">Оформить заявку</button>
+                    <button class="btn btn-link" type="submit">Оформить заявку</button>
                 </div>
 
             </form>

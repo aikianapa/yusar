@@ -39,7 +39,7 @@
     </a> -->
   </div>
 
-  <h3>{{_lang.title2}}</h3>
+  <h3 class="s-indent-top">{{_lang.title2}}</h3>
   <div class="slick" data-slick-options='{"autoplay":true,"infinite":true,"lazyLoad":"ondemand","responsive":
     [{"breakpoint":1800,"settings":{"slidesToShow":6,"slidesToScroll":1}},{"breakpoint":1200,
     "settings":{"slidesToShow":5,"slidesToScroll":1}},{"breakpoint":992,"settings":{"slidesToShow":
@@ -58,7 +58,7 @@
       <img src="https://via.placeholder.com/320x400.png?text=Управление+9" alt="">
     </a> -->
   </div>
-  <h3>{{_lang.title3}}</h3>
+  <h3 class="s-indent-top">{{_lang.title3}}</h3>
 
   <div class="slick integration" data-slick-options='{"infinite":true,"lazyLoad":"ondemand",
     "responsive":[{"breakpoint":1800,"settings":{"slidesToShow":6,"slidesToScroll":1}},

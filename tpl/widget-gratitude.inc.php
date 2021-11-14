@@ -1,6 +1,6 @@
-<div class="container widget-gratitude" style="overflow-x: visible !important;">
+<div class="s-indent-top container widget-gratitude" style="overflow-x: visible !important;">
     <wb-data wb="table=pages&item=gratitude">
-        <h3>{{header}}</h3>
+        <h3 class="mt-0">{{header}}</h3>
         {{text}}
         <div class="slick border-top" data-autoplay="2000" data-scroll="1">
             <wb-foreach wb-count="10">

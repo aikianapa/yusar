@@ -11,10 +11,10 @@
 }
 </style>
 
-<div class="pt-3r">
+<div class="s-indent-top">
     <wb-data wb="table=pages&item=widget-projects">
         <div class="container widget widget-projects">
-            <div class="border-bottom pb-1r mb-2r position-relative">
+            <div class="mb-3r position-relative">
                 <h3 class="realize-projects">Реализованные проекты</h3>
 
                 <a class="float-right link-arrow link-projects" href="/projects">
@@ -24,7 +24,7 @@
                 </a>
             </div>
 
-            <div class="slick pb-1r projects-grid" id="widgetProjectsList">
+            <div class="slick projects-grid" id="widgetProjectsList">
                 <wb-foreach wb="table=pages&from=images">
                     <a href="/project">
                         <div class="card card--second">

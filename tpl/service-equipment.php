@@ -30,7 +30,7 @@
 }
 </style>
 
-<div class="container pt-3r service-equipment" style="overflow-x: visible !important">
+<div class="container pt-3r s-indent-bottom service-equipment" style="overflow-x: visible !important">
   <!-- <div class="row service-equipment--gallery">
     <div class="col-12 col-md-6">
       <div class="image__container">

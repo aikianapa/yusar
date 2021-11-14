@@ -1,4 +1,4 @@
-<div class="pt-3r pb-3r">
+<div class="pt-3r">
     <div class="container widget widget-news">
         <div class="mb-3r position-relative">
             <a class="position-absolute float-right link-arrow link-news" href="/news">
@@ -9,7 +9,7 @@
             <h3>Новости компании</h3>
         </div>
         <wb-data wb="table=pages&item=home">
-        <div class="slick news-grid pb-1r" id="widgetNewsList">
+        <div class="slick news-grid" id="widgetNewsList">
             <wb-foreach wb="from=images">
                 <a href="/news/id603273b10a95/">
                     <div class="card card--second">

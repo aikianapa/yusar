@@ -185,7 +185,7 @@
                     <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
                     <span class="card-text">Приложить документ до 10 мб</span>
                 </div>
-                <button class="btn footer__button" type="submit">Оформить заявку</button>
+                <button class="btn btn-link" type="submit">Оформить заявку</button>
             </div>
         </form>
     </div>

@@ -4,10 +4,10 @@
 <body class="loading">
     <wb-include wb-tpl="header.inc.php" class="homepage" />
 
-    <wb-include wb-tpl="widget-news.inc.php" />
+    <wb-include wb-tpl="widget-news.inc.php" class="s-indent-bottom"/>
 
     <div class="container widget widget-products">
-        <div class="border-bottom pb-1r">
+        <div>
             <h3>IT-Продукты</h3>
         </div>
     </div>
@@ -17,7 +17,7 @@
     <wb-include wb-tpl="widget-globe.inc.php" />
 
     <wb-include wb-tpl="widget-projects.inc.php" />
-    <wb-include wb-tpl="footer.inc.php" class="footer--mt-sm"/>
+    <wb-include wb-tpl="footer.inc.php"/>
 </body>
 
 </html>

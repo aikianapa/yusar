@@ -1,5 +1,5 @@
 <div class="container">
-    <h3>{{_lang.header}}</h3>
+    <h3 class="mt-0">{{_lang.header}}</h3>
     <div class="row">
         <!-- <wb-foreach wb-count="6"> -->
         <div class="col-12 col-md-6 col-lg-4 pb-3r">

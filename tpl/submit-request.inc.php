@@ -19,7 +19,7 @@
         <input type="email" name="email" class="form-control" placeholder="{{_lang.email}}">
       </div>
       <div class="col-12">
-        <textarea class="form-control" name="comment" rows="auto" placeholder="{{_lang.comment}}"></textarea>
+        <textarea class="message footer__message" name="comment"  placeholder="{{_lang.comment}}"></textarea>
       </div>
       <div class="col-12">
         <a href="#" class="add-file pb-1r">Приложить документ до 10 мб.</a>

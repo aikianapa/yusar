@@ -1,6 +1,6 @@
-<div class="pt-3r pb-3r">
+<div class="s-indent-top">
     <div class="container widget widget-equipment">
-        <div class="border-bottom pb-1r mb-2r">
+        <div class="mb-3r">
             <h3>Оборудование и интеграция</h3>
         </div>
     <div class="row">

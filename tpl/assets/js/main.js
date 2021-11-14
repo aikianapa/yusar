@@ -36,7 +36,7 @@ $(document).ready(function() {
             var scrollTop = window.pageYOffset;
     
             $(".mis-menu__item").css("background", "none");
-            $(".mis-menu__item").css("color", "#444");
+            $(".mis-menu__item").css("color", "#fff");
             $(".mis-menu__item").removeClass("mis-menu__item-active");
     
             if(scrollTop >= item1Poition && scrollTop <= item1Poition + item1Height) {
@@ -418,7 +418,7 @@ $(document).ready(function() {
             $(".mis-menu__item").mouseleave(function(e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "none");
-                    $(this).css("color", "#444");
+                    $(this).css("color", "#fff");
                 }
             });
         }

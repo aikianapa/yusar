@@ -1,23 +1,25 @@
 <wb-include wb-tpl="popup.php" />
-<div class="container widget widget-quote">
-    <h3 class="mt-0 pb-2r">{{_lang.getquote}}</h3>
+<div class="container widget widget-quote mt-6r">
+    <h3 class="mt-0 pb-3r">{{_lang.getquote}}</h3>
     <form method="post">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input type="text" name="fullname" class="form-control" placeholder="{{_lang.fullname}}">
             </div>
 
-            <div class="col-md-3">
-                <input type="phone" name="phone" class="form-control" placeholder="{{_lang.phone}}">
+            <div class="col-md-4">
+                <!-- <input type="phone" name="phone" class="form-control" placeholder="{{_lang.phone}}"> -->
+                <input type="phone" name="phone" class="form-control" placeholder="Ваш телефон">
+                
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input type="email" name="email" class="form-control" placeholder="{{_lang.email}}">
             </div>
 
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <input type="text" name="vacancy" class="form-control" placeholder="{{_lang.vacancy}}">
-            </div>
+            </div> -->
 
             <div class="col-12">
                 <textarea class="form-control" name="comment" rows="auto" placeholder="{{_lang.comment}}"></textarea>
