@@ -1,6 +1,6 @@
 <div class="pt-3r pb-3r">
     <div class="container widget widget-news">
-        <div class="border-bottom pb-1r mb-2r position-relative">
+        <div class="mb-3r position-relative">
             <a class="position-absolute float-right link-arrow link-news" href="/news">
                 Все новости
                 <!-- <img width="24" height="24" src="/tpl/assets/img/black-arrow.svg" class="ml-10"> -->
