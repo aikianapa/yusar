@@ -1159,6 +1159,8 @@ main .tsami .card-text {
         top: 0px;
         z-index: 103;
         background: rgba(6,25,50,0.81);
+        -webkit-backdrop-filter: blur(50px);
+        backdrop-filter: blur(50px);
         border-radius: 0;
         border: none;
         padding: 10px 4vw;
@@ -1390,6 +1392,8 @@ main .tsami .card-text {
     padding-bottom: 16px;
     position: sticky;
     background: rgba(6,25,50,0.81);
+    -webkit-backdrop-filter: blur(50px );
+    backdrop-filter: blur(50px );
     top: 0;
     z-index: 103;
 }
