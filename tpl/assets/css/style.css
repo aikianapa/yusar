@@ -1165,6 +1165,15 @@ main .tsami .card-text {
         border: none;
         padding: 10px 4vw;
     }
+
+    .mobile-menu-list__item {
+        margin-bottom: 10px;
+    }
+
+    .mobile-menu-list__item:last-child {
+        margin-bottom: 0;
+    }
+    
     body.body-mis .mis-container.mob-nav {
         margin-right: 0;
         margin-left: 0;
