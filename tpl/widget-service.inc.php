@@ -1,4 +1,4 @@
-<div class="pt-3r pb-3r s-indent-top s-indent-bottom widget-service">
+<div class="pt-3r pb-3r s-indent-top mb-3r widget-service">
   <div class="container widget">
     <div class="mb-3r">
       <h3>Услуги</h3>
