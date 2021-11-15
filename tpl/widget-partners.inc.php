@@ -30,10 +30,10 @@
 
 <div class="container widget-partners" style="overflow-x: visible !important">
     <wb-data wb="table=pages&item=partners">
-        <h3>{{header}}</h3>
+        <h3 class="mb-1r">{{header}}</h3>
         {{text}}
 
-        <div class="slick border-bottom border-top pt-3r pb-3r partners-widget" data-autoplay="2000" data-scroll="1">
+        <div class="slick border-bottom border-top mt-3r pt-3r pb-3r partners-widget" data-autoplay="2000" data-scroll="1">
             <wb-foreach wb-from="images">
                 <div class="image-inner">
                     <img src="/200x200/src{{img}}" alt="" class="partners-img">
