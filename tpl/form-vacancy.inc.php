@@ -56,7 +56,7 @@
                 <input type="tel" class="input footer__input email" placeholder="Ваш E-mail*" name="email" required>
             </div>
             <div class="footer__input-group">
-                <input type="text" class="input footer__input" placeholder="{{_lang.vacancy}}" name="fullname" required
+                <input type="text" class="input footer__input" placeholder="Вакансия" name="fullname" required
                     minlength="2">
             </div>
         </div>
