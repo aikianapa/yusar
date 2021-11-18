@@ -142,7 +142,7 @@ $(document).ready(function() {
         // отменяем стандартное действие
         event.preventDefault();
 
-        var c = 30;
+        var c = -30;
         if(window.innerWidth <= 568) {
             var c = 70;
         }

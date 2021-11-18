@@ -545,7 +545,7 @@
             <div class="hr"></div>
 
         </section>
-        <section class="reviews pb-0" id="reviews">
+        <section class="reviews pb-0 pt-9r" id="reviews">
             <div class="reviews__button-prev"></div>
             <div class="reviews__button-next"></div>
             <h4 class="card-text">Отзывы</h4>

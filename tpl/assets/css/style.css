@@ -2294,12 +2294,13 @@ main .tsami .card-text {
         -ms-flex-direction: column;
         flex-direction: column
     }
-    .purpose,
-    .description,
-    .benefits,
-    .special,
-    .reviews {
-        padding-top: 20px
+    .body-mis .purpose,
+    .body-mis .description,
+    .body-mis .benefits,
+    .body-mis .special,
+    .body-mis .reviews,
+    .body-mis .products {
+        padding-top: 20px !important;
     }
     .reviews__button-prev,
     .reviews__button-next,
