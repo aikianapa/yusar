@@ -29,7 +29,7 @@
 </div> -->
 
 
-<div class="footer contacts-feedback">
+<div class="footer contacts-feedback pb-0">
     <span class="card-text request">Оставить заявку</span>
 
     <form action="send.php" method="POST" class="footer__form form">

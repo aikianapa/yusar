@@ -8,7 +8,7 @@
             <p><b>{{_lang.email}}</b>: {{_sett.email}}</p>
         </div>
         <div class="col-md-6">
-            <wb-include wb-tpl="form-feedback.inc.php" class="pb-3r" />
+            <wb-include wb-tpl="form-feedback.inc.php" />
         </div>
     </div>
 </div>
