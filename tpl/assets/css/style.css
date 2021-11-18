@@ -662,12 +662,21 @@ body.body-equipment .container.ultrasound {
 
 .footer .add-doc {
     margin-bottom: 39px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    flex-wrap: wrap;
+}
+
+.add-doc__inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.add-doc__input-file {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 200px;
+    cursor: pointer;
 }
 
 @media (max-width: 625px) {
