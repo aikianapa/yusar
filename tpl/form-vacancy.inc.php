@@ -37,7 +37,7 @@
 </div> -->
 
 
-<div class="footer container">
+<div class="footer container pb-0">
     <span class="card-text request">Оставить заявку</span>
 
     <form action="send.php" method="POST" class="footer__form form">
