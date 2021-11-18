@@ -505,7 +505,7 @@
                     <span class="section-label" id="news">Новости</span>
                     <h2 class="section-title">Специальные условия</h2>
                 </div>
-                <a href="/thermal-imagers">
+                <a href="/news">
                     <span class="link-text">В&nbsp;раздел</span>
                     <img class="link-icon" src="tpl/assets/img/chapter.svg" alt="icon">
                 </a>
