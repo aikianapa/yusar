@@ -1,39 +1,42 @@
 $(document).ready(function() {
 
     if($('.body-mis').length) {
-        const scrollTop = window.pageYOffset;
-        var a = 4000;
-    
-        if(window.innerWidth <= 568) {
-            var a = 3850;
-        }
-         
-        var item1 = $("#purpose"), 
-            item1Poition = parseInt(item1.offset().top - a),
-            item1Height = item1.outerHeight(),
-    
-            item2 = $("#descriprion"), 
-            item2Poition = parseInt(item2.offset().top - a),
-            item2Height = item2.outerHeight(),
-    
-            item3 = $("#benefits"), 
-            item3Poition = parseInt(item3.offset().top - a),
-            item3Height = item3.outerHeight(),
-    
-            item4 = $("#news"), 
-            item4Poition = parseInt(item4.offset().top - a),
-            item4Height = item4.outerHeight(),
-    
-            item5 = $("#reviews"), 
-            item5Poition = parseInt(item5.offset().top - a),
-            item5Height = item5.outerHeight(),
-    
-            item6 = $("#products"), 
-            item6Poition = parseInt(item6.offset().top - a),
-            item6Height = item6.outerHeight();
+        
     
         $(document).scroll(function(){
-            var scrollTop = window.pageYOffset;
+            
+            const scrollTop = window.pageYOffset;
+            var a = 80;
+        
+            if(window.innerWidth <= 568) {
+                var a = 80;
+            }
+                 
+            var item1 = $("#purpose"), 
+                item1Poition = parseInt(item1.offset().top - a),
+                item1Height = item1.outerHeight(),
+        
+                item2 = $("#descriprion"), 
+                item2Poition = parseInt(item2.offset().top - a),
+                item2Height = item2.outerHeight(),
+        
+                item3 = $("#benefits"), 
+                item3Poition = parseInt(item3.offset().top - a),
+                item3Height = item3.outerHeight(),
+        
+                item4 = $("#news"), 
+                item4Poition = parseInt(item4.offset().top - a),
+                item4Height = item4.outerHeight(),
+        
+                item5 = $("#reviews"), 
+                item5Poition = parseInt(item5.offset().top - a),
+                item5Height = item5.outerHeight(),
+        
+                item6 = $("#products"), 
+                item6Poition = parseInt(item6.offset().top - a),
+                item6Height = item6.outerHeight();
+
+            
     
             $(".mis-menu__item").css("background", "none");
             $(".mis-menu__item").css("color", "#fff");
@@ -139,8 +142,13 @@ $(document).ready(function() {
         // отменяем стандартное действие
         event.preventDefault();
 
+        var c = 30;
+        if(window.innerWidth <= 568) {
+            var c = 70;
+        }
+
         var sc = $(this).attr("href"),
-            dn = $(sc).offset().top - 80;
+            dn = $(sc).offset().top - c;
             
 
         $("html, body").animate({ scrollTop: dn }, 800);
