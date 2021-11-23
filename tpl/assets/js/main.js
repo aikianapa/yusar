@@ -1,88 +1,88 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-    if($('.body-mis').length) {
-        
-    
-        $(document).scroll(function(){
-            
+    if ($('.body-mis').length) {
+
+
+        $(document).scroll(function () {
+
             const scrollTop = window.pageYOffset;
             var a = 80;
-        
-            if(window.innerWidth <= 568) {
+
+            if (window.innerWidth <= 568) {
                 var a = 80;
             }
-                 
-            var item1 = $("#purpose"), 
+
+            var item1 = $("#purpose"),
                 item1Poition = parseInt(item1.offset().top - a),
                 item1Height = item1.outerHeight(),
-        
-                item2 = $("#descriprion"), 
+
+                item2 = $("#descriprion"),
                 item2Poition = parseInt(item2.offset().top - a),
                 item2Height = item2.outerHeight(),
-        
-                item3 = $("#benefits"), 
+
+                item3 = $("#benefits"),
                 item3Poition = parseInt(item3.offset().top - a),
                 item3Height = item3.outerHeight(),
-        
-                item4 = $("#news"), 
+
+                item4 = $("#news"),
                 item4Poition = parseInt(item4.offset().top - a),
                 item4Height = item4.outerHeight(),
-        
-                item5 = $("#reviews"), 
+
+                item5 = $("#reviews"),
                 item5Poition = parseInt(item5.offset().top - a),
                 item5Height = item5.outerHeight(),
-        
-                item6 = $("#products"), 
+
+                item6 = $("#products"),
                 item6Poition = parseInt(item6.offset().top - a),
                 item6Height = item6.outerHeight();
 
-            
-    
+
+
             $(".mis-menu__item").css("background", "none");
-            $(".mis-menu__item").css("color", "#fff");
+            $(".mis-menu__item").css("color", "#4F4F4F");
             $(".mis-menu__item").removeClass("mis-menu__item-active");
-    
-            if(scrollTop >= item1Poition && scrollTop <= item1Poition + item1Height) {
-                $("#item-1").css("background", "#7A7F83");
+
+            if (scrollTop >= item1Poition && scrollTop <= item1Poition + item1Height) {
+                $("#item-1").css("background", "#697079");
                 $("#item-1").css("color", "#fff");
                 $("#item-1").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Цель ");
-            } 
-    
-            if(scrollTop >= item2Poition && scrollTop <= item2Poition + item2Height) {
-                $("#item-2").css("background", "#7A7F83");
+            }
+
+            if (scrollTop >= item2Poition && scrollTop <= item2Poition + item2Height) {
+                $("#item-2").css("background", "#697079");
                 $("#item-2").css("color", "#fff");
                 $("#item-2").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Описание ");
-            } 
-            
-            if(scrollTop >= item3Poition && scrollTop <= item3Poition + item3Height) {
-                $("#item-3").css("background", "#7A7F83");
+            }
+
+            if (scrollTop >= item3Poition && scrollTop <= item3Poition + item3Height) {
+                $("#item-3").css("background", "#697079");
                 $("#item-3").css("color", "#fff");
                 $("#item-3").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Преимущества ");
-            } 
-            
-            if(scrollTop >= item4Poition && scrollTop <= item4Poition + item4Height) {
-                $("#item-4").css("background", "#7A7F83");
+            }
+
+            if (scrollTop >= item4Poition && scrollTop <= item4Poition + item4Height) {
+                $("#item-4").css("background", "#697079");
                 $("#item-4").css("color", "#fff");
                 $("#item-4").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Новости ");
-            } 
-            
-            if(scrollTop >= item5Poition && scrollTop <= item5Poition + item5Height) {
-                $("#item-5").css("background", "#7A7F83");
+            }
+
+            if (scrollTop >= item5Poition && scrollTop <= item5Poition + item5Height) {
+                $("#item-5").css("background", "#697079");
                 $("#item-5").css("color", "#fff");
                 $("#item-5").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Отзывы ");
-            } 
-            
-            if(scrollTop >= item6Poition && scrollTop <= item6Poition + item6Height) {
-                $("#item-6").css("background", "#7A7F83");
+            }
+
+            if (scrollTop >= item6Poition && scrollTop <= item6Poition + item6Height) {
+                $("#item-6").css("background", "#697079");
                 $("#item-6").css("color", "#fff");
                 $("#item-6").addClass("mis-menu__item-active");
                 $(".drop-down-list").text("Продукты ");
-            } 
+            }
         });
     }
 
@@ -106,8 +106,8 @@ $(document).ready(function() {
     }) : null;
 
     //плавное перемещение по странице
-    $(function() {});
-    $(window).scroll(function() {
+    $(function () { });
+    $(window).scroll(function () {
         if ($(this).scrollTop() != 0) {
             $("#toTop").fadeIn();
         } else {
@@ -134,22 +134,22 @@ $(document).ready(function() {
         }
     });
 
-    $("#toTop").click(function() {
+    $("#toTop").click(function () {
         $("body,html").animate({ scrollTop: 0 }, 1000);
     });
 
-    $('a[href^="#"]').on("click", function(event) {
+    $('a[href^="#"]').on("click", function (event) {
         // отменяем стандартное действие
         event.preventDefault();
 
         var c = -30;
-        if(window.innerWidth <= 568) {
+        if (window.innerWidth <= 568) {
             var c = 70;
         }
 
         var sc = $(this).attr("href"),
             dn = $(sc).offset().top - c;
-            
+
 
         $("html, body").animate({ scrollTop: dn }, 800);
     });
@@ -286,7 +286,7 @@ $(document).ready(function() {
             end1 = +number1.dataset.max;
 
     if (window.innerHeight >= number1Top) {
-        var interval1 = setInterval(function() {
+        var interval1 = setInterval(function () {
             number1.innerHTML = ++start1 + "%";
             if (start1 == end1) {
                 clearInterval(interval1);
@@ -296,7 +296,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number1Top - window.innerHeight) {
                 this.removeEventListener("scroll", onScroll);
-                var interval1 = setInterval(function() {
+                var interval1 = setInterval(function () {
                     number1.innerHTML = ++start1 + "%";
                     if (start1 == end1) {
                         clearInterval(interval1);
@@ -312,7 +312,7 @@ $(document).ready(function() {
             end2 = +number2.dataset.max;
 
     if (window.innerHeight >= number2Top) {
-        var interval2 = setInterval(function() {
+        var interval2 = setInterval(function () {
             number2.innerHTML = ++start2 + "%";
             if (start2 == end2) {
                 clearInterval(interval2);
@@ -322,7 +322,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number2Top - window.innerHeight) {
                 this.removeEventListener("scroll", onScroll);
-                var interval2 = setInterval(function() {
+                var interval2 = setInterval(function () {
                     number2.innerHTML = ++start2 + "%";
                     if (start2 == end2) {
                         clearInterval(interval2);
@@ -341,7 +341,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number3Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval3 = setInterval(function() {
+                var interval3 = setInterval(function () {
                     number3.innerHTML = ++start3 + "%";
                     if (start3 == end3) {
                         clearInterval(interval3);
@@ -359,7 +359,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number4Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval4 = setInterval(function() {
+                var interval4 = setInterval(function () {
                     number4.innerHTML = ++start4 + "%";
                     if (start4 == end4) {
                         clearInterval(interval4);
@@ -378,7 +378,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number5Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval5 = setInterval(function() {
+                var interval5 = setInterval(function () {
                     number5.innerHTML = ++start5 + "%";
                     if (start5 == end5) {
                         clearInterval(interval5);
@@ -397,7 +397,7 @@ $(document).ready(function() {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number6Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval6 = setInterval(function() {
+                var interval6 = setInterval(function () {
                     number6.innerHTML = ++start6 + "%";
                     if (start6 == end6) {
                         clearInterval(interval6);
@@ -407,7 +407,7 @@ $(document).ready(function() {
         });
     }
 
-    $(document).scroll(function() {
+    $(document).scroll(function () {
         const top = window.pageYOffset;
         if (top > 600 && aosref == false) {
             // fix problems
@@ -416,14 +416,14 @@ $(document).ready(function() {
         }
 
         function menuItemHover() {
-            $(".mis-menu__item").mouseover(function(e) {
+            $(".mis-menu__item").mouseover(function (e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "#333");
                     $(this).css("color", "#fff");
                 }
             });
 
-            $(".mis-menu__item").mouseleave(function(e) {
+            $(".mis-menu__item").mouseleave(function (e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "none");
                     $(this).css("color", "#fff");
