@@ -418,7 +418,7 @@ $(document).ready(function () {
         function menuItemHover() {
             $(".mis-menu__item").mouseover(function (e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
-                    $(this).css("background", "#333");
+                    $(this).css("background", "#697079");
                     $(this).css("color", "#fff");
                 }
             });
@@ -426,7 +426,7 @@ $(document).ready(function () {
             $(".mis-menu__item").mouseleave(function (e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "none");
-                    $(this).css("color", "#fff");
+                    $(this).css("color", "#4F4F4F");
                 }
             });
         }

@@ -1448,7 +1448,7 @@ main .tsami .card-text {
     line-height: 125%;
     font-weight: 500;
     border-radius: 33px;
-    color: #fff;
+    color: rgb(79, 79, 79);
     background: none;
 }
 
