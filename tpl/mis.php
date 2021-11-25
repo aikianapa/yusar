@@ -137,7 +137,7 @@
             <div class="mob-nav-flex">
                 <div class="mob-nav-wrapper">
                     <span class="drop-down-list">Цель</span>
-                    <img class="drop-down-list-arrow" src="tpl/assets/img/arrow-down-icon.svg" alt="arrow">
+                    <img class="drop-down-list-arrow" src="tpl/assets/img/arrow-down-icon--gray.svg" alt="arrow">
                 </div>
                 <a href="#" class="btn btn-video">
                     <span class="btn-text">Смотреть видео</span>
