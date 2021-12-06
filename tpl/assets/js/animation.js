@@ -1,3 +1,5 @@
+
+/*
 var animation = () => {
 
     var vh = $(window).height();
@@ -406,3 +408,5 @@ var animation = () => {
 
 }
 animation();
+
+*/
