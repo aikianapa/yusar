@@ -20,6 +20,8 @@
                             </button>
                         </div>
 
+                        <div class="test-block-ant">Тестовый блок для првоерки блока</div>
+
                         <div class="statistics mis-container">
                             <div class="statistics-1">
                                 <div class="statistics__item st9">
