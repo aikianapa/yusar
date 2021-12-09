@@ -1,4 +1,9 @@
+
 $(document).ready(function () {
+
+	console.log('fff')
+	console.log(brain)
+	
 
     if ($('.body-mis').length) {
 

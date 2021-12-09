@@ -1,76 +1,118 @@
 <html lang="ru">
-<link rel="preload" href="/tpl/assets/js/jquery.scroolly.js" as="script">
 <wb-include wb-tpl="head.inc.php" />
 
 <body class="loading body-mis cont-color-w" >
+	<div class=lf-placeholder></div>
+
+	<div class=lf-brain></div>
+	<div class=lf-brain2></div>
+
     <wb-include wb-tpl="header.inc.php" />
-    <div class="body-mis__container">
+    <div class="body-mis__container lf-main">
         <div class="qbody" id="qbody">
             <div class="staging staging-1">
                 <div class="to-fix">
                     <div class="stage">
-                        <div class="mis-top scene scene-1">
-                            <h3 class="title">СИСТЕМЫ ПОДДЕРЖКИ ПРИНЯТИЯ РЕШЕНИЯ TEST</h3>
-                            <p class="text">Несобственно-прямая речь, по определению приводит экзистенциальный
+                        <div class="mis-top scene scene-1 lf-header-block">
+                        	<h3 class="title lf-site-title">
+	                            <div class="lf-site-title-row"><div class="lf-site-title-row-inner">СИСТЕМЫ ПОДДЕРЖКИ&nbsp;</div></div>
+    	                        <div class="lf-site-title-row"><div class="lf-site-title-row-inner">ПРИНЯТИЯ РЕШЕНИЯ</div></div>
+							</h3>
+                            <p class="text lf-site-subtitle">Несобственно-прямая речь, по определению приводит экзистенциальный
                                 авторитаризм. Как отмечает
                                 А.А.Потебня, комбинаторное
                                 приращение взаимно. Катахреза обретает системный феномен толпы.</p>
-                            <button class="btn" href="#">
+                            <button class="btn lf-header-btn" href="#" data-transparent="true">
                                 <span class="btn-text">Подробнее</span>
                             </button>
                         </div>
-
-
-                        <div class="test">Простая тестовая надпись</div>
-
-                        <div class="statistics mis-container">
-                            <div class="statistics-1">
-                                <div class="statistics__item st9">
-                                    <span class="statistics__value">215</span>
-                                    <span class="statistics__text st10">Экспериментов</span>
-                                </div>
-                                <div class="statistics__item st7">
-                                    <span class="statistics__value">794</span>
-                                    <span class="statistics__text st8">Количество сотрудников</span>
-                                </div>
-                                <div class="statistics__item st5">
-                                    <span class="statistics__value">500</span>
-                                    <span class="statistics__text st6">Количество установок</span>
-                                </div>
-                                <div class="statistics__item st3">
-                                    <img class="statistics__icon" src="tpl/assets/img/CE.svg" alt="icon">
-                                    <span class="statistics__text st4">Количество (данных, случаев)</span>
-                                </div>
-                                <div class="statistics__item st1">
-                                    <span class="statistics__value">96</span>
-                                    <span class="statistics__text st2">Процентов чего-то</span>
-                                </div>
+                        
+                        <div class="lf-stats lf-stats1">
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">215</span>
+                            	</span>
+                                <span class="lf-stats-text">Экспериментов</span>
                             </div>
-                            <div class="statistics-2">
-                                <div class="statistics__item st19">
-                                    <img class="statistics__icon" src="tpl/assets/img/CE.svg" alt="icon">
-                                    <span class="statistics__text st20">Количество (данных, случаев, объема
-                                        архива)</span>
-                                </div>
-                                <div class="statistics__item st17">
-                                    <span class="statistics__value">123</span>
-                                    <span class="statistics__text st18">Патента</span>
-                                </div>
-                                <div class="statistics__item st15">
-                                    <span class="statistics__value">280</span>
-                                    <span class="statistics__text st16">Успешных внедрений</span>
-                                </div>
-                                <div class="statistics__item st13">
-                                    <span class="statistics__value">900</span>
-                                    <span class="statistics__text st14">Партнеров</span>
-                                </div>
-                                <div class="statistics__item st11">
-                                    <span class="statistics__value">89</span>
-                                    <span class="statistics__text st12">Процентов чего-то</span>
-                                </div>
                             </div>
-                        </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">794</span>
+                            	</span>
+                                <span class="lf-stats-text">Количество сотрудников</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">500</span>
+                            	</span>
+                                <span class="lf-stats-text">Количество установок</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+			                        <span class="lf-stats-value-inner" style="background-image:url(tpl/assets/img/CE.svg)"></span>
+                            	</span>
+                                <span class="lf-stats-text">Количество (данных, случаев)</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">96</span>
+                            	</span>
+                                <span class="lf-stats-text">Процентов чего-то</span>
+                            </div>
+                            </div>
+						</div>
 
+                        <div class="lf-stats lf-stats2">
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+			                        <span class="lf-stats-value-inner" style="background-image:url(tpl/assets/img/CE.svg)"></span>
+                            	</span>
+                                <span class="lf-stats-text">Количество (данных, случаев, объема архива)</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">123</span>
+                            	</span>
+                                <span class="lf-stats-text">Патента</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">280</span>
+                            	</span>
+                                <span class="lf-stats-text">Успешных внедрений</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">900</span>
+                            	</span>
+                                <span class="lf-stats-text">Партнёров</span>
+                            </div>
+                            </div>
+                        	<div class="lf-stats-item-container">
+                        	<div class="lf-stats-item">
+                            	<span class="lf-stats-value-outer">
+                            		<span class="lf-stats-value-inner">89</span>
+                            	</span>
+                                <span class="lf-stats-text">Процентов чего-то</span>
+                            </div>
+                            </div>
+						</div>
+						
                         <div class="scene scene-2 mis-container">
                             <img src="tpl/assets/img/Covid/covid_1.png" alt="covid">
                             <img src="tpl/assets/img/Covid/covid_2.png" alt="covid">
@@ -94,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <section class="mis-menu-wrapper">
+        <section class="mis-menu-wrapper lf-menu02">
             <div class="mis-nav mis-container">
                 <ul class="mis-menu">
                     <a href="#purpose">
@@ -800,6 +842,12 @@
         </div>
     </div>
     <wb-include wb-tpl="footer.inc.php" />
+    <script src="/tpl/assets/js/requestAnimFrame.js"></script>
+    <script src="/tpl/assets/js/brain.js"></script>
+    <script src="/tpl/assets/js/header.js"></script>
+    <script src="/tpl/assets/js/block.js"></script>
+    <script src="/tpl/assets/js/sections.js"></script>
+    <script src="/tpl/assets/js/menu.js"></script>
 </body>
 
 </html>

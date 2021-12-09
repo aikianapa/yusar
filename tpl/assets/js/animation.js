@@ -1,5 +1,3 @@
-/*
-
 var animation = () => {
 
     var vh = $(window).height();
@@ -7,8 +5,8 @@ var animation = () => {
     var sh = vw - vh;
     var animationHeight = vh * 3;
     sh > 0 ? sh = Math.ceil(sh / 3) : sh = Math.ceil(sh / 1.5);
-
-
+ 
+/*
     var animInit = function() {
         if (!$(".to-fix").length) return;
         animReset();
@@ -343,7 +341,7 @@ var animation = () => {
             $(".staging-1 .statistics__item").css({ 'opacity': '0' });
         }, 10)
     }
-
+*/
     var Counters = function() {
         var card = document.querySelector(".columns.percent-columns");
         var body = document.querySelector("body");
@@ -398,14 +396,13 @@ var animation = () => {
     }
 
     $(window).on('resize', function() {
-        if (Math.abs(vw - $(window).width()) > vw / 10) animInit();
+        if (Math.abs(vw - $(window).width()) > vw / 10) Counters();
     })
 
     setTimeout(function() {
-        animInit();
+       // animInit();
         Counters();
     }, 400)
 
 }
 animation();
-*/
