@@ -22,15 +22,16 @@ function lf_show_header(){
 	})
 }
 
-var lf_flag = true
+//ждём когда прелоадер изчезнет и показываем заголовок
+var timer = setInterval(function(){
+	var preloader = document.querySelector('.preloader')
 
-window.addEventListener('scroll', function() {
-	var top = $('.lf-site-title').offset().top - $(window).scrollTop();
-	if(top<300 && lf_flag){
-		lf_flag = false
-		lf_show_header()
+	if(!preloader){
+		clearTimeout(timer)		
+		setTimeout(lf_show_header,400)
 	}
-})
+},100)
+
 
 //появляющийся подзаголовок сайта
 function lf_show_header2(){

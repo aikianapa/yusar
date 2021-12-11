@@ -61,8 +61,8 @@ header{
 .lf-stats-value-outer{
 	padding:0px;
 	height:6vw; 
-	font-size:6vw;
-	line-height:6vw;
+	font-size:5vw;
+	line-height:5vw;
 	text-align:center;
 	font-family:'IBM Plex Sans', sans-serif;
 	font-weight:700;
@@ -99,6 +99,18 @@ header{
 	line-height:64px;
 	height:64px;
 	overflow-y:hidden
+}
+
+@media (max-width:1140px){
+	.lf-site-title-row{
+		font-size:5vw ;
+		line-height:5vw;
+		height:5vw;
+	}	
+
+	.lf-header-block{
+		padding:0 !important
+	}
 }
 
 .lf-site-title-row-inner{

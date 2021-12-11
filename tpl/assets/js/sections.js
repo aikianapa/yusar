@@ -1,11 +1,12 @@
 var sections = [
+	//задержка
 	{
-		"height":500,
+		"height":50,
 		"handler":function(){}
 	},
 	//картинка органа появляется снизу
 	{
-		"height":300,
+		"height":600,
 		"handler":function(position){
 			var a = brain.start_pos
 			var b = (document.documentElement.clientHeight - brain.getSize()) / 2
@@ -19,8 +20,8 @@ var sections = [
 	{
 		"height":100,
 		"handler":function(position){
-			brain.setSaturate(position)
-			brain.setOpacity2(position)
+			brain.setSaturate(Math.min(50,position/2))
+			brain.setOpacity2(Math.min(50,position/2))
 		}
 	},
 	
@@ -28,8 +29,17 @@ var sections = [
 	{
 		"height":100,
 		"handler":function(position){
+			var oldsize = brain.getSize()
+
 			brain.setSaturate(100-position)
-			brain.setSize(brain.start_size-position)
+			brain.setOpacity(0)
+			brain.setOpacity2(100-position/2)
+
+			var newsize = brain.start_size-position
+			var delta = oldsize - newsize
+
+			brain.setSize(newsize)
+			brain.setPos(brain.getPos()+delta/2)
 		}
 	},
 	//статистика
@@ -45,11 +55,12 @@ var sections = [
 			lf_statistics.page2.setValue(position)
 		}		
 	},
+	//изчезновение картинки
 	{
 		"height":200,
 		"handler":function(position){
-			brain.setOpacity2(100-position)
-			brain.setOpacity(100-position)
+			brain.setOpacity2(50-position/2)
+			brain.setOpacity(0)
 		}
 	},
 ]
@@ -93,6 +104,8 @@ window.addEventListener('scroll', function() {
 	
 	var pos = (pageYOffset - section.start) / (section.height/100)
 	section.handler(Math.min(100,pos))
+
+	console.log({i:section.index, pos:Math.floor(pos)})
 
 	old_index = index
 })
