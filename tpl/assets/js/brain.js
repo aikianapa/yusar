@@ -1,3 +1,5 @@
+
+
 window.requestAnimFrame = (function() {
     return (
         window.requestAnimationFrame ||
@@ -10,8 +12,6 @@ window.requestAnimFrame = (function() {
         }
     )
 })();
-
-
 
 
 let lf2_flag = true
@@ -231,9 +231,9 @@ var brain = (function() {
     var opacity2 = 0
 
     return {
-        setSize: function(height) {
-            size = height
-            el2.style.backgroundSize = el.style.backgroundSize = 'auto ' + height + 'px'
+        setSize: function(w) {
+            size = w
+            el2.style.backgroundSize = el.style.backgroundSize = w + 'px'
         },
 
         getSize: function() { return size },
@@ -272,8 +272,36 @@ var brain = (function() {
     }
 })()
 
+function getbrainsize(){
+	var w = window.innerWidth
+
+	if(w>1000){
+		return 550
+	}else if(w>800){
+		return 450 
+	}else{
+		return w * 0.7
+	}
+	
+}
+
+var lf_resize_flag = true
+
+window.addEventListener('resize',function(){
+	if(lf_resize_flag){
+		lf_resize_flag = false
+	}else{
+		var x = brain.getSize() / brain.start_size
+		brain.start_size = getbrainsize()	
+		brain.setSize(x * brain.start_size)
+	}
+})
+
+
+
 brain.start_pos = document.querySelector('.lf-header-btn').getBoundingClientRect().top
-brain.start_size = (window.innerWidth > 450 ? 500 : 300)
+
+brain.start_size = getbrainsize()
 brain.start_sat = 0
     //
 brain.appendix = 50
@@ -368,7 +396,7 @@ var sections = [
             brain.setOpacity2(50 - position / 2)
             brain.setOpacity(0)
         }
-    },
+    }
 ]
 
 var placeholder = document.querySelector('#qbody')
