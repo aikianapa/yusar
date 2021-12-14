@@ -17,11 +17,18 @@ var lf_statistics = (function(){
 		function show_text(val){
 			text.style.opacity = val/100
 		}
+		function hideText(val){
+			text.style.opacity = val*100
+		}
 
 		//показать значение. val=0 - текст скрыт, val=100 - проявлен
 		function show_value(val){
 			var size = outer.offsetHeight
 			inner.style.marginTop = size/100 * (100-val) + 'px'
+		}
+		function hideValue(val){
+			var size = outer.offsetHeight
+			inner.style.marginTop = size/100 * (100+val) + 'px'
 		}
 
 		var val = 0
@@ -57,10 +64,13 @@ var lf_statistics = (function(){
 		var val = 0
 
 		function draw(index,value){
-			for(var i=0;i<index;i++){
+			if(window.innerWidth>450){
+				for(var i=0;i<index;i++){
 				blocks[i].setValue(100)	
+			}}
+			if(window.innerWidth<450 && index){
+				blocks[index-1].setValue(Math.max(1 - Math.min(value*2,100)/100,0))
 			}
-			
 			if(index<5){
 				hide(0)
 				blocks[index].setValue(value)

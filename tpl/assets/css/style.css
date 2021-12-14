@@ -85,12 +85,12 @@ header{
 
 .lf-brain{
 	z-index:100;
-	background-image:url(/tpl/assets/img/Covid_01.png);
+	background-image:url(../img/Covid_01.png);
 }
 
 .lf-brain2{
 	z-index:120;
-	background-image:url(/tpl/assets/img/Covid_02.png);
+	background-image:url(../img/Covid_02.png);
 }
 
 
@@ -5545,6 +5545,16 @@ body.body-services .hours .card-2 .card-text_first {
     }
     .products__wrapper {
         gap: 0px;
+    }
+    .lf-stats {
+        flex-direction: column;
+    }
+    .lf-stats-item-container {
+        height:auto;
+    }
+    .lf-stats-item {
+        height: auto;
+        margin-top: 50px !important;
     }
 }
 

@@ -50,10 +50,10 @@ var brain = (function(){
 })()
 
 brain.start_pos = document.querySelector('.lf-header-btn').getBoundingClientRect().top
-brain.start_size = 400
+brain.start_size = (window.innerWidth > 450 ? 500 : 300)
 brain.start_sat = 0
-
-brain.appendix = 100
+//
+brain.appendix = 50
 brain.prestart_size = brain.start_size + brain.appendix
 		
 brain.setSize(brain.prestart_size)
