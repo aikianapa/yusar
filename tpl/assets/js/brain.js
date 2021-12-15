@@ -1,5 +1,3 @@
-
-
 window.requestAnimFrame = (function() {
     return (
         window.requestAnimationFrame ||
@@ -272,29 +270,29 @@ var brain = (function() {
     }
 })()
 
-function getbrainsize(){
-	var w = window.innerWidth
+function getbrainsize() {
+    var w = window.innerWidth
 
-	if(w>1000){
-		return 550
-	}else if(w>800){
-		return 450 
-	}else{
-		return w * 0.7
-	}
-	
+    if (w > 1000) {
+        return 700
+    } else if (w > 800) {
+        return 450
+    } else {
+        return w * 0.7
+    }
+
 }
 
 var lf_resize_flag = true
 
-window.addEventListener('resize',function(){
-	if(lf_resize_flag){
-		lf_resize_flag = false
-	}else{
-		var x = brain.getSize() / brain.start_size
-		brain.start_size = getbrainsize()	
-		brain.setSize(x * brain.start_size)
-	}
+window.addEventListener('resize', function() {
+    if (lf_resize_flag) {
+        lf_resize_flag = false
+    } else {
+        var x = brain.getSize() / brain.start_size
+        brain.start_size = getbrainsize()
+        brain.setSize(x * brain.start_size)
+    }
 })
 
 
