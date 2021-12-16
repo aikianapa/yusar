@@ -1,14 +1,10 @@
 
 var sections = [
-    //задержка
-    {
-        "height": 50,
-        "handler": function() {}
-    },
     //картинка органа появляется снизу
     {
-        "height": 600,
+        "height": 1000,
         "handler": function(position) {
+        	console.log('fffff')
             var a = brain.start_pos
             var b = (document.documentElement.clientHeight - brain.getSize()) / 2
             var delta = b - a
@@ -84,30 +80,44 @@ placeholder.style.height = sum + 'px'
 
 var old_index
 
-window.addEventListener('scroll', function() {
-    var last_section = sections[sections.length - 1]
-    var section = sections.find(function(section) {
-        if (section.start <= pageYOffset && section.end >= pageYOffset) {
-            return true
-        }
-    }) || last_section
+window.addEventListener('load',function(){
+	var btn_top
+	var h = document.documentElement.clientHeight
+	
+	window.addEventListener('scroll', function() {
+		if(!btn_top){
+			btn_top = $('.lf-header-btn').offset().top
+		}
 
-    var index = section.index
+		var pad = btn_top - h + 100
+		var y = pageYOffset - pad
 
-    if (index > old_index) {
-        for (var i = old_index; i < index; i++) {
-            sections[i].handler(100)
-        }
-    } else if (index < old_index) {
-        for (var i = old_index; i > index; i--) {
-            sections[i].handler(0)
-        }
-    }
+		if(y<0) return;
+		
+    	var last_section = sections[sections.length - 1]
+    	var section = sections.find(function(section) {
+        	if (section.start <= y && section.end >= y) {
+            	return true
+        	}
+	    }) || last_section
 
-    var pos = (pageYOffset - section.start) / (section.height / 100)
-    section.handler(Math.min(100, pos))
+	    var index = section.index
 
-    //console.log({i:section.index, pos:Math.floor(pos)})
+    	if (index > old_index) {
+        	for (var i = old_index; i < index; i++) {
+            	sections[i].handler(100)
+        	}
+	    } else if (index < old_index) {
+    	    for (var i = old_index; i > index; i--) {
+        	    sections[i].handler(0)
+        	}
+	    }
 
-    old_index = index
+    	var pos = (y - section.start) / (section.height / 100)
+    	section.handler(Math.min(100, pos))
+
+	    old_index = index
+	})
+	
 })
+

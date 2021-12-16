@@ -1,74 +1,46 @@
-let lf2_flag = true
-
-let lf2_f = 0
-
-var $menu
-
 window.addEventListener('load', function(){
-	$menu  = $('.lf-menu02')
-})
+	var $menu = $('.lf-menu02')
+	var flag  = true
+	var y1 = 0
+	var y = 0
+	var placeholder = document.querySelector('#qbody')
+	var $placeholder = $(placeholder)
+	var placeholder_top = $placeholder.offset().top
 
-var lf_old_y = 0
+	console.log(placeholder_top)
 
-window.addEventListener('scroll', function() {
-	if($menu){
+	//ловим момент когда второе меню появляется и вызываем пристыковку
+	window.addEventListener('scroll', function() {
 		var top    = $menu.offset().top - pageYOffset;
 		var bottom = document.documentElement.clientHeight - $menu.height() - top
+		var y2 = pageYOffset
+		var pad = 40
 
-		if(bottom>40 && lf2_flag && pageYOffset > lf_old_y){
-			console.time('lf-menu')
-//			lf_menu_scroll(top)
+		if(bottom>pad && flag && y2 > y1 && top){
+			flag = false
+			var g = pad-bottom
+			scrollBy(0,g)
+			y = pageYOffset
+			move()
 		}
-		
-		lf_old_y = pageYOffset;
-	}
-})
 
-function lf_menu_scroll(top){
-	var y = pageYOffset
-	lf2_flag = false
-	requestAnimFrame(move)
+		y1 = y2
+	})
 
+	//пристыковка
 	function move(){
-	
-		window.scrollBy(0,20)
-		top-=20
+		var step = 15
 
-		if(top>20){
+		window.scrollBy(0,step-(pageYOffset-y) )
+		var top = $menu.offset().top - pageYOffset;
+
+		if(top>step){
 			requestAnimFrame(move)
 		}else{
-			lf2_flag = true
-			top    = $menu.offset().top - pageYOffset;
 			window.scrollBy(0,top)
-			console.timeEnd('lf-menu')
+			flag = true
 		}
-
+		
+		y = pageYOffset
 	}
-}
-
-/*
-window.addEventListener('scroll', function() {
-	var top = $('.lf-menu02').offset().top - $(window).scrollTop();
-	var delta =lf2_f - pageYOffset
-	var h = document.documentElement.clientHeight
-	
-	if(delta<0 && top<h && top>0 && lf2_flag){
-			lf2_flag = false
-	
-			requestAnimFrame(move)
-	
-			function move(){				
-				window.scrollBy(0,+30)
-				var top = $('.lf-menu02').offset().top - $(window).scrollTop();
-
-				if(top>30){
-					requestAnimFrame(move)
-				}else{
-					lf2_flag = true
-					window.scrollBy(0,top)
-				}
-			}
-	}
-	lf2_f = pageYOffset
 })
-*/

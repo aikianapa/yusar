@@ -80,7 +80,8 @@ window.addEventListener('resize', function() {
 
 
 
-brain.start_pos = document.querySelector('.lf-header-btn').getBoundingClientRect().top
+brain.start_pos = document.documentElement.clientHeight
+//document.querySelector('.lf-header-btn').getBoundingClientRect().top
 
 brain.start_size = getbrainsize()
 brain.start_sat = 0

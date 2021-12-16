@@ -17,7 +17,7 @@ var animation = () => {
         var offset;
         $('.qbody .staging ').height(ht);
         if ($(window).width() > 0) {
-            $(".to-fix").scroolly(
+/*            $(".to-fix").scroolly(
                 [{
                         alias: "before",
                         from: "",
@@ -80,13 +80,13 @@ var animation = () => {
                     },
                 ],
                 $(".staging-1")
-            );
+            );*/
 
             ih = document.querySelector(".scene.scene-2.mis-container img:first-child").naturalHeight;
             var ofy = Math.ceil((vh - ih) / 2 + sh);
 
             vw > 767 ? ofy = 430 : ofy = 330;
-            $(".staging-1 .scene-2").scroolly(
+/*            $(".staging-1 .scene-2").scroolly(
                 [{
                     from: "con-top",
                     to: "con-top + 200 = top",
@@ -99,7 +99,7 @@ var animation = () => {
                 }, ],
                 $(".staging-1")
             );
-
+*/
 
             // Картинки //
             if ($(window).width() > 767) {
@@ -120,7 +120,7 @@ var animation = () => {
                 offset[i] = start + os * (i + 1);
                 if (i !== 0) {
                     if (i + 1 < images) {
-                        $(".staging-1 .scene-2 img:eq(" + (i - 1) + ")").scroolly([{
+  /*                      $(".staging-1 .scene-2 img:eq(" + (i - 1) + ")").scroolly([{
                                 from: "con-top + " + (offset[i - 1]) + " = top",
                                 to: "con-top + " + (offset[i]) + " = top",
                                 cssFrom: {
@@ -135,10 +135,10 @@ var animation = () => {
                                 }
                             }],
                             $(".staging-1")
-                        );
+                        );*/
                     }
 
-                    $(".staging-1 .scene-2 img:eq(" + i + ")").scroolly(
+/*                    $(".staging-1 .scene-2 img:eq(" + i + ")").scroolly(
                         [{
                             from: "con-top + " + (offset[i - 1] + 1) + " = top",
                             to: "con-top + " + (offset[i] + 1) + " = top",
@@ -152,7 +152,7 @@ var animation = () => {
                             },
                         }],
                         $(".staging-1")
-                    );
+                    );*/
                 }
             }
             // ========= //
@@ -174,7 +174,7 @@ var animation = () => {
                 for (i = 1; i <= plates; i++) {
                     let start = Math.ceil(top + ((i - 1) * height));
                     let stop = stop1 = Math.ceil(top + (i * height));
-                    $(".staging-1 .statistics-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
+/*                    $(".staging-1 .statistics-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                         [{
                             from: "con-top + " + start + " = top",
                             to: "con-top + " + stop + " = top",
@@ -191,7 +191,7 @@ var animation = () => {
                             }
                         }],
                         $(".staging-1")
-                    );
+                    );*/
                 }
 
                 // второй блок плашек
@@ -200,7 +200,7 @@ var animation = () => {
                 for (i = 1; i <= plates; i++) {
                     let start = Math.ceil(top + ((i - 1) * height));
                     let stop = stop2 = Math.ceil(top + (i * height));
-                    $(".staging-1 .statistics-2 .statistics__item:eq(" + (i - 1) + ")").scroolly(
+/*                    $(".staging-1 .statistics-2 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                         [{
                             from: "con-top + " + start + " = top",
                             to: "con-top + " + stop + " = top",
@@ -214,7 +214,7 @@ var animation = () => {
                             },
                         }],
                         $(".staging-1")
-                    );
+                    );*/
                 }
 
                 stop2 = Math.ceil(stop2);
@@ -222,7 +222,7 @@ var animation = () => {
                 // весь блок плашек 1 наверх
                 let start = Math.ceil(stop1);
                 let stop = start + vh;
-                $(".staging-1 .statistics-1").scroolly(
+/*                $(".staging-1 .statistics-1").scroolly(
                     [{
                         from: "con-top + " + start + " = top",
                         to: "con-top + " + stop + " = top",
@@ -236,10 +236,11 @@ var animation = () => {
                         },
                     }],
                     $(".staging-1")
-                );
+                );*/
                 // весь блок плашек 2 наверх
                 start = Math.ceil(stop2);
                 stop = start + vh / 2;
+                /*
                 $(".staging-1 .statistics-2").scroolly(
                     [{
                         from: "con-top + " + start + " = top",
@@ -269,7 +270,7 @@ var animation = () => {
                         }
                     }, ],
                     $(".staging-1")
-                );
+                );*/
             } else {
                 top = vh;
                 let offset = [];
@@ -280,7 +281,7 @@ var animation = () => {
                     offset[i] = Math.ceil(top + (os * i));
                     offset[i + 1] = offset[i] + os;
                     $('.statistics.mis-container .statistics__item').height(height);
-                    $(".staging-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
+/*                    $(".staging-1 .statistics__item:eq(" + (i - 1) + ")").scroolly(
                         [{
                                 from: "con-top + " + (offset[i - 1]) + " = top",
                                 to: "con-top + " + (offset[i]) + " = top",
@@ -307,12 +308,12 @@ var animation = () => {
                             }
                         ],
                         $(".staging-1")
-                    );
+                    );*/
                 }
                 start = ht - Math.ceil(vh * 0.8);
                 stop = start + vh;
                 // блок с картинками тоже наверх
-                $(".staging-1 .scene-2").scroolly(
+/*                $(".staging-1 .scene-2").scroolly(
                     [{
                         from: "con-top + " + start + " = top",
                         to: "con-top + " + stop + " = top",
@@ -324,7 +325,7 @@ var animation = () => {
                         }
                     }, ],
                     $(".staging-1")
-                );
+                );*/
             }
         }
     }

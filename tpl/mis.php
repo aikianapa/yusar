@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        <section class="mis-menu-wrapper1 lf-menu02">
+        <section class="mis-menu-wrapper lf-menu02">
             <div class="mis-nav mis-container">
                 <ul class="mis-menu">
                     <a href="#purpose">
