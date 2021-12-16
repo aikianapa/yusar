@@ -15,7 +15,7 @@
                     <div class="stage">
                         <div class="mis-top scene scene-1 lf-header-block">
                         	<h3 class="title lf-site-title">
-	                            <div class="lf-site-title-row"><div class="lf-site-title-row-inner">СИСТЕМЫ ПОДДЕРЖКИ </div></div>
+	                            <div class="lf-site-title-row"><div class="lf-site-title-row-inner">СИСТЕМЫ ПОДДЕРЖКИ&nbsp;</div></div>
     	                        <div class="lf-site-title-row"><div class="lf-site-title-row-inner">ПРИНЯТИЯ РЕШЕНИЯ</div></div>
 							</h3>
                             <p class="text lf-site-subtitle">Несобственно-прямая речь, по определению приводит экзистенциальный
@@ -113,11 +113,30 @@
                             </div>
 						</div>
 						
+                        <div class="scene scene-2 mis-container">
+                            <img src="tpl/assets/img/Covid/covid_1.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_2.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_3.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_4.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_5.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_6.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_7.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_8.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_9.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_10.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_11.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_12.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_13.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_14.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_15.png" alt="covid">
+                            <img src="tpl/assets/img/Covid/covid_16.png" alt="covid">
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
-        <section class="mis-menu-wrapper lf-menu02">
+        <section class="mis-menu-wrapper1 lf-menu02">
             <div class="mis-nav mis-container">
                 <ul class="mis-menu">
                     <a href="#purpose">
@@ -163,7 +182,7 @@
             <div class="mob-nav-flex">
                 <div class="mob-nav-wrapper">
                     <span class="drop-down-list">Цель</span>
-                    <img class="drop-down-list-arrow" src="/tpl/assets/img/arrow-down-icon--gray.svg" alt="arrow">
+                    <img class="drop-down-list-arrow" src="tpl/assets/img/arrow-down-icon--gray.svg" alt="arrow">
                 </div>
                 <a href="#" class="btn btn-video">
                     <span class="btn-text">Смотреть видео</span>
@@ -208,7 +227,7 @@
             <h2 class="section-title">Реализация процесса автоматизации деятельности медицинских учреждений</h2>
             <div class="double-card">
                 <div class="card card-1" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
-                    <img class="background" src="/tpl/assets/img/problem.png" alt="background">
+                    <img class="background" src="tpl/assets/img/problem.png" alt="background">
                     <div class="wrapper">
                         <h3 class="card-title">
                             Проблема
@@ -231,7 +250,7 @@
                     </div>
                     <a href="/thermal-imagers">
                         <span class="link-text">Подробнее</span>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="Подробнее">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
                 </div>
                 <div class="card card-2 y-10" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
@@ -267,7 +286,7 @@
 
                     <a href="/thermal-imagers">
                         <span class="link-text">Подробнее</span>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="Подробнее">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="Подробнее">
                     </a>
                 </div>
             </div>
@@ -393,7 +412,7 @@
                             <span class="card-text">Общесистемные компоненты:</span>
 
                             <div class="components__item">
-                                <img src="/tpl/assets/img/description-1.svg" alt="">
+                                <img src="tpl/assets/img/description-1.svg" alt="">
                                 <div class="components__wrapper">
                                     <span class="components__title">Общесистемные механизмы</span>
                                     <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
@@ -405,7 +424,7 @@
                             <div class="hr"></div>
 
                             <div class="components__item">
-                                <img src="/tpl/assets/img/description-2.svg" alt="">
+                                <img src="tpl/assets/img/description-2.svg" alt="">
                                 <div class="components__wrapper">
                                     <span class="components__title">Интеграционная платформа</span>
                                     <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
@@ -417,7 +436,7 @@
                             <div class="hr"></div>
 
                             <div class="components__item">
-                                <img src="/tpl/assets/img/description-3.svg" alt="">
+                                <img src="tpl/assets/img/description-3.svg" alt="">
                                 <div class="components__wrapper">
                                     <span class="components__title">Средства администрирования</span>
                                     <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
@@ -429,7 +448,7 @@
                             <div class="hr"></div>
 
                             <div class="components__item">
-                                <img src="/tpl/assets/img/description-4.svg" alt="">
+                                <img src="tpl/assets/img/description-4.svg" alt="">
                                 <div class="components__wrapper">
                                     <span class="components__title">Средства настройки и адаптации</span>
                                     <span class="components__text">Как отмечает А.А.Потебня, комбинаторное приращение
@@ -447,7 +466,7 @@
             
             <div class="sistem card mis-container" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'
                 data-aos-easing="ease-in-out">
-                <img class="background" src="/tpl/assets/img/sistem.png" alt="background">
+                <img class="background" src="tpl/assets/img/sistem.png" alt="background">
                 <div class="card-wrapper">
                     <h3 class="card-title">
                         Функционал системы
@@ -462,10 +481,10 @@
                 </div>
 
                 <div class="card-bottom">
-                    <img class="card-icon" src="/tpl/assets/img/description-1.svg" alt="icon">
+                    <img class="card-icon" src="tpl/assets/img/description-1.svg" alt="icon">
                     <a href="/thermal-imagers">
                         <span class="link-text">Подробнее</span>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
                 </div>
             </div>
@@ -473,7 +492,7 @@
 
                 <div class="double-card">
                     <div class="card card-1 y-10">
-                        <img class="card-icon" src="/tpl/assets/img/description-4.svg" alt="icon">
+                        <img class="card-icon" src="tpl/assets/img/description-4.svg" alt="icon">
                         <h2 class="card-title_big">
                             Технические требования
                         </h2>
@@ -508,20 +527,20 @@
             <div class="double-card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='200'>
 
                 <div class="card card-1">
-                    <img class="background" src="/tpl/assets/img/soa.png" alt="background">
+                    <img class="background" src="tpl/assets/img/soa.png" alt="background">
                     <h3 class="card-title">
                         Использование принципов SOA
                     </h3>
-                    <img class="card-icon" src="/tpl/assets/img/description-3.svg" alt="icon">
+                    <img class="card-icon" src="tpl/assets/img/description-3.svg" alt="icon">
                 </div>
 
                 <div class="card card-2 zoom">
-                    <img class="background" src="/tpl/assets/img/configurations.png" alt="background">
+                    <img class="background" src="tpl/assets/img/configurations.png" alt="background">
                     <h3 class="card-title">
                         Типовые конфигурации формируются из подсистем,
                         компонентов и модулей
                     </h3>
-                    <img class="card-icon" src="/tpl/assets/img/description-4.svg" alt="icon">
+                    <img class="card-icon" src="tpl/assets/img/description-4.svg" alt="icon">
                 </div>
             </div>
         </section>
@@ -533,7 +552,7 @@
                 </div>
                 <a href="/news">
                     <span class="link-text">В&nbsp;раздел</span>
-                    <img class="link-icon" src="/tpl/assets/img/chapter.svg" alt="icon">
+                    <img class="link-icon" src="tpl/assets/img/chapter.svg" alt="icon">
                 </a>
             </div>
 
@@ -541,7 +560,7 @@
                 <span class="card-date">12.10.2021</span>
                 <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">ЮСАР+ на международном спортивном форуме ”SportForumLive”</span>
-                    <img class="link-icon" src="/tpl/assets/img/news.svg" alt="icon">
+                    <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
             </div>
             <div class="hr"></div>
@@ -549,7 +568,7 @@
                 <span class="card-date">12.10.2021</span>
                 <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Работа на результат</span>
-                    <img class="link-icon" src="/tpl/assets/img/news.svg" alt="icon">
+                    <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
             </div>
             <div class="hr"></div>
@@ -557,7 +576,7 @@
                 <span class="card-date">12.10.2021</span>
                 <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Онлайн-бизнес-миссия ЮСАР+ в Швейцарии</span>
-                    <img class="link-icon" src="/tpl/assets/img/news.svg" alt="icon">
+                    <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
             </div>
             <div class="hr"></div>
@@ -565,7 +584,7 @@
                 <span class="card-date">12.10.2021</span>
                 <a class="special__article" href="/thermal-imagers">
                     <span class="card-text">Катахреза обретает системный феномен толпы.</span>
-                    <img class="link-icon" src="/tpl/assets/img/news.svg" alt="icon">
+                    <img class="link-icon" src="tpl/assets/img/news.svg" alt="icon">
                 </a>
             </div>
             <div class="hr"></div>
@@ -690,7 +709,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/paks" class="card products__card-2 swiper-slide y-10">
@@ -703,7 +722,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/pharmacy" class="card products__card-3 swiper-slide y-10">
@@ -716,7 +735,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/telemedicine" class="card products__card-4 swiper-slide y-10">
@@ -729,7 +748,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/ris" class="card products__card-1 swiper-slide y-10">
@@ -742,7 +761,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/paks" class="card products__card-2 swiper-slide y-10">
@@ -755,7 +774,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/pharmacy" class="card products__card-3 swiper-slide y-10">
@@ -768,7 +787,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
                     <a href="/telemedicine" class="card products__card-4 swiper-slide y-10">
@@ -781,7 +800,7 @@
                                 феномен толпы.
                             </p>
                         </div>
-                        <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
+                        <img class="link-icon" src="tpl/assets/img/more.svg" alt="icon">
                     </a>
 
 
@@ -813,7 +832,7 @@
                     <div class="add-doc">
                         <div class="add-doc__inner">
                             <input type="file" class="add-doc__input-file">
-                            <img class="footer-icon" src="/tpl/assets/img/clip.svg" alt="icon">
+                            <img class="footer-icon" src="tpl/assets/img/clip.svg" alt="icon">
                             <span class="card-text">Приложить документ до 10 мб</span>
                         </div>
                     </div>
@@ -823,7 +842,12 @@
         </div>
     </div>
     <wb-include wb-tpl="footer.inc.php" />
-    <script src="/tpl/assets/js/brain.js" wb-app></script>
+    <script src="/tpl/assets/js/requestAnimFrame.js"></script>
+    <script src="/tpl/assets/js/brain.js"></script>
+    <script src="/tpl/assets/js/header.js"></script>
+    <script src="/tpl/assets/js/block.js"></script>
+    <script src="/tpl/assets/js/sections.js"></script>
+    <script src="/tpl/assets/js/menu.js"></script>
 </body>
 
 </html>
