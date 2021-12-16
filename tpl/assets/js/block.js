@@ -2,6 +2,10 @@ var lf_statistics = (function(){
 	var $page1 = document.querySelector('.lf-stats1')
 	var $page2 = document.querySelector('.lf-stats2')
 
+	function is_mobile(){
+		return document.documentElement.clientWidth<=750
+	}
+
 	function Block(block){
 		var outer = block.querySelector('.lf-stats-value-outer')
 		var inner = block.querySelector('.lf-stats-value-inner')
@@ -33,9 +37,15 @@ var lf_statistics = (function(){
 				var val2 = Math.max(val-60,0) * 2.5
 				move_block(pos)
 				show_value(val)
-				show_text( val2 )
+				show_text( val2 )			
 			},
-			getValue(){ return val }
+			
+			getValue(){ return val },
+
+			hide(val){
+				block.style.marginTop = - val/4 + '%'
+				block.style.opacity   = Math.max(1 - val/100,0)
+			}
 		}		
 	}
 
@@ -73,6 +83,36 @@ var lf_statistics = (function(){
 			}
 		}
 
+		function set_value(_val){
+			_val = _val * 6
+			var index = Math.min(5,Math.floor(_val/100))
+			_val = _val===600 ? 100 : _val%100
+			if(_val === 99) _val = 100
+			draw(index, _val)
+		}
+
+		function set_value_mob(_val){
+			var a = 2 //перекрытие блоков
+			var max = blocks.length-1
+			_val = _val * blocks.length * 2
+			var index = Math.min(max, Math.floor(_val/200))
+			_val = Math.min(200, _val%200)
+			if(_val === 199) _val = 200
+
+			var block = blocks[index]
+
+			for(var i=index;i<blocks.length;i++){
+				blocks[i].setValue(0)										
+			}
+
+			if(_val<100){
+				block.setValue(_val)
+			}else{
+				block.hide(_val-100)
+			}
+
+		}
+
 		var o = {
 			setValue(_val){
 				val = _val
@@ -83,12 +123,11 @@ var lf_statistics = (function(){
 					el.style.display = 'flex'						
 				}
 
-
-				_val = _val * 6
-				var index = Math.min(5,Math.floor(_val/100))
-				_val = _val===600 ? 100 : _val%100
-				if(_val === 99) _val = 100
-				draw(index, _val)
+				if(is_mobile()){
+					set_value_mob(_val)	
+				}else{
+					set_value(_val)
+				}	
 			},
 			getValue(){return val}
 		}

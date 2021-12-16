@@ -1,4 +1,6 @@
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 
 header{
 	position:relative !important;
@@ -5552,5 +5554,40 @@ body.body-services .hours .card-2 .card-text_first {
 	background-color:transparent !important
 }
 
+@media (max-width:750px){
+
+	.lf-stats{
+	}
+
+	.lf-stats-item-container{
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:100%
+	}
+
+	.lf-stats-item{
+		width:50vmin;
+		height:50vmin;
+	}
+
+	.lf-stats-text{
+		height:10vmin;
+		font-weight:400;
+		font-size:16px
+	}
+
+	.lf-stats-value-inner{
+		height:40vmin;
+		margin-top:40vmin
+	}
+
+	.lf-stats-value-outer{
+		height:40vmin; 
+		font-size:25vmin;
+		line-height:25vmin;
+	}
+
+}
 
 /*# sourceMappingURL=style.css.map */

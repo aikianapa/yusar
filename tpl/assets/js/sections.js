@@ -1,3 +1,8 @@
+function is_mobile(){
+	return document.documentElement.clientWidth<=750
+}
+
+
 var sections = [
     //картинка органа появляется снизу
     {
@@ -40,9 +45,9 @@ var sections = [
     },
     //статистика
     {
-    	"height":3000,
+    	"height": is_mobile() ? 15000 : 3000,
     	"handler":function(position){
-    		var f = 10   //высота области в которой обе подсекции накладываются друг на друга
+    		var f = is_mobile() ? 0 : 10   //высота области в которой обе подсекции накладываются друг на друга
     		var position1 //позиция в первой подсекции
     		var position2 //во второй
 			var f2 = f/2  //половина области наложения
