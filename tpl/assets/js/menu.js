@@ -1,22 +1,23 @@
 window.addEventListener('load', function(){
-	var $menu = $('.lf-menu02')
+	var menu = getmenu()
 	var flag  = true
 	var y1 = 0
 	var y = 0
 	var placeholder = document.querySelector('#qbody')
-	var $placeholder = $(placeholder)
-	var placeholder_top = $placeholder.offset().top
+	var placeholder_top = placeholder.getBoundingClientRect().top
 
-	console.log(placeholder_top)
+	window.addEventListener('resize', function(){
+		menu = getmenu()
+	})
 
 	//ловим момент когда второе меню появляется и вызываем пристыковку
 	window.addEventListener('scroll', function() {
-		var top    = $menu.offset().top - pageYOffset;
-		var bottom = document.documentElement.clientHeight - $menu.height() - top
+		var top    = menu.getBoundingClientRect().top
+		var bottom = document.documentElement.clientHeight - menu.offsetHeight - top
 		var y2 = pageYOffset
 		var pad = 40
 
-		if(bottom>pad && flag && y2 > y1 && top){
+		if(bottom>pad && flag && y2 > y1 && top>1){
 			flag = false
 			var g = pad-bottom
 			scrollBy(0,g)
@@ -27,12 +28,18 @@ window.addEventListener('load', function(){
 		y1 = y2
 	})
 
+	function getmenu(){
+		return document.querySelector(
+			document.documentElement.clientWidth<=768 ? '.lf-menu03' : '.lf-menu02'
+		)
+	}
+
 	//пристыковка
 	function move(){
 		var step = 15
 
 		window.scrollBy(0,step-(pageYOffset-y) )
-		var top = $menu.offset().top - pageYOffset;
+		var top = menu.getBoundingClientRect().top
 
 		if(top>step){
 			requestAnimFrame(move)
