@@ -55,6 +55,7 @@ var sections = [
 			var s2 = [50-f2, 100] //вторая
 			var percent = s1[1]/100
 
+
 			if(position<s1[1]){
 				position1 = position/percent
 				lf_statistics.page1.setValue(position1)
@@ -97,7 +98,8 @@ for (var i in sections) {
 
 var old_index
 
-window.addEventListener('load',function(){
+on_really_load(function(){
+//window.addEventListener('load',function(){
 	var btn_top
 	var h = document.documentElement.clientHeight
 	

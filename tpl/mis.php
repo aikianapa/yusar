@@ -842,6 +842,7 @@
         </div>
     </div>
     <wb-include wb-tpl="footer.inc.php" />
+    <script src="/tpl/assets/js/scroll.js"></script>
     <script src="/tpl/assets/js/requestAnimFrame.js"></script>
     <script src="/tpl/assets/js/brain.js"></script>
     <script src="/tpl/assets/js/header.js"></script>
