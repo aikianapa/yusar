@@ -97,9 +97,9 @@ header{
 
 
 .lf-site-title-row{
-	font-size:64px ;
-	line-height:64px;
-	height:64px;
+	font-size:55px ;
+	line-height:55px;
+	height:55px;
 	overflow-y:hidden
 }
 
@@ -4870,7 +4870,7 @@ body.body-services .hours .card-2 .card-text_first {
 .qbody .staging .to-fix .stage .scene-1 {
     margin: auto;
     margin-top: 10vh;
-    width: 40vw;
+    width: 1000px;
     top: 216px;
     left: 0;
     display: -webkit-box;

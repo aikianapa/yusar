@@ -2,6 +2,10 @@ function is_mobile(){
 	return document.documentElement.clientWidth<=750
 }
 
+//коэффициент наложения одного ряда блоков статистики на другой
+var lf_overlap = is_mobile() ? 0 : 10
+//высота зоны статистики
+var lf_height  = is_mobile() ? 7000 : 3000
 
 var sections = [
     //картинка органа появляется снизу
@@ -26,6 +30,14 @@ var sections = [
         }
     },
 
+	//ожидание
+	{
+		"height":850,
+		"handler":function(pos){
+//			console.log('зона ожидания: ' + pos)
+		}
+	},
+
     //картинка затемняется и уменьшается
     {
         "height": 200,
@@ -45,9 +57,10 @@ var sections = [
     },
     //статистика
     {
-    	"height": is_mobile() ? 15000 : 3000,
-    	"handler":function(position){
-    		var f = is_mobile() ? 0 : 10   //высота области в которой обе подсекции накладываются друг на друга
+    	"label":"stats",
+    	"height": lf_height,
+    	"handler":function(position,dir){
+    		var f = lf_overlap   //высота области в которой обе подсекции накладываются друг на друга
     		var position1 //позиция в первой подсекции
     		var position2 //во второй
 			var f2 = f/2  //половина области наложения
@@ -58,16 +71,16 @@ var sections = [
 
 			if(position<s1[1]){
 				position1 = position/percent
-				lf_statistics.page1.setValue(position1)
+				lf_statistics.page1.setValue(position1,dir)
 			}else{
-				lf_statistics.page1.setValue(100)
+				lf_statistics.page1.setValue(100,dir)
 			}
 
 			if(position>s2[0]){
 				position2 = (position - s2[0]) / percent
-				lf_statistics.page2.setValue(position2)
+				lf_statistics.page2.setValue(position2,dir)
 			}else{
-				lf_statistics.page2.setValue(0)
+				lf_statistics.page2.setValue(0,dir)
 			}
 
     	}
@@ -82,8 +95,16 @@ var sections = [
     }
 ]
 
+var current = 0
+var $$y = 0
+var $a
+var $b
+var $flag = true
 var placeholder = document.querySelector('#qbody')
 var title = document.querySelector('title')
+var stats = sections.find(function(section){
+	return section.label === 'stats'
+})
 
 var sum = 0
 
@@ -98,18 +119,140 @@ for (var i in sections) {
 
 var old_index
 
-on_really_load(function(){
-//window.addEventListener('load',function(){
-	var btn_top
-	var h = document.documentElement.clientHeight
-	
-	window.addEventListener('scroll', function() {
-		if(!btn_top){
-			btn_top = $('.lf-header-btn').offset().top
+function getparams(index){
+	var f = stats.height / 100 * lf_overlap / 2
+	var page  = index<5 ? 1 : 2
+	var start = page == 1 ? stats.start : stats.start + stats.height/2 - f
+	start = start + get_pad()		
+	var end   = start + stats.height/2 + f
+	var h     = end - start
+	if(index>4){ index = index - 5}		
+	var h1 = h / (is_mobile() ? 5 : 6)
+	var a = start + h1 * index //позиция прокрутки когда блок только начинает появляться
+	var b = a + (is_mobile() ? h1/4 : h1/2) //позиция прокрутки когда блок чуть чуть показался
+	var c = a + (is_mobile() ? h1/2 : h1) //позиция когда блок появился полностью
+	var d = c - b //на сколько пикселей прокрутить
+
+	return {a,b,c,d}	
+}
+
+//прокрутить страницу до определённого блока статистики
+function $scroll_to(index,reverse){		
+		console.log({index,reverse})
+		if(!$flag){return;}
+
+		$flag = false
+		
+		var {a,b,c,d} = getparams(index)
+		$$y = (reverse ? c : b)
+		window.scrollBy(0, $$y - pageYOffset)
+
+		var y = pageYOffset
+		var step = 15
+		var offset = 0
+
+		function move(){
+			if(reverse){
+				$$y = - offset + y
+			}else{
+				$$y = offset + y
+			}
+			var $offset = $$y - pageYOffset
+			scrollBy(0,$offset)		
+			offset = offset + step
+
+			if(reverse){
+				if(offset<d){
+					requestAnimFrame(move)	
+				}else{
+					$$y=b
+					scrollBy(0,b-pageYOffset)	
+					if(reverse){
+						current = current - 1
+					}else{
+						current = current + 1
+					}
+					$a = current ? getparams(current-1).c : -1
+					$b = current == 10 ? Infinity : getparams(current).b
+					console.log({current,$a,$b})
+
+					$flag = true
+
+				}
+			}else if(offset<d){
+				requestAnimFrame(move)
+			}else{
+				$$y = c
+				scrollBy(0,c-pageYOffset)
+				if(reverse){
+					current = current - 1
+				}else{
+					current = current + 1
+				}
+				$a = current ? getparams(current-1).c : -1
+				$b = current == 10 ? Infinity : getparams(current).b
+				console.log({current,$a,$b})
+
+				$flag = true
+			}
 		}
 
-		var pad = btn_top - h + 100
-		var y = pageYOffset - pad
+		move()
+}	
+
+
+
+var btn_top
+var h
+
+function get_pad(){
+	return btn_top - h + 100
+}
+
+on_really_load(function(){
+	console.log('load')
+	h = document.documentElement.clientHeight
+
+//	scrollBy(0,-pageYOffset)
+
+	
+
+	if(!btn_top){
+//			btn_top = document
+//				.querySelector('.lf-header-btn')
+//				.getBoundingClientRect()
+//				.top //+ pageYOffset
+//			console.log({btn_top,pageYOffset})
+		btn_top=750
+	}
+
+
+	var $$old_y = 0
+
+	$a = current ? getparams(current-1).c : -1
+	$b = getparams(current).b
+	console.log({current,$a,$b})
+	
+	window.addEventListener('scroll', function() {
+		var Y = $flag ? pageYOffset : $$y
+
+		var dir = Y > $$old_y ? 'down' : 'up'
+
+		if($flag && dir==='down' && Y>$b){
+			console.log('выход за нижнюю границу')
+			$scroll_to(current)
+			return;
+		}else if($flag && dir==='up' && Y<$a){
+			console.log('выход за верхнюю границу')
+			$scroll_to(current-1,true)
+			return;
+		}
+
+		$$old_y = Y
+
+		var pad = get_pad()
+		stats.$start  = stats.start + pad
+		var y = Y - pad
 
 		window.placeholder_height = placeholder.style.height = sum + pad + 'px'
 
@@ -138,7 +281,9 @@ on_really_load(function(){
 	    }
 
     	var pos = (y - section.start) / (section.height / 100)
-    	section.handler(Math.min(100, pos))
+
+
+    	section.handler(Math.min(100, pos),dir)
 
 	    old_index = index
 	})

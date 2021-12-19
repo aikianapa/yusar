@@ -2,6 +2,8 @@
 var lf_statistics = (function(){
 	var $page1 = document.querySelector('.lf-stats1')
 	var $page2 = document.querySelector('.lf-stats2')
+	var _count = 0
+	var current = -1
 
 	function is_mobile(){
 		return document.documentElement.clientWidth<=750
@@ -11,9 +13,17 @@ var lf_statistics = (function(){
 		var outer = block.querySelector('.lf-stats-value-outer')
 		var inner = block.querySelector('.lf-stats-value-inner')
 		var text  = block.querySelector('.lf-stats-text')
+		var count = _count++
+
 
 		//плавно двигать блок. pos - положение центра блока от верхнего края страницы, в процентах
 		function move_block(pos, label){
+
+//			if(count == current && pos<=75){
+//				automove()
+//				console.log('k')
+//			}
+			
 			if(is_mobile()){
 				pos = pos - 50
 			}
@@ -21,7 +31,7 @@ var lf_statistics = (function(){
 			var percent = document.documentElement.clientHeight/100
 			block.style.marginTop = pos*percent - block.offsetHeight/2 + 'px'
 			if($label=='page10'){
-				console.log('move: '+pos+', margin: '+a+'/'+block.style.marginTop +', label: '+label)
+			//	console.log('move: '+pos+', margin: '+a+'/'+block.style.marginTop +', label: '+label)
 			}
 		}
 
@@ -61,6 +71,7 @@ var lf_statistics = (function(){
 		}		
 	}
 
+
 	function Page(el, label){
 		var $blocks = el.querySelectorAll('.lf-stats-item')
 		var blocks = [];
@@ -83,6 +94,8 @@ var lf_statistics = (function(){
 			for(var i=0;i<index;i++){
 				blocks[i].setValue(100)	
 			}
+
+//			current = index
 			
 			if(index<5){
 				hide(0)
@@ -96,15 +109,26 @@ var lf_statistics = (function(){
 			}
 		}
 
-		function set_value(_val){
+		function set_value(_val,dir){
+			var $val = _val
 			_val = _val * 6
 			var index = Math.min(5,Math.floor(_val/100))
 			_val = _val===600 ? 100 : _val%100
 			if(_val === 99) _val = 100
+			//check(index,dir,_val)
+
 			draw(index, _val)
 		}
 
-		function set_value_mob(_val){
+		function check(index,dir,val){
+			var cur_label = current < 5 ? 'page1' : 'page2'
+			if(label!=cur_label) return;
+			if(label=='page2'){ index = index+5 }
+			console.log({label,index,dir,val})
+		}
+
+		function set_value_mob(_val,dir){
+			var $val = _val
 			var a = 2 //перекрытие блоков
 			var max = blocks.length-1
 			_val = _val * blocks.length * 2
@@ -114,6 +138,7 @@ var lf_statistics = (function(){
 
 			var block = blocks[index]
 
+
 			for(var i=0;i<blocks.length;i++){
 				if(i!=index){
 				//	console.log('обработан блок '+i)
@@ -121,12 +146,14 @@ var lf_statistics = (function(){
 				}
 			}
 
-			console.log({index})
+			//console.log({index})
 
 			if(_val<100){
 				if(label=='page1'){
-					console.log(label+': уст. знач. : '+_val)
+					//console.log(label+': уст. знач. : '+_val)
 				}
+				//check(index,dir,_val)
+
 				block.setValue(_val)
 			}else{
 				_val = _val-100
@@ -134,15 +161,18 @@ var lf_statistics = (function(){
 				var mov = 50 - _val/2
 				block.move(mov, 'mobile')
 				if(label=='page1'){
-					console.log(label + ': сокрытие: '+_val+', движение: '+mov)
+					//console.log(label + ': сокрытие: '+_val+', движение: '+mov)
 				}
 			}
+
 
 		}
 
 		var o = {
-			setValue(_val){
+			setValue(_val,dir){
 				val = _val
+
+				var $val = val
 
 				if(val == 100 || val == 0){
 					el.style.display = 'none'	
@@ -151,9 +181,9 @@ var lf_statistics = (function(){
 				}
 
 				if(is_mobile()){
-					set_value_mob(_val)	
+					set_value_mob(_val,dir)	
 				}else{
-					set_value(_val)
+					set_value(_val,dir)
 				}	
 			},
 			getValue(){return val}

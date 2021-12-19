@@ -60,8 +60,10 @@ function getbrainsize() {
     } else if (w > 800) {
         return 450
 	//если ширина окна меньше 800, ширина картинки будет 70% оот ширины окна
-    } else {
-        return w * 0.7
+    } else if (w > 600){
+		return w * 0.85
+    }else{
+        return w * 0.95
     }
 
 }

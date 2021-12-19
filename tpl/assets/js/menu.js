@@ -18,6 +18,8 @@ window.addEventListener('load', function(){
 		var pad = 40
 
 		if(bottom>pad && flag && y2 > y1 && top>1){
+			console.log('пристыковка меню')
+			console.log({bottom,pad,top,pageYOffset})
 			flag = false
 			var g = pad-bottom
 			scrollBy(0,g)
