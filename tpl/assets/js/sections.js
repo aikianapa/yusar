@@ -35,7 +35,7 @@ var sections = [
 
 	//ожидание
 	{
-		"height":300,
+		"height":200,
 		"handler":function(pos){
 //			console.log('зона ожидания: ' + pos)
 		}
@@ -43,7 +43,7 @@ var sections = [
 
     //картинка затемняется и уменьшается
     {
-        "height": 200,
+        "height": 450,
         "handler": function(position) {
             var oldsize = brain.getSize()
 

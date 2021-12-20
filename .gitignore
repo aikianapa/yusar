@@ -5,3 +5,4 @@ engine
 *.pid
 *.log
 .vscode
+tpl/assets/css/compress/
