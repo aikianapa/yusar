@@ -35,7 +35,7 @@ var sections = [
 
 	//ожидание
 	{
-		"height":850,
+		"height":300,
 		"handler":function(pos){
 //			console.log('зона ожидания: ' + pos)
 		}
