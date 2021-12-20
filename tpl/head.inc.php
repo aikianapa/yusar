@@ -31,6 +31,3 @@
         transition: all 0.5s ease 0.5s;
     }
 </style>
-<script wb-app>
-
-</script>

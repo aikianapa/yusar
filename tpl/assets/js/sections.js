@@ -25,8 +25,11 @@ var sections = [
         "height": 200,
         "handler": function(position) {
             brain.setOpacity(100)
-            brain.setSaturate(Math.min(50, position / 2))
-            brain.setOpacity2(Math.min(50, position / 2))
+//            brain.setSaturate(Math.min(50, position / 2))
+  //          brain.setOpacity2(Math.min(50, position / 2))
+            brain.setSaturate(position)
+            brain.setOpacity2(position)
+
         }
     },
 
@@ -238,14 +241,16 @@ on_really_load(function(){
 
 		var dir = Y > $$old_y ? 'down' : 'up'
 
-		if($flag && dir==='down' && Y>$b){
-			console.log('выход за нижнюю границу')
-			$scroll_to(current)
-			return;
-		}else if($flag && dir==='up' && Y<$a){
-			console.log('выход за верхнюю границу')
-			$scroll_to(current-1,true)
-			return;
+		if(is_mobile()){
+			if($flag && dir==='down' && Y>$b){
+				console.log('выход за нижнюю границу')
+				$scroll_to(current)
+				return;
+			}else if($flag && dir==='up' && Y<$a){
+				console.log('выход за верхнюю границу')
+				$scroll_to(current-1,true)
+				return;
+			}
 		}
 
 		$$old_y = Y
