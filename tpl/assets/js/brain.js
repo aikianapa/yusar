@@ -7,6 +7,8 @@ var brain = (function() {
     var sat = 0
     var opacity = 0
     var opacity2 = 0
+	var video = ''
+
 
     return {
         setSize: function(w) {

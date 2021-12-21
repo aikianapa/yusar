@@ -7,30 +7,84 @@ var lf_overlap = is_mobile() ? 0 : 10
 //высота зоны статистики
 var lf_height  = is_mobile() ? 7000 : 3000
 
+var lf_image
+var lf_image2
+var lf_image_start_pos = document.documentElement.clientHeight
+
+function show_brain(position){
+	var a = brain.start_pos
+    var b = (document.documentElement.clientHeight - brain.getSize()) / 2
+    var delta = b - a
+    var percent = delta / 100
+    brain.setPos(a + position * percent)	
+}
+
+function show_image(position){
+	var a = lf_image_start_pos
+	var percent = a/100
+	
+	lf_image.style.top = a - position * percent + 'px' 	
+	lf_image2.style.top = a - position * percent + 'px' 	
+}
+
+function highlight_brain(position){
+	brain.setOpacity(100)
+    brain.setSaturate(position)
+    brain.setOpacity2(position)
+}
+
+function highlight_image(position){
+	
+}
+
+function fade_brain(position){
+	var oldsize = brain.getSize()
+
+	brain.setSaturate(100 - position)
+    brain.setOpacity(0)
+    brain.setOpacity2(70 - position / 2)
+
+    var newsize = brain.start_size - position + (window.innerWidth > 450 ? 50 : 0)
+    var delta = oldsize - newsize
+
+    brain.setSize(newsize)
+    brain.setPos(brain.getPos() + delta / 2)
+	
+}
+
+function fade_image(position){
+//	lf_image.style.filter = 'saturate(' + (100 - position/2) + ')'
+//	console.log(lf_image.style.filter)
+	lf_image2.style.background='RGBA(255,255,255,'+position/200+')'
+}
+
+function hide_brain(position){
+	brain.setOpacity2(50 - position / 2)
+    brain.setOpacity(0)	
+}
+
+function hide_image(position){
+	console.log(position)
+	var val = (50 - position / 2)/100
+	lf_image.style.opacity  = val
+	lf_image2.style.opacity = val
+	console.log({position,val})
+}
+
+var lf_is_mis = location.pathname === '/mis'
+
 var sections = [
+	...(lf_is_mis ? [] : [{height:100,handler:function(){}}]),
     //картинка органа появляется снизу
     {
         "height": 1000,
-        "handler": function(position) {
-            var a = brain.start_pos
-            var b = (document.documentElement.clientHeight - brain.getSize()) / 2
-            var delta = b - a
-            var percent = delta / 100
-            brain.setPos(a + position * percent)
-        }
+        "handler": lf_is_mis ? show_brain : show_image
     },
 
     //картинка органа вспыхивает
     {
         "height": 200,
-        "handler": function(position) {
-            brain.setOpacity(100)
-//            brain.setSaturate(Math.min(50, position / 2))
-  //          brain.setOpacity2(Math.min(50, position / 2))
-            brain.setSaturate(position)
-            brain.setOpacity2(position)
-
-        }
+        "handler": lf_is_mis ? highlight_brain : highlight_image
     },
 
 	//ожидание
@@ -44,19 +98,7 @@ var sections = [
     //картинка затемняется и уменьшается
     {
         "height": 450,
-        "handler": function(position) {
-            var oldsize = brain.getSize()
-
-            brain.setSaturate(100 - position)
-            brain.setOpacity(0)
-            brain.setOpacity2(70 - position / 2)
-
-            var newsize = brain.start_size - position + (window.innerWidth > 450 ? 50 : 0)
-            var delta = oldsize - newsize
-
-            brain.setSize(newsize)
-            brain.setPos(brain.getPos() + delta / 2)
-        }
+        "handler": lf_is_mis ? fade_brain : fade_image
     },
     //статистика
     {
@@ -90,11 +132,8 @@ var sections = [
     },
     //изчезновение картинки
     {
-        "height": 200,
-        "handler": function(position) {
-            brain.setOpacity2(50 - position / 2)
-            brain.setOpacity(0)
-        }
+        "height": lf_is_mis ? 200 : 600,
+        "handler": lf_is_mis ? hide_brain : hide_image
     }
 ]
 
@@ -211,6 +250,13 @@ var h
 function get_pad(){
 	return btn_top - h + 100
 }
+
+window.addEventListener('load',function(){
+	lf_image = document.querySelector('.lf-image')
+	lf_image2 = document.querySelector('.lf-image2')
+	lf_image.style.top = lf_image_start_pos + 'px'
+	lf_image2.style.top = lf_image_start_pos + 'px'
+})
 
 on_really_load(function(){
 	console.log('load')

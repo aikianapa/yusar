@@ -36,13 +36,15 @@ window.addEventListener('load', function(){
 		)
 	}
 
+
 	//пристыковка
 	function move(){
 		var step = 15
+		var percent = document.documentElement.clientHeight/100
 
 		window.scrollBy(0,step-(pageYOffset-y) )
 		var top = menu.getBoundingClientRect().top
-
+		
 		if(top>step){
 			requestAnimFrame(move)
 		}else{
