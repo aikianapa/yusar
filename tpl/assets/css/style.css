@@ -27,11 +27,13 @@ header{
 	flex-wrap:nowrap;
 	justify-content:center;
 	z-index:200;
+	pointer-events: none !important;
 }
 
 .lf-stats-item-container{
 	height:100%;
 	width:13vw;
+	pointer-events: none !important;
 }
 
 
@@ -41,13 +43,15 @@ header{
 	height:11vw;
 	display:flex;
 	flex-direction:column;
+	pointer-events: none !important;
 }
 
 .lf-stats-text{
 	height:5vw;
 	font-weight:400;
 	text-align:center;
-	font-size:16px
+	font-size:16px;
+	pointer-events: none !important;
 }
 
 .lf-stats-value-inner{
@@ -57,7 +61,8 @@ header{
 	background-position:center;
 	background-repeat:no-repeat;
 	display:block;
-	margin-top:6vw
+	margin-top:6vw;
+	pointer-events: none !important;
 }
 
 .lf-stats-value-outer{
@@ -69,6 +74,7 @@ header{
 	font-family:'IBM Plex Sans', sans-serif;
 	font-weight:700;
 	overflow:hidden;
+	pointer-events: none !important;
 }
 
 .lf-hidden{
