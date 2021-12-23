@@ -282,7 +282,7 @@ on_really_load(function(){
 	$b = getparams(current).b
 	console.log({current,$a,$b})
 	
-	window.addEventListener('scroll', function() {
+	function f(){
 		var Y = $flag ? pageYOffset : $$y
 
 		var dir = Y > $$old_y ? 'down' : 'up'
@@ -317,7 +317,19 @@ on_really_load(function(){
         	if (section.start <= y && section.end >= y) {
             	return true
         	}
-	    }) || last_section
+	    })
+
+		var pos
+
+		if(!section){
+//			if(sections[0].start > y){
+//				section = sections[0]
+//				pos = 0
+//			}else{
+				section = last_section
+				pos = 100
+//			}
+		}
 
 	    var index = section.index
 
@@ -331,13 +343,17 @@ on_really_load(function(){
         	}
 	    }
 
-    	var pos = (y - section.start) / (section.height / 100)
-
+		if(pos === undefined){
+	    	pos = (y - section.start) / (section.height / 100)
+		}
 
     	section.handler(Math.min(100, pos),dir)
 
 	    old_index = index
-	})
+	}
+
+	window.addEventListener('scroll',f)
+	window.addEventListener('resize',f)
 	
 })
 

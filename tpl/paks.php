@@ -4,7 +4,10 @@
 <body class="loading body-mis cont-color-w" >
 	<div class=lf-placeholder></div>
 
-	<div class=lf-image><video autoplay="autoplay" loop="loop" src="/tpl/assets/video/services.mp4" id="lf-video"></video></div>
+	<div class=lf-image>
+		<video autoplay="autoplay" loop="loop" id="lf-video" playsinline="playsinline" muted="muted"></video>
+	</div>
+	<script src="/tpl/assets/js/video.js"></script>
 	<div class=lf-image2></div>
 
 <!--	<div class=lf-brain2><img src="/tpl/assets/img/cells.jpg"></div>
@@ -847,7 +850,7 @@
     <wb-include wb-tpl="footer.inc.php" />
     <script src="/tpl/assets/js/scroll.js"></script>
     <script src="/tpl/assets/js/requestAnimFrame.js"></script>
-    <script src="/tpl/assets/js/brain.js"></script>
+<!--    <script src="/tpl/assets/js/brain.js"></script>-->
     <script src="/tpl/assets/js/header.js"></script>
     <script src="/tpl/assets/js/block.js"></script>
     <script src="/tpl/assets/js/sections.js"></script>

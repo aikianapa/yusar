@@ -10,8 +10,9 @@
 	height:100%
 }
 
+
 .lf-image{
-	background-image:url(/tpl/assets/img/cells.jpg);
+	background-image:url(/tpl/assets/img/cells1600.jpg);
 	background-position:center;
 	z-index:100;
 	background-size:cover;
@@ -22,8 +23,12 @@
 	height:100%
 }
 
+@media (max-width: 1200px){ .lf-image{background-image:url(/tpl/assets/img/cells1200.jpg)}}
+@media (max-width: 1000px){ .lf-image{background-image:url(/tpl/assets/img/cells1000.jpg)}}
+@media (max-width: 800px){  .lf-image{background-image:url(/tpl/assets/img/cells800.jpg)}}
+@media (max-width: 600px){  .lf-image{background-image:url(/tpl/assets/img/cells600.jpg)}}
 
-.lf-video{
+#lf-video{
 	height:100%;
 	width:100%;
 	object-fit:cover
