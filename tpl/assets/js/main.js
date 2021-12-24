@@ -123,7 +123,12 @@ $(document).ready(function () {
             // console.log( 'Высота до меню: ' + $('.mis-menu-wrapper').offset().top);
             // console.log( 'Прокрутили на: ' + $(this).scrollTop());
             // console.log( 'Высота страницы: ' + $(this).height());
-            if ($(this).scrollTop() < toScroll - $(".bg-topmenu").height()) {
+            var _scroll = $(this).scrollTop()
+            var h = $(".bg-topmenu").height()
+//            console.log({_scroll,toScroll,h})
+//            if (_scroll < toScroll - h) {
+
+            if (_scroll < toScroll - h && !window.lf_attach_menu_flag ) {
                 // console.log('не долшло');
                 $(".bg-topmenu").show("slow");
             } else {

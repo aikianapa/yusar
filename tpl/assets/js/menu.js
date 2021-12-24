@@ -19,6 +19,7 @@ window.addEventListener('load', function(){
 
 		if(bottom>pad && flag && y2 > y1 && top>1){
 			console.log('пристыковка меню')
+			window.lf_attach_menu_flag = true
 			console.log({bottom,pad,top,pageYOffset})
 			flag = false
 			var g = pad-bottom
@@ -50,6 +51,8 @@ window.addEventListener('load', function(){
 		}else{
 			window.scrollBy(0,top)
 			flag = true
+			window.lf_attach_menu_flag = false
+			console.log('пристыковка завершена')
 		}
 		
 		y = pageYOffset

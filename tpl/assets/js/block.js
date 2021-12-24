@@ -76,6 +76,7 @@ var lf_statistics = (function(){
 		var $blocks = el.querySelectorAll('.lf-stats-item')
 		var blocks = [];
 		var c = 0;
+		var l = $blocks.length;
 
 		[].forEach.call($blocks,function($block){
 			var block = Block($block,label + c++)
@@ -97,11 +98,11 @@ var lf_statistics = (function(){
 
 //			current = index
 			
-			if(index<5){
+			if(index<l){
 				hide(0)
 				blocks[index].setValue(value)
 
-				for(var i=index+1;i<5;i++){
+				for(var i=index+1;i<l;i++){
 					blocks[i].setValue(0)						
 				}
 			}else{
@@ -111,9 +112,9 @@ var lf_statistics = (function(){
 
 		function set_value(_val,dir){
 			var $val = _val
-			_val = _val * 6
-			var index = Math.min(5,Math.floor(_val/100))
-			_val = _val===600 ? 100 : _val%100
+			_val = _val * (l+1)
+			var index = Math.min(l,Math.floor(_val/100))
+			_val = _val===(l*100 + 100) ? 100 : _val%100
 			if(_val === 99) _val = 100
 			//check(index,dir,_val)
 
@@ -121,9 +122,9 @@ var lf_statistics = (function(){
 		}
 
 		function check(index,dir,val){
-			var cur_label = current < 5 ? 'page1' : 'page2'
+			var cur_label = current < l ? 'page1' : 'page2'
 			if(label!=cur_label) return;
-			if(label=='page2'){ index = index+5 }
+			if(label=='page2'){ index = index+l }
 			console.log({label,index,dir,val})
 		}
 
@@ -186,7 +187,8 @@ var lf_statistics = (function(){
 					set_value(_val,dir)
 				}	
 			},
-			getValue(){return val}
+			getValue(){return val},
+			len: l
 		}
 
 		o.setValue(0)
@@ -196,7 +198,7 @@ var lf_statistics = (function(){
 
 	var o = {
 		page1: Page($page1, 'page1'),
-		page2: Page($page2, 'page2')
+		page2: $page2 && Page($page2, 'page2')
 	}
 
 	return o

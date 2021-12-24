@@ -1,11 +1,15 @@
+var lf_len = lf_statistics.page2 ? (lf_statistics.page1.len + lf_statistics.page2.len) : lf_statistics.page1.len
+
 function is_mobile(){
 	return document.documentElement.clientWidth<=750
 }
 
 //коэффициент наложения одного ряда блоков статистики на другой
-var lf_overlap = is_mobile() ? 0 : 10
+var lf_overlap = is_mobile() ? 0 : 10 
 //высота зоны статистики
-var lf_height  = is_mobile() ? 7000 : 3000
+var lf_height  = is_mobile() ? (700 * lf_len) : (250 * (lf_len+2))
+
+console.log({lf_height})
 
 var lf_image
 var lf_image2
@@ -64,11 +68,11 @@ function hide_brain(position){
 }
 
 function hide_image(position){
-	console.log(position)
+//	console.log(position)
 	var val = (50 - position / 2)/100
 	lf_image.style.opacity  = val
 	lf_image2.style.opacity = val
-	console.log({position,val})
+	//console.log({position,val})
 }
 
 var lf_is_mis = location.pathname === '/mis'
@@ -105,7 +109,8 @@ var sections = [
     	"label":"stats",
     	"height": lf_height,
     	"handler":function(position,dir){
-    		var f = lf_overlap   //высота области в которой обе подсекции накладываются друг на друга
+//    		console.log({position})
+    		var f = lf_statistics.page2 ? lf_overlap : 0   //высота области в которой обе подсекции накладываются друг на друга
     		var position1 //позиция в первой подсекции
     		var position2 //во второй
 			var f2 = f/2  //половина области наложения
@@ -113,6 +118,10 @@ var sections = [
 			var s2 = [50-f2, 100] //вторая
 			var percent = s1[1]/100
 
+			if(!lf_statistics.page2){
+				lf_statistics.page1.setValue(position,dir)
+				return
+			}
 
 			if(position<s1[1]){
 				position1 = position/percent
@@ -162,25 +171,35 @@ for (var i in sections) {
 var old_index
 
 function getparams(index){
-	var f = stats.height / 100 * lf_overlap / 2
-	var page  = index<5 ? 1 : 2
+	var l = lf_statistics.page1.len
+	var f = lf_statistics.page2 ? (stats.height / 100 * lf_overlap / 2) : 0
+//	console.log({l,f})
+//	console.log({f})
+	var page  = index < l ? 1 : 2
 	var start = page == 1 ? stats.start : stats.start + stats.height/2 - f
+//	console.log({l,f,page,start,index})
 	start = start + get_pad()		
-	var end   = start + stats.height/2 + f
+	var end   = start + ( lf_statistics.page2 ? (stats.height/2 + f) : stats.height) 
 	var h     = end - start
-	if(index>4){ index = index - 5}		
-	var h1 = h / (is_mobile() ? 5 : 6)
+	if(index>l-1){ index = index - l}
+	var L = lf_statistics['page'+page].len		
+	var h1 = h / (is_mobile() ? L : L+1)
 	var a = start + h1 * index //позиция прокрутки когда блок только начинает появляться
 	var b = a + (is_mobile() ? h1/4 : h1/2) //позиция прокрутки когда блок чуть чуть показался
 	var c = a + (is_mobile() ? h1/2 : h1) //позиция когда блок появился полностью
 	var d = c - b //на сколько пикселей прокрутить
-
+//	console.log({index,c,b,delta:b-c})
+//	console.log(stats)
+//	console.log({index,c,b})
+//	console.log({start,end,h,index,L,h1,a,b,c,d})
 	return {a,b,c,d}	
 }
 
+
 //прокрутить страницу до определённого блока статистики
 function $scroll_to(index,reverse){		
-		console.log({index,reverse})
+		//console.log('scroll')
+		//console.log({index,reverse})
 		if(!$flag){return;}
 
 		$flag = false
@@ -215,8 +234,8 @@ function $scroll_to(index,reverse){
 						current = current + 1
 					}
 					$a = current ? getparams(current-1).c : -1
-					$b = current == 10 ? Infinity : getparams(current).b
-					console.log({current,$a,$b})
+					$b = current == lf_len ? Infinity : getparams(current).b
+					//console.log({current,$a,$b})
 
 					$flag = true
 
@@ -232,8 +251,8 @@ function $scroll_to(index,reverse){
 					current = current + 1
 				}
 				$a = current ? getparams(current-1).c : -1
-				$b = current == 10 ? Infinity : getparams(current).b
-				console.log({current,$a,$b})
+				$b = current == lf_len ? Infinity : getparams(current).b
+				//console.log({current,$a,$b})
 
 				$flag = true
 			}
@@ -254,12 +273,29 @@ function get_pad(){
 window.addEventListener('load',function(){
 	lf_image = document.querySelector('.lf-image')
 	lf_image2 = document.querySelector('.lf-image2')
-	lf_image.style.top = lf_image_start_pos + 'px'
-	lf_image2.style.top = lf_image_start_pos + 'px'
+	if(lf_image){
+		lf_image.style.top = lf_image_start_pos + 'px'
+		lf_image2.style.top = lf_image_start_pos + 'px'
+	}
+
+	var button = document.querySelector('.navbar-toggler')
+	var html = document.querySelector('html')
+	var button2 = document.querySelector('.close-mobile-nav')
+
+	button.addEventListener('click',function(){
+		//console.log('click')
+		html.style.overflow = 'hidden'
+	})
+
+	button2.addEventListener('click',function(){
+		console.log('clock')
+		html.style.overflow = 'auto'
+	})
+	
 })
 
 on_really_load(function(){
-	console.log('load')
+	//console.log('load')
 	h = document.documentElement.clientHeight
 
 //	scrollBy(0,-pageYOffset)
@@ -280,7 +316,7 @@ on_really_load(function(){
 
 	$a = current ? getparams(current-1).c : -1
 	$b = getparams(current).b
-	console.log({current,$a,$b})
+	//console.log({current,$a,$b})
 	
 	function f(){
 		var Y = $flag ? pageYOffset : $$y
@@ -288,6 +324,7 @@ on_really_load(function(){
 		var dir = Y > $$old_y ? 'down' : 'up'
 
 		if(is_mobile()){
+//			console.log({$flag,Y,$a,$b})
 			if($flag && dir==='down' && Y>$b){
 				console.log('выход за нижнюю границу')
 				$scroll_to(current)
