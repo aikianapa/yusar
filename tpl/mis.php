@@ -6,7 +6,9 @@
 
 	<div class=lf-brain></div>
 	<div class=lf-brain2></div>
-
+<!--	<div class=lf-brain2><img src="/tpl/assets/img/cells.jpg"></div>
+	<div class=lf-brain2><video autoplay="autoplay" loop="loop" src="/tpl/assets/video/SCOPE_resource.mp4" id="lf-video"></video></div>
+-->
     <wb-include wb-tpl="header.inc.php" />
     <div class="body-mis__container lf-main">
         <div class="qbody" id="qbody">
@@ -90,25 +92,25 @@
                         	<div class="lf-stats-item-container">
                         	<div class="lf-stats-item">
                             	<span class="lf-stats-value-outer">
-                            		<span class="lf-stats-value-inner">280</span>
+                            		<span class="lf-stats-value-inner">256</span>
                             	</span>
-                                <span class="lf-stats-text">Успешных внедрений</span>
+                                <span class="lf-stats-text">Файлов</span>
                             </div>
                             </div>
                         	<div class="lf-stats-item-container">
                         	<div class="lf-stats-item">
                             	<span class="lf-stats-value-outer">
-                            		<span class="lf-stats-value-inner">900</span>
+                            		<span class="lf-stats-value-inner">16</span>
                             	</span>
-                                <span class="lf-stats-text">Партнёров</span>
+                                <span class="lf-stats-text">Папок</span>
                             </div>
                             </div>
                         	<div class="lf-stats-item-container">
                         	<div class="lf-stats-item">
                             	<span class="lf-stats-value-outer">
-                            		<span class="lf-stats-value-inner">89</span>
+                            		<span class="lf-stats-value-inner">32</span>
                             	</span>
-                                <span class="lf-stats-text">Процентов чего-то</span>
+                                <span class="lf-stats-text">Проектов</span>
                             </div>
                             </div>
 						</div>
