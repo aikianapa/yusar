@@ -1,5 +1,5 @@
 <edit header="Виджет картинки-ссылки">
-    <wb-include wb-src="/modules/yonger/common/blocks/common.inc.php" />
+    <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
 
     <div class="row">
         <div class="col-sm-6 mb-2">

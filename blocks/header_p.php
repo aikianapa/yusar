@@ -1,5 +1,5 @@
 <edit header="Header для остальных страниц">
-    <wb-include wb-src="/modules/yonger/common/blocks/common.inc.php" />
+    <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     <div class="form-group row">
         <label class="col-2">{{_lang.video}}</label>
         <div class="col-10">

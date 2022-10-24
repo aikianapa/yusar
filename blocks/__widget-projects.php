@@ -1,5 +1,5 @@
 <edit header="Виджет проектов">
-    <wb-include wb-src="/modules/yonger/common/blocks/common.inc.php" />
+    <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     <div class="row">
         <div class="col-12 mb-2">
             <label>Количество записей в виджете</label>

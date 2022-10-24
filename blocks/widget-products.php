@@ -1,5 +1,5 @@
 <edit header="Виджет IT-продукты">
-    <wb-include wb-src="/modules/yonger/common/blocks/common.inc.php" />
+    <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     <wb-multilang wb-lang="{{_sett.locales}}" name="lang">
         <div class="row">
             <div class="col-12 mb-2">

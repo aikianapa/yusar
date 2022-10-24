@@ -179,7 +179,7 @@
             <div class="pb-1r col-xl-3 col-md-6 order-xl-4 order-4 text-md-right">
                 <a href="//idees.ru" class="studio-link">
                     Сделано в 
-                    <img src="http://landing.omsplus.ru/assets/idees_logo.svg" alt="" width="17">
+                    <img src="http://idees.ru/assets/img/favicons/icon.svg" alt="" width="17">
                 </a>
             </div>
         </div>

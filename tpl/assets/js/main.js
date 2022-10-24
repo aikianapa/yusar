@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     if ($('.body-mis').length) {
 
 
-        $(document).scroll(function () {
+        $(document).scroll(function() {
 
             const scrollTop = window.pageYOffset;
             var a = 80;
@@ -106,8 +106,8 @@ $(document).ready(function () {
     }) : null;
 
     //плавное перемещение по странице
-    $(function () { });
-    $(window).scroll(function () {
+    $(function() {});
+    $(window).scroll(function() {
         if ($(this).scrollTop() != 0) {
             $("#toTop").fadeIn();
         } else {
@@ -125,10 +125,10 @@ $(document).ready(function () {
             // console.log( 'Высота страницы: ' + $(this).height());
             var _scroll = $(this).scrollTop()
             var h = $(".bg-topmenu").height()
-//            console.log({_scroll,toScroll,h})
-//            if (_scroll < toScroll - h) {
+                //            console.log({_scroll,toScroll,h})
+                //            if (_scroll < toScroll - h) {
 
-            if (_scroll < toScroll - h && !window.lf_attach_menu_flag ) {
+            if (_scroll < toScroll - h && !window.lf_attach_menu_flag) {
                 // console.log('не долшло');
                 $(".bg-topmenu").show("slow");
             } else {
@@ -139,11 +139,11 @@ $(document).ready(function () {
         }
     });
 
-    $("#toTop").click(function () {
+    $("#toTop").click(function() {
         $("body,html").animate({ scrollTop: 0 }, 1000);
     });
 
-    $('a[href^="#"]').on("click", function (event) {
+    $('a[href^="#"]').on("click", function(event) {
         // отменяем стандартное действие
         event.preventDefault();
 
@@ -152,8 +152,9 @@ $(document).ready(function () {
             var c = 70;
         }
 
-        var sc = $(this).attr("href"),
-            dn = $(sc).offset().top - c;
+        let sc = $(this).attr("href");
+        console.log();
+        let dn = $(sc).offset().top - c;
 
 
         $("html, body").animate({ scrollTop: dn }, 800);
@@ -291,7 +292,7 @@ $(document).ready(function () {
             end1 = +number1.dataset.max;
 
     if (window.innerHeight >= number1Top) {
-        var interval1 = setInterval(function () {
+        var interval1 = setInterval(function() {
             number1.innerHTML = ++start1 + "%";
             if (start1 == end1) {
                 clearInterval(interval1);
@@ -301,7 +302,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number1Top - window.innerHeight) {
                 this.removeEventListener("scroll", onScroll);
-                var interval1 = setInterval(function () {
+                var interval1 = setInterval(function() {
                     number1.innerHTML = ++start1 + "%";
                     if (start1 == end1) {
                         clearInterval(interval1);
@@ -317,7 +318,7 @@ $(document).ready(function () {
             end2 = +number2.dataset.max;
 
     if (window.innerHeight >= number2Top) {
-        var interval2 = setInterval(function () {
+        var interval2 = setInterval(function() {
             number2.innerHTML = ++start2 + "%";
             if (start2 == end2) {
                 clearInterval(interval2);
@@ -327,7 +328,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number2Top - window.innerHeight) {
                 this.removeEventListener("scroll", onScroll);
-                var interval2 = setInterval(function () {
+                var interval2 = setInterval(function() {
                     number2.innerHTML = ++start2 + "%";
                     if (start2 == end2) {
                         clearInterval(interval2);
@@ -346,7 +347,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number3Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval3 = setInterval(function () {
+                var interval3 = setInterval(function() {
                     number3.innerHTML = ++start3 + "%";
                     if (start3 == end3) {
                         clearInterval(interval3);
@@ -364,7 +365,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number4Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval4 = setInterval(function () {
+                var interval4 = setInterval(function() {
                     number4.innerHTML = ++start4 + "%";
                     if (start4 == end4) {
                         clearInterval(interval4);
@@ -383,7 +384,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number5Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval5 = setInterval(function () {
+                var interval5 = setInterval(function() {
                     number5.innerHTML = ++start5 + "%";
                     if (start5 == end5) {
                         clearInterval(interval5);
@@ -402,7 +403,7 @@ $(document).ready(function () {
         window.addEventListener("scroll", function onScroll() {
             if (window.pageYOffset > number6Top - window.innerHeight / 2 - 1100) {
                 this.removeEventListener("scroll", onScroll);
-                var interval6 = setInterval(function () {
+                var interval6 = setInterval(function() {
                     number6.innerHTML = ++start6 + "%";
                     if (start6 == end6) {
                         clearInterval(interval6);
@@ -412,7 +413,7 @@ $(document).ready(function () {
         });
     }
 
-    $(document).scroll(function () {
+    $(document).scroll(function() {
         const top = window.pageYOffset;
         if (top > 600 && aosref == false) {
             // fix problems
@@ -421,14 +422,14 @@ $(document).ready(function () {
         }
 
         function menuItemHover() {
-            $(".mis-menu__item").mouseover(function (e) {
+            $(".mis-menu__item").mouseover(function(e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "#697079");
                     $(this).css("color", "#fff");
                 }
             });
 
-            $(".mis-menu__item").mouseleave(function (e) {
+            $(".mis-menu__item").mouseleave(function(e) {
                 if (!$(this).hasClass("mis-menu__item-active")) {
                     $(this).css("background", "none");
                     $(this).css("color", "#4F4F4F");

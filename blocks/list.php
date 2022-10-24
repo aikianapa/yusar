@@ -1,5 +1,5 @@
 <edit header="Список с заголовком">
-    <wb-include wb-src="/modules/yonger/common/blocks/common.inc.php" />
+    <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     <wb-multilang wb-lang="{{_sett.locales}}" name="lang">
     <div class="col-12 mb-2">
         <input class="form-control" type="text" name="header" placeholder="Заголовок">
