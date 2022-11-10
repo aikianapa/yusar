@@ -1,5 +1,5 @@
 <edit header="Подвал сайта">
-<div class="alert alert-info">
+    <div class="alert alert-info">
         <p>/blocks/footer.php</p>
         <p>/tpl/footer.inc.php</p>
     </div>

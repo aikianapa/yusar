@@ -4,27 +4,34 @@ if (location.protocol == 'file:') {
 
 
 
-window.addEventListener("earthjsload", function () {
+window.addEventListener("earthjsload", function() {
 
     var myearth;
     var sprites = [];
-
-    var cities = [
-        [59.939095, 30.315868], // спб
-        [55.755814, 37.617635], // мск
-        [43.115536, 131.885485], // вл
-        [45.035470, 38.975313], // крас
-        [54.314192, 48.403123], // уль
-        [53.195873, 50.100193], // сам
-        [56.852676, 53.206891] // иж
-    ]
-
+    /*
+        var cities = [
+            [59.939095, 30.315868], // спб
+            [55.755814, 37.617635], // мск
+            [43.115536, 131.885485], // вл
+            [45.035470, 38.975313], // крас
+            [54.314192, 48.403123], // уль
+            [53.195873, 50.100193], // сам
+            [56.852676, 53.206891] // иж
+        ]
+    */
+    var cities = []
     var center = cities[0];
+
+    var meta = document.querySelectorAll('#globeData meta')
+    for (const [i, node] of Object.entries(meta)) {
+        let item = node.dataset
+        cities.push(item.geopos.split(' '))
+    }
 
     myearth = new Earth('myearth', {
         location: { lat: 60.921841, lng: 76.632464 },
         //location: { lat: center[0], lng: center[1] },
-//        mapImage: '/modules/earth/hologram-map.svg',
+        //        mapImage: '/modules/earth/hologram-map.svg',
         zoom: 1.15,
         zoomMin: 1,
         zoomMax: 1.8,
@@ -36,21 +43,21 @@ window.addEventListener("earthjsload", function () {
         mapBorderWidth: 0.4,
         transparent: true,
         autoRotate: true,
-        autoRotateSpeed: 1.2,
-        autoRotateDelay: 100,
+        autoRotateSpeed: 1.0,
+        autoRotateDelay: 500,
         autoRotateStart: 2000,
         mapStyles: '#RU {fill:RGBA(0,156,255,0.4)}'
 
     });
 
 
-    myearth.addEventListener("ready", function () {
+    myearth.addEventListener("ready", function() {
         function lines(earth) {
             // connections
             var connections = [];
             let next;
             let curr;
-            $.each(cities, function (i, val) {
+            $.each(cities, function(i, val) {
                 curr = val;
                 if (cities[i + 1] !== undefined) {
                     next = cities[i + 1];
@@ -73,10 +80,12 @@ window.addEventListener("earthjsload", function () {
                 sprites[index].location = { lat: random_location[0], lng: random_location[1] };
 
                 sprites[index].animate('scale', 0.5, {
-                    duration: 320, complete: function () {
+                    duration: 320,
+                    complete: function() {
                         this.animate('scale', 0.01, {
-                            duration: 320, complete: function () {
-                                setTimeout(function () { pulse(index); }, getRandomInt(100, 400));
+                            duration: 320,
+                            complete: function() {
+                                setTimeout(function() { pulse(index); }, getRandomInt(100, 400));
                             }
                         });
                     }
@@ -98,40 +107,37 @@ window.addEventListener("earthjsload", function () {
             for (var i = 0; i < 8; i++) {
                 sprites[i] = earth.addSprite({
                     image: '/modules/earth/hologram-shine.svg',
-                    scale: 0.01,
-                    offset: -0.5,
-                    opacity: 0.5
+                    scale: 1,
+                    offset: -0.1,
+                    opacity: 0.1
                 });
                 pulse(i);
             }
         }
 
         function places(earth) {
-            
-            
+
+
             for (var i = 0; i < cities.length; i++) {
 
                 var marker = earth.addMarker({
 
                     mesh: "Marker",
                     color: '#dc3545',
-                    location: {lat: cities[i][0], lng: cities[i][1]},
-                    scale: 0.01,
-                    offset: 1.6,
+                    location: { lat: cities[i][0], lng: cities[i][1] },
                     visible: false,
                     hotspot: true,
-                    hotspotRadius: 0.5,
-                    hotspotHeight: 0.5,
-                    link: 'https://idees.ru'
-                    // custom property
-                    //photo_info: photos[i]
-
+                    hotspotRadius: 1,
+                    hotspotHeight: 1,
+                    depthScale: 1,
+                    index: i,
+                    data: meta[i].dataset
                 });
 
                 marker.addEventListener('click', openLink);
 
                 // animate marker
-                setTimeout((function () {
+                setTimeout((function() {
                     this.visible = true;
                     this.animate('scale', 0.3, { duration: 140 });
                     this.animate('offset', 0, { duration: 1100, easing: 'bounce' });
@@ -141,7 +147,11 @@ window.addEventListener("earthjsload", function () {
         }
 
         function openLink() {
-            window.open(this.link);
+            $('#globeReg .modal-title img').attr('src', '/thumbc/80x80/src' + this.data.img)
+            $('#globeReg .modal-body .region').text(this.data.reg)
+            $('#globeReg .modal-body .name').text(this.data.name)
+            $('#globeReg .modal-body .email').text(this.data.email)
+            $('#globeReg').modal('show')
         }
 
         places(this);
@@ -150,7 +160,3 @@ window.addEventListener("earthjsload", function () {
 
 
 });
-
-
-
-

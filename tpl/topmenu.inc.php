@@ -8,21 +8,25 @@
             </a>
             <!-- Sections -->
             <div class="collapse navbar-collapse mainmenu">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-xl-between" wb-tree="item=menu&branch=mainmenu&parent=false&children=false">
-                    <li class="nav-item dropdown w-auto d-xl-inline" wb-if="children > ''">
-                        <a class="nav-link dropdown-toggle" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{data.lang.{{_sess.lang}}}}</a>
-
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-xl-between">
+                    <wb-foreach wb="table=pages&tpl=false&sort=_sort" wb-filter="active=on&menu=on&path=">
+                    <wb-var child="0" />
+                    <li class="nav-item dropdown w-auto d-xl-inline">
+                        <a class="nav-link dropdown-toggle" href="{{url}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{menu_title}}</a>
                         <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
-                            <wb-foreach wb="from=children">
-                                <a class="dropdown-item w-auto" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
+                            <wb-foreach wb="table=pages&tpl=false&sort=_sort" wb-filter="active=on&menu=on&path={{url}}">
+                                <a class="dropdown-item w-auto" href="{{url}}">{{menu_title}}</a>
+                                <wb-var child="1" />
                             </wb-foreach>
                         </div>
+                        <wb-jq wb-if="'{{_var.child}}'=='0';" wb="
+                            $dom->find('a')->removeClass('dropdown-toggle');
+                            $dom->find('div')->remove();
+                        "  />
                     </li>
-
-                    <li class="nav-item d-xl-inline" wb-if="children == ''">
-                        <a class="nav-link" href="{{data.link}}">{{data.lang.{{_sess.lang}}}}</a>
-                    </li>
+                    </wb-foreach>
                 </ul>
+
             </div>
             <!-- End Sections -->
 
@@ -34,7 +38,7 @@
                             <img width="26" height="26" src="/tpl/assets/img/header-icons/search-icon.png" />
                             <!-- </svg> -->
                             <div class="dropdown-menu dropdown-menu-right item-search" style="top: 62px;">
-                                <span class="dropdown-item">Поиск</span>
+                                <span class="dropdown-item">{{_lang.search}}</span>
                             </div>
                         </a>
                     </li>
@@ -44,7 +48,7 @@
                             <img width="22" height="23" src="/tpl/assets/img/header-icons/auth-icon.png" />
 
                             <div class="dropdown-menu dropdown-menu-right item-account" style="top: 62px;">
-                                <span class="dropdown-item">Аккаунт</span>
+                                <span class="dropdown-item">{{_lang.acc}}</span>
                             </div>
                         </a>
                     </li>
@@ -265,8 +269,10 @@ style="-webkit-backdrop-filter: blur(10px);">
         search = Поиск
         signin = Личный кабинет
         menu = Меню
+        acc = Аккаунт
     [en]
         search = Search
         signin = Signin
         menu = Menu
+        acc = Account
 </wb-lang>

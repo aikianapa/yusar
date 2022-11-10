@@ -105,7 +105,6 @@
 
 <view>
     <div class="container" style="overflow-x: visible !important">
-
         <h3 wb-if="'{{ title.{{_sess.lang}} }}'>''">{{title.{{_sess.lang}}}}</h3>
         <p class="text" wb-if="'{{text.{{_sess.lang}}}}'>''">{{text.{{_sess.lang}}}}</p>
 
@@ -120,7 +119,7 @@
         <wb-var speed="" wb-if="'{{speed}}'==''" else="{{speed}}" />
         <wb-var view="" wb-if="'{{view}}'==''" else="{{view}}" />
 
-        <div class="slick {{_var.hrbot}} {{_var.hrtop}} pb-3r mb-0 slick-slider slick-dotted"
+        <div class="slick {{_var.hrbot}} {{_var.hrtop}} system-grid slick-slider"
             data-autoplay="{{_var.speed}}" data-scroll="{{_var.scroll}}" data-show="{{_var.show}}">
             <wb-foreach wb="from=images">
                 <div class="picture">
@@ -138,7 +137,7 @@
             </wb-foreach>
         </div>
     </div>
-    <script wb-app remove src="/tpl/assets/js/fslightbox.js"></script>
+    <script src="/tpl/assets/js/fslightbox.js"></script>
     <style>
     .image__container {
         overflow: hidden;
@@ -151,5 +150,14 @@
     .image__container img.zoom:hover {
         transform: scale(1.1);
     }
+.system-grid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.picture {
+  padding-left: 15px;
+  padding-right: 15px;
+}
     </style>
 </view>

@@ -78,7 +78,7 @@
         {{#each result}}
         <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
           <div class="card-project">
-            <a data-href="/projects/{{url}}" style="color: #333333;">
+            <a data-href="{{url}}" style="color: #333333;">
               <div class="image__container">
                 <img data-src="/thumbc/510x328/src{{cover}}" class="card-img-top">
               </div>
@@ -98,7 +98,7 @@
           {{#each result}}
           <div class="col-12 col-lg-6 mb-3r">
             <div class="media">
-              <a class="d-flex" data-href="/projects/{{url}}" style="color: #4F4F4F;">
+              <a class="d-flex" data-href="{{url}}" style="color: #4F4F4F;">
                 <div class="image__container">
                   <img width="255" height="118" data-src="/thumbc/255x118/src{{cover}}" class="card-img-top">
                 </div>
@@ -162,6 +162,7 @@
         },
         on: {
           init() {
+            wbapp.loader = false
             this.fire("loadPage")
           },
           update() {

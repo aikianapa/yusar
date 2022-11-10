@@ -88,7 +88,7 @@
         wbapp.loadScripts(['/engine/lib/js/nestable/nestable.min.js'])
         var api = "/api/v2"
         var form = "projects"
-        var base = api + `/list/${form}?&@size=10&@sort=name`
+        var base = api + `/list/${form}?&@size=10&@sort=header`
         var list = new Ractive({
             el: "#{{_form}}List",
             template: $("#{{_form}}List").html(),

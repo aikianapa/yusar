@@ -16,11 +16,11 @@
                 <div class="row  p-1r  pt-0" >
                     <div class="col-12 pb-2r bg-sky" style="border-radius: 5px">
                         <h3 class="col-12 mt-1r tx-20 font-weight-bold" style="margin-bottom: 0;">{{_lang.othernews}}</h3>
-                        <wb-foreach wb="table=news&limit=5&sort=date:d&render=server&offset=-100" wb-filter="{'active':'on'}">
+                        <wb-foreach wb="table=news&limit=5&sort=date:d&render=server&offset=-100" wb-filter="{'active':'on','id':{'$ne':'{{_route.item}}'}}">
                             <div class="col-12">
-                                <a href="/news/{{id}}/" style="color: #333333;">
+                                <a href="/news/{{wbFurlGenerate({{header}})}}" style="color: #333333;">
                                     <div class="media-news d-flex border-bottom">
-                                        <img class="mt-1" width="60" height="60" data-src="/thumbc/60x60/src{{cover.0.img}}" alt="">
+                                        <img class="mt-1" width="60" height="60" data-src="/thumbc/60x60/src{{cover}}" alt="">
                                         <div class="media-body">
                                             <p class="tx-16">{{header}}</p>
                                         </div>

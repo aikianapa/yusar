@@ -1,4 +1,3 @@
-
 var brain = (function() {
     var el = document.querySelector('.lf-brain')
     var el2 = document.querySelector('.lf-brain2')
@@ -7,7 +6,7 @@ var brain = (function() {
     var sat = 0
     var opacity = 0
     var opacity2 = 0
-	var video = ''
+    var video = ''
 
 
     return {
@@ -55,16 +54,16 @@ var brain = (function() {
 function getbrainsize() {
     var w = window.innerWidth
 
-	//если ширина окна больше 1000 то картинка будет иметь ширину 700
+    //если ширина окна больше 1000 то картинка будет иметь ширину 700
     if (w > 1000) {
         return 700
-    //если ширина окна меньше тысячи но больше 800 картинка будет 450
+            //если ширина окна меньше тысячи но больше 800 картинка будет 450
     } else if (w > 800) {
         return 450
-	//если ширина окна меньше 800, ширина картинки будет 70% оот ширины окна
-    } else if (w > 600){
-		return w * 0.85
-    }else{
+            //если ширина окна меньше 800, ширина картинки будет 70% оот ширины окна
+    } else if (w > 600) {
+        return w * 0.85
+    } else {
         return w * 0.95
     }
 
@@ -85,7 +84,7 @@ window.addEventListener('resize', function() {
 
 
 brain.start_pos = document.documentElement.clientHeight
-//document.querySelector('.lf-header-btn').getBoundingClientRect().top
+    //document.querySelector('.lf-header-btn').getBoundingClientRect().top
 
 brain.start_size = getbrainsize()
 brain.start_sat = 0

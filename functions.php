@@ -11,6 +11,21 @@ function datetext($date)
     return strftime('%e %B %Y', strtotime($date));
 }
 
+function beforeShow(&$out) {
+    $app = $_ENV['app'];
+    $map = json_decode(file_get_contents($_ENV['dba'].'/_yonmap.json'),true);
+    $fr = $to = [];
+    foreach($map as $m) {
+        if ($m['f'] == 'pages') {
+            $fr[] = urlencode('['.$m['n'].']');
+            $to[] = $m['u'];
+        }
+    }
+    $out = str_replace($fr, $to, $out);
+    return $out;
+}
+
+
 function getVideoList()
 {
     $app = &$_ENV['app'];
@@ -38,9 +53,9 @@ function headerByPath($path='/')
     $header = '';
     if ($item && isset($item['header'])) {
         if ((array)$item['header'] === $item['header']) {
-            $header = $item['header'][$lang];
+            @$header = isset($item['header'][$lang]) ? $item['header'][$lang] : $item['header']['ru'];
         } else {
-            $header = $item['header'];
+            @$header = $item['header'];
         }
     }
     return $header;

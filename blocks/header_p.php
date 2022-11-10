@@ -33,7 +33,7 @@
         video = Video
     </wb-lang>
     <div class="alert alert-info tx-12 p-1">
-        /blocks/header_p.php, /tpl/header.inc.php
+        Внимание!<br>Заголовок данного блока является приоритетным по отношению к заголовку в левой колонке.
     </div>
 </edit>
 

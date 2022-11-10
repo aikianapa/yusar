@@ -5,12 +5,11 @@
         <wb-var mrg="mr-{{imgmrg}}" wb-if=" '{{imgpos}}' == 'left'" />
         <wb-var mrg="ml-{{imgmrg}}" wb-if=" '{{imgpos}}' == 'right'" />
         <div class="image__container" wb-if="in_array('{{imgpos}}',['none','bottom']) && '{{image.0.img}}' > ''">
-            <img data-src="{{image.0.img}}" alt="{{title.{{_sess.lang}}}}"
-                class="w-{{imgwidth}} mb-{{imgmrg}} {{_var.mrg}}" />
+            <img data-src="{{image.0.img}}" alt="{{title.{{_sess.lang}}}}" class="w-{{imgwidth}} mb-{{imgmrg}} {{_var.mrg}}" />
         </div>
-        <img data-src="{{image.0.img}}" alt="{{title.{{_sess.lang}}}}"
+        <img data-src="{{image.0.img}}" alt="{{title.{{_sess.lang}}}}" 
             class="img-fluid w-{{imgwidth}} float-{{imgpos}} mb-{{imgmrg}} {{_var.mrg}}"
-        wb-if="in_array('{{imgpos}}',['left','right']) && '{{image.0.img}}' > ''" />
+            wb-if="in_array('{{imgpos}}',['left','right']) && '{{image.0.img}}' > ''" />
         <p wb-if=" '{{imgpos}}' !== 'bottom' ">
             {{text}}
         </p>

@@ -1,3 +1,5 @@
+
+<!-- требует редакции -->
 <style>
     .card-image {
         background-image: url("/tpl/assets/img/elipse.svg");

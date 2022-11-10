@@ -30,6 +30,9 @@
                 <input class="form-control" type="email" name="email">
             </div>              
             </div>
+            <div class="col-12">
+                <input name="yamap" wb="module=yamap" height="300">
+            </div>
         </form>
     </wb-jq>
 </html>

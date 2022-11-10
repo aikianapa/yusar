@@ -73,7 +73,7 @@
                     <div class="row grid" wb-if="'{{_var.listtype}}' == 'grid'" id="newsListGrid">
                         {{#each result}}
                         <div class="col-md-4 col-sm-6 col-lg-3 mb-3r">
-                            <a class="d-flex" data-href="/news/{{url}}">
+                            <a class="d-flex" data-href="{{url}}">
                                 <div class="card card--second">
                                     <div class="image__container">
                                         <!-- <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->
@@ -94,7 +94,7 @@
                         {{#each result}}
                         <div class="col-12 col-lg-6 mb-3r">
                             <div class="media">
-                                <a class="d-flex" data-href="/news/{{url}}">
+                                <a class="d-flex" data-href="{{url}}">
                                     <div class="image__container">
                                         <img class="card-img-top" width="255" height="118" data-src="/thumbc/255x118/src{{cover}}" alt="{{header}}">
                                     </div>
@@ -155,6 +155,7 @@
             },
             on: {
                 init() {
+                    wbapp.loader = false
                     this.fire("loadPage")
                 },
                 update() {

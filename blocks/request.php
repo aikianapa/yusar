@@ -1,5 +1,6 @@
 <edit header="Форма заявки">
     <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
+    <p>Заменить на /blocks/form-feedback.php</p>
     <wb-multilang wb-lang="{{_sett.locales}}" name="lang">
         <div class="row">
             <div class="col-sm-6">
@@ -16,5 +17,7 @@
 </edit>
 
 <view>
+    <p>Заменить на /blocks/form-feedback.php</p>
+
     <wb-include wb-tpl="submit-request.inc.php" />
 </view>

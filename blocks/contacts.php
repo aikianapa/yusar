@@ -62,7 +62,7 @@
             <p wb-if="'{{lang.email}}'==''"><b>{{_lang.email}}</b>: {{_sett.email}}</p>
         </div>
         <div class="col-md-6">
-            <wb-include wb-tpl="form-feedback.inc.php" />
+            <wb-module wb="module=yonger&mode=render&view=form-feedback" />
         </div>
     </div>
 </div>

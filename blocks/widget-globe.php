@@ -3,5 +3,7 @@
 </edit>
 
 <view>
-    <wb-include wb-tpl="widget-globe.inc.php" />
+<div class="widget widget-globe">
+    <wb-module wb="module=earth" />
+</div>
 </view>

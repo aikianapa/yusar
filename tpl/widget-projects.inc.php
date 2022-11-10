@@ -1,3 +1,5 @@
+
+<!-- требует редакции -->
 <style>
 @media (max-width: 767px) {
     .realize-projects {

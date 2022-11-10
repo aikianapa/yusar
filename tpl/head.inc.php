@@ -17,11 +17,10 @@
 <link rel="preload" href="/tpl/assets/slick/slick.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/swiper-bundle.min.js" as="script">
 <link rel="preload" href="/tpl/assets/js/aos.js" as="script">
-<link rel="preload" href="/tpl/assets/js/animation.js" as="script">
+<!--link rel="preload" href="/tpl/assets/js/animation.js" as="script"-->
 <link rel="preload" href="/tpl/assets/js/main.js" as="script">
-
-<title>{{lang.ru.header}}</title>
-<meta name="description" content="{{lang.ru.header}}">
+<title>{{header}}</title>
+<meta name="description" content="{{header}}">
 <link rel="manifest" href="/manifest.json">
 <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
