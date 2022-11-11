@@ -25,7 +25,6 @@ function beforeShow(&$out) {
     return $out;
 }
 
-
 function getVideoList()
 {
     $app = &$_ENV['app'];

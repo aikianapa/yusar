@@ -1,4 +1,5 @@
 <div class="bg-topmenu position-fixed w-100" style=z-index:1;>
+    <wb-var menu="{{yongerSiteMenu()}}" />
     <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark px-0 top">
             <a class="navbar-brand" href="/">
@@ -9,24 +10,17 @@
             <!-- Sections -->
             <div class="collapse navbar-collapse mainmenu">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-xl-between">
-                    <wb-foreach wb="table=pages&tpl=false&sort=_sort" wb-filter="active=on&menu=on&path=">
-                        <wb-var child="0" />
+                    <wb-foreach wb="from=_var.menu&tpl=false">
                         <li class="nav-item dropdown w-auto d-xl-inline">
-                            <a class="nav-link dropdown-toggle" href="{{url}}" id="menu-{{id}}" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">{{menu_title}}</a>
-                            <div class="dropdown-menu" aria-labelledby="menu-{{id}}">
-                                <wb-foreach wb="table=pages&tpl=false&sort=_sort"
-                                    wb-filter="active=on&menu=on&path={{url}}">
-                                    <a class="dropdown-item w-auto" href="{{url}}"
-                                        wb-if="'{{_idx}}'=='0'">{{_parent.menu_title}}</a>
-                                    <a class="dropdown-item w-auto" href="{{url}}">{{menu_title}}</a>
-                                    <wb-var child="1" />
+                            <a class="nav-link dropdown-toggle" href="{{path}}" id="menu-{{id}}" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"  wb-if="'{{count({{children}})}}'>'0'">{{menu_title}}</a>
+                            <a class="nav-link" href="{{path}}" wb-if="'{{count({{children}})}}'=='0'">{{menu_title}}</a>
+
+                            <div class="dropdown-menu" aria-labelledby="menu-{{id}}" wb-if="'{{count({{children}})}}'>'0'">
+                                <wb-foreach wb="from=children&tpl=false">
+                                    <a class="dropdown-item w-auto" href="{{path}}">{{menu_title}}</a>
                                 </wb-foreach>
                             </div>
-                            <wb-jq wb-if="'{{_var.child}}'=='0';" wb="
-                            $dom->find('a')->removeClass('dropdown-toggle');
-                            $dom->find('div')->remove();
-                        " />
                         </li>
                     </wb-foreach>
                 </ul>
@@ -113,24 +107,17 @@
                     </div>
                 </a>
             </li>
-            <wb-foreach wb="table=pages&tpl=false&sort=_sort" wb-filter="active=on&menu=on&path=">
+            <wb-foreach wb="from=_var.menu&tpl=false">
                 <wb-var child="0" />
                 <li>
-                    <a class="nav-with-dropdown cur-pointer">{{menu_title}}</a>
-                    <a href="{{url}}">{{menu_title}}</a>
+                    <a class="nav-with-dropdown cur-pointer" wb-if="'{{count({{children}})}}'>'0'">{{menu_title}}</a>
+                    <a href="{{path}}" wb-if="'{{count({{children}})}}'=='0'">{{menu_title}}</a>
 
-                    <div class="nav-dropdown-menu">
-                        <wb-foreach wb="table=pages&tpl=false&sort=_sort" wb-filter="active=on&menu=on&path={{url}}">
-                        <a class="nav-dropdown-item" href="{{url}}" wb-if="'{{_idx}}'=='0'">{{_parent.menu_title}}</a>
-                        <a class="nav-dropdown-item" href="{{url}}">{{menu_title}}</a>
-                        <wb-var child="1" />
+                    <div class="nav-dropdown-menu" wb-if="'{{count({{children}})}}'>'0'">
+                        <wb-foreach wb="from=children&tpl=false">
+                        <a class="nav-dropdown-item" href="{{path}}">{{menu_title}}</a>
                         </wb-foreach>
                     </div>
-                        <wb-jq wb-if="'{{_var.child}}'=='0';" wb="
-                        $dom->find('a.nav-with-dropdown')->remove();
-                        $dom->find('.nav-dropdown-menu')->remove();
-                        " />
-                        <wb-jq wb-if="'{{_var.child}}'=='1';" wb="$dom->find('a[href]:not(.nav-dropdown-item)')->remove();" />
                 </li>
             </wb-foreach>
         </ul>

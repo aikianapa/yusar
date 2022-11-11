@@ -1,73 +1,29 @@
 <footer>
     <div class="container">
         <div class="row">
+            <wb-var menu="{{yongerSiteMenu()}}" />
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="/about">О компании</a>
-                        <ul>
+                        <a class="nav-link" href="{{_var.menu.0.path}}">{{_var.menu.0.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.0.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.0.children&tpl=false" wb-filter="active=on">
                             <li class="nav-item">
-                                <a class="nav-link" href="/about">Наша компания</a>
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/history">Наша история</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/team">Наша команда</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/partners">Наши партнёры</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/reviews">Отзывы</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/licenses-and-certificates">Лицензии и сертификаты</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/documentation">Документация</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/vacancy">Вакансии</a>
-                            </li>
+                            </wb-foreach>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/news">Новости</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <ul class="navbar-nav navbar-nav--top">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/it-products">IT-продукты</a>
-                        <ul>
+                        <a class="nav-link" href="{{_var.menu.1.path}}">{{_var.menu.1.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.1.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.1.children&tpl=false">
                             <li class="nav-item">
-                                <a class="nav-link" href="/mis">МИС</a>
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/ris">РИС</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/paks">ПАКС</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/endoscopy">Эндоскопия</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/cami">ЦАМИ</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/telemedicine">Телемедицина</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/artificial-intelligence">Искусственный интеллект</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pharmacy">Аптека</a>
-                            </li>
+                            </wb-foreach>
                         </ul>
                     </li>
                 </ul>
@@ -75,30 +31,13 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="/hardware-and-integration">Оборудование и интеграция</a>
-                        <ul>
+                        <a class="nav-link" href="{{_var.menu.2.path}}">{{_var.menu.2.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.2.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.2.children&tpl=false">
                             <li class="nav-item">
-                                <a class="nav-link" href="/equipment">Медицинское оборудование</a>
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/system">Системная интеграция</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/complex">Комплексные инжинерные системы</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/services">Услуги</a>
-                        <ul>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/service-software">Сервис программного обеспечения</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/service-equipment">Сервис оборудования</a>
-                            </li>
+                            </wb-foreach>
                         </ul>
                     </li>
                 </ul>
@@ -106,20 +45,52 @@
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
-                        <a class="nav-link" href="/projects">Проекты</a>
-                        <ul>
+                        <a class="nav-link" href="{{_var.menu.3.path}}">{{_var.menu.3.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.3.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.3.children&tpl=false">
                             <li class="nav-item">
-                                <a class="nav-link" href="/map-presence">Карта присутствия</a>
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/projects">Наши проекты</a>
-                            </li>
+                            </wb-foreach>
                         </ul>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/contacts">Контакты</a>
+                        <a class="nav-link" href="{{_var.menu.4.path}}">{{_var.menu.4.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.4.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.4.children&tpl=false">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                            </li>
+                            </wb-foreach>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="navbar-nav navbar-nav--top">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{_var.menu.5.path}}">{{_var.menu.5.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.5.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.5.children&tpl=false">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                            </li>
+                            </wb-foreach>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{_var.menu.6.path}}">{{_var.menu.6.menu_title}}</a>
+                        <ul wb-if="'{{count({{_var.menu.6.children}})}}'>'0'">
+                            <wb-foreach wb="from=_var.menu.6.children&tpl=false">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                            </li>
+                            </wb-foreach>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -127,7 +98,7 @@
 
         <div class="second-block pb-1r">
             <span class="address-block">
-                Адрес: <span style="margin-left: 3px;">{{_sett.address}}</span>
+                {{_lang.address}}: <span style="margin-left: 3px;">{{_sett.address}}</span>
             </span>
             <div class="info-block">
                 <div class="mr-25">
@@ -171,10 +142,10 @@
                 <a>Copyright 1996-{{date("Y")}}, ЮСАР+</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-2 order-1">
-                <a href="/policy">Политика конфиденциальности</a>
+                <a href="/policy">{{_lang.policy}}</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-3 order-2 order-md-3">
-                <a href="/rules">Пользовательское соглашение</a>
+                <a href="/rules">{{_lang.rules}}</a>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-4 order-4 text-md-right">
                 <a href="//idees.ru" class="studio-link">
@@ -185,5 +156,15 @@
 
     </div>
     <a href="" class="scrollup">Наверх</a>
+    <wb-lang>
+        [en]
+        policy = "Private policy"
+        rules = "User rules"
+        address = Address
+        [ru]
+        policy = "Политика конфиденциальности"
+        rules = "Пользовательское соглашение"
+        address = Адрес
+    </wb-lang>
 </footer>
 <wb-include wb-tpl="common.inc.php" />

@@ -5,6 +5,7 @@
     "/modules/earth/miniature.earth.core.js"
     ,"/modules/earth/earth.js"
   ],"earth-js");
+  $('footer').addClass('mt-0');
 </script>
 <div>
 <a id="map_presence">
