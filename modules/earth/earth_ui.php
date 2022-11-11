@@ -2,10 +2,12 @@
 <script type="wbapp">
   wbapp.loadStyles(["/modules/earth/style.css"]);
   wbapp.loadScripts([
-    "/modules/earth/miniature.earth.core.js"
+    "/modules/earth/miniature.earth.js"
     ,"/modules/earth/earth.js"
   ],"earth-js");
-  $('footer').addClass('mt-0');
+  if ($('footer').prev().is('.widget-globe')) {
+	$('footer').addClass('mt-0');
+  }
 </script>
 <div>
 <a id="map_presence">

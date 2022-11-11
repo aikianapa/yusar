@@ -31,7 +31,7 @@ window.addEventListener("earthjsload", function() {
     myearth = new Earth('myearth', {
         location: { lat: 60.921841, lng: 76.632464 },
         //location: { lat: center[0], lng: center[1] },
-        //        mapImage: '/modules/earth/hologram-map.svg',
+        // mapImage: '/modules/earth/map.svg',
         zoom: 1.15,
         zoomMin: 1,
         zoomMax: 1.8,
@@ -43,6 +43,7 @@ window.addEventListener("earthjsload", function() {
         mapBorderWidth: 0.4,
         transparent: true,
         autoRotate: true,
+        opacity: 0.5,
         autoRotateSpeed: 1.0,
         autoRotateDelay: 500,
         autoRotateStart: 2000,

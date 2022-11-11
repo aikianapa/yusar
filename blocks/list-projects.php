@@ -3,55 +3,76 @@
 </edit>
 
 <view>
+  <wb-lang>
+    [en]
+    inter = International
+    local = Russian
+    sort = Sort
+    popular = "By popularity"
+    novelty = "By novelty"
+    categories = Categories
+    all = All
+    year = Year
+    [ru]
+    inter = Международные
+    local = Российские
+    sort = Сортировать
+    popular = "По популярности"
+    novelty = "По новизне"
+    categories = Категории
+    all = Все
+    year = Год
+  </wb-lang>
+
   <div class="container pt-3r projects" id="projectsList">
     <div class="tabs">
-      <div class="tabs--item tabs--item--active" data-value="r" data-prop="type" on-click="setFilter">Российские</div>
+      <div class="tabs--item tabs--item--active" data-value="r" data-prop="type" on-click="setFilter">{{_lang.local}}</div>
       <div class="separator"></div>
-      <div class="tabs--item" data-value="m" data-prop="type" on-click="setFilter">Международные</div>
+      <div class="tabs--item" data-value="m" data-prop="type" on-click="setFilter">{{_lang.inter}}</div>
     </div>
 
     <div class="row pb-3r">
       <div class="col-lg-12">
         <div style="width: 100%; box-sizing: border-box; display: flex; flex-wrap: wrap;" class="sorting-block">
           <div class="item-inner sorting">
-            <span>Сортировать</span>
+            <span>{{_lang.sort}}</span>
 
             <div class="custom-select-wrapper">
               <div class="select-block">
-                По популярности
+                {{_lang.popular}}
               </div>
 
               <div class="select-block-options sort">
-                <span class="custom-option" data-value="_created:a" on-click="setSort">По популярности</span>
-                <span class="custom-option" data-value="_created:d" on-click="setSort">По новизне</span>
+                <span class="custom-option" data-value="_created:a" on-click="setSort">{{_lang.popular}}</span>
+                <span class="custom-option" data-value="_created:d" on-click="setSort">{{_lang.novelty}}</span>
               </div>
             </div>
           </div>
 
           <div class="item-inner category">
-            <span>Категории</span>
+            <span>{{_lang.categories}}</span>
             <div class="custom-select-wrapper">
               <div class="select-block">
-                Все
+                {{_lang.all}}
               </div>
               <div class="select-block-options category" wb-tree="dict=project_category&tpl=false">
                 <span class="custom-option" data-value="{{id}}" data-prop="category" on-click="setFilter">{{data.lang.{{_sess.lang}}}}</span>
               </div>
               <wb-jq wb-prepend=".select-block-options.category">
-                <span class="custom-option" data-value="null" data-prop="category" on-click="setFilter">Все</span>
+                <span class="custom-option" data-value="null" data-prop="category" on-click="setFilter">{{_lang.all}}</span>
               </wb-jq>
             </div>
           </div>
 
           <div class="item-inner year">
-            <span>Год</span>
+            <span>{{_lang.year}}</span>
             <wb-var year='{{date("Y")}}' />
             <div class="custom-select-wrapper">
               <div class="select-block">
-                Все
+                {{_lang.all}}
               </div>
               <div class="select-block-options">
-                <span class="custom-option" data-value='null' data-prop="year" on-click="setFilter">Все</span>
+                <span class="custom-option" data-value='null' data-prop="year" on-click="setFilter">{{_lang.all}}</span>
                 <span class="custom-option" data-value='{{_var.year}}' data-prop="year" on-click="setFilter">{{_var.year}}</span>
                 <wb-foreach wb='count={{_var.year - (date("Y") -6) }}&tpl=false'>
                   <span class="custom-option" data-value='{{ {{date("Y")}} - _value}}' data-prop="year" on-click="setFilter">{{ {{date("Y")}} - _value}}</span>
@@ -84,7 +105,7 @@
               </div>
 
               <div class="card-body" style="padding-left: 0;">
-                <h4 class="card-title">{{date}}</h4>
+                <h4 class="card-title">{{year}}</h4>
                 <p class="card-text">{{header}}</p>
               </div>
             </a>
@@ -105,7 +126,7 @@
 
                 <div class="media-body" style="margin-left: 30px; font-weight: 400 !important;">
                   <h4 class="card-title" style="margin-top: 0 !important; font-weight: 400 !important;">
-                    {{date}}</h4>
+                    {{year}}</h4>
                   <p class="card-text">{{header}}</p>
                 </div>
               </a>

@@ -1,11 +1,11 @@
 var yusar = {};
 
-yusar.listmode = function (type) {
+yusar.listmode = function(type) {
     $(this).parents('.container');
     document.cookie = "listtype=" + type;
     //document.location.href = document.location.href;
-    wbapp.post(document.location.href, {}, function (data) {
-        $(data).find(`.${type}`).each(function (i, el) {
+    wbapp.post(document.location.href, {}, function(data) {
+        $(data).find(`.${type}`).each(function(i, el) {
             if (type == 'list') {
                 $(document).find(`.grid:eq(${i})`).parent().html($(el).outer())
             } else {
@@ -16,29 +16,33 @@ yusar.listmode = function (type) {
     })
 }
 
-yusar.anchor = function () {
+yusar.anchor = function() {
     let hash = document.location.hash;
     if (hash == '') return;
     $(document).find(`a[href='${hash}']:eq(0)`).trigger('click');
 }
 
-yusar.linkfix = function () {
+yusar.linkfix = function() {
     $('a[data-toggle="dropdown"][href*="/"]').off('tap click');
-    $('a[data-toggle="dropdown"][href*="/"]').on('tap click',function(){
+    $('a[data-toggle="dropdown"][href*="/"]').on('tap click', function() {
         document.location.href = $(this).attr('href');
     })
 }
 
 
-yusar.dataOptions = function (el) {
+yusar.dataOptions = function(el) {
 
-    var strToBool = function (string) {
+    var strToBool = function(string) {
         if (typeof string === "string") {
             switch (string.toLowerCase().trim()) {
-                case "true": return true;
-                case "false": return false;
-                case "null": return null;
-                case "undefined": return undefined;
+                case "true":
+                    return true;
+                case "false":
+                    return false;
+                case "null":
+                    return null;
+                case "undefined":
+                    return undefined;
             }
             if (is_numeric(string)) string = string * 1;
         }
@@ -53,8 +57,8 @@ yusar.dataOptions = function (el) {
     return el.options;
 }
 
-yusar.scrollup = function () {
-    $(document).scroll(function () {
+yusar.scrollup = function() {
+    $(document).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('.scrollup').fadeIn();
         } else {
@@ -62,9 +66,9 @@ yusar.scrollup = function () {
         }
     });
 
-    $('.scrollup').click(function (e) {
+    $('.scrollup').click(function(e) {
         e.preventDefault();
-        
+
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
@@ -79,22 +83,20 @@ $(function() {
         if (begin == -1) {
             begin = dc.indexOf(prefix);
             if (begin != 0) return null;
-        }
-
-        else {
+        } else {
             begin += 2;
             var end = document.cookie.indexOf(";", begin);
             if (end == -1) {
-            end = dc.length;
+                end = dc.length;
             }
         }
 
         return decodeURI(dc.substring(begin + prefix.length, end));
-    } 
-    
+    }
+
     function doSomething() {
         var myCookie = getCookie("listtype");
-    
+
         if (myCookie == "grid") {
             $(".icon-list").addClass("sorting-active");
             $(".icon-grid").removeClass("sorting-active");
@@ -119,18 +121,18 @@ $(function() {
     })
 });
 
-yusar.slick = function () {
+yusar.slick = function() {
     if ($('.carousel').length) {
-        $('.carousel').each(function () {
+        $('.carousel').each(function() {
             if (this.done == true) return;
             this.done = true;
             let interval = 1000;
             if (parseInt($(this).attr('data-interval')) > 0) interval = parseInt($(this).attr('data-interval'));
-            $(this).carousel({'interval':interval});
+            $(this).carousel({ 'interval': interval });
         })
     }
     if ($('.slick').length) {
-        $('.slick:not(.slick-initialized)').each(function () {
+        $('.slick:not(.slick-initialized)').each(function() {
             let options = {
                 infinite: true,
                 lazyLoad: 'ondemand',
@@ -162,14 +164,14 @@ yusar.slick = function () {
                 slidesToScroll: 4
             };
 
-			if ($(this).attr('data-autoplay') > '') {
-				options.autoplay = true;
-				options.autoplaySpeed = $(this).attr('data-autoplay') * 1;
-			}
+            if ($(this).attr('data-autoplay') > '') {
+                options.autoplay = true;
+                options.autoplaySpeed = $(this).attr('data-autoplay') * 1;
+            }
 
-			if ($(this).attr('data-scroll') > '') {
-				options.slidesToScroll = $(this).attr('data-scroll') * 1;
-			}
+            if ($(this).attr('data-scroll') > '') {
+                options.slidesToScroll = $(this).attr('data-scroll') * 1;
+            }
 
             try {
                 if (typeof this.dataset.slickOptions === 'string') {
@@ -191,7 +193,7 @@ yusar.slick = function () {
                 }
             }
 
-            $(this).slick(this.options).on('afterChange', function (event, slick, currentSlide, nextSlide) {
+            $(this).slick(this.options).on('afterChange', function(event, slick, currentSlide, nextSlide) {
                 if ($(this).hasClass('slick-for')) {
                     let nav = $(this).parents('.row').find('.slick-nav');
                     if (nav) {
@@ -204,11 +206,11 @@ yusar.slick = function () {
     }
 
     if ($('.slick-uninit.slick-nav').length) {
-        $('.slick-uninit.slick-nav').each(function () {
+        $('.slick-uninit.slick-nav').each(function() {
             $(this).find('.slick-slide:first-child').addClass('slick-current');
             let navslick = this;
             let forslick = $(this).parents('.row').find('.slick-for')[0];
-            $(this).find('.slick-slide').on('tap click', function () {
+            $(this).find('.slick-slide').on('tap click', function() {
                 $(navslick).find('.slick-current').removeClass('slick-current');
                 $(this).addClass('slick-current');
                 $(forslick).slick('slickGoTo', $(this).index());
@@ -217,7 +219,7 @@ yusar.slick = function () {
     }
 
     if ($('.slider.slider-for').length) {
-        $('.slider.slider-for').each(function () {
+        $('.slider.slider-for').each(function() {
             this.options = {
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -234,7 +236,7 @@ yusar.slick = function () {
     }
 
     if ($('.slider.slider-nav').length) {
-        $('.slider.slider-nav').each(function () {
+        $('.slider.slider-nav').each(function() {
             this.options = {
                 infinite: true,
                 slidesToShow: 3,
@@ -251,31 +253,31 @@ yusar.slick = function () {
     }
 }
 
-$(document).ready(function () {
-    setTimeout(function () {
+$(document).ready(function() {
+    setTimeout(function() {
         wbapp.loadPreload();
         wbapp.lazyload();
     }, 100);
 })
 
-wbapp.on('preloaded-js', function () {
+wbapp.on('preloaded-js', function() {
     //$('[data-youtube]').youtube_background();
-    $('source[data-src]').each(function(){
-        $(this).attr('src',$(this).attr('data-src'));
+    $('source[data-src]').each(function() {
+        $(this).attr('src', $(this).attr('data-src'));
         $(this).removeAttr('data-src');
     });
-    $('video').each(function(){
+    $('video').each(function() {
         this.load();
     });
 
-    setTimeout(function () {
+    setTimeout(function() {
         // window.addEventListener('selectstart', function (e) { e.preventDefault(); });
         window.dispatchEvent(new Event('resize'));
         yusar.slick();
         yusar.anchor();
         yusar.linkfix();
     }, 100)
-    setTimeout(function () {
+    setTimeout(function() {
         $('body.preloading').removeClass('preloading');
         $('.preloader').remove();
         yusar.scrollup();
