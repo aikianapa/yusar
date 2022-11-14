@@ -12,6 +12,7 @@
     <li class="breadcrumb-item"><a href="/">{{_lang.home}}</a></li>
     <li class="breadcrumb-item" wb-if="'{{_var.midcrumb}}'>''"><a href="{{_var.parent}}">{{_var.midcrumb}}</a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">{{_parent.header}}</li>
+    <li class="breadcrumb-item active" aria-current="page" wb-if="'{{path}}'>''">{{_parent.header}}</li>
+    <li class="breadcrumb-item active" aria-current="page" wb-if="'{{path}}'==''">{{header}}</li>
 </ol>
 </html>

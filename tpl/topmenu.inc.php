@@ -42,7 +42,9 @@
                     </li>
 
                     <li class="nav-item icon-small">
-                        <a class="nav-link icon-link" href="/account">
+                        <wb-var link="/account" wb-if="'{{_sess.user.role}}'>''" else="/sign-in"/>
+                        <wb-var link="/workspace" wb-if="'{{_sess.user.role}}'=='admin'"/>
+                        <a class="nav-link icon-link" href="{{_var.link}}">
                             <img width="22" height="23" src="/tpl/assets/img/header-icons/auth-icon.png" />
 
                             <div class="dropdown-menu dropdown-menu-right item-account" style="top: 62px;">
