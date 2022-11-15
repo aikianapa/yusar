@@ -48,7 +48,7 @@ class modLogin
         }
     }
 
-    public function signup($dom)
+    public function signup(&$dom)
     {
         $app = $this->app;
         $app->vars('_route.tpl') ? $out = $app->getTpl($app->vars('_route.tpl')) : $out = null;
@@ -116,7 +116,7 @@ class modLogin
                 $confirm = md5($user['password']);
                 $link = $this->app->vars("_route.host")."/sign-up/{$user['id']}-{$confirm}";
                 $msg="Ссылка для активации аккаунта: <a href='{$link}'>{$link}</a>";
-                $res = $this->app->mail($app->vars->('_sett.email'), $user['email'], "Регистрация ЮСАР+", "<html>{$msg}</html>");
+                $res = $this->app->mail($app->vars('_sett.email'), $user['email'], "Регистрация ЮСАР+", "<html>{$msg}</html>");
                 if ($res['error']) {
                     $out->find('.sign-up-wrong')->removeClass('d-none');
                     $out->find('.sign-up-wrog .m3')->removeClass('d-none');
@@ -130,7 +130,7 @@ class modLogin
         return $out;
     }
 
-    public function signin($dom)
+    public function signin(&$dom)
     {
         $app = $dom->app;
         $out = null;
@@ -157,8 +157,8 @@ class modLogin
         $app = $dom->app;
         $user = wbArrayToObj($app->vars("_user"));
         $group = wbArrayToObj($app->itemRead("users", $user->role));
-        $app->vars->set("_sess.user", null);
-        $app->vars->set("_env.user", null);
+        $app->varsset("_sess.user", null);
+        $app->varsset("_env.user", null);
         setcookie("user", "", time()-3600, "/");
         if ($group->url_logout > "") {
             header('Location: '.$group->url_logout);
@@ -206,7 +206,7 @@ class modLogin
                 $confirm = md5($user['password-confirm']);
                 $link = $this->app->vars("_route.host")."/password-recovery/{$user['id']}-{$confirm}";
                 $msg="Ссылка для восстановления пароля: <a href='{$link}'>{$link}</a>";
-                $res = $this->app->mail($app->vars->('_sett.email'),$user['email'], "Восстановление пароля ЮСАР+", "<html>{$msg}</html>");
+                $res = $this->app->mail($app->vars('_sett.email'),$user['email'], "Восстановление пароля ЮСАР+", "<html>{$msg}</html>");
                 if ($res['error']) {
                     $error = '.m3';
                 } else {
