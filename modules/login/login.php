@@ -157,8 +157,8 @@ class modLogin
         $app = $dom->app;
         $user = wbArrayToObj($app->vars("_user"));
         $group = wbArrayToObj($app->itemRead("users", $user->role));
-        $app->varsset("_sess.user", null);
-        $app->varsset("_env.user", null);
+        $app->vars->set("_sess.user", null);
+        $app->vars->set("_env.user", null);
         setcookie("user", "", time()-3600, "/");
         if ($group->url_logout > "") {
             header('Location: '.$group->url_logout);
