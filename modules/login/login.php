@@ -116,7 +116,7 @@ class modLogin
                 $confirm = md5($user['password']);
                 $link = $this->app->vars("_route.host")."/sign-up/{$user['id']}-{$confirm}";
                 $msg="Ссылка для активации аккаунта: <a href='{$link}'>{$link}</a>";
-                $res = $this->app->mail($user['email'], 'oleg_frolov@mail.ru', "Регистрация ЮСАР+", "<html>{$msg}</html>");
+                $res = $this->app->mail($app->vars->('_sett.email'), $user['email'], "Регистрация ЮСАР+", "<html>{$msg}</html>");
                 if ($res['error']) {
                     $out->find('.sign-up-wrong')->removeClass('d-none');
                     $out->find('.sign-up-wrog .m3')->removeClass('d-none');
@@ -206,7 +206,7 @@ class modLogin
                 $confirm = md5($user['password-confirm']);
                 $link = $this->app->vars("_route.host")."/password-recovery/{$user['id']}-{$confirm}";
                 $msg="Ссылка для восстановления пароля: <a href='{$link}'>{$link}</a>";
-                $res = $this->app->mail($user['email'], 'oleg_frolov@mail.ru', "Восстановление пароля ЮСАР+", "<html>{$msg}</html>");
+                $res = $this->app->mail($app->vars->('_sett.email'),$user['email'], "Восстановление пароля ЮСАР+", "<html>{$msg}</html>");
                 if ($res['error']) {
                     $error = '.m3';
                 } else {
