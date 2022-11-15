@@ -77,9 +77,8 @@ class modLogin
                 $error = '.m2';
             }
         } elseif (count($app->vars("_post"))) {
-            $fld = $app->vars("_sett.modules.login.loginby") == "userid" ? $fld = "login" : $app->vars("_sett.modules.login.loginby");
-            $fld = "" ? $fld = 'email' : null;
-
+            $fld = $app->vars("_sett.modules.login.loginby") == "userid" ? "login" : $app->vars("_sett.modules.login.loginby");
+            $fld == "" ? $fld = 'email' : null;
             $user = $this->checkUser($app->vars("_post.{$fld}"));
             if ($user) {
                 $error = '.m1';
@@ -168,7 +167,10 @@ class modLogin
     {
         $app = $dom->app;
         $app->vars('_route.tpl') ? $out = $app->getTpl($app->vars('_route.tpl')) : null;
-        $fld = $app->vars("_sett.modules.login.loginby");
+
+        $fld = $app->vars("_sett.modules.login.loginby") == "userid" ? "login" : $app->vars("_sett.modules.login.loginby");
+        $fld == "" ? $fld = 'email' : null;
+
         $out->fetch();
         $error = false;
         if (!$app->vars("_post") && !$app->vars('_route.user')) {
@@ -220,22 +222,14 @@ class modLogin
 
     public function checkUser($login=null, $pass=null)
     {
-        $app = $_ENV["app"];
-        if ($app->vars("_sett.modules.login.loginby") == "phone" or $app->vars("_post._loginby") == "phone") {
-            $fld = "phone";
-            $login = preg_replace("/\D/", '', $login);
-        } elseif ($app->vars("_sett.modules.login.loginby") == "email" or $app->vars("_post._loginby") == "email") {
-            $fld = "email";
-        } elseif ($app->vars("_sett.modules.login.loginby") == "userid" or $app->vars("_post._loginby") == "userid") {
-            $fld = "id";
-        } else {
-            $fld = "email";
-        }
+        $app = $this->app;
+        $fld = $app->vars("_sett.modules.login.loginby") == "userid" ? "login" : $app->vars("_sett.modules.login.loginby");
+        $fld == "" ? $fld = 'email' : null;
+
         $users = wbItemList("users", ['filter' => [
             $fld => $login,
             'isgroup' => ['$ne'=>'on']
         ]]);
-
         if (!count($users['list'])) {
             return false;
         }
