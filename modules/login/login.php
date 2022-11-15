@@ -58,6 +58,12 @@ class modLogin
         $out->item = $app->vars("_post");
         $out->item["_dir_"] = $out->path;
         $out->fetch();
+        $error = false;
+        if (!$app->vars("_post") && !$app->vars('_route.user')) {
+            echo $out;
+            return;
+        }
+        $out->find("#recovery form")->remove();
         if ($app->vars('_route.user') && $app->vars('_route.confirm')) {
             $out->find('form')->remove();
             $user = $app->itemRead('users', $app->vars('_route.user'));
@@ -68,37 +74,24 @@ class modLogin
                 $out->find('.sign-up-success')->removeClass('d-none');
                 $out->find('.sign-up-success .m2')->removeClass('d-none');
             } else {
-                $out->find("#signup .signup-wrong")->removeClass("d-none");
-                $out->find("#signup .signup-wrong .m2")->removeClass("d-none");
+                $error = '.m2';
             }
         } elseif (count($app->vars("_post"))) {
-            $fld = "login";
-
-            if ($app->vars("_sett.modules.login.loginby") == "phone") {
-                $fld = "phone";
-            }
-            if ($app->vars("_sett.modules.login.loginby") == "email") {
-                $fld = "email";
-            }
-            if ($app->vars("_sett.modules.login.loginby") == "userid") {
-                $fld = "login";
-            }
+            $fld = $app->vars("_sett.modules.login.loginby") == "userid" ? $fld = "login" : $app->vars("_sett.modules.login.loginby");
+            $fld = "" ? $fld = 'email' : null;
 
             $user = $this->checkUser($app->vars("_post.{$fld}"));
-
             if ($user) {
-                $out->find("#signup .signup-wrong")->removeClass("d-none");
-                $out->find("#signup .signup-wrong .m1")->removeClass("d-none");
+                $error = '.m1';
             } else if ($app->vars("_post.password") !== $app->vars("_post.password-confirm")) {
-                $out->find("#signup .signup-wrong")->removeClass("d-none");
-                $out->find("#signup .signup-wrong .m4")->removeClass("d-none");
+                $error = '.m4';
             } else {
                 $app->vars("_post.password", wbPasswordMake($app->vars("_post.password")));
                 $user=array(
                "id"               => wbNewId()
               ,"active"           => ""
               ,"role"             => "user"
-          );
+             );
                 if ($app->vars("_sett.modules.login.loginby") == "userid") {
                     $user["id"] = $app->vars("_post.{$fld}");
                     unset($_POST["login"]);
@@ -118,14 +111,17 @@ class modLogin
                 $msg="Ссылка для активации аккаунта: <a href='{$link}'>{$link}</a>";
                 $res = $this->app->mail($app->vars('_sett.email'), $user['email'], "Регистрация ЮСАР+", "<html>{$msg}</html>");
                 if ($res['error']) {
-                    $out->find('.sign-up-wrong')->removeClass('d-none');
-                    $out->find('.sign-up-wrog .m3')->removeClass('d-none');
+                    $error = '.m3';
                 } else {
                     $out->find('.sign-up-success')->removeClass('d-none');
                     $out->find('.sign-up-success .m1')->removeClass('d-none');
                 }
 
             }
+        }
+        if ($error) {
+                $out->find("#signup .signup-wrong")->removeClass("d-none");
+                $out->find("#signup .signup-wrong {$error}")->removeClass("d-none");
         }
         return $out;
     }
@@ -237,8 +233,7 @@ class modLogin
         }
         $users = wbItemList("users", ['filter' => [
             $fld => $login,
-            'isgroup' => ['$ne'=>'on'],
-            'active' => 'on'
+            'isgroup' => ['$ne'=>'on']
         ]]);
 
         if (!count($users['list'])) {

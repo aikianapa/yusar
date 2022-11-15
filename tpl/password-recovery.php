@@ -48,7 +48,7 @@
 
         <div class="signup-wrong d-none">
           <div class="row justify-content-sm-center">
-            <div class="col-12 col-sm-8 col-lg-5 pb-2r text-center">
+            <div class="col-12 pb-2r text-center">
               <h1>Ошибка!</h1>
               <div class="sus-info m1 d-none">
                   Указанный Email не зарегистрирован или аккаунт деактивирован - обратитесь к администрации сайта
