@@ -1,5 +1,10 @@
 <wb-var path_video='/tpl/assets/video' />
 <header wb-if="name == 'home'" class="homepage">
+    <wb-var header="" />
+    <wb-foreach wb="from=blocks&tpl=false">
+        <wb-var header="{{_parent.blocks.{{_idx}}}}" wb-if="'{{name}}'=='header'" />
+    </wb-foreach>
+
     <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="none">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="container p-0">
@@ -15,7 +20,7 @@
                 <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
                 <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
             </video>
-            <wb-foreach wb-from="blocks.header.lang.{{_sess.lang}}.slides">
+            <wb-foreach wb-from="_var.header.lang.{{_sess.lang}}.slides">
                 <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
                 <div class="carousel-item {{_var.active}}">
                     <div class="container position-relative">

@@ -1,2 +1,11 @@
 User-agent: *
-Disallow: /
+Disallow: /database
+Disallow: /assets
+Disallow: /blocks
+Disallow: /tpl
+Disallow: /forms
+Disallow: /modules
+Disallow: /uploads
+
+User-agent: Yandex
+Clean-param: utm
