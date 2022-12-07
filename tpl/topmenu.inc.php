@@ -18,7 +18,10 @@
 
                             <div class="dropdown-menu" aria-labelledby="menu-{{id}}" wb-if="'{{count({{children}})}}'>'0'">
                                 <wb-foreach wb="from=children&tpl=false">
-                                    <a class="dropdown-item w-auto" href="{{path}}">{{menu_title}}</a>
+                                    <a class="dropdown-item w-auto" href="{{path}}"
+                                        wb-if="'{{menu_title}}'!=='{{_parent.menu_title}}'">
+                                        {{menu_title}}
+                                    </a>
                                 </wb-foreach>
                             </div>
                         </li>
