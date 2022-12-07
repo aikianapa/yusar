@@ -139,7 +139,7 @@
 
         <div class="third-block row pt-1r">
             <div class="pb-1r col-xl-3 col-md-6 order-xl-1 order-3 order-md-2 text-md-right text-xl-left">
-                <a>Copyright 1996-{{date("Y")}}, ЮСАР+</a>
+                <nobr>{{_lang.copyright}} 1996-{{date("Y")}}, ЮСАР+</nobr>
             </div>
             <div class="pb-1r col-xl-3 col-md-6 order-xl-2 order-1">
                 <a href="/policy">{{_lang.policy}}</a>
@@ -161,10 +161,12 @@
         policy = "Private policy"
         rules = "User rules"
         address = Address
+        copyright = Copyright
         [ru]
         policy = "Политика конфиденциальности"
         rules = "Пользовательское соглашение"
         address = Адрес
+        copyright = "Права защищены"
     </wb-lang>
 </footer>
 <wb-include wb-tpl="common.inc.php" />

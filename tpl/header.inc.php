@@ -35,7 +35,7 @@
                                         {{text}}
                                     </p>
                                     <p class="lead lead-button mt-3r">
-                                        <a class="btn btn-primary rounded-30 btn-lg" href="Jumbo action link"
+                                        <a class="btn btn-primary rounded-30 btn-lg" href="{{link}}"
                                             role="button">{{button}}</a>
                                     </p>
                                 </div>

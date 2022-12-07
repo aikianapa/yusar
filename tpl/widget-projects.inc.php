@@ -36,7 +36,7 @@
 
             <div class="slick projects-grid" id="widgetProjectsList">
                 <wb-foreach wb="table=projects&sort=year:d&rand=true&limit=10" wb-filter="active=on">
-                    <a href="/project">
+                    <a href="/projects/{{wbFurlGenerate({{header}})}}">
                         <div class="card card--second">
                             <div class="image__container">
                             <!-- <img class="card-img-top" width="500" height="320" data-src="/thumb/500x320/src/tpl/assets/img/widget-news.jpg" alt=""> -->

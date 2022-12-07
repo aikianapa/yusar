@@ -23,7 +23,7 @@
                             <input class="form-control" type="text" name="button" placeholder="{{_lang.button}}">
                         </div>
                         <div class="col-lg-6 mb-2">
-                            <input class="form-control" type="text" name="link" placeholder="{{_lang.link}}">
+                            <input class="form-control" type="text" name="link" wb="module=yonger&mode=pageselect" placeholder="{{_lang.link}}">
                         </div>
                     </div>
                 </div>

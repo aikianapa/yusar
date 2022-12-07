@@ -5,7 +5,7 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-      <a href="http://yusar.yonger.ru/service-software">
+      <a href="[service-software]">
         <div class="card card--second">
           <div class="image__container">
             <img class="card-img-top" width="254" height="164" data-src="tpl/assets/img/notebook-pic.jpg" alt="">
@@ -18,7 +18,7 @@
       </div>
 
       <div class="col-md-6">
-      <a href="http://yusar.yonger.ru/service-equipment">
+      <a href="[service-equipment]">
         <div class="card card--second">
           <div class="image__container">
             <img class="card-img-top" data-src="tpl/assets/img/data-centre.jpg" alt="">
