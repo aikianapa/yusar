@@ -58,8 +58,9 @@
                 <input name="specfiles" wb="module=filepicker&width=100&height=70" wb-path="/uploads/usr/{{id}}">
             </div>             
             </div>
-            <script>
-                (($)=>{
+        </form>
+    </wb-jq>
+                <script>
                     var generatePassword = function() {
                         let length = 8,
                             charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
@@ -75,8 +76,5 @@
                         let pass = generatePassword()
                         $('#{{_form}}EditForm .genpass').parents('.input-group').children('input').val(pass)
                     })
-                })($)
             </script>
-        </form>
-    </wb-jq>
 </html>
