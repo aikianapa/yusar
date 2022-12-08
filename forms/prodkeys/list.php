@@ -1,8 +1,8 @@
 <html>
-<div class="m-3" id="yongerDealers" wb-allow="admin">
+<div class="m-3" id="yongerProdkeys" wb-allow="admin">
 
     <nav class="nav navbar navbar-expand-md col">
-        <h3 class="tx-bold tx-spacing--2 order-1">Региональные представители</h3>
+        <h3 class="tx-bold tx-spacing--2 order-1">Коды продукции</h3>
         <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <i class="wd-20 ht-20 fa fa-ellipsis-v"></i>
@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <input class="form-control mg-r-10 col-auto" type="search" placeholder="Поиск..." aria-label="Поиск..." data-ajax="{'target':'#{{_form}}List','filter_add':{'$or':[{ 'doc_num' : {'$like' : '$value'} }, { 'fullname': {'$like' : '$value'} }]} }">
                 </div>
-                <a href="#" data-ajax="{'url':'/cms/ajax/form/{{_form}}/edit/_new','html':'#yongerDealers modals'}" class="ml-2 btn btn-primary">
+                <a href="#" data-ajax="{'url':'/cms/ajax/form/{{_form}}/edit/_new','html':'#yongerProdkeys modals'}" class="ml-2 btn btn-primary">
                     <img src="/module/myicons/item-select-plus-add.svg?size=24&stroke=FFFFFF" /> Добавить
                 </a>
             </form>
@@ -26,11 +26,11 @@
             <li data-id="{{id}}" class="list-group-item d-flex align-items-center">
                 <div>
                     <h6 class="tx-13 tx-inverse tx-semibold mg-b-0">{{region}}</h6>
-                    <div class="tx-12">{{name}}</div>
+                    <div class="tx-12">[ {{id}} ] {{name}}</div>
                 </div>
                 <div class="tx-right pos-absolute t-10 r-10">
                     <span class="d-none d-sm-inline">{{email}}</span>
-                    <a href="javascript:" data-ajax="{'url':'/cms/ajax/form/dealers/edit/{{.id}}','html':'#yongerDealers modals'}" class="d-inline">
+                    <a href="javascript:" data-ajax="{'url':'/cms/ajax/form/prodkeys/edit/{{.id}}','html':'#yongerProdkeys modals'}" class="d-inline">
                         <img src="/module/myicons/content-edit-pen.svg?size=24&stroke=323232">
                     </a>
                     {{#if ~/user.role == 'admin'}}
@@ -74,16 +74,18 @@
     </div>
     <script>
         var api = "/api/v2"
-        var form = "dealers"
+        var form = "prodkeys"
         var base = api + `/list/${form}?&@size=10&@sort=name`
         var list = new Ractive({
             el: "#{{_form}}List",
             template: $("#{{_form}}List").html(),
             data: {
                 base: base,
-                result: [],
+                result: {},
                 pagination: [],
-                user: wbapp._session.user
+                user: wbapp._session.user,
+                page: 1,
+                pages: 1
             },
             on: {
                 complete() {

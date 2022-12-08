@@ -6,6 +6,7 @@ Disallow: /tpl
 Disallow: /forms
 Disallow: /modules
 Disallow: /uploads
+Disallow: /docs
 
 User-agent: Yandex
 Clean-param: utm
