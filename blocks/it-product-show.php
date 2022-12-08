@@ -157,11 +157,11 @@
                     <div class="divider-text mb-0 col-12">Изображения скроллера шапки</div>
                     <div class="col-auto">
                         <wb-module wb="module=filepicker&mode=single&width=150&height=100" name="slide1"
-                            wb-path="/uplods/slides" />
+                            wb-path="/uploads/slides" />
                     </div>
                     <div class="col-auto">
                         <wb-module wb="module=filepicker&mode=single&width=150&height=100" name="slide2"
-                            wb-path="/uplods/slides" />
+                            wb-path="/uploads/slides" />
                     </div>
                     <div class="col-auto sltype">
                         <label class="form-control-label">Тип скроллера</label>

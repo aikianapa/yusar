@@ -2,6 +2,11 @@
 <wb-include wb-tpl="head.inc.php" />
 
 <body class="loading">
+    <wb-module wb="module=yonger&mode=render" />
+</body>
+
+<!--
+<body class="loading">
     <wb-include wb-tpl="header.inc.php" class="homepage" />
 
     <wb-include wb-tpl="widget-news.inc.php" class="s-indent-bottom"/>
@@ -17,7 +22,8 @@
     <wb-include wb-tpl="widget-globe.inc.php" />
 
     <wb-include wb-tpl="widget-projects.inc.php" />
-    <wb-include wb-tpl="footer.inc.php"/>
+    
 </body>
-
+-->
+<wb-include wb-tpl="footer.inc.php"/>
 </html>
