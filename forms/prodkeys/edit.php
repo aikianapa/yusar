@@ -59,7 +59,6 @@
             </div>             
             </div>
             <script>
-                (($)=>{
                     $('#{{_form}}EditForm .genpass').off('click')
                     $('#{{_form}}EditForm .genpass').on('click',function(){
                         let pass = generatePassword()
@@ -74,8 +73,6 @@
                         }
                         return retVal;
                     }
-
-                })($)
             </script>
         </form>
     </wb-jq>
