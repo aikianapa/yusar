@@ -41,6 +41,7 @@
                 <input class="form-control" type="email" name="email">
             </div>
             <div class="form-group">
+                <label>Пароль доступа</label>
                 <div class="input-group">
                     <div class="input-group-prepend cursor-pointer">
                         <span class="input-group-text genpass">
@@ -49,8 +50,6 @@
                     </div>
                     <input class="form-control" type="text" name="pass">
                 </div>
-                <label>Пароль доступа</label>
-                
             </div>
 
             <div class="form-group">
@@ -61,11 +60,12 @@
         </form>
     </wb-jq>
                 <script>
+                    "use strict"
                     var generatePassword = function() {
-                        let length = 8,
-                            charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-                            retVal = "";
-                            for (var i = 0, n = charset.length; i < length; ++i){
+                        let length = 8
+                        let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                        let retVal = ""
+                            for ( var i = 0, n = charset.length; length > i; ++i ) {
                                 retVal += charset.charAt(Math.floor(Math.random() * n));
                             }
                         return retVal;
