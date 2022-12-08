@@ -5,6 +5,14 @@
     <div>
         <div class="px-3">
             <div class="row">
+                <div class="col-sm-3 mb-2">
+                    <label>Заголовок</label>
+                </div>
+                <div class="col-sm-9 mb-2">
+                    <input class="form-control tx-bold" type="text" name="title" placeholder="Заголовок блока" wb-module="langinp">
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12 bd rounded-5">
                     <div class="row p-2">
                         <div class="col-sm-4 col-lg-3">
@@ -198,6 +206,10 @@
 
     <div class="pt-3r">
         <div class="container widget widget-products">
+            <div class="border-bottom pb-1r mb-2r" wb-if="'{{title.{{_sess.lang}}}}'>''">
+                <h3>{{title.{{_sess.lang}}}}</h3>
+            </div>
+
             <main class="main main__it-products">
                 <div class="mis card">
                     <img class="background" src="{{bkg1.0.img}}" alt="background" wb-if="'{{bkg1.0.img}}'>''">
