@@ -59,12 +59,8 @@
             </div>             
             </div>
             <script>
-                    $('#{{_form}}EditForm .genpass').off('click')
-                    $('#{{_form}}EditForm .genpass').on('click',function(){
-                        let pass = generatePassword()
-                        $('#{{_form}}EditForm .genpass').parents('.input-group').children('input').val(pass)
-                    })
-                    function generatePassword() {
+                (($)=>{
+                    var generatePassword = function() {
                         var length = 8,
                             charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
                             retVal = "";
@@ -73,6 +69,13 @@
                         }
                         return retVal;
                     }
+
+                    $('#{{_form}}EditForm .genpass').off('click')
+                    $('#{{_form}}EditForm .genpass').on('click',function(){
+                        let pass = generatePassword()
+                        $('#{{_form}}EditForm .genpass').parents('.input-group').children('input').val(pass)
+                    })
+                })($)
             </script>
         </form>
     </wb-jq>
