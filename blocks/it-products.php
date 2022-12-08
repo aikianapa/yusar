@@ -1,4 +1,4 @@
-<edit header="Страница IT-продукты">
+<edit header="Блок IT-продукты">
     <div>
         <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     </div>
@@ -201,6 +201,7 @@
             <main class="main main__it-products">
                 <div class="mis card">
                     <img class="background" src="{{bkg1.0.img}}" alt="background" wb-if="'{{bkg1.0.img}}'>''">
+                    <img class="background" src="/tpl/assets/img/mis.jpg" alt="background" wb-if="'{{bkg1.0.img}}'==''">
                     <div class="card-wrapper">
                         <h3 class="card-title">{{title1.{{_sess.lang}}}}</h3>
                         <p class="card-text text-break">{{text1.{{_sess.lang}}}}</p>
@@ -266,6 +267,7 @@
                     <div class="endoscopy card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='100'
                         data-aos-easing="ease-in-out">
                         <img class="background" src="{{bkg5.0.img}}" alt="background" wb-if="'{{bkg5.0.img}}'>''">
+                        <img class="background" src="/tpl/assets/img/endoscopy.jpg" alt="background" wb-if="'{{bkg5.0.img}}'==''">
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title5.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text5.{{_sess.lang}}}}</p>
@@ -277,6 +279,7 @@
                     <div class="pharmacy card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='100'
                         data-aos-easing="ease-in-out">
                         <img class="background" src="{{bkg6.0.img}}" alt="background" wb-if="'{{bkg6.0.img}}'>''">
+                        <img class="background" src="/tpl/assets/img/pharmacy.jpg" alt="background" wb-if="'{{bkg6.0.img}}'==''">
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title6.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text6.{{_sess.lang}}}}</p>
@@ -288,6 +291,7 @@
                     <div class="ai card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='100'
                         data-aos-easing="ease-in-out">
                         <img class="background" src="{{bkg7.0.img}}" alt="background" wb-if="'{{bkg7.0.img}}'>''">
+                        <img class="background" src="/tpl/assets/img/ai.png" alt="background" wb-if="'{{bkg7.0.img}}'==''">
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title7.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text7.{{_sess.lang}}}}</p>
@@ -299,6 +303,7 @@
                     <div class="tsami card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset='100'
                         data-aos-easing="ease-in-out">
                        <img class="background" src="{{bkg8.0.img}}" alt="background" wb-if="'{{bkg8.0.img}}'>''">
+                       <img class="background" src="/tpl/assets/img/tsami.png" alt="background" wb-if="'{{bkg8.0.img}}'==''">
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title8.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text8.{{_sess.lang}}}}</p>
