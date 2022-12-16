@@ -38,18 +38,17 @@
                     </div>
                     <div class="col-9 col-sm-10" style="padding-left: 0 !important;">
                         <div class="slick slick-for dates-slider" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=true&arrows=false&adaptiveHeight&true">
-                            <!-- обязательно через src !!! -->
                             <wb-foreach wb="from=history">
                                 <div>
-                                    <div>
-                                        <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{image.0.img}}" alt="{{year}}">
-                                    </div>
                                     <wb-var next="{{_parent.history.{{_ndx}}.year}}" wb-if="'{{_parent.history.{{_ndx}}.year}}'>''" else="{{_parent.history.0.year}}" />
-                                    <div data-year="{{_var.next}}">
+                                    <div data-year="{{year}}">
                                       <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{_parent.history.{{_ndx}}.image.0.img}}" alt="{{year*1 + 1}}"  wb-if="'{{_parent.history.{{_ndx}}.image.0.img}}'>''">
                                       <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{_parent.history.0.image.0.img}}" alt="{{year*1 + 1}}"  wb-if="'{{_parent.history.{{_ndx}}.image.0.img}}'==''">
                                     </div>
                                     <div class="d-none src-data" data-year="{{year}}" data-title="{{title.{{_sess.lang}}}}">{{text.{{_sess.lang}}}}</div>
+                                    <div>
+                                        <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{image.0.img}}" alt="{{year}}">
+                                    </div>
                                 </div>
                             </wb-foreach>
                         </div>
