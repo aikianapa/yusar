@@ -41,23 +41,33 @@ function getVideoList()
 function headerByPath($path='/')
 {
     $app = $_ENV['app'];
-    $json = json_decode(file_get_contents($app->route->path_app.'/database/_yonmap.json'), true);
-    $json = $app->json($json);
+    $map = json_decode(file_get_contents($app->route->path_app.'/database/_yonmap.json'), true);
     $lang = $app->vars('_sess.lang');
-    $res = $json->where('u', $path)->get();
-    if (count($res)) {
-        $res = array_pop($res);
-    }
-    $item = $app->itemRead($res['f'], $res['i']);
-    $header = '';
-    if ($item && isset($item['header'])) {
-        if ((array)$item['header'] === $item['header']) {
-            @$header = isset($item['header'][$lang]) ? $item['header'][$lang] : $item['header']['ru'];
-        } else {
-            @$header = $item['header'];
+    $chunk = explode('/', $path);
+    $path = '';
+    $result = [];
+    foreach($chunk as $cp) {
+        if ($cp > '') {
+            $path.='/'.$cp;
+            $json = $app->json($map);
+            $res = $json->where('u', $path)->get();
+            count($res) ? $res = array_pop($res) : null;
+            $item = $app->itemRead($res['f'], $res['i']);
+            $header = '';
+            if ($item && isset($item['header'])) {
+                if ((array)$item['header'] === $item['header']) {
+                    @$header = isset($item['header'][$lang]) ? $item['header'][$lang] : $item['header']['ru'];
+                } else {
+                    @$header = $item['header'];
+                }
+                $result[] = [
+                    'path' => $path,
+                    'header' => $header
+                ];
+            }
         }
     }
-    return $header;
+    return $result;
 }
 
 function fileinfo($file)

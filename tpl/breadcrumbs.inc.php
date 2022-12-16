@@ -10,9 +10,10 @@
 <wb-var midcrumb='{{headerByPath({{_var.parent}})}}' wb-if="'{{_var.parent}}'>'/'" else='' />
 <ol class="breadcrumb transparent pl-0">
     <li class="breadcrumb-item"><a href="/">{{_lang.home}}</a></li>
-    <li class="breadcrumb-item" wb-if="'{{_var.midcrumb}}'>''"><a href="{{_var.parent}}">{{_var.midcrumb}}</a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page" wb-if="'{{path}}'>''">{{_parent.header}}</li>
+    <wb-foreach wb="from=_var.midcrumb&tpl=false">
+        <li class="breadcrumb-item"><a href="{{path}}">{{header}}</a>
+        </li>
+    </wb-foreach>
     <li class="breadcrumb-item active" aria-current="page" wb-if="'{{path}}'==''">{{header}}</li>
 </ol>
 </html>
