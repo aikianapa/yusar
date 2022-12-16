@@ -16,9 +16,10 @@
             </ol>
         </div>
         <div class="carousel-inner">
-            <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
-                <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
-                <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
+            <wb-var video="{{video}}" wb-if="'{{video}}'>''" else="about" />
+            <video autoplay="true" muted="true" playsinline="true" loop="true">
+                <source data-src="{{_var.path_video}}/{{_var.video}}.webm" type="video/webm">
+                <source data-src="{{_var.path_video}}/{{_var.video}}.mp4" type="video/mp4">
             </video>
             <wb-foreach wb-from="_var.header.lang.{{_sess.lang}}.slides">
                 <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
@@ -65,13 +66,10 @@
     <div class="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="carousel-inner">
-            <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" > ""'>
-                <source data-src="{{_var.path_video}}/{{video}}.webm" type="video/webm">
-                <source data-src="{{_var.path_video}}/{{video}}.mp4" type="video/mp4">
-            </video>
-            <video autoplay="true" muted="true" playsinline="true" loop="true" wb-if='"{{video}}" == ""'>
-                <source data-src="{{_var.path_video}}/about.webm" type="video/webm">
-                <source data-src="{{_var.path_video}}/about.mp4" type="video/mp4">
+            <wb-var video="{{video}}" wb-if="'{{video}}'>''" else="about" />
+            <video autoplay="true" muted="true" playsinline="true" loop="true">
+                <source data-src="{{_var.path_video}}/{{{_var.video}}.webm" type="video/webm">
+                <source data-src="{{_var.path_video}}/{{{_var.video}}.mp4" type="video/mp4">
             </video>
             <div class="container">
                 <div class="carousel-caption text-left">
