@@ -1,8 +1,8 @@
 <wb-var path_video='/tpl/assets/video' />
 <header wb-if="'{{_route.name}}' == 'home'" class="homepage">
     <wb-var header="" />
-    <wb-foreach wb="from=blocks&tpl=false">
-        <wb-var header="{{_parent.blocks.{{_idx}}}}" wb-if="'{{name}}'=='header'" />
+    <wb-foreach wb="from=_parent.blocks&tpl=false">
+        <wb-var header="{{_parent._parent.blocks.{{_idx}}}}" wb-if="'{{name}}'=='header'" />
     </wb-foreach>
 
     <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="none">
