@@ -1,5 +1,5 @@
 <wb-var path_video='/tpl/assets/video' />
-<header wb-if="name == 'home'" class="homepage">
+<header wb-if="'{{_route.name}}' == 'home'" class="homepage">
     <wb-var header="" />
     <wb-foreach wb="from=blocks&tpl=false">
         <wb-var header="{{_parent.blocks.{{_idx}}}}" wb-if="'{{name}}'=='header'" />
@@ -61,7 +61,7 @@
         </a>
     </div>
 </header>
-<header wb-if="name !== 'home'">
+<header wb-if="'{{_route.name}}' !== 'home'">
     <div class="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="carousel-inner">
