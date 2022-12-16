@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="col-sm-6">
                                         <label>Категория</label>
-                                        <select name="category" wb-select2 wb-tree="dict=project_category&tpl=false">
+                                        <select name="category" wb-tree="dict=project_category&tpl=false" wb-select2>
                                             <option value="{{id}}">{{name}}</option>
                                         </select>
                                     </div>
