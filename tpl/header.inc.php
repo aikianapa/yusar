@@ -68,8 +68,8 @@
         <div class="carousel-inner">
             <wb-var video="{{video}}" wb-if="'{{video}}'>''" else="about" />
             <video autoplay="true" muted="true" playsinline="true" loop="true">
-                <source data-src="{{_var.path_video}}/{{{_var.video}}.webm" type="video/webm">
-                <source data-src="{{_var.path_video}}/{{{_var.video}}.mp4" type="video/mp4">
+                <source data-src="{{_var.path_video}}/{{_var.video}}.webm" type="video/webm">
+                <source data-src="{{_var.path_video}}/{{_var.video}}.mp4" type="video/mp4">
             </video>
             <div class="container">
                 <div class="carousel-caption text-left">
