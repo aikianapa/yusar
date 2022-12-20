@@ -2,6 +2,7 @@
 class newsClass extends cmsFormsClass {
 
     function beforeItemShow(&$item) {
+        $Item = $this->app->Dot($item);
         isset($item['lang']) ? $lang = $item['lang'][$this->app->vars('_sess.lang')] : $lang = [];
         $item = (array)$lang + (array)$item;
         isset($item['date']) ? $item['dateshort'] = date('d.m.Y',strtotime($item['date'])) : null;
@@ -11,7 +12,7 @@ class newsClass extends cmsFormsClass {
         } else {
             @$item['header'] = $item['header']['ru'];
         }
-        @$item['cover'] = $item['cover'][0]['img'];
+        $item['cover'] = $Item->get('cover.0.img');
         @$item['url'] = '/news/'.wbFurlGenerate(@$item['header']);
     }
 

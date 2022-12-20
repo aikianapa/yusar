@@ -132,15 +132,15 @@
 <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
     aria-hidden="true" style="-webkit-backdrop-filter: blur(10px);">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <div class="modal-content" wb-module="yusarsearch">
             <div class="modal-header" style="margin-top: 0;">
                 <div class="d-flex" style="align-items: center;">
                     <img src="/tpl/assets/img/search-icon.svg" alt="">
-                    <input type="text" class="modal-input" id="searchModalLabel" placeholder="ЮСАР">
+                    <input type="text" class="modal-input" id="searchModalLabel" on-change="search" placeholder="ЮСАР" autocomplete="off">
                 </div>
 
                 <div class="d-flex modal-header-two" style="align-items: center;">
-                    <button class="search-button" style="padding-left: 0;">Найти</button>
+                    <button class="search-button" type="button" style="padding-left: 0;" on-click="search">Найти</button>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0;">
                         <span aria-hidden="true">
@@ -150,19 +150,21 @@
                 </div>
             </div>
 
-            <div class="modal-body" style="text-align: left;">
+            <div class="modal-body" style="text-align: left;" wb-off>
+                {{#each list}}
+                <div class="modal-body--section" data-url="{{url}}" on-click="goto">
+                    <span class="section-title" style="font-weight: 400;">{{header}}</span>
+                    <span class="section-text">{{context}}</span>
+                </div>
+                {{else}}
                 <div class="modal-body--section">
-                    <span class="section-title" style="font-weight: 400;">Раздел</span>
-                    <span class="section-text">О компании</span>
+                {{#if ~/find == ''}}
+                    Поиск по сайту
+                {{else}}
+                    Ничего не найдено
+                {{/if}}
                 </div>
-
-                <div class="modal-body--subsection">
-                    <span class="section-title" style="font-weight: 400;">Новости</span>
-                    <span class="section-text">
-                        ЮСАР+ на международной конференции
-                        «Рак груди: наука на стороне женщины»
-                    </span>
-                </div>
+                {{/each}}
             </div>
             <!-- <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -193,6 +195,12 @@ $(".close-mobile-nav").on('touchstart click', function(e) {
 
 $("li").on("click", function(e) {
     $(this).children(".nav-dropdown-menu").toggleClass("open-dropdown");
+})
+
+$('#searchModal').on('shown.bs.modal',function(){
+    setTimeout(function(){
+        $('.modal-backdrop').css('z-index',20)
+    },100)
 })
 </script>
 
