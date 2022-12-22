@@ -23,7 +23,7 @@
                 </a>
                 </div>
                 <div>
-                    ID: {{id}}
+                    ID: <a href="/docs/{{id}}" target="_blank">{{id}}</a>
                 </div>
             </div>                
             </div>
