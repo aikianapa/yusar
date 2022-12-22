@@ -53,8 +53,7 @@
             </div>
 
             <div class="form-group">
-                <label>Файлы</label>
-                <input name="specfiles" wb="module=filepicker&width=100&height=70" wb-path="/uploads/usr/{{id}}">
+                <input name="specfiles" wb="module=filepicker&width=100&height=70&original=true" wb-path="/uploads/usr/{{id}}">
             </div>             
             </div>
         </form>
