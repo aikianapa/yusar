@@ -2146,10 +2146,8 @@ main .tsami .card-text {
 .reviews {
     padding-top: 6rem;
     padding-bottom: 6rem;
-    /*
     margin-left: 7.8vw;
     margin-right: 7.8vw;
-    */
     position: relative;
     overflow: hidden;
 }
@@ -2245,10 +2243,9 @@ main .tsami .card-text {
 }
 
 .products {
-    /* padding-bottom: 3em; 
+    padding-bottom: 3em;
     margin-left: 7.8vw;
     margin-right: 7.8vw;
-    */
     position: relative;
     overflow: hidden;
 }
