@@ -26,4 +26,5 @@
 </body>
 -->
 <wb-include wb-tpl="footer.inc.php"/>
+<wb-jq wb="$dom->find('body')->addClass('body-mis');"  />
 </html>
