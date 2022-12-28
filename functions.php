@@ -21,8 +21,8 @@ function beforeShow(&$out) {
             $to[] = $m['u'];
         }
     }
-    $out = str_replace('container', 'mis-container', $out);
-    $out = str_replace('mis-mis-container', 'mis-container', $out);
+    //$out = str_replace('container', 'mis-container', $out);
+    //$out = str_replace('mis-mis-container', 'mis-container', $out);
 
     //$out = str_replace('class="reviews ', 'class="reviews container ', $out);
     //$out = str_replace('section class="products', 'section class="products container', $out);

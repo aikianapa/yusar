@@ -6,6 +6,6 @@
 <wb-include wb-tpl="footer.inc.php" />
 
 
-<wb-jq wb="$dom->find('.card[data-aos]')->parent('body')->addClass('body-services cont-color-w');
-$dom->find('body')->addClass('body-mis');"  />
+<wb-jq wb="$dom->find('.card[data-aos]')->parent('body')->addClass('body-services cont-color-w');"/>
+<!--wb-jq wb="$dom->find('body')->addClass('body-mis');"  /-->
 </html>

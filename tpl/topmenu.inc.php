@@ -88,7 +88,9 @@
 <div class="mobile-nav">
     <div class="container">
         <div class="mobile-nav--logo">
-            <img src="/tpl/assets/img/logo-white.svg" alt="">
+            <a href="/">
+                <img src="/tpl/assets/img/logo-white.svg" alt="">
+            </a>
             <button class="close-mobile-nav"></button>
         </div>
 
