@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <wb-var menu="{{yongerSiteMenu()}}" />
+            <!-- // _var.menu Причитано в topmenu.inc.php /-->
             <div class="col-md-3">
                 <ul class="navbar-nav navbar-nav--top">
                     <li class="nav-item">
