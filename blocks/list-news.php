@@ -3,7 +3,7 @@
 </edit>
 
 <view>
-    <section>
+    <section class="container">
         <div class="pt-3r" id="newsList">
             <div class="container widget news-grid news-page">
                 <div class="row pb-3r">
