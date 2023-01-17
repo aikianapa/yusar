@@ -12,14 +12,12 @@
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100 justify-content-xl-between">
                     <wb-foreach wb="from=_var.menu&tpl=false">
                         <li class="nav-item dropdown w-auto d-xl-inline">
-                            <a class="nav-link dropdown-toggle" href="{{path}}" id="menu-{{id}}" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"  wb-if="'{{count({{children}})}}'>'0'">{{menu_title}}</a>
+                            <a class="nav-link dropdown-toggle" href="{{path}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" wb-if="'{{count({{children}})}}'>'0'">{{menu_title}}</a>
                             <a class="nav-link" href="{{path}}" wb-if="'{{count({{children}})}}'=='0'">{{menu_title}}</a>
 
                             <div class="dropdown-menu" aria-labelledby="menu-{{id}}" wb-if="'{{count({{children}})}}'>'0'">
                                 <wb-foreach wb="from=children&tpl=false">
-                                    <a class="dropdown-item w-auto" href="{{path}}"
-                                        wb-if="'{{menu_title}}'!=='{{_parent.menu_title}}'">
+                                    <a class="dropdown-item w-auto" href="{{path}}" wb-if="'{{menu_title}}'!=='{{_parent.menu_title}}'">
                                         {{menu_title}}
                                     </a>
                                 </wb-foreach>
@@ -45,8 +43,8 @@
                     </li>
 
                     <li class="nav-item icon-small">
-                        <wb-var link="/account" wb-if="'{{_sess.user.role}}'>''" else="/sign-in"/>
-                        <wb-var link="/workspace" wb-if="'{{_sess.user.role}}'=='admin'"/>
+                        <wb-var link="/account" wb-if="'{{_sess.user.role}}'>''" else="/sign-in" />
+                        <wb-var link="/workspace" wb-if="'{{_sess.user.role}}'=='admin'" />
                         <a class="nav-link icon-link" href="{{_var.link}}">
                             <img width="22" height="23" src="/tpl/assets/img/header-icons/auth-icon.png" />
 
@@ -64,8 +62,7 @@
 
                 <ul class="navbar-nav my-2 my-lg-0 right">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle lang-icon" href="{{data.link}}" id="menu-{{id}}"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle lang-icon" href="{{data.link}}" id="menu-{{id}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <!-- {{strtoupper({{_sess.lang}})}} -->
                             <img width="21" height="21" src="/tpl/assets/img/header-icons/lang-icon.png" />
                         </a>
@@ -104,8 +101,7 @@
                     <img width="22" height="22" src="/tpl/assets/img/header-icons/auth-icon.png" />
                 </a>
 
-                <a class="nav-with-dropdown"
-                    style="display: flex; align-items: center; padding-top: 3px; position: relative;">
+                <a class="nav-with-dropdown" style="display: flex; align-items: center; padding-top: 3px; position: relative;">
                     <img width="21" height="21" src="/tpl/assets/img/header-icons/lang-icon.png" />
 
                     <div class="nav-dropdown-menu" style="position: absolute; left: 130px; top: 0px; display: inline;">
@@ -122,7 +118,7 @@
 
                     <div class="nav-dropdown-menu" wb-if="'{{count({{children}})}}'>'0'">
                         <wb-foreach wb="from=children&tpl=false">
-                        <a class="nav-dropdown-item" href="{{path}}">{{menu_title}}</a>
+                            <a class="nav-dropdown-item" href="{{path}}">{{menu_title}}</a>
                         </wb-foreach>
                     </div>
                 </li>
@@ -131,18 +127,17 @@
     </div>
 </div>
 
-<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel"
-    aria-hidden="true" style="-webkit-backdrop-filter: blur(10px);">
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true" style="-webkit-backdrop-filter: blur(10px);">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content" wb-module="yusarsearch">
             <div class="modal-header" style="margin-top: 0;">
                 <div class="d-flex" style="align-items: center;">
                     <img src="/tpl/assets/img/search-icon.svg" alt="">
-                    <input type="text" class="modal-input" id="searchModalLabel" on-change="search" placeholder="ЮСАР" autocomplete="off">
+                    <input type="text" class="modal-input" id="searchModalLabel" on-change="search" placeholder="Поиск по сайту" autocomplete="off">
                 </div>
 
                 <div class="d-flex modal-header-two" style="align-items: center;">
-                    <button class="search-button" type="button" style="padding-left: 0;" on-click="search">Найти</button>
+                    <button class="btn btn-link" type="button" style="margin-right:10px;" on-click="search">Найти</button>
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin: 0;">
                         <span aria-hidden="true">
@@ -151,21 +146,21 @@
                     </button>
                 </div>
             </div>
+            
 
             <div class="modal-body" style="text-align: left;" wb-off>
                 {{#each list}}
-                <div class="modal-body--section" data-url="{{url}}" on-click="goto">
-                    <span class="section-title" style="font-weight: 400;">{{header}}</span>
-                    <span class="section-text">{{context}}</span>
-                </div>
+                    <div class="modal-body--section" data-url="{{url}}" on-click="goto">
+                        <span class="section-title" style="font-weight: 400;">{{header}}</span>
+                        <span class="section-text">{{context}}</span>
+                    </div>
                 {{else}}
-                <div class="modal-body--section">
-                {{#if ~/find == ''}}
-                    Поиск по сайту
-                {{else}}
-                    Ничего не найдено
-                {{/if}}
-                </div>
+                    <div class="modal-body--section">
+                        {{#if ~/find == ''}}
+                        {{else}}
+                            Ничего не найдено
+                        {{/if}}
+                    </div>
                 {{/each}}
             </div>
             <!-- <div class="modal-footer">
@@ -176,34 +171,34 @@
 </div>
 
 <script wb-app>
-$(".navbar-toggler").off('touchstart click');
-$(".navbar-toggler").on('touchstart click', function(e) {
-    $('.bg-topmenu').css("opacity", "0");
-    $('body').toggleClass('mobile-menu-open');
+    $(".navbar-toggler").off('touchstart click');
+    $(".navbar-toggler").on('touchstart click', function(e) {
+        $('.bg-topmenu').css("opacity", "0");
+        $('body').toggleClass('mobile-menu-open');
 
-    $('.mobile-nav').toggleClass('show-mobile-menu');
-    $('header').css('overflow', 'auto');
-    return false;
-})
+        $('.mobile-nav').toggleClass('show-mobile-menu');
+        $('header').css('overflow', 'auto');
+        return false;
+    })
 
-$(".close-mobile-nav").on('touchstart click', function(e) {
-    $('.bg-topmenu').css("opacity", "1");
-    $('body').toggleClass('mobile-menu-open');
+    $(".close-mobile-nav").on('touchstart click', function(e) {
+        $('.bg-topmenu').css("opacity", "1");
+        $('body').toggleClass('mobile-menu-open');
 
-    $('.mobile-nav').toggleClass('show-mobile-menu');
-    $('header').css('overflow', 'hidden');
-    return false;
-})
+        $('.mobile-nav').toggleClass('show-mobile-menu');
+        $('header').css('overflow', 'hidden');
+        return false;
+    })
 
-$("li").on("click", function(e) {
-    $(this).children(".nav-dropdown-menu").toggleClass("open-dropdown");
-})
+    $("li").on("click", function(e) {
+        $(this).children(".nav-dropdown-menu").toggleClass("open-dropdown");
+    })
 
-$('#searchModal').on('shown.bs.modal',function(){
-    setTimeout(function(){
-        $('.modal-backdrop').css('z-index',20)
-    },100)
-})
+    $('#searchModal').on('shown.bs.modal', function() {
+        setTimeout(function() {
+            $('.modal-backdrop').css('z-index', 20)
+        }, 100)
+    })
 </script>
 
 <wb-lang>
