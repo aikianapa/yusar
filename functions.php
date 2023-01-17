@@ -11,21 +11,18 @@ function datetext($date)
     return strftime('%e %B %Y', strtotime($date));
 }
 
-function beforeShow(&$out) {
-    $app = $_ENV['app'];
-    $map = json_decode(file_get_contents($_ENV['dba'].'/_yonmap.json'),true);
+function beforeShow(&$out)
+{
+    $map = json_decode(file_get_contents($_ENV['dba'] . '/_yonmap.json'), true);
     $fr = $to = [];
-    foreach($map as $m) {
+    foreach ($map as $m) {
         if ($m['f'] == 'pages') {
-            $fr[] = urlencode('['.$m['n'].']');
+            $fr[] = urlencode('[' . $m['n'] . ']');
+            $fr[] = ('[' . $m['n'] . ']');
+            $to[] = $m['u'];
             $to[] = $m['u'];
         }
     }
-    //$out = str_replace('container', 'mis-container', $out);
-    //$out = str_replace('mis-mis-container', 'mis-container', $out);
-
-    //$out = str_replace('class="reviews ', 'class="reviews container ', $out);
-    //$out = str_replace('section class="products', 'section class="products container', $out);
     $out = str_replace($fr, $to, $out);
     return $out;
 }
