@@ -146,7 +146,7 @@
                     </button>
                 </div>
             </div>
-            
+
 
             <div class="modal-body" style="text-align: left;" wb-off>
                 {{#each list}}
@@ -155,12 +155,13 @@
                         <span class="section-text">{{context}}</span>
                     </div>
                 {{else}}
-                    <div class="modal-body--section">
-                        {{#if ~/find == ''}}
-                        {{else}}
+                    {{#if ~/find == ''}}
+                    {{else}}
+                        <div class="modal-body--section">
                             Ничего не найдено
-                        {{/if}}
-                    </div>
+                        </div>
+                    {{/if}}
+
                 {{/each}}
             </div>
             <!-- <div class="modal-footer">
