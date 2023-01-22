@@ -18,7 +18,7 @@
         </div>
         <wb-data wb="table=pages&item=home">
         <div class="slick news-grid" id="widgetNewsList">
-            <wb-foreach wb="table=news&tpl=false&sort=_date:d&limit=10">
+            <wb-foreach wb="table=news&tpl=false&sort=date:d&limit=10">
                 <a href="/news/{{wbFurlGenerate({{header}})}}">
                     <div class="card card--second">
                         <div class="image__container">
