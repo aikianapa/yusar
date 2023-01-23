@@ -18,6 +18,9 @@
                 <a class="nav-link" data-toggle="tab" href="#tab_benef" role="tab" aria-controls="tab_benef" aria-selected="false">Преимущества</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab_prd" role="tab" aria-controls="tab_prd" aria-selected="false">Продукты</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab_rvs" role="tab" aria-controls="tab_rvs" aria-selected="false">Отзывы</a>
             </li>
             <li class="nav-item">
@@ -200,7 +203,7 @@
                                         <textarea class="form-control" rows="auto" name="trg_text1" placeholder="Текст" wb-module="langinp"></textarea>
                                     </div>
                                     <div class="">
-                                        <input class="form-control" type="text" name="trg_link1" placeholder="Ссылка">
+                                        <input class="form-control" type="text" name="trg_link1" placeholder="Ссылка" wb="module=yonger&mode=pageselect">
                                     </div>
                                 </div>
                             </div>
@@ -220,7 +223,7 @@
                                         <textarea class="form-control" rows="auto" name="trg_text2" placeholder="Текст" wb-module="langinp"></textarea>
                                     </div>
                                     <div class="">
-                                        <input class="form-control" type="text" name="trg_link2" placeholder="Ссылка">
+                                        <input class="form-control" type="text" name="trg_link2" placeholder="Ссылка" wb="module=yonger&mode=pageselect">
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +322,7 @@
                                 <textarea class="form-control" rows="auto" name="dsc_btext" placeholder="Текст" wb-module="langinp"></textarea>
                             </div>
                             <div class="col-12 mb-2">
-                                <input class="form-control" type="text" name="dsc_blink" placeholder="Ссылка">
+                                <input class="form-control" type="text" name="dsc_blink" placeholder="Ссылка" wb="module=yonger&mode=pageselect">
                             </div>
                         </div>
                     </div>
@@ -426,6 +429,35 @@
                         <input class="form-control" type="text" name="rvs_subtitle" placeholder="Подпись" wb-module="langinp">
                     </div>
                     </wb-miltiinput>
+            </div>
+            <div class="tab-pane fade" id="tab_prd" role="tabpanel" aria-labelledby="tab_prd">
+                <div class="row mb-1">
+                    <label class="form-control-label col-md-3">Отображать блок</label>
+                    <div class="col-md-9  mb-1">
+                        <input name="prdsw" wb-module="switch">
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col-12 mb-1">
+                        <input class="form-control tx-bold" type="text" name="prd_title" placeholder="Продкуты" wb-module="langinp">
+                    </div>
+                </div>
+                <wb-multiinput name="products">
+                    <div class="col-sm-4">
+                        <wb-module wb="module=filepicker&mode=single&width=250&height=170" name="prdbkg" wb-path="/uploads/it-products" />
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="mb-1">
+                            <input class="form-control" type="text" name="prdtitle" placeholder="Заголовок" wb-module="langinp">
+                        </div>
+                        <div class="mb-1">
+                            <textarea class="form-control" rows="auto" name="prdtext" placeholder="Текст" wb-module="langinp"></textarea>
+                        </div>
+                        <div class="">
+                            <input class="form-control" type="text" name="prdlink" placeholder="Ссылка" wb="module=yonger&mode=pageselect">
+                        </div>
+                    </div>
+                </wb-multiinput>
             </div>
             <div class="tab-pane fade" id="tab_vid" role="tabpanel" aria-labelledby="tab_vid">
                 <div class="row mb-1">
@@ -568,7 +600,7 @@
                             {{_lang.reviews}}
                         </li>
                     </a>
-                    <a href="#products">
+                    <a href="#products" wb-if="'{{prdsw}}'=='on'">
                         <li class="mis-menu__item" id='item-6'>
                             {{_lang.products}}
                         </li>
@@ -811,24 +843,27 @@
             </div>
         </section>
 
-        <section class="products" id="products">
+        <section class="container">
+            <wb-module wb="module=yonger&mode=render&view=form-feedback" />
+        </section>
+
+        <section class="products  pt-0" id="products" wb-if="'{{prdsw}}'=='on' && '{{products}}' > ''">
             <div class="products__button-prev"></div>
             <div class="products__button-next"></div>
-            <h4 class="card-text">{{_land.products}}</h4>
+            <h4 class="card-text" wb-if="'{{prd_title.{{_sess.lang}}}}'==''">{{_lang.products}}</h4>
+            <h4 class="card-text" wb-if="'{{prd_title.{{_sess.lang}}}}'>''">{{prd_title.{{_sess.lang}}}}</h4>
             <div class="products__swiper-container swiper-container">
-
                 <div class="swiper-wrapper products__wrapper">
-                    <wb-foreach wb="table=pages&tpl=false&minimal=5" wb-filter="active=on&path=/it-products">
-                        <a href="[{{name}}]" class="card products__card-1 swiper-slide y-10">
+                    <wb-foreach wb="from=products&minimal=5">
+                        <wb-var bkg="{{prdbkg.0.img}}" wb-if="'{{prdbkg.0.img}}'>''" else="/assets/img/products.png" />
+                        <a href="{{prdlink}}" class="card products__card-1 swiper-slide y-10" style="background-image:url({{_var.bkg}})">
                             <div class="card-wrapper">
                                 <h3 class="card-title">
-                                    {{header}}
+                                    {{prdtitle.{{_sess.lang}}}}
                                 </h3>
-                                <wb-foreach wb="from=blocks&tpl=false" wb-filter="name=header_p">
-                                    <p class="card-text">
-                                        {{lang.{{_sess.lang}}.text}}
-                                    </p>
-                                </wb-foreach>
+                                <p class="card-text">
+                                    {{prdtext.{{_sess.lang}}}}
+                                </p>
                             </div>
                             <img class="link-icon" src="/tpl/assets/img/more.svg" alt="icon">
                         </a>
