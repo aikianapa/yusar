@@ -1949,7 +1949,7 @@ main .tsami .card-text {
 }
 
 .technical .card-1 .card-title_big {
-    width: 50%;
+    /* width: 50%; */
     margin-bottom: 14px;
     line-height: 112%;
 }
