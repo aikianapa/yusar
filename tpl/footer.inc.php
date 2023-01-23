@@ -8,9 +8,9 @@
                         <a class="nav-link" href="{{_var.menu.0.path}}">{{_var.menu.0.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.0.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.0.children&tpl=false" wb-filter="active=on">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -20,9 +20,9 @@
                         <a class="nav-link" href="{{_var.menu.1.path}}">{{_var.menu.1.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.1.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.1.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -34,9 +34,9 @@
                         <a class="nav-link" href="{{_var.menu.2.path}}">{{_var.menu.2.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.2.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.2.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -48,9 +48,9 @@
                         <a class="nav-link" href="{{_var.menu.3.path}}">{{_var.menu.3.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.3.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.3.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -60,9 +60,9 @@
                         <a class="nav-link" href="{{_var.menu.4.path}}">{{_var.menu.4.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.4.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.4.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -74,9 +74,9 @@
                         <a class="nav-link" href="{{_var.menu.5.path}}">{{_var.menu.5.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.5.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.5.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -86,9 +86,9 @@
                         <a class="nav-link" href="{{_var.menu.6.path}}">{{_var.menu.6.menu_title}}</a>
                         <ul wb-if="'{{count({{_var.menu.6.children}})}}'>'0'">
                             <wb-foreach wb="from=_var.menu.6.children&tpl=false">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{path}}">{{menu_title}}</a>
-                            </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{path}}">{{menu_title}}</a>
+                                </li>
                             </wb-foreach>
                         </ul>
                     </li>
@@ -102,8 +102,7 @@
             </span>
             <div class="info-block">
                 <div class="mr-25">
-                    <ul class="d-flex list-inline m-0 nobr"
-                        wb-tree="item=menu&branch=social&parent=false&children=false">
+                    <ul class="d-flex list-inline m-0 nobr" wb-tree="item=menu&branch=social&parent=false&children=false">
                         <li style="margin-right: 8px;">
                             <a href="{{data.link}}" target="_blank">
                                 <!-- <svg width="24" height="24">
@@ -169,4 +168,13 @@
         copyright = "Права защищены"
     </wb-lang>
 </footer>
+<div id="video" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" wb-append="body">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <iframe class="img-fluid" width="100%" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
 <wb-include wb-tpl="common.inc.php" />

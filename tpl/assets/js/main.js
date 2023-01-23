@@ -86,6 +86,13 @@ $(document).ready(function() {
         });
     }
 
+    $('.modal#video').on('hide.bs.modal',function(){
+        $(this).find('iframe').attr('src','')
+    }).on('shown.bs.modal', function () {
+        let height = $(this).find('.modal-body').width() / (16/9)
+        $(this).find('iframe').css('height',height+'px')
+    })
+
 
     // ****** Mobile ****** //
 
