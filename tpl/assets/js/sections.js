@@ -70,6 +70,7 @@ function hide_brain(position) {
 function hide_image(position) {
     //	console.log(position)
     var val = (50 - position / 2) / 100
+    if (lf_image.style == undefined) lf_image.style = {}
     lf_image.style.opacity = val
     lf_image2.style.opacity = val
         //console.log({position,val})

@@ -12,11 +12,13 @@ $(document).ready(function() {
                 var a = 80;
             }
 
-            var item1 = $("#purpose"),
-                item1Poition = parseInt(item1.offset().top - a),
-                item1Height = item1.outerHeight(),
+            var item1 = $("#purpose")
+            if (item1.length) {
+                var item1Poition = parseInt(item1.offset().top - a),
+                    item1Height = item1.outerHeight()
+            }
 
-                item2 = $("#descriprion"),
+            var item2 = $("#descriprion"),
                 item2Poition = parseInt(item2.offset().top - a),
                 item2Height = item2.outerHeight(),
 
@@ -26,15 +28,19 @@ $(document).ready(function() {
 
                 item4 = $("#news"),
                 item4Poition = parseInt(item4.offset().top - a),
-                item4Height = item4.outerHeight(),
+                item4Height = item4.outerHeight()
 
-                item5 = $("#reviews"),
-                item5Poition = parseInt(item5.offset().top - a),
-                item5Height = item5.outerHeight(),
+            var item5 = $("#reviews")
+            if (item5.length) {
+                var item5Poition = parseInt(item5.offset().top - a),
+                item5Height = item5.outerHeight()
+            }
 
-                item6 = $("#products"),
-                item6Poition = parseInt(item6.offset().top - a),
+            var item6 = $("#products")
+            if (item5.length) {
+                var item6Poition = parseInt(item6.offset().top - a),
                 item6Height = item6.outerHeight();
+            }
 
 
 
@@ -94,22 +100,26 @@ $(document).ready(function() {
     })
 
     // ***** Отображение имени файла ***** //
+    function fileNameAdd() {
+        const form = $('.footer__form');
+        if (form.length) {
+            const fileInput = form[0].querySelector('input[type="file"]');
 
-    const form = document.querySelector('.footer__form');
-    const fileInput = document.querySelector('input[type="file"]');
-
-    fileInput.addEventListener('change', function (e) {
-        const fileWrapper = fileInput.parentElement.querySelector('.add-doc__inner');
-        const fileText = fileInput.parentElement.querySelector('.card-text');
-        fileText.innerHTML = e.target.files[0].name;
-        if (this.value) {
-            fileWrapper.classList.add('add-doc__inner--attached');
-        } else {
-            fileWrapper.classList.remove('add-doc__inner--attached');
+            fileInput.addEventListener('change', function (e) {
+                const fileWrapper = fileInput.parentElement.querySelector('.add-doc__inner');
+                const fileText = fileInput.parentElement.querySelector('.card-text');
+                fileText.innerHTML = e.target.files[0].name;
+                if (fileWrapper !== undefined) {
+                if (this.value) {
+                    $(fileWrapper).addClass('add-doc__inner--attached');
+                } else {
+                    $(fileWrapper).removeClass('add-doc__inner--attached');
+                }
+                }
+            });
         }
-    });
-
-
+    }
+    fileNameAdd()
     // ****** Mobile ****** //
 
     const dropDownList = document.querySelector(".drop-down-list");
