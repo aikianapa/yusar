@@ -856,7 +856,7 @@
                 <div class="swiper-wrapper products__wrapper">
                     <wb-foreach wb="from=products&minimal=5">
                         <wb-var bkg="{{prdbkg.0.img}}" wb-if="'{{prdbkg.0.img}}'>''" else="/assets/img/products.png" />
-                        <a href="{{prdlink}}" class="card products__card-1 swiper-slide y-10" style="background-image:url({{_var.bkg}})">
+                        <a href="{{prdlink}}" class="card products__card-1 swiper-slide y-10" style="background-image:url({{_var.bkg}});background-size:cover;background-position:50% 50%;">
                             <div class="card-wrapper">
                                 <h3 class="card-title">
                                     {{prdtitle.{{_sess.lang}}}}
