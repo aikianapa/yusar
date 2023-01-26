@@ -93,6 +93,22 @@ $(document).ready(function() {
         $(this).find('iframe').css('height',height+'px')
     })
 
+    // ***** Отображение имени файла ***** //
+
+    const form = document.querySelector('.footer__form');
+    const fileInput = document.querySelector('input[type="file"]');
+
+    fileInput.addEventListener('change', function (e) {
+        const fileWrapper = fileInput.parentElement.querySelector('.add-doc__inner');
+        const fileText = fileInput.parentElement.querySelector('.card-text');
+        fileText.innerHTML = e.target.files[0].name;
+        if (this.value) {
+            fileWrapper.classList.add('add-doc__inner--attached');
+        } else {
+            fileWrapper.classList.remove('add-doc__inner--attached');
+        }
+    });
+
 
     // ****** Mobile ****** //
 
