@@ -77,7 +77,7 @@
           </wb-lang>
           <wb-foreach wb="table=projects&limit=5&rand=true&tpl=false" wb-filter="active=on&id!={{id}}">
             <div class="project--sidebar--item">
-              <a href="/project" class="d-flex">
+              <a href="{{yongerFurl()}}" class="d-flex">
                 <img src="/thumbc/60x60/src{{cover.0.img}}" alt="">
                 <div>{{header}}</div>
               </a>
