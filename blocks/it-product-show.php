@@ -9,6 +9,9 @@
                 <a class="nav-link active" data-toggle="tab" href="#tab_scroller" role="tab" aria-controls="tab_scroller" aria-selected="true">Скроллер</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab_vid" role="tab" aria-controls="tab_vid" aria-selected="false">Видео</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab_target" role="tab" aria-controls="tab_target" aria-selected="false">Цель</a>
             </li>
             <li class="nav-item">
@@ -18,13 +21,10 @@
                 <a class="nav-link" data-toggle="tab" href="#tab_benef" role="tab" aria-controls="tab_benef" aria-selected="false">Преимущества</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab_prd" role="tab" aria-controls="tab_prd" aria-selected="false">Продукты</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#tab_rvs" role="tab" aria-controls="tab_rvs" aria-selected="false">Отзывы</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#tab_vid" role="tab" aria-controls="tab_vid" aria-selected="false">Видео</a>
+                <a class="nav-link" data-toggle="tab" href="#tab_prd" role="tab" aria-controls="tab_prd" aria-selected="false">Продукты</a>
             </li>
         </ul>
         <div class="tab-content bd bd-gray-300 bd-t-0 pd-20" id="myTabContent">
