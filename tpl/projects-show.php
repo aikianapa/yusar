@@ -33,8 +33,8 @@
         <p>{{text}}</p>
 
 
-        <div class="image__container" wb-if="'{{cover.0.img}}' > ''">
-        <img src=" /thumbc/730x395/src{{cover.0.img}}" alt="">
+        <div class="image__container" wb-if="'{{cover}}' > ''">
+        <img src=" /thumbc/730x395/src{{cover}}" alt="">
         </div>
         <div>
           <wb-module wb="module=yonger&mode=render" />
@@ -78,7 +78,7 @@
           <wb-foreach wb="table=projects&limit=5&rand=true&tpl=false" wb-filter="active=on&id!={{id}}">
             <div class="project--sidebar--item">
               <a href="{{yongerFurl()}}" class="d-flex">
-                <img src="/thumbc/60x60/src{{cover.0.img}}" alt="">
+                <img src="/thumbc/60x60/src{{cover}}" alt="">
                 <div>{{header}}</div>
               </a>
             </div>
