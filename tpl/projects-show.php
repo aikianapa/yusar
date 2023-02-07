@@ -28,6 +28,7 @@
 
     <div class="row align-items-start">
       <div class="col-12 col-md-8">
+<!--
         <h3 class="mt-0">{{header}}</h3>
 
         <p>{{text}}</p>
@@ -36,6 +37,7 @@
         <div class="image__container" wb-if="'{{cover}}' > ''">
         <img src=" /thumbc/730x395/src{{cover}}" alt="">
         </div>
+  -->
         <div>
           <wb-module wb="module=yonger&mode=render" />
         </div>
