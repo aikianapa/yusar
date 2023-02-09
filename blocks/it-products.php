@@ -30,155 +30,275 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row col-12">
+                        <wb-multiinput name="icons1">
+                            <div class="col"><select class="form-control" wb-select2 name="icon">
+                                    <option value="">Выберите...</option>
+                                    <option value="orbit.svg">orbit</option>
+                                    <option value="two.svg">two</option>
+                                    <option value="three.svg">three</option>
+                                    <option value="four.svg">four</option>
+                                    <option value="blue.svg">blue</option>
+                                    <option value="skyblue.svg">skyblue</option>
+                                    <option value="green.svg">green</option>
+
+                                </select></div>
+                            <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                            <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                        </wb-multiinput>
+                    </div>
                 </div>
-                <div class="col-12">
-                    <wb-multiinput name="icons1">
-                        <div class="col"><input class="form-control" name="icon" placeholder="Иконка"></div>
+            </div>
+
+            <div class="mt-2 row">
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg2" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title2" placeholder="Заголовок виджета" wb-module="langinp">
+                            </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text2" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link2" placeholder="Ссылка">
+                            </div>
+                        </div>
+                    </div>
+                    <wb-multiinput name="icons2">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
                 </div>
             </div>
+
             <div class="mt-2 row">
-                <div class="pl-0 col-6">
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg2" wb-path="/uploads/it-products" />
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg5" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title5" placeholder="Заголовок виджета" wb-module="langinp">
                             </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title2" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text2" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link2" placeholder="Ссылка">
-                                </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text5" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link5" placeholder="Ссылка">
                             </div>
                         </div>
                     </div>
+                    <wb-multiinput name="icons5">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
 
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg5" wb-path="/uploads/it-products" />
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title5" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text5" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link5" placeholder="Ссылка">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="pr-0 col-6">
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg3" wb-path="/uploads/it-products" />
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title3" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text3" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link3" placeholder="Ссылка">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg4" wb-path="/uploads/it-products" />
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title4" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text4" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link4" placeholder="Ссылка">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg6" wb-path="/uploads/it-products" />
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title6" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text6" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link6" placeholder="Ссылка">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
                 </div>
             </div>
+
             <div class="mt-2 row">
-                <div class="pl-0 col-6">
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg7" wb-path="/uploads/it-products" />
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg3" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title3" placeholder="Заголовок виджета" wb-module="langinp">
                             </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title7" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text7" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link7" placeholder="Ссылка">
-                                </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text3" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link3" placeholder="Ссылка">
                             </div>
                         </div>
                     </div>
+                    <wb-multiinput name="icons3">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
                 </div>
-                <div class="pl-0 col-6">
-                    <div class="bd rounded-5">
-                        <div class="p-2 row">
-                            <div class="col-12">
-                                <wb-module wb="module=filepicker&mode=single&width=400&height=200" name="bkg8" wb-path="/uploads/it-products" />
+            </div>
+
+            <div class="mt-2 row">
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg4" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title4" placeholder="Заголовок виджета" wb-module="langinp">
                             </div>
-                            <div class="col-12">
-                                <div class="mb-1">
-                                    <input class="form-control" type="text" name="title8" placeholder="Заголовок виджета" wb-module="langinp">
-                                </div>
-                                <div class="mb-1">
-                                    <textarea class="form-control" rows="auto" name="text8" placeholder="Текст" wb-module="langinp"></textarea>
-                                </div>
-                                <div class="">
-                                    <input class="form-control" type="text" name="link8" placeholder="Ссылка">
-                                </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text4" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link4" placeholder="Ссылка">
                             </div>
                         </div>
                     </div>
+                    <wb-multiinput name="icons4">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
+                </div>
+            </div>
+
+            <div class="mt-2 row">
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg6" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title6" placeholder="Заголовок виджета" wb-module="langinp">
+                            </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text6" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link6" placeholder="Ссылка">
+                            </div>
+                        </div>
+                    </div>
+                    <wb-multiinput name="icons6">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
+                </div>
+            </div>
+
+            <div class="mt-2 row">
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg7" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title7" placeholder="Заголовок виджета" wb-module="langinp">
+                            </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text7" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link7" placeholder="Ссылка">
+                            </div>
+                        </div>
+                    </div>
+                    <wb-multiinput name="icons7">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
+                </div>
+            </div>
+
+            <div class="mt-2 row">
+                <div class="col-12 bd rounded-5">
+                    <div class="p-2 row">
+                        <div class="col-sm-4 col-lg-3">
+                            <wb-module wb="module=filepicker&mode=single&width=200&height=150" name="bkg8" wb-path="/uploads/it-products" />
+                        </div>
+                        <div class="col-sm-8 col-lg-9">
+                            <div class="mb-1">
+                                <input class="form-control" type="text" name="title8" placeholder="Заголовок виджета" wb-module="langinp">
+                            </div>
+                            <div class="mb-1">
+                                <textarea class="form-control" rows="auto" name="text8" placeholder="Текст" wb-module="langinp"></textarea>
+                            </div>
+                            <div class="">
+                                <input class="form-control" type="text" name="link8" placeholder="Ссылка">
+                            </div>
+                        </div>
+                    </div>
+                    <wb-multiinput name="icons8">
+                        <div class="col"><select class="form-control" wb-select2 name="icon">
+                                <option value="">Выберите...</option>
+                                <option value="orbit.svg">orbit</option>
+                                <option value="two.svg">two</option>
+                                <option value="three.svg">three</option>
+                                <option value="four.svg">four</option>
+                                <option value="blue.svg">blue</option>
+                                <option value="skyblue.svg">skyblue</option>
+                                <option value="green.svg">green</option>
+
+                            </select></div>
+                        <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                        <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                    </wb-multiinput>
                 </div>
             </div>
         </div>
@@ -200,6 +320,14 @@
                     <div class="card-wrapper">
                         <h3 class="card-title">{{title1.{{_sess.lang}}}}</h3>
                         <p class="card-text text-break">{{text1.{{_sess.lang}}}}</p>
+                        <wb-var icnt="0" />
+                        <div class="d-block icon-wrapper wrp1">
+                            <wb-foreach wb="from=icons1&tpl=false">
+                                <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                            </wb-foreach>
+                        </div>
+                        <wb-jq wb="$dom->find('.icon-wrapper.wrp1')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                     </div>
                     <a href="{{link1}}">
                         <span class="link-text">{{_lang.more}}</span>
@@ -213,12 +341,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title2.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text2.{{_sess.lang}}}}</p>
-                            <div class="icon-wrapper">
-                                <img class="icon" src="/tpl/assets/img/four.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/two.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/blue.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/orbit.svg" alt="icon">
+                            <wb-var icnt="0" />
+                            <div class="icon-wrapper wrp2">
+                                <wb-foreach wb="from=icons2&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
                             </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp2')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link2}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -229,12 +359,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title3.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text3.{{_sess.lang}}}}</p>
-                            <div class="icon-wrapper">
-                                <img class="icon" src="/tpl/assets/img/three.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/two.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/orbit.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/skyblue.svg" alt="icon">
+                            <wb-var icnt="0" />
+                            <div class="icon-wrapper wrp3">
+                                <wb-foreach wb="from=icons3&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
                             </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp3')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link3}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -245,12 +377,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title4.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text4.{{_sess.lang}}}}</p>
-                            <div class="icon-wrapper">
-                                <img class="icon" src="/tpl/assets/img/orbit.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/green.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/four.svg" alt="icon">
-                                <img class="icon" src="/tpl/assets/img/two.svg" alt="icon">
+                            <wb-var icnt="0" />
+                            <div class="d-block icon-wrapper wrp4">
+                                <wb-foreach wb="from=icons4&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
                             </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp4')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link4}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -262,6 +396,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title5.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text5.{{_sess.lang}}}}</p>
+                            <wb-var icnt="0" />
+                            <div class="icon-wrapper wrp5">
+                                <wb-foreach wb="from=icons5&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
+                            </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp5')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link5}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -273,6 +415,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title6.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text6.{{_sess.lang}}}}</p>
+                            <wb-var icnt="0" />
+                            <div class="d-block icon-wrapper wrp6">
+                                <wb-foreach wb="from=icons6&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
+                            </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp6')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link6}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -284,6 +434,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title7.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text7.{{_sess.lang}}}}</p>
+                            <wb-var icnt="0" />
+                            <div class="d-block icon-wrapper wrp7">
+                                <wb-foreach wb="from=icons7&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
+                            </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp7')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link7}}">
                             <span class="link-text">{{_lang.more}}</span>
@@ -295,6 +453,14 @@
                         <div class="card-wrapper">
                             <h3 class="card-title">{{title8.{{_sess.lang}}}}</h3>
                             <p class="card-text">{{text8.{{_sess.lang}}}}</p>
+                            <wb-var icnt="0" />
+                            <div class="d-block icon-wrapper wrp8">
+                                <wb-foreach wb="from=icons8&tpl=false">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                </wb-foreach>
+                            </div>
+                            <wb-jq wb="$dom->find('.icon-wrapper.wrp8')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
                         </div>
                         <a href="{{link8}}">
                             <span class="link-text">{{_lang.more}}</span>
