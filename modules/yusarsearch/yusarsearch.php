@@ -27,6 +27,9 @@ class modYusarsearch
         header("Content-type:application/json");
         $this->fields = ['header','title','text','descr','name','fullname'];
         $list = $this->app->itemList('_yonmap')['list'];
+
+
+
         $result = [];
         $find = mb_strtolower($this->app->vars('_post.find'));
         if ($find == '') {
@@ -35,8 +38,11 @@ class modYusarsearch
         }
         $find = str_replace('ё', 'е', $find);
         $find = explode(' ', trim($find));
+        $tables = [];
         foreach($list as &$l) {
-            $item=$this->app->itemRead($l['f'], $l['i']);
+            isset($tables[$l['f']]) ? null : $tables[$l['f']] = $this->app->itemList($l['f'],['filter'=>['active'=>'on']])['list'];
+            //$item=$this->app->itemRead($l['f'], $l['i']);
+            $item = $tables[$l['f']][$l['i']];
             $class=$this->app->formClass($l['f']);
             method_exists($class,'beforeItemShow') ? $class->beforeItemShow($item) : null;
             $l['header'] = $item['header'];
