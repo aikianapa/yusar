@@ -1064,7 +1064,7 @@ main .paks .icon-wrapper {
     flex-direction: row;
 }
 
-body main.main__it-products .ris .icon {
+body main.main__it-products .icon {
     transform: scale(1);
 }
 
