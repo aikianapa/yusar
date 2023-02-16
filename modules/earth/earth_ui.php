@@ -9,7 +9,7 @@
 	$('footer').addClass('mt-0');
   }
 </script>
-<wb-var map wb-api="/api/v2/list/map?active=on&sort=name" />
+<wb-var map wb-api="/api/v2/list/map?active=on&@sort=name" />
 <div>
 	<div class="container">
 		<div class="pt-4 pb-4 row">
