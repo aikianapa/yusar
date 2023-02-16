@@ -2,8 +2,6 @@ if (location.protocol == 'file:') {
     alert('This demo does not work with the file protocol due to browser security restrictions.');
 }
 
-
-
 window.addEventListener("earthjsload", function() {
 
     var myearth;
@@ -28,13 +26,17 @@ window.addEventListener("earthjsload", function() {
         cities.push(item.geopos.split(' '))
     }
 
+    var zoom = false;
+    var zoomO = 1;
+    var zoomI = 2.2; 
+
     myearth = new Earth('myearth', {
         location: { lat: 60.921841, lng: 76.632464 },
         //location: { lat: center[0], lng: center[1] },
         // mapImage: '/modules/earth/map.svg',
-        zoom: 1.15,
-        zoomMin: 1,
-        zoomMax: 1.8,
+        zoom: zoomO,
+        zoomMin: zoomO,
+        zoomMax: zoomI,
         quality: (window.innerWidth <= 1024) ? 4 : 5,
         light: 'simple',
         mapLandColor: 'RGBA(0,156,255,0.07)',
@@ -47,9 +49,34 @@ window.addEventListener("earthjsload", function() {
         autoRotateSpeed: 1.0,
         autoRotateDelay: 500,
         autoRotateStart: 2000,
-        mapStyles: '#RU {fill:RGBA(0,156,255,0.4)}'
+        //mapStyles: '#RU {fill:RGBA(0,156,255,0.4)}'
 
     });
+
+
+    myearth.addEventListener('click', function (ev) {
+            if (zoom) {
+                myearth.goTo(ev.location, { zoom: zoomO, duration: 400, easing: 'out-quad', complete: function () {  } });
+            } else {
+                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () {  } });
+            }
+            zoom = !zoom
+
+    });
+
+    let finder = document.querySelector('#mapFinder')
+    finder.addEventListener('change', function (ev) {
+        let l = finder.value.split(' ')
+        ev.location = { lat: l[0], lng: l[1] }
+        if (zoom) {
+            myearth.goTo(ev.location, { zoom: zoomO, duration: 400, easing: 'out-quad', complete: function () { 
+                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () { } });    
+            } });
+        } else {
+            myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () { } });
+        }
+        zoom = true
+    })
 
 
     myearth.addEventListener("ready", function() {
@@ -122,14 +149,14 @@ window.addEventListener("earthjsload", function() {
             for (var i = 0; i < cities.length; i++) {
 
                 var marker = earth.addMarker({
-
                     mesh: "Marker",
                     color: '#dc3545',
                     location: { lat: cities[i][0], lng: cities[i][1] },
-                    visible: false,
+                    visible: true,
                     hotspot: true,
-                    hotspotRadius: 1,
-                    hotspotHeight: 1,
+                    hotspotRadius: 0.5,
+                    hotspotHeight: 0.5,
+                    scale: 0.15,
                     depthScale: 1,
                     index: i,
                     data: meta[i].dataset
@@ -137,22 +164,19 @@ window.addEventListener("earthjsload", function() {
 
                 marker.addEventListener('click', openLink);
 
-                // animate marker
-                setTimeout((function() {
-                    this.visible = true;
-                    this.animate('scale', 0.3, { duration: 140 });
-                    this.animate('offset', 0, { duration: 1100, easing: 'bounce' });
-                }).bind(marker), 280 * i);
-
             }
         }
 
         function openLink() {
+            console.log(this.data);
+            /*
             $('#globeReg .modal-title img').attr('src', '/thumbc/80x80/src' + this.data.img)
             $('#globeReg .modal-body .region').text(this.data.reg)
             $('#globeReg .modal-body .name').text(this.data.name)
             $('#globeReg .modal-body .email').text(this.data.email)
             $('#globeReg').modal('show')
+            */
+            document.location.href = this.data.link
         }
 
         places(this);
