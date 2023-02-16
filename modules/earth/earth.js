@@ -56,9 +56,13 @@ window.addEventListener("earthjsload", function() {
 
     myearth.addEventListener('click', function (ev) {
             if (zoom) {
-                myearth.goTo(ev.location, { zoom: zoomO, duration: 400, easing: 'out-quad', complete: function () {  } });
+                myearth.goTo(ev.location, { zoom: zoomO, duration: 400, easing: 'out-quad', complete: function () {
+                    myearth.autoRotateSpeed = 1.0
+                } });
             } else {
-                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () {  } });
+                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () {
+                    myearth.autoRotateSpeed = 0
+                } });
             }
             zoom = !zoom
 
@@ -73,11 +77,12 @@ window.addEventListener("earthjsload", function() {
         ev.location = { lat: l[0], lng: l[1] }
         if (zoom) {
             myearth.goTo(ev.location, { zoom: zoomO, duration: 400, easing: 'out-quad', complete: function () { 
-                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () { } });    
+                myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () { } });
             } });
         } else {
             myearth.goTo(ev.location, { zoom: zoomI, duration: 400, easing: 'out-quad', complete: function () { } });
         }
+        myearth.autoRotateSpeed = 0
         zoom = true
     })
 
