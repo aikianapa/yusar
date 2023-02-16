@@ -2,7 +2,7 @@
 <div class="m-3" id="yongerDealers" wb-allow="admin">
 
     <nav class="nav navbar navbar-expand-md col">
-        <h3 class="order-1 tx-bold tx-spacing--2">Региональные представители</h3>
+        <h3 class="order-1 tx-bold tx-spacing--2">Карта присутствия</h3>
         <button class="order-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="wd-20 ht-20 fa fa-ellipsis-v"></i>
         </button>
