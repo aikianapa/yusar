@@ -66,6 +66,9 @@ window.addEventListener("earthjsload", function() {
 
     let finder = document.querySelector('#mapFinder')
     finder.addEventListener('change', function (ev) {
+        if (finder.value == 'finder') {
+            return
+        }
         let l = finder.value.split(' ')
         ev.location = { lat: l[0], lng: l[1] }
         if (zoom) {
