@@ -11,16 +11,31 @@
 </script>
 <wb-var map wb-api="/api/v2/list/map?active=on&@sort=name" />
 <div>
-	<div class="container">
-		<div class="pt-4 pb-4 row">
-			<div class="col">
-				<select wb-select2 id="mapFinder">
-					<option value="finder">Найти...</option>
-					<wb-foreach wb="from=_var.map&tpl=false">
-						<option value="{{yamap.0.geopos}}">{{name}}</option>
-					</wb-foreach>
-				</select>
-
+	<div class="position-relative">
+		<div class="p-4 ml-4 rounded position-absolute w-25 scrollbar-none" style="margin-top:10vh;background-color: #0000009e;z-index:9999;height:60vh;overflow:auto;">
+			<h4 class="text-white ">География присутствия</h4>
+			<div class="text-white" id="mapFinder" wb-off>
+				<h5 class="mt-3 text-white">Россия</h5>
+				<div class=" row row-cols-2 text-sm-left">
+					{{#each cities}}
+  						{{#if country == "Россия"}}
+						<small class="cursor-pointer col" on-click="link" data-pos="{{yamap.0.geopos}}">{{name}}</small>
+						{{/if}}
+					{{/each}}
+				</div>
+				<h5 class="mt-3 text-white">В мире</h5>
+				<div class=" row text-sm-left">
+					{{#each country}}
+						<h6 class="mt-2 col-12">{{@key}}</h6>
+						<div class="col-12">
+							<div class="row row-cols-2 text-sm-left">
+								{{#each cities}}
+									<small class="cursor-pointer col" on-click="link" data-pos="{{yamap.0.geopos}}">{{name}}</small>
+								{{/each}}
+							</div>
+						</div>
+					{{/each}}
+				</div>
 			</div>
 		</div>
 	</div>
@@ -30,9 +45,6 @@
 		</div>
 	</div>
 	<div id="globeData">
-		<wb-foreach wb="from=_var.map&tpl=false">
-			<meta data-geopos="{{yamap.0.geopos}}" data-link="{{link}}" data-name="{{name}}">
-		</wb-foreach>
 		<div class="modal fade" id="globeReg" tabindex="-1" role="dialog" aria-labelledby="globeReg" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -61,6 +73,24 @@
 	</div>
 </div>
 <style>
+	.scrollbar-none::-webkit-scrollbar {
+		display: none;
+	}
+
+	.widget-globe .tooltip {
+		white-space: nowrap;
+		text-transform: uppercase;
+		letter-spacing: 0.025em;
+		font-weight: bold;
+		font-size: 1.25em;
+		padding: 0.25em 0.5em 0.25em 1.8em;
+		color: white;
+		filter: drop-shadow(0 2px 1px #003399) drop-shadow(0 1px 3px #003399);
+		line-height: 120%;
+		transform: translate(-50%, 100%);
+		opacity: 1;
+	}
+
 	.widget-globe .select2-container--default .select2-selection--single {
 		background-color: #0000003b;
 		color: white;

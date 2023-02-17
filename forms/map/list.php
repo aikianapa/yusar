@@ -23,8 +23,8 @@
         <ul class="list-group">
             {{#each result}}
                 <li data-id="{{id}}" class="list-group-item d-flex align-items-center">
-                    <div>
-                        <h6 class="tx-13 tx-inverse tx-semibold mg-b-0">{{region}}</h6>
+                    <div class="d-flex w-100">
+                        <h6 class="mr-3 w-25 tx-13 tx-inverse tx-semibold">{{country}}</h6>
                         <div class="tx-12">{{name}}</div>
                     </div>
                     <div class="tx-right pos-absolute t-10 r-10">
@@ -80,7 +80,7 @@
     <script>
         var api = "/api/v2"
         var form = "map"
-        var base = api + `/list/${form}?&@size=10&@sort=name`
+        var base = api + `/list/${form}?&@size=20&@sort=name`
         var list = new Ractive({
             el: "#{{_form}}List",
             template: $("#{{_form}}List").html(),

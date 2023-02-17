@@ -13,6 +13,8 @@
     <form id="{{_form}}EditForm" wb="module=bsform">
         <label>Отображать</label>
         <input name="active" wb-module="switch">
+        <label>Страна</label>
+        <input class="form-control" type="text" name="country" placeholder="Россия">
         <label>Наименование</label>
         <input class="form-control" type="text" name="name">
         <label>Ссылка</label>
