@@ -1,3 +1,3 @@
 <html>
-    <mata wb-module="filemanager" wb-path="/uploads/usr"/>
+    <meta wb-module="filemanager" wb-path="/uploads/usr"/>
 </html>

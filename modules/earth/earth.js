@@ -175,6 +175,7 @@ window.addEventListener("earthjsload", function() {
                     zoom: zoomI, duration: duration, easing: 'out-quad', complete: function () {
                         myearth.autoRotateSpeed = 0
                         zoom = true
+                        scaleMarkers()
                     }
                 });
             }
