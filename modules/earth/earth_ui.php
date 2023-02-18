@@ -12,7 +12,7 @@
 <wb-var map wb-api="/api/v2/list/map?active=on&@sort=name" />
 <div>
 	<div class="position-relative">
-		<div class="p-4 ml-4 rounded position-absolute w-25 scrollbar-none" style="margin-top:10vh;background-color: #0000009e;z-index:9999;height:60vh;overflow:auto;">
+		<div class="p-4 ml-4 rounded d-none d-lg-block position-absolute w-25 scrollbar-none" style="margin-top:10vh;background-color: #0000009e;z-index:9999;height:60vh;overflow:auto;">
 			<h4 class="text-white ">География присутствия</h4>
 			<div class="text-white" id="mapFinder" wb-off>
 				<h5 class="mt-3 text-white">Россия</h5>

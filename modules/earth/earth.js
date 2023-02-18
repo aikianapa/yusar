@@ -6,7 +6,12 @@ window.addEventListener("earthjsload", function() {
     var zoom = false;
     var zoomO = 1;
     var zoomI = 2.2;
+    var color = '#dc3545';
+    var select = 'yellow';
+    var scaleO = 0.1
+    var scaleI = 0.05
     var duration = 1000;
+    var markers = [];
 
     myearth = new Earth('myearth', {
         location: { lat: 60.921841, lng: 76.632464 },
@@ -31,6 +36,14 @@ window.addEventListener("earthjsload", function() {
 
     });
 
+    function scaleMarkers() {
+        let keys = Object.keys(markers)
+        keys.forEach(key => {
+            let marker = markers[key]
+            marker.color = color
+            marker.scale = zoom ? scaleI : scaleO
+        })
+    }
 
     myearth.addEventListener('click', function (ev) {
             if (zoom) {
@@ -42,8 +55,8 @@ window.addEventListener("earthjsload", function() {
                     myearth.autoRotateSpeed = 0
                 } });
             }
-            zoom = !zoom
-
+        zoom = !zoom
+        scaleMarkers()
     });
 /*
     let finder = document.querySelector('#mapFinder')
@@ -54,7 +67,6 @@ window.addEventListener("earthjsload", function() {
 
     })
 */
-
     myearth.addEventListener("ready", function() {
         var tooltip = this.addOverlay({
             className: 'tooltip',
@@ -68,16 +80,16 @@ window.addEventListener("earthjsload", function() {
                 mapFinder(cities)
                 cities.forEach(place => {
                     let pos = place.yamap[0].geopos.split(' ')
-                    let marker = earth.addMarker({
-                        mesh: "Marker",
-                        color: '#dc3545',
+                    let marker
+                    marker = markers[place.yamap[0].geopos] = earth.addMarker({
+                        mesh: 'Pin',
+                        color: color,
                         location: { lat: pos[0], lng: pos[1] },
                         visible: true,
                         hotspot: true,
                         hotspotRadius: 0.5,
                         hotspotHeight: 0.5,
-                        scale: 0.05,
-                        depthScale: 0.5,
+                        scale: scaleO,
                         data: place
                     })
                     marker.addEventListener('click', openLink);
@@ -108,12 +120,12 @@ window.addEventListener("earthjsload", function() {
                                     country[city.country].cities.push({name: city.name, yamap: city.yamap})
                                 })    
                             });
-                            console.log(country);
                             list.set('country', country)
                         })
                     },
                     link(ev) {
-                        let location = $(ev.node).attr('data-pos').split(' ')
+                        let location = $(ev.node).attr('data-pos')
+                        location = location.split(' ')
                         location = { lat: location[0], lng: location[1] }
                         if (zoom) {
                             myearth.goTo(location, {
@@ -126,16 +138,13 @@ window.addEventListener("earthjsload", function() {
                         }
                         myearth.autoRotateSpeed = 0
                         zoom = true
+                        scaleMarkers()
+                        markers[$(ev.node).attr('data-pos')].color = select
+                        markers[$(ev.node).attr('data-pos')].scale = scaleO
                     }
                 }
             })
         }
-
-        function zoomOut() {
-            collapseCluster();
-            myearth.animate('zoom', 1.15, { relativeDuration: 100 });
-        }
-
 
         function enterMarker(ev) {
 
@@ -144,8 +153,6 @@ window.addEventListener("earthjsload", function() {
             tooltip.content = this.data.name;
             tooltip.element.style.marginTop = '-' + String(this.scale * 0.5 + 0.75) + 'em';
             tooltip.visible = true;
-            console.log(this);
-
         }
 
         function leaveMarker() {
