@@ -2,7 +2,7 @@
     <div>
         <wb-include wb-src="/engine/modules/yonger/common/blocks/common.inc.php" />
     </div>
-    <div class="col-12 mb-2">
+    <div class="mb-2 col-12">
         <input class="form-control" type="text" name="title" placeholder="Заголовок" wb-module="langinp">
     </div>
 
