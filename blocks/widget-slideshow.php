@@ -53,7 +53,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-7">
                             <div class="image__container">
-                                <img src="{{_val.0.img}}" alt="" class="big-img">
+                                <img src="/thumbc/1000x700/src{{_val.0.img}}" alt="" class="big-img">
                             </div>
 
                         </div>
@@ -61,12 +61,12 @@
                         <div class="col-lg-4 blocks">
                             <div class="block">
                                 <div class="image__container">
-                                    <img src="{{_val.1.img}}" alt="">
+                                    <img src="/thumbc/600x420/src{{_val.1.img}}" alt="">
                                 </div>
                             </div>
                             <div class="block">
                                 <div class="image__container">
-                                    <img src="{{_val.2.img}}" alt="">
+                                    <img src="/thumbc/600x420/src{{_val.2.img}}" alt="">
                                 </div>
                             </div>
                         </div>
