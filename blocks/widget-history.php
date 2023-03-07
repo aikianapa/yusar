@@ -5,7 +5,7 @@
             <input class="form-control" type="text" name="year" placeholder="Год">
             <wb-module wb="module=filepicker&mode=single&width=150&height=100" name="image" />
         </div>
-        <div class="col-9 pl-3">
+        <div class="pl-3 col-9">
                 <div class="col-12">
                     <input class="form-control" type="text" name="title" placeholder="Заголовок" wb-module="langinp">
                 </div>
@@ -29,14 +29,14 @@
             </div>
             <div class="col-lg-6">
                 <div class="row" style="height:100%;">
-                    <div class="col-3 col-sm-2 pt-3r dates">
+                    <div class="col-3 pt-3r dates">
                         <div class="slick-uninit slick-nav">
                             <wb-foreach wb="from=history">
                                 <div class="d-block slick-slide" data-year="{{year}}">{{year}}</div>
                             </wb-foreach>
                         </div>
                     </div>
-                    <div class="col-9 col-sm-10" style="padding-left: 0 !important;">
+                    <div class="col-9" style="padding-left: 0 !important;">
                         <div class="slick slick-for dates-slider" data-options="vertical=true&verticalSwiping=true&dots=false&slidesToShow=1&slidesToScroll=1&responsive=false&dots=false&infinite=true&arrows=false&adaptiveHeight&true">
                             <wb-foreach wb="from=history">
                                 <div>

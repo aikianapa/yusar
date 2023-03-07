@@ -48,7 +48,7 @@
         </div>
 
         <div class="form-group row">
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>
                     Метод
                 </label>
@@ -59,24 +59,24 @@
 
             </div>
 
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>Скорость</label>
                 <input class="form-control" type="number" name="speed" placeholder="Скорость def:2000">
             </div>
 
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>Ширина</label>
                 <input class="form-control" type="number" name="width" placeholder="Ширина def:500">
             </div>
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>Высота</label>
                 <input class="form-control" type="number" name="height" placeholder="Высота def:320">
             </div>
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>Слайдов</label>
                 <input class="form-control" type="number" name="show" placeholder="Слайдов def:4">
             </div>
-            <div class="col-md-2 col-sm-6 mb-2">
+            <div class="mb-2 col-md-2 col-sm-6">
                 <label>Скрол</label>
                 <input class="form-control" type="number" name="scroll" placeholder="Скрол def:4">
             </div>
