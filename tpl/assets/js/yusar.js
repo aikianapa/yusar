@@ -160,8 +160,8 @@ yusar.slick = function() {
                         slidesToScroll: 1
                     }
                 }],
-                slidesToShow: 4,
-                slidesToScroll: 4
+                slidesToShow: $(this).data('show') > '' ? $(this).data('show') : 4,
+                slidesToScroll: $(this).data('show') > '' ? $(this).data('show') : 4
             };
 
             if ($(this).attr('data-autoplay') > '') {
