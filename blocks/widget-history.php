@@ -49,7 +49,7 @@
                                     <div wb-if="'{{_idx}}'=='0'" data-year="{{_parent.year}}">
                                         <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{img}}" alt="">
                                     </div>
-                                    <div>
+                                    <div wb-if="'{{_idx}}'>'0'">
                                         <img class="img-fluid" width="660" height="480" src="/thumbc/655x480/src/{{img}}" alt="">
                                     </div>
                             </div>
@@ -78,7 +78,7 @@
                     $dst.children('.title').html($src.data('title'));
                     $dst.children('.text').html($src.html());
                     $dst.fadeIn(timeout);
-                }, timeout/2)
+                }, timeout / 2)
             })
         </script>
     </section>
