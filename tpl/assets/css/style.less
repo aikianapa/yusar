@@ -2394,6 +2394,32 @@ body {
             font-weight: 400;
         }
 
+        .slides {
+            [data-year] {
+                background: #2BA8DD;
+
+                >img {
+                    opacity: .2;
+                }
+
+                &:before {
+                    content: attr(data-year);
+                    width: 100%;
+                    display: block;
+                    position: absolute;
+                    font-size: 2rem;
+                    margin-top: 30%;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 72px;
+                    font-style: normal;
+                    font-weight: 100;
+                    line-height: 60px;
+                    letter-spacing: 0em;
+                }
+            }
+        }
+
         .slick.slick-for {
             [data-year] {
                 background: #2BA8DD;
