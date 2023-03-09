@@ -38,7 +38,7 @@
                         <div class="text-center">
                             <wb-foreach wb="from=history">
                                 <div class="pb-1 cursor-pointer d-block" data-year="{{year}}">{{year}}</div>
-                                <div class="d-none src-data" data-year="{{year}}" data-title="{{title.{{_sess.lang}}}}">{{text.{{_sess.lang}}}}</div>
+                                <div class="d-none src-data" data-title="{{title.{{_sess.lang}}}}">{{text.{{_sess.lang}}}}</div>
                             </wb-foreach>
                         </div>
                     </div>
@@ -61,8 +61,11 @@
         </div>
         </div>
         <script wb-app remove>
-            $('#History .year-block:eq(0)').removeClass('d-none')
-            $('#History .dates [data-year]').click(function() {
+            var hiAuto
+            $('#History .dates [data-year]').click(function(ev) {
+                ev.isTrigger == undefined && hiAuto !== undefined ? clearInterval(hiAuto) : null
+                $('#History .dates [data-year]').removeClass('active')
+                $(this).addClass('active')
                 let $src = $(this).next('src-data');
                 let $dst = $('#History div.dst-data');
                 let year = $(this).data('year')
@@ -72,14 +75,26 @@
                 let that = this;
                 $dst.fadeOut(timeout);
                 setTimeout(function() {
-                    let year = $(that).data('year');
                     let $src = $('#History div.src-data[data-year=' + year + ']');
-                    $dst.children('.year').html($src.data('year'));
+                    $dst.children('.year').html(year);
                     $dst.children('.title').html($src.data('title'));
                     $dst.children('.text').html($src.html());
                     $dst.fadeIn(timeout);
                 }, timeout / 2)
             })
+
+            var historyAuto = function() {
+                hiAuto = setInterval(function() {
+                    let $active = $('#History .dates [data-year].active')
+                    let idx = $active.index() / 2
+                    idx + 1 >= $('#History .dates [data-year]').length ? idx = 0 : idx++
+                    $active.removeAttr('active')
+                    $(`#History .dates [data-year]:eq(${idx})`).trigger('click', null)
+                }, 3000)
+            }
+
+            $('#History .dates [data-year]:eq(0)').trigger('click')
+            historyAuto()
         </script>
     </section>
 
