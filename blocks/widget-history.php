@@ -66,16 +66,15 @@
                 ev.isTrigger == undefined && hiAuto !== undefined ? clearInterval(hiAuto) : null
                 $('#History .dates [data-year]').removeClass('active')
                 $(this).addClass('active')
-                let $src = $(this).next('src-data');
+                let $src = $(this).next('.src-data');
                 let $dst = $('#History div.dst-data');
-                let year = $(this).data('year')
+                let year = $(this).attr('data-year')
                 $('#History .year-block').addClass('d-none')
                 $(`#History .year-block[data-year=${year}]`).removeClass('d-none')
                 let timeout = 200;
                 let that = this;
                 $dst.fadeOut(timeout);
                 setTimeout(function() {
-                    let $src = $('#History div.src-data[data-year=' + year + ']');
                     $dst.children('.year').html(year);
                     $dst.children('.title').html($src.data('title'));
                     $dst.children('.text').html($src.html());
