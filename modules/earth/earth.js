@@ -76,7 +76,7 @@ window.addEventListener("earthjsload", function() {
             depthScale: 0.4
         });
         function places(earth) {
-            $.get("/api/v2/list/map?active=on&@sort=name&@return=country,name,yamap",function(cities){
+            $.get("/api/v2/list/map?active=on&@sort=name&@return=country,name,yamap,link",function(cities){
                 mapFinder(cities)
                 cities.forEach(place => {
                     let pos = place.yamap[0].geopos.split(' ')
@@ -110,7 +110,7 @@ window.addEventListener("earthjsload", function() {
                 },
                 on: {
                     complete() {
-                        $.get("/api/v2/list/map?active=on&country!=Россия&@sort=name&@group=country&@return=name,yamap,country",function(outside){
+                        $.get("/api/v2/list/map?active=on&country!=Россия&@sort=name&@group=country&@return=name,yamap,country,link",function(outside){
                             
                             outside = Object.values(outside)
                             let country = {}
