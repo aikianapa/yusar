@@ -42,7 +42,7 @@
                             </wb-foreach>
                         </div>
                     </div>
-                    <div class="col-9 slides">
+                    <div class="px-0 col-9 slides">
                         <wb-foreach wb="from=history&tpl=false">
                             <div class="year-block d-none" data-year="{{year}}">
                                 <wb-foreach wb="from=image&tpl=false">
