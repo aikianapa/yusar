@@ -25,13 +25,13 @@
                 <wb-var active="active" wb-if='"{{_idx}}" == "0"' else="" />
                 <div class="carousel-item {{_var.active}}">
                     <div class="container position-relative">
-                        <div class="carousel-caption text-left">
+                        <div class="text-left carousel-caption">
                             <div class="jumbotron transparent row">
                                 <h1 class="mb-3r">
                                     {{header}}
                                 </h1>
 
-                                <div class="col-12 col-lg-6 px-0">
+                                <div class="px-0 col-12 col-lg-6">
                                     <p class="lead lead-text">
                                         {{text}}
                                     </p>
@@ -62,7 +62,7 @@
         </a>
     </div>
 </header>
-<header wb-if="'{{_route.name}}' !== 'home'">
+<header wb-if="'{{_route.name}}' !== 'home'" class="mb-5">
     <div class="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="carousel-inner">
@@ -72,15 +72,15 @@
                 <source data-src="{{_var.path_video}}/{{_var.video}}.mp4" type="video/mp4">
             </video>
             <div class="container">
-                <div class="carousel-caption text-left">
-                    <div class="jumbotron transparent row mb-0 pb-1r no-home">
+                <div class="text-left carousel-caption">
+                    <div class="mb-0 jumbotron transparent row pb-1r no-home">
                         <nav aria-label="breadcrumb">
                         <wb-include wb-tpl="breadcrumbs.inc.php" />
                         </nav>
-                        <div class="col-12 px-0">
+                        <div class="px-0 col-12">
                             <h1>{{header}}</h1>
                         </div>
-                        <div class="col-12 col-lg-6 px-0">
+                        <div class="px-0 col-12 col-lg-6">
                             <p class="lead-text" wb-if="'{{_route.uri}}'!=='/project' && '{{_form}}' !== 'news'">
                                 {{text}}</p>
                         </div>

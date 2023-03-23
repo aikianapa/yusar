@@ -46,7 +46,7 @@
         }
     </style>
     <div class="container">
-        <div class="pt-5 slider slider-for slide-pics" data-options="arrows=false" style="max-width: 1620px;">
+        <div class="slider slider-for slide-pics" data-options="arrows=false" style="max-width: 1620px;">
             <wb-var pgs="{{array_chunk({{images}},3)}}"></wb-var>
             <wb-foreach wb="from=_var.pgs">
                 <div class="slider-block" style="margin-top: 0;">
