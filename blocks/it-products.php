@@ -30,22 +30,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row col-12">
-                        <wb-multiinput name="icons1">
-                            <div class="col"><select class="form-control" wb-select2 name="icon">
-                                    <option value="">Выберите...</option>
-                                    <option value="orbit.svg">orbit</option>
-                                    <option value="two.svg">two</option>
-                                    <option value="three.svg">three</option>
-                                    <option value="four.svg">four</option>
-                                    <option value="blue.svg">blue</option>
-                                    <option value="skyblue.svg">skyblue</option>
-                                    <option value="green.svg">green</option>
-
-                                </select></div>
-                            <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
-                            <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
-                        </wb-multiinput>
+                    <div class="row">
+                        <div class="col-12">
+                            <wb-multiinput name="icons1">
+                                <div class="col-auto">
+                                    <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                                </div>
+                                <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
+                                <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
+                            </wb-multiinput>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -69,17 +63,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons2">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -105,17 +91,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons5">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -141,17 +119,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons3">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -177,17 +147,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons4">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -213,17 +175,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons6">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -249,17 +203,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons7">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -285,17 +231,9 @@
                         </div>
                     </div>
                     <wb-multiinput name="icons8">
-                        <div class="col"><select class="form-control" wb-select2 name="icon">
-                                <option value="">Выберите...</option>
-                                <option value="orbit.svg">orbit</option>
-                                <option value="two.svg">two</option>
-                                <option value="three.svg">three</option>
-                                <option value="four.svg">four</option>
-                                <option value="blue.svg">blue</option>
-                                <option value="skyblue.svg">skyblue</option>
-                                <option value="green.svg">green</option>
-
-                            </select></div>
+                        <div class="col-auto">
+                            <input name="icon" wb="module=filepicker&mode=single&width=24&height=24" />
+                        </div>
                         <div class="col"><input class="form-control" name="label" placeholder="Текст"></div>
                         <div class="col"><input class="form-control" name="link" placeholder="Ссылка" wb="module=yonger&mode=pageselect"></div>
                     </wb-multiinput>
@@ -323,8 +261,8 @@
                         <wb-var icnt="0" />
                         <div class="d-block icon-wrapper wrp1">
                             <wb-foreach wb="from=icons1&tpl=false">
-                                <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                <img wb-if="'{{icon.0.img}}'>' '" class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                             </wb-foreach>
                         </div>
                         <wb-jq wb="$dom->find('.icon-wrapper.wrp1')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -344,8 +282,8 @@
                             <wb-var icnt="0" />
                             <div class="icon-wrapper wrp2">
                                 <wb-foreach wb="from=icons2&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp2')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -362,8 +300,8 @@
                             <wb-var icnt="0" />
                             <div class="icon-wrapper wrp3">
                                 <wb-foreach wb="from=icons3&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp3')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -380,8 +318,8 @@
                             <wb-var icnt="0" />
                             <div class="d-block icon-wrapper wrp4">
                                 <wb-foreach wb="from=icons4&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp4')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -399,8 +337,8 @@
                             <wb-var icnt="0" />
                             <div class="icon-wrapper wrp5">
                                 <wb-foreach wb="from=icons5&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp5')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -418,8 +356,8 @@
                             <wb-var icnt="0" />
                             <div class="d-block icon-wrapper wrp6">
                                 <wb-foreach wb="from=icons6&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp6')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -437,8 +375,8 @@
                             <wb-var icnt="0" />
                             <div class="d-block icon-wrapper wrp7">
                                 <wb-foreach wb="from=icons7&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp7')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
@@ -456,8 +394,8 @@
                             <wb-var icnt="0" />
                             <div class="d-block icon-wrapper wrp8">
                                 <wb-foreach wb="from=icons8&tpl=false">
-                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon}}'>' '" />
-                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="/tpl/assets/img/{{icon}}" alt="icon">
+                                    <wb-var icnt="{{_var.icnt*1 + 1}}" wb-if="'{{icon.0.img}}'>' '" />
+                                    <img class="cursor-pointer icon" title="{{label}}" onclick="javascript:document.location.href='{{link}}';" src="{{icon.0.img}}" alt="icon">
                                 </wb-foreach>
                             </div>
                             <wb-jq wb="$dom->find('.icon-wrapper.wrp8')->remove()" wb-if="'{{_var.icnt}}'=='0'" />
