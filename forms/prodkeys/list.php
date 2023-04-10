@@ -1,17 +1,17 @@
 <html>
-<div class="m-3" id="yongerProdkeys" wb-allow="admin">
+<div class="m-3" id="yongerProdkeys" wb-allow="admin,staff">
 
     <nav class="nav navbar navbar-expand-md col">
-        <h3 class="tx-bold tx-spacing--2 order-1">Коды продукции</h3>
-        <button class="navbar-toggler order-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <h3 class="order-1 tx-bold tx-spacing--2">Коды продукции</h3>
+        <button class="order-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <i class="wd-20 ht-20 fa fa-ellipsis-v"></i>
         </button>
 
-        <div class="collapse navbar-collapse order-2" id="navbarSupportedContent">
-            <form class="form-inline mg-t-10 mg-lg-0  ml-auto">
+        <div class="order-2 collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="ml-auto form-inline mg-t-10 mg-lg-0">
                 <div class="form-group">
-                    <input class="form-control mg-r-10 col-auto" type="search" placeholder="Поиск..." aria-label="Поиск..." data-ajax="{'target':'#{{_form}}List','filter_add':{'$or':[{ 'doc_num' : {'$like' : '$value'} }, { 'fullname': {'$like' : '$value'} }]} }">
+                    <input class="col-auto form-control mg-r-10" type="search" placeholder="Поиск..." aria-label="Поиск..." data-ajax="{'target':'#{{_form}}List','filter_add':{'$or':[{ 'doc_num' : {'$like' : '$value'} }, { 'fullname': {'$like' : '$value'} }]} }">
                 </div>
                 <a href="#" data-ajax="{'url':'/cms/ajax/form/{{_form}}/edit/_new','html':'#yongerProdkeys modals'}" class="ml-2 btn btn-primary">
                     <img src="/module/myicons/item-select-plus-add.svg?size=24&stroke=FFFFFF" /> Добавить
