@@ -8,21 +8,21 @@
     <main>
         <div class="container pt-2r">
             <h2>Файлы</h2>
-            
+
             <form action="{{_route.uri}}" method="POST" wb-if="'{{_post.pass}}'!=='{{pass}}'">
                 <wb-data>
-                    <small>Для доступа к файлам необходимо ввести пароль</small>
-            <div class="footer__top-wrapper">
-                <div class="footer__input-group">
-                    <input type="password" class="input footer__input phone" placeholder="Пароль" name="pass" required>
-                </div>
-                <div class="footer__input-group">
-                    <button class="btn btn-link" type="submit">Отправить</button>
-                </div>
-            </div>
-            </wb-data>
+                    <small></small>
+                    <div class="footer__top-wrapper">
+                        <div class="footer__input-group">
+                            <input type="password" class="input footer__input phone" placeholder="Для доступа к файлам необходимо ввести пароль" name="pass" required>
+                        </div>
+                        <div class="footer__input-group">
+                            <button class="btn btn-link" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </wb-data>
             </form>
-            
+
             <div class="documentation" wb-if="'{{_post.pass}}'=='{{pass}}'">
                 <h3>{{title.{{_sess.lang}}}}</h3>
                 <div class="documentation--files">
