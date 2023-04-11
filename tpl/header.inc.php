@@ -63,6 +63,8 @@
     </div>
 </header>
 <header wb-if="'{{_route.name}}' !== 'home'" class="mb-5">
+    <wb-var header="{{header}}" />
+    <wb-var header="Доступ к персональным файлам" wb-if="'{{_route.tpl}}'=='prodkeys.php'" />
     <div class="carousel" data-interval="6000">
         <wb-include wb-tpl="topmenu.inc.php" />
         <div class="carousel-inner">
@@ -78,7 +80,7 @@
                         <wb-include wb-tpl="breadcrumbs.inc.php" />
                         </nav>
                         <div class="px-0 col-12">
-                            <h1>{{header}}</h1>
+                            <h1>{{_var.header}}</h1>
                         </div>
                         <div class="px-0 col-12 col-lg-6">
                             <p class="lead-text" wb-if="'{{_route.uri}}'!=='/project' && '{{_form}}' !== 'news'">
